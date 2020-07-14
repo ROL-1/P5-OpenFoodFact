@@ -1,0 +1,1 @@
+"""class to make an interface (optionnal)"""

@@ -1,0 +1,1 @@
+"""class to get informations from API"

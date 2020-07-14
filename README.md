@@ -12,7 +12,7 @@ L'utilisateur est sur le terminal. Ce dernier lui affiche les choix suivants :
 1 - Quel aliment souhaitez-vous remplacer ?  
 2 - Retrouver mes aliments substitués.
 
-L'utilisateur sélectionne 1.   
+L'utilisateur sélectionne 1.  
 Le programme pose les questions suivantes à l'utilisateur et ce dernier sélectionne les réponses :
 
 - Sélectionnez la catégorie. [Plusieurs propositions associées à un chiffre. L'utilisateur entre le chiffre correspondant et appuie sur entrée]
@@ -20,7 +20,7 @@ Le programme pose les questions suivantes à l'utilisateur et ce dernier sélect
 - Le programme propose un substitut, sa description, un magasin ou l'acheter (le cas échéant) et un lien vers la page d'Open Food Facts concernant cet aliment.
 - L'utilisateur a alors la possibilité d'enregistrer le résultat dans la base de données.
 
-L'utilisateur sélectionne 2.   
+L'utilisateur sélectionne 2.  
 Le programme retourne la liste des aliments substitués précédemment sauvegardés.
 
  
@@ -34,3 +34,16 @@ Le programme retourne la liste des aliments substitués précédemment sauvegard
 
 Trello : https://trello.com/b/c5Zmq94p/p5-openfoodfacts
 
+### Fichiers
+MVC avec :  
+
+MODEL :  
+mysql.py : classe pour faire le lien entre la base de donnée et le programme  
+VIEW :  
+interface.py : classe gérant l'interface pour l'utilisateur (option)  
+CONTROLER :  
+main.py : lance l'application et distribue les autres fichiers  
+program.py : le programme (algo)  
+product.py : classe "fiche-produit"  
+api.py : classe pour récupérer les infos de l'api  
+user.py : classe pour la fiche client  

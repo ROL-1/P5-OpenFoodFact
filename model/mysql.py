@@ -1,0 +1,1 @@
+""" class to filter api informations and transmit it to the database."""
