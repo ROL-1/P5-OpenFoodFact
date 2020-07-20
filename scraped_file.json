@@ -1,0 +1,1203 @@
+{
+    "products": [
+        {
+            "product_name": "Ricor\u00e9",
+            "url": "https://fr.openfoodfacts.org/produit/7613035676497/ricore-nestle",
+            "code": "7613035676497",
+            "categories": "Plant-based foods and beverages,Beverages,Plant-based beverages,Plant-based foods,Instant beverages,Coffees,Instant chicory",
+            "brands": "nestle",
+            "stores": ""
+        },
+        {
+            "brands": "Nestl\u00e9,Ricor\u00e9",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Boissons instantan\u00e9es, Caf\u00e9s solubles, Chicoree",
+            "stores": "Magasins U,Al Campo (Auchan),Carrefour,Auchan,Delhaize",
+            "product_name": "Nestl\u00e9 Ricor\u00e9 original",
+            "code": "3033710073467",
+            "url": "https://fr.openfoodfacts.org/produit/3033710073467/nestle-ricore-original"
+        },
+        {
+            "stores": "Magasins U",
+            "brands": "Malongo",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Caf\u00e9s moulus",
+            "url": "https://fr.openfoodfacts.org/produit/3187570015447/cafe-moulu-pur-arabica-des-petits-producteurs-malongo",
+            "code": "3187570015447",
+            "product_name": "Caf\u00e9 moulu pur arabica des petits producteurs"
+        },
+        {
+            "stores": "Carrefour,Magasins U",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Boissons \u00e0 base de v\u00e9g\u00e9taux, Caf\u00e9s, Boissons instantan\u00e9es, Boissons sans alcool, Chicor\u00e9e soluble, Boissons sans sucre ajout\u00e9, Chicoree",
+            "brands": "Nestl\u00e9",
+            "url": "https://fr.openfoodfacts.org/produit/3033710071005/ricore-au-lait-nestle",
+            "code": "3033710071005",
+            "product_name": "Ricor\u00e9 au lait"
+        },
+        {
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux,Boissons,Aliments d'origine v\u00e9g\u00e9tale,Produits laitiers,Boissons chaudes,Laits,Caf\u00e9s,Boissons instantan\u00e9es,Cappuccino en poudre",
+            "brands": "Nescaf\u00e9",
+            "stores": "Carrefour,Monoprix,Magasins U",
+            "product_name": "Cappuccino",
+            "url": "https://fr.openfoodfacts.org/produit/7613032568436/cappuccino-nescafe",
+            "code": "7613032568436"
+        },
+        {
+            "stores": "Magasins U",
+            "categories": "Plant-based foods and beverages,Beverages,Plant-based foods,Coffees,Instant beverages,Instant coffees",
+            "brands": "Nestl\u00e9",
+            "url": "https://fr.openfoodfacts.org/produit/3033710074525/nescafe-nestle",
+            "code": "3033710074525",
+            "product_name": "Nescaf\u00e9"
+        },
+        {
+            "brands": "Carte Noire",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s, Caf\u00e9s moulus",
+            "stores": "Magasins U",
+            "product_name": "Caf\u00e9 moulu ar\u00f4me intense",
+            "url": "https://fr.openfoodfacts.org/produit/8000070200289/cafe-moulu-arome-intense-carte-noire",
+            "code": "8000070200289"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/produit/3033710077274/nescafe-nes-fine-mousse",
+            "code": "3033710077274",
+            "product_name": "Nescaf\u00e9 NES - Fine mousse",
+            "stores": "Magasins U,Carrefour,Auchan",
+            "categories": "Plant-based foods and beverages,Beverages,Plant-based foods,Hot beverages,Coffees,Instant beverages,Instant coffees",
+            "brands": "Nescaf\u00e9"
+        },
+        {
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux,Boissons,Aliments d'origine v\u00e9g\u00e9tale,Boissons chaudes,Caf\u00e9s,Boissons instantan\u00e9es,Caf\u00e9s solubles",
+            "brands": "Nescaf\u00e9",
+            "stores": "Magasins U",
+            "product_name": "Nescaf\u00e9 S\u00e9lection",
+            "code": "3033710075225",
+            "url": "https://fr.openfoodfacts.org/produit/3033710075225/nescafe-selection"
+        },
+        {
+            "stores": "Leclerc,Magasins U,carrefour",
+            "brands": "Nescaf\u00e9,Nestl\u00e9",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Boissons instantan\u00e9es, Caf\u00e9s solubles, Boissons sans sucre ajout\u00e9",
+            "url": "https://fr.openfoodfacts.org/produit/3033710074518/nescafe-special-filtre",
+            "code": "3033710074518",
+            "product_name": "Nescaf\u00e9 sp\u00e9cial filtre"
+        },
+        {
+            "code": "8711000522967",
+            "url": "https://fr.openfoodfacts.org/produit/8711000522967/cafe-soluble-maxwell-house",
+            "product_name": "Caf\u00e9 soluble",
+            "stores": "Leclerc,Auchan, Magasins U",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s, Boissons instantan\u00e9es, Caf\u00e9s solubles",
+            "brands": "Maxwell House"
+        },
+        {
+            "brands": "Nescaf\u00e9",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux,Boissons,Aliments d'origine v\u00e9g\u00e9tale,Boissons chaudes,Caf\u00e9s,Boissons avec sucre ajout\u00e9",
+            "stores": "Magasins U",
+            "product_name": "Cappuccino",
+            "code": "3033710047765",
+            "url": "https://fr.openfoodfacts.org/produit/3033710047765/cappuccino-nescafe"
+        },
+        {
+            "stores": "grande surface,carrefour",
+            "brands": "Nescaf\u00e9,Nestl\u00e9",
+            "categories": "Pflanzliche Lebensmittel und Getr\u00e4nke,Getr\u00e4nke,Pflanzliche Lebensmittel,Milchprodukte,Hei\u00dfgetr\u00e4nke,Milchgetr\u00e4nke,Kaffees,Hei\u00dfgetr\u00e4nke zum Aufglie\u00dfen,Kaffeegetr\u00e4nke,Kaffeemilch,Gezuckerte Getr\u00e4nke,fr:cafes-viennois",
+            "url": "https://fr.openfoodfacts.org/produit/8000300211368/cafe-viennois-nescafe",
+            "code": "8000300211368",
+            "product_name": "Caf\u00e9 viennois"
+        },
+        {
+            "stores": "Magasins U,cora",
+            "brands": "Nestl\u00e9, Nescafe",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Boissons instantan\u00e9es, Caf\u00e9s en dosettes, Caf\u00e9s solubles",
+            "url": "https://fr.openfoodfacts.org/produit/3033710072927/nescafe-nes-nestle",
+            "code": "3033710072927",
+            "product_name": "Nescaf\u00e9 NES"
+        },
+        {
+            "code": "7613036451253",
+            "url": "https://fr.openfoodfacts.org/produit/7613036451253/nescafe-special-filtre",
+            "product_name": "Nescaf\u00e9 sp\u00e9cial filtre",
+            "stores": "",
+            "brands": "Nescaf\u00e9",
+            "categories": "Boissons, Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s, Boissons instantan\u00e9es, Caf\u00e9s solubles"
+        },
+        {
+            "product_name": "Lungo",
+            "url": "https://fr.openfoodfacts.org/produit/5011546498423/lungo-nescafe",
+            "code": "5011546498423",
+            "brands": "Nescaf\u00e9,Nescaf\u00e9 Dolce Gusto",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Caf\u00e9s en dosettes, Caf\u00e9s en dosettes compatible Dolce Gusto, Caf\u00e9s moulus, Caf\u00e9s en dosettes compatible Nespresso",
+            "stores": "Super U,Hyper U,Magasins U,Delhaize"
+        },
+        {
+            "product_name": "Cappuccino classique",
+            "url": "https://fr.openfoodfacts.org/produit/8711000519776/cappuccino-classique-maxwell-house",
+            "code": "8711000519776",
+            "brands": "Maxwell House",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Produits d\u00e9shydrat\u00e9s, Produits lyophilis\u00e9s \u00e0 reconstituer, Caf\u00e9s, Boissons lyophilis\u00e9es, Boissons avec sucre ajout\u00e9",
+            "stores": "Magasins U"
+        },
+        {
+            "brands": "Nescaf\u00e9,Nestl\u00e9",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Boissons instantan\u00e9es, Caf\u00e9s solubles, Boissons sans sucre ajout\u00e9",
+            "stores": "Super U,Cora,Magasins U",
+            "product_name": "Sp\u00e9cial Filtre",
+            "code": "3033710076017",
+            "url": "https://fr.openfoodfacts.org/produit/3033710076017/special-filtre-nescafe"
+        },
+        {
+            "brands": "Senseo",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s",
+            "product_name": "Caf\u00e9 dosette",
+            "code": "3228470064743",
+            "url": "https://fr.openfoodfacts.org/produit/3228470064743/cafe-dosette-senseo"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/produit/3564700028872/chicoree-cafe-plantation",
+            "code": "3564700028872",
+            "product_name": "Chicor\u00e9e Caf\u00e9",
+            "stores": "Leclerc",
+            "brands": "Plantation,Marque Rep\u00e8re",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Boissons instantan\u00e9es, Boissons sans sucre ajout\u00e9, Chicor\u00e9e"
+        },
+        {
+            "brands": "Nescaf\u00e9",
+            "categories": "Plant-based foods and beverages, Beverages, Plant-based foods, Coffees, Instant beverages, Instant coffees",
+            "stores": "",
+            "product_name": "",
+            "url": "https://fr.openfoodfacts.org/produit/3033710075270/nescafe",
+            "code": "3033710075270"
+        },
+        {
+            "stores": "Magasins U",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s",
+            "brands": "Malongo",
+            "code": "3187570015508",
+            "url": "https://fr.openfoodfacts.org/produit/3187570015508/la-tierra-malongo",
+            "product_name": "La Tierra"
+        },
+        {
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s",
+            "brands": "senseo",
+            "stores": "",
+            "product_name": "Caf\u00e9",
+            "url": "https://fr.openfoodfacts.org/produit/3228470064774/cafe-senseo",
+            "code": "3228470064774"
+        },
+        {
+            "brands": "Nescaf\u00e9,Dolce Gusto",
+            "categories": "Plant-based foods and beverages, Beverages, Plant-based foods, Hot beverages, Coffees, Unsweetened beverages, en:coffee-capsules",
+            "stores": "Auchan,Magasins U",
+            "product_name": "Espresso",
+            "code": "5011546498393",
+            "url": "https://fr.openfoodfacts.org/produit/5011546498393/espresso-nescafe"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/produit/7613033174667/dolce-gusto-nescafe",
+            "code": "7613033174667",
+            "product_name": "Dolce Gusto",
+            "stores": "Magasins U",
+            "categories": "Plant-based foods and beverages, Beverages, Plant-based foods, Hot beverages, Coffees, Non-Alcoholic beverages, Coffee capsules, Dolce Gusto-compatible coffee capsules, Unsweetened beverages, fr:dosettes-dolce-gusto",
+            "brands": "Nescaf\u00e9,Dolce Gusto"
+        },
+        {
+            "brands": "Senseo,Philips,DE Master Blenders",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Caf\u00e9s en dosettes, Caf\u00e9s en dosettes compatible Senseo, Boissons avec sucre ajout\u00e9, Caf\u00e9 soluble dosette filtre petit d\u00e9jeun\u00e9",
+            "stores": "Super U,Magasins U,Auchan",
+            "product_name": "Cappuccino",
+            "url": "https://fr.openfoodfacts.org/produit/3228470038188/cappuccino-senseo",
+            "code": "3228470038188"
+        },
+        {
+            "brands": "nescaf\u00e9",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Caf\u00e9s en dosettes, Caf\u00e9s moulus, Boissons avec sucre ajout\u00e9",
+            "stores": "Magasins U",
+            "product_name": "Cappuccino",
+            "code": "7613036271868",
+            "url": "https://fr.openfoodfacts.org/produit/7613036271868/cappuccino-nescafe"
+        },
+        {
+            "stores": "Lidl",
+            "brands": "Bellarom",
+            "categories": "Plant-based foods and beverages, Beverages, Plant-based foods, Coffees, Instant beverages, Instant coffees",
+            "code": "4056489028154",
+            "url": "https://fr.openfoodfacts.org/produit/4056489028154/bellarom-qualite-filtre",
+            "product_name": "Gold"
+        },
+        {
+            "brands": "Bellarom",
+            "categories": "Caf\u00e9s solubles",
+            "stores": "Lidl",
+            "product_name": "Bellarom kr\u00e4ftig 100% l\u00f6slicher Kaffee",
+            "url": "https://fr.openfoodfacts.org/produit/20918835/corse-intensite-n-8-bellarom",
+            "code": "20918835"
+        },
+        {
+            "product_name": "Nescaf\u00e9 NES fine mousse",
+            "code": "3033710076505",
+            "url": "https://fr.openfoodfacts.org/produit/3033710076505/nescafe-nes-fine-mousse",
+            "brands": "Nescaf\u00e9",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s, Boissons instantan\u00e9es, Caf\u00e9s solubles, Boissons sans sucre ajout\u00e9",
+            "stores": "Intermarch\u00e9,Magasins U"
+        },
+        {
+            "stores": "Magasins U",
+            "brands": "grand m\u00e8re",
+            "categories": "Plant-based foods and beverages,Plant-based foods,Coffees",
+            "code": "8711000892091",
+            "url": "https://fr.openfoodfacts.org/produit/8711000892091/cafe-moulu-grand-mere",
+            "product_name": "Caf\u00e9 Moulu"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/produit/05179565/nescafe-cappuccino",
+            "code": "05179565",
+            "product_name": "nescafe cappuccino",
+            "stores": "",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux,Aliments d'origine v\u00e9g\u00e9tale,Caf\u00e9s",
+            "brands": "nescaf\u00e9"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/produit/7613035690639/nescafe-dolce-gusto-chococino",
+            "code": "7613035690639",
+            "product_name": "Nescaf\u00e9 Dolce Gusto - Chococino",
+            "stores": "Magasins U,Leclerc",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Caf\u00e9s en dosettes, Caf\u00e9s en dosettes compatible Dolce Gusto",
+            "brands": "Nescafe"
+        },
+        {
+            "product_name": "Deca Aqua",
+            "code": "3187570015317",
+            "url": "https://fr.openfoodfacts.org/produit/3187570015317/deca-aqua-malongo",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Caf\u00e9s d\u00e9caf\u00e9in\u00e9s, Caf\u00e9s moulus, Boissons sans sucre ajout\u00e9",
+            "brands": "Malongo",
+            "stores": "Magasins U"
+        },
+        {
+            "brands": "carte noire",
+            "categories": "Boissons, Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s, Boissons instantan\u00e9es, Caf\u00e9s solubles",
+            "stores": "Magasins U",
+            "product_name": "Classique",
+            "code": "8000070016644",
+            "url": "https://fr.openfoodfacts.org/produit/8000070016644/classique-carte-noire"
+        },
+        {
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Boissons instantan\u00e9es, Caf\u00e9s solubles",
+            "brands": "Nescaf\u00e9",
+            "stores": "Magasins U",
+            "product_name": "Nescaf\u00e9 espresso",
+            "url": "https://fr.openfoodfacts.org/produit/7613034870940/nescafe-espresso",
+            "code": "7613034870940"
+        },
+        {
+            "product_name": "Nescaf\u00e9 Special Filtre D\u00e9cafein\u00e9",
+            "url": "https://fr.openfoodfacts.org/produit/3033710074624/nescafe-special-filtre-decafeine",
+            "code": "3033710074624",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Boissons instantan\u00e9es, Caf\u00e9s d\u00e9caf\u00e9in\u00e9s, Caf\u00e9s solubles",
+            "brands": "Nescaf\u00e9,Nestl\u00e9",
+            "stores": "Magasins U"
+        },
+        {
+            "product_name": "Nescaf\u00e9 Sp\u00e9cial Filtre BIO",
+            "code": "7613036311540",
+            "url": "https://fr.openfoodfacts.org/produit/7613036311540/nescafe-special-filtre-bio",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s, Boissons instantan\u00e9es, Caf\u00e9s solubles",
+            "brands": "Nescaf\u00e9",
+            "stores": "Magasins U,E. Leclerc,Casino"
+        },
+        {
+            "code": "3033710074617",
+            "url": "https://fr.openfoodfacts.org/produit/3033710074617/special-filtre-decafeine-nescafe",
+            "product_name": "Sp\u00e9cial Filtre D\u00e9caf\u00e9in\u00e9",
+            "stores": "Magasins U",
+            "brands": "Nescaf\u00e9",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Boissons instantan\u00e9es, Caf\u00e9s d\u00e9caf\u00e9in\u00e9s, Caf\u00e9s solubles, Caf\u00e9s en poudre d\u00e9caf\u00e9in\u00e9s, Boissons sans sucre ajout\u00e9"
+        },
+        {
+            "product_name": "Caf\u00e9 San Marco pur arabica",
+            "code": "3259234231002",
+            "url": "https://fr.openfoodfacts.org/produit/3259234231002/cafe-san-marco-pur-arabica",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s, Caf\u00e9s moulus",
+            "brands": "San Marco",
+            "stores": "Magasins U,Leclerc"
+        },
+        {
+            "stores": "Nestle,Magasins U",
+            "brands": "nestle",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Boissons \u00e0 base de v\u00e9g\u00e9taux, Caf\u00e9s, Boissons instantan\u00e9es, Caf\u00e9s solubles, Chicor\u00e9e soluble",
+            "code": "7613035001848",
+            "url": "https://fr.openfoodfacts.org/produit/7613035001848/dolce-ricore-latte-nestle",
+            "product_name": "Dolce ricor\u00e9 latte"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/produit/8003753900438/espresso-caffe-macinato-illy",
+            "code": "8003753900438",
+            "product_name": "Espresso Caff\u00e8 Macinato",
+            "stores": "Magasins U,Delhaize,Kaufland,Globus,Woolworths",
+            "brands": "Illy",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Caf\u00e9s moulus"
+        },
+        {
+            "code": "8711000534540",
+            "url": "https://fr.openfoodfacts.org/produit/8711000534540/l-or-classique",
+            "product_name": "L'Or Classique",
+            "stores": "Magasins U",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux,Boissons,Aliments d'origine v\u00e9g\u00e9tale,Caf\u00e9s,Boissons instantan\u00e9es,Caf\u00e9s solubles",
+            "brands": "L'Or,JDE - Jacobs Douve Egberts"
+        },
+        {
+            "product_name": "Senseo classique",
+            "url": "https://fr.openfoodfacts.org/produit/3228470065177/senseo-classique",
+            "code": "3228470065177",
+            "brands": "Senseo",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s"
+        },
+        {
+            "code": "5411188128045",
+            "url": "https://fr.openfoodfacts.org/produit/5411188128045/cafe-avec-boisson-a-l-amande-alpro",
+            "product_name": "Caff\u00e8 Brazilian Coffee & Almond Blend",
+            "stores": "",
+            "nutriscore_grade": "d",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux,Boissons,Aliments d'origine v\u00e9g\u00e9tale,Caf\u00e9s,Boissons sans alcool,Boissons au caf\u00e9,Boissons avec sucre ajout\u00e9",
+            "brands": "Alpro,Caff\u00e8"
+        },
+        {
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Caf\u00e9s en dosettes, Caf\u00e9s en dosettes compatible Nespresso, Boissons sans sucre ajout\u00e9",
+            "brands": "Nespresso",
+            "stores": "",
+            "product_name": "Nespresso Volluto",
+            "code": "7640140337272",
+            "url": "https://fr.openfoodfacts.org/produit/7640140337272/nespresso-volluto"
+        },
+        {
+            "stores": "",
+            "brands": "Maxwell House,Jacobs Douwe Egberts",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s, Boissons instantan\u00e9es, Caf\u00e9s solubles",
+            "code": "8711000523124",
+            "url": "https://fr.openfoodfacts.org/produit/8711000523124/cafe-maxwell-house",
+            "product_name": "Caf\u00e9"
+        },
+        {
+            "product_name": "Espresso original 100% arabica",
+            "code": "3033710076789",
+            "url": "https://fr.openfoodfacts.org/produit/3033710076789/espresso-original-100-arabica-nescafe",
+            "brands": "Nescaf\u00e9",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Boissons instantan\u00e9es, Caf\u00e9s solubles",
+            "stores": "Magasins U"
+        },
+        {
+            "brands": "Jacques Vabre",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s, Caf\u00e9s moulus",
+            "stores": "Magasins U",
+            "product_name": "Caf\u00e9 moulu pur arabica, Br\u00e9sil",
+            "code": "8711000523360",
+            "url": "https://fr.openfoodfacts.org/produit/8711000523360/cafe-moulu-pur-arabica-bresil-jacques-vabre"
+        },
+        {
+            "product_name": "l'or classique",
+            "code": "8711000534137",
+            "url": "https://fr.openfoodfacts.org/produit/8711000534137/l-or-classique",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s, Caf\u00e9s moulus",
+            "brands": "l'or",
+            "stores": "carrefour"
+        },
+        {
+            "brands": "U",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons \u00e0 base de v\u00e9g\u00e9taux, Caf\u00e9s, Boissons instantan\u00e9es, Chicor\u00e9e soluble, Boissons sans sucre ajout\u00e9, Boissons \u00e0 la chicor\u00e9e, Chicor\u00e9e",
+            "stores": "Magasins U",
+            "product_name": "Chicor\u00e9e caf\u00e9 soluble",
+            "url": "https://fr.openfoodfacts.org/produit/3256220321372/chicoree-cafe-soluble-u",
+            "code": "3256220321372"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/produit/8711000522516/qualite-filtre-maxwell-house",
+            "code": "8711000522516",
+            "product_name": "Qualit\u00e9 filtre",
+            "stores": "",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Produits d\u00e9shydrat\u00e9s, Caf\u00e9s, Produits lyophilis\u00e9s \u00e0 reconstituer, Boissons instantan\u00e9es, Caf\u00e9s solubles",
+            "brands": "Maxwell House"
+        },
+        {
+            "product_name": "Cappucino Caf\u00e9 Viennois",
+            "code": "20941093",
+            "url": "https://fr.openfoodfacts.org/produit/20941093/cappucino-cafe-viennois-bellarom",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Produits laitiers, Boissons chaudes, Boissons lact\u00e9es, Caf\u00e9s, Boissons instantan\u00e9es, Boissons au caf\u00e9, Boissons lact\u00e9es au caf\u00e9, Boissons avec sucre ajout\u00e9, Caf\u00e9s viennois",
+            "brands": "Bellarom,Midl",
+            "stores": "Lidl"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/produit/8410100020549/nescafe-classic-natural",
+            "code": "8410100020549",
+            "product_name": "Nescaf\u00e9 Classic Natural",
+            "stores": "Carrefour,Condis,Alcampo,Mercadona,Eroski,Dia,Caprabo,Hipercor,El Corte Ingl\u00e9s",
+            "brands": "Nescaf\u00e9",
+            "categories": "Alimentos y bebidas de origen vegetal,Bebidas,Alimentos de origen vegetal,Bebidas para tomar calientes,Caf\u00e9s,Bebidas instant\u00e1neas,Caf\u00e9s solubles,Bebidas no azucaradas"
+        },
+        {
+            "product_name": "Malongo Gout italien",
+            "url": "https://fr.openfoodfacts.org/produit/3187570015201/malongo-gout-italien",
+            "code": "3187570015201",
+            "brands": "Malongo",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s",
+            "stores": "Magasins U"
+        },
+        {
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Boissons instantan\u00e9es, Boissons avec sucre ajout\u00e9",
+            "brands": "Nescaf\u00e9,Nestl\u00e9",
+            "stores": "Cora,Carrefour,Magasins U",
+            "product_name": "Nescaf\u00e9 3 en 1 go\u00fbt Caf\u00e9 au Lait sucr\u00e9",
+            "code": "7613034339959",
+            "url": "https://fr.openfoodfacts.org/produit/7613034339959/nescafe-3-en-1-gout-cafe-au-lait-sucre"
+        },
+        {
+            "product_name": "Caf\u00e9 Club",
+            "code": "8000070015104",
+            "url": "https://fr.openfoodfacts.org/produit/8000070015104/cafe-club-lavazza",
+            "brands": "Lavazza",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux,Boissons,Aliments d'origine v\u00e9g\u00e9tale,Caf\u00e9s",
+            "stores": "Magasins U,Delhaize"
+        },
+        {
+            "brands": "Nespresso, NESPRESSO de NESTL\u00c9",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s, Caf\u00e9s torr\u00e9fi\u00e9s",
+            "stores": "NESPRESSO",
+            "product_name": "Nespresso Ristretto",
+            "url": "https://fr.openfoodfacts.org/produit/7630039686796/nespresso-ristretto",
+            "code": "7630039686796"
+        },
+        {
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Boissons instantan\u00e9es, Caf\u00e9s d\u00e9caf\u00e9in\u00e9s, Caf\u00e9s solubles",
+            "brands": "Nescaf\u00e9",
+            "stores": "Magasins U",
+            "product_name": "Nescafe Selection D\u00e9caf\u00e9in\u00e9 et cors\u00e9",
+            "code": "3033710076895",
+            "url": "https://fr.openfoodfacts.org/produit/3033710076895/nescafe-selection-decafeine-et-corse"
+        },
+        {
+            "categories": "Plant-based foods and beverages, Beverages, Plant-based foods, Coffees, Non-Alcoholic beverages, en:coffee-capsules",
+            "brands": "Nescaf\u00e9",
+            "stores": "Magasins U,Delhaize",
+            "product_name": "Dolce Gusto caf\u00e9 pur arabica, grande aroma",
+            "code": "7613032584573",
+            "url": "https://fr.openfoodfacts.org/produit/7613032584573/dolce-gusto-cafe-pur-arabica-grande-aroma-nescafe"
+        },
+        {
+            "brands": "Summa",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Boissons \u00e0 base de v\u00e9g\u00e9taux, Caf\u00e9s, Boissons instantan\u00e9es, Chicor\u00e9e soluble, Boissons sans sucre ajout\u00e9, Chicor\u00e9e",
+            "stores": "Aldi",
+            "product_name": "Chicor\u00e9e Caf\u00e9, Soluble (112 tasses)",
+            "code": "26033181",
+            "url": "https://fr.openfoodfacts.org/produit/26033181/chicoree-cafe-soluble-112-tasses-summa"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/produit/7613037074475/nescafe-special-filtre-riche-et-subtil",
+            "code": "7613037074475",
+            "product_name": "Nescafe Special filtre Riche et subtil",
+            "stores": "",
+            "categories": "en:instant-coffees",
+            "brands": "Nescaf\u00e9"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/produit/3261342003723/cafe-meo",
+            "code": "3261342003723",
+            "product_name": "Caf\u00e9",
+            "stores": "Monoprix,Magasins U,Coccinelle",
+            "brands": "M\u00c9O",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s"
+        },
+        {
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s",
+            "brands": "senseo",
+            "stores": "Leclercq",
+            "product_name": "Caf\u00e9",
+            "code": "3228470065290",
+            "url": "https://fr.openfoodfacts.org/produit/3228470065290/cafe-senseo"
+        },
+        {
+            "stores": "Lidl",
+            "categories": "Beverages, en:coffees",
+            "brands": "Bellarom",
+            "url": "https://fr.openfoodfacts.org/produit/20713096/cafe-pur-arabica-perou-doux-et-fruite-bio-bellarom",
+            "code": "20713096",
+            "product_name": "Caf\u00e9 Pur Arabica P\u00e9rou Doux Et Fruit\u00e9 Bio"
+        },
+        {
+            "brands": "Maxwell House",
+            "categories": "Plant-based foods and beverages, Beverages, Plant-based foods, Hot beverages, Coffees, Decaffeinated coffees, Coffee capsules, en:instant-coffees",
+            "stores": "Auchan",
+            "product_name": "Qualit\u00e9 filtre d\u00e9caf\u00e9in\u00e9",
+            "url": "https://fr.openfoodfacts.org/produit/8711000522547/qualite-filtre-decafeine-maxwell-house",
+            "code": "8711000522547"
+        },
+        {
+            "brands": "Marque Rep\u00e8re,Plantation",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s",
+            "stores": "Leclerc",
+            "product_name": "Caf\u00e9 soluble lyophilis\u00e9",
+            "url": "https://fr.openfoodfacts.org/produit/3564700087671/cafe-soluble-lyophilise-marque-repere",
+            "code": "3564700087671"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/produit/3228470064804/cafe-doux-senseo",
+            "code": "3228470064804",
+            "product_name": "Caf\u00e9 doux",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s",
+            "brands": "Senseo"
+        },
+        {
+            "product_name": "Cappuccino chocolat",
+            "code": "3564700434949",
+            "url": "https://fr.openfoodfacts.org/produit/3564700434949/cappuccino-chocolat-plantation",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Aliments d'origine v\u00e9g\u00e9tale, Boissons, Caf\u00e9s, Boissons instantan\u00e9es, Caf\u00e9s solubles",
+            "brands": "Plantation,Marque Rep\u00e8re",
+            "stores": "Leclerc"
+        },
+        {
+            "stores": "Carrefour",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Boissons instantan\u00e9es, Caf\u00e9s solubles",
+            "brands": "Nescaf\u00e9",
+            "code": "7613035538054",
+            "url": "https://fr.openfoodfacts.org/produit/7613035538054/nescafe-nes",
+            "product_name": "Nescaf\u00e9 NES"
+        },
+        {
+            "brands": "Nescaf\u00e9",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s, Boissons instantan\u00e9es, Caf\u00e9s solubles",
+            "code": "7613036667852",
+            "url": "https://fr.openfoodfacts.org/produit/7613036667852/cappuccino-caramel-nescafe",
+            "product_name": "Cappuccino caramel"
+        },
+        {
+            "product_name": "Ricor\u00e9 (Caf\u00e9, Chicor\u00e9e, Magn\u00e9sium)",
+            "code": "3033710073511",
+            "url": "https://fr.openfoodfacts.org/produit/3033710073511/ricore-cafe-chicoree-magnesium-nestle",
+            "categories": "Plant-based foods and beverages,Beverages,Plant-based foods,Hot beverages,Plant-based beverages,Coffees,Instant beverages,Instant chicory,Unsweetened beverages,fr:Chicor\u00e9e",
+            "brands": "Nestl\u00e9,Ricor\u00e9",
+            "stores": "Carrefour market,Delhaize"
+        },
+        {
+            "code": "3228470062053",
+            "url": "https://fr.openfoodfacts.org/produit/3228470062053/cafe-moulu-pur-arabica-doux-l-or",
+            "product_name": "Caf\u00e9 moulu pur arabica, doux",
+            "stores": "Magasins U,intermarch\u00e9",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s",
+            "brands": "l'or"
+        },
+        {
+            "brands": "Nescaf\u00e9,Nescaf\u00e9 Dolce Gusto,Dolce Gusto",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Produits laitiers, Boissons chaudes, Boissons lact\u00e9es, Caf\u00e9s, Caf\u00e9s en dosettes, Boissons au caf\u00e9, Boissons lact\u00e9es au caf\u00e9, Boissons avec sucre ajout\u00e9",
+            "nutriscore_grade": "e",
+            "stores": "Irma.dk, Magasins U, Delhaize",
+            "product_name": "Latte macchiatto dolce gusto",
+            "url": "https://fr.openfoodfacts.org/produit/5011546498386/latte-macchiatto-dolce-gusto-nescafe",
+            "code": "5011546498386"
+        },
+        {
+            "stores": "Aldi",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Boissons instantan\u00e9es, Boissons sans alcool, Caf\u00e9s solubles",
+            "brands": "Summa",
+            "url": "https://fr.openfoodfacts.org/produit/26033099/summa-filtre",
+            "code": "26033099",
+            "product_name": "Summa filtre"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/produit/3033710075232/nescafe-selection-cafe-soluble",
+            "code": "3033710075232",
+            "product_name": "NESCAFE S\u00e9lection caf\u00e9 soluble",
+            "stores": "Epicerie",
+            "brands": "Nescaf\u00e9",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Boissons instantan\u00e9es, Caf\u00e9s solubles"
+        },
+        {
+            "stores": "Magasins U",
+            "brands": "senseo",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s",
+            "url": "https://fr.openfoodfacts.org/produit/3228470065412/cafe-classique-senseo",
+            "code": "3228470065412",
+            "product_name": "Cafe classique"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/produit/8711000510704/cappuccino-milka-maxwell-house",
+            "code": "8711000510704",
+            "product_name": "Cappuccino Milka",
+            "stores": "",
+            "brands": "Maxwell House",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s, Boissons instantan\u00e9es, Caf\u00e9s solubles"
+        },
+        {
+            "stores": "Leclerc",
+            "brands": "Plantation,Marque Rep\u00e8re",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Boissons instantan\u00e9es, Caf\u00e9s solubles, Boissons sans sucre ajout\u00e9",
+            "url": "https://fr.openfoodfacts.org/produit/3564700087688/cafe-soluble-lyophilise-plantation",
+            "code": "3564700087688",
+            "product_name": "Caf\u00e9 soluble lyophilis\u00e9"
+        },
+        {
+            "product_name": "Caff? Latte Cappuccino",
+            "code": "7610900138906",
+            "url": "https://fr.openfoodfacts.org/produit/7610900138906/caff-latte-cappuccino-emmi",
+            "brands": "Emmi,Caff\u00e8 Latte",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Produits laitiers, Boissons chaudes, Boissons lact\u00e9es, Caf\u00e9s, Laits aromatis\u00e9s, Boissons au caf\u00e9, Boissons avec sucre ajout\u00e9, Boissons sans sucre ajout\u00e9, Caf\u00e9 liquide",
+            "stores": "Delhaize,Coop",
+            "nutriscore_grade": "e"
+        },
+        {
+            "product_name": "Dolce Gusto cortado espresso macchiato",
+            "code": "7613032396350",
+            "url": "https://fr.openfoodfacts.org/produit/7613032396350/cortado-espresso-macchiato-nescafe",
+            "brands": "Nescaf\u00e9",
+            "categories": "Plant-based foods and beverages,Beverages,Plant-based foods,Hot beverages,Coffees,Coffee capsules,Dolce Gusto-compatible coffee capsules",
+            "stores": "WALMART"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/produit/7640140337333/nespresso-roma",
+            "code": "7640140337333",
+            "product_name": "Nespresso Roma",
+            "stores": "",
+            "brands": "Nespresso",
+            "categories": "Pflanzliche Lebensmittel und Getr\u00e4nke, Getr\u00e4nke, Pflanzliche Lebensmittel, Hei\u00dfgetr\u00e4nke, Kaffees, Ungezuckerte Getr\u00e4nke"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/produit/3261342002108/pur-arabica-moulu-biologique-cafes-meo",
+            "code": "3261342002108",
+            "product_name": "Pur Arabica Moulu biologique",
+            "stores": "Magasins U,Carrefour",
+            "brands": "Caf\u00e9s M\u00e9o",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux,Aliments d'origine v\u00e9g\u00e9tale,Caf\u00e9s,Caf\u00e9s moulus"
+        },
+        {
+            "brands": "Nespresso",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Caf\u00e9s en dosettes, Caf\u00e9s en dosettes compatible Nespresso",
+            "code": "7630039685317",
+            "url": "https://fr.openfoodfacts.org/produit/7630039685317/nespresso-arpeggio",
+            "product_name": "Nespresso Arpeggio"
+        },
+        {
+            "brands": "Senseo",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux,Boissons,Aliments d'origine v\u00e9g\u00e9tale,Boissons chaudes,Caf\u00e9s,Caf\u00e9s en dosettes,Caf\u00e9s en dosettes compatible Senseo",
+            "stores": "Magasins U",
+            "product_name": "Sens\u00e9o Cors\u00e9",
+            "code": "3228470065214",
+            "url": "https://fr.openfoodfacts.org/produit/3228470065214/senseo-corse"
+        },
+        {
+            "product_name": "Yannoh Instant Original",
+            "code": "5411788003629",
+            "url": "https://fr.openfoodfacts.org/produit/5411788003629/yannoh-instant-original-lima",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s",
+            "brands": "Lima",
+            "stores": "Horizon Vert,Bio14"
+        },
+        {
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux,Boissons,Aliments d'origine v\u00e9g\u00e9tale,Boissons chaudes,Caf\u00e9s,Caf\u00e9s d\u00e9caf\u00e9in\u00e9s,Caf\u00e9s en dosettes,Caf\u00e9s en dosettes compatible Dolce Gusto,Boissons sans sucre ajout\u00e9,Caf\u00e9 torr\u00e9fi\u00e9 moulu d\u00e9caf\u00e9in\u00e9,Lungo decaffeinato",
+            "brands": "Nescafe,Dolce Gusto",
+            "stores": "Intermarch\u00e9 Mas Guerido,Magasins U,Delhaize",
+            "product_name": "Lungo Decaffeinato",
+            "url": "https://fr.openfoodfacts.org/produit/7613031794331/lungo-decaffeinato-nescafe",
+            "code": "7613031794331"
+        },
+        {
+            "brands": "Plantation,Marque Rep\u00e8re",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s, Caf\u00e9s moulus",
+            "stores": "Leclerc",
+            "product_name": "Caf\u00e9 moulu tradition",
+            "code": "3564700010426",
+            "url": "https://fr.openfoodfacts.org/produit/3564700010426/cafe-moulu-tradition-plantation"
+        },
+        {
+            "product_name": "Espresso Forza",
+            "code": "8711000360811",
+            "url": "https://fr.openfoodfacts.org/produit/8711000360811/espresso-forza-l-or",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Caf\u00e9s en dosettes, Caf\u00e9s en dosettes compatible Nespresso",
+            "brands": "L'Or,Jacobs Douwe Egberts",
+            "stores": ""
+        },
+        {
+            "product_name": "Senseo Cors\u00e9",
+            "url": "https://fr.openfoodfacts.org/produit/3228470065450/senseo-corse",
+            "code": "3228470065450",
+            "brands": "Senseo",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Caf\u00e9s en dosettes, Caf\u00e9s en dosettes compatible Senseo",
+            "stores": "Magasins U"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/produit/3228470056700/dosette-mdc-senseo-selection-brazil-x32",
+            "code": "3228470056700",
+            "product_name": "Dosette MDC Senseo S\u00e9lection Brazil X32",
+            "stores": "Magasins U",
+            "brands": "Senseo",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Caf\u00e9s en dosettes, Caf\u00e9s en dosettes compatible Senseo"
+        },
+        {
+            "brands": "U Bio,U",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux,Boissons,Aliments d'origine v\u00e9g\u00e9tale,Boissons chaudes,Produits d\u00e9shydrat\u00e9s,Caf\u00e9s,Produits lyophilis\u00e9s \u00e0 reconstituer,Boissons instantan\u00e9es,Caf\u00e9s solubles,Boissons lyophilis\u00e9es,Boissons sans sucre ajout\u00e9",
+            "stores": "Magasins U",
+            "product_name": "Caf\u00e9 soluble lyophilis\u00e9 extra filtre",
+            "url": "https://fr.openfoodfacts.org/produit/3256221406931/cafe-soluble-lyophilise-extra-filtre-u-bio",
+            "code": "3256221406931"
+        },
+        {
+            "brands": "Maison du Caf\u00e9",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Aliments d'origine v\u00e9g\u00e9tale, Boissons, Boissons chaudes, Caf\u00e9s, Caf\u00e9s en dosettes",
+            "stores": "Magasins U",
+            "product_name": "L'or espres splendente 20 capsules",
+            "url": "https://fr.openfoodfacts.org/produit/8711000360804/l-or-espres-splendente-20-capsules-maison-du-cafe",
+            "code": "8711000360804"
+        },
+        {
+            "code": "3228470006002",
+            "url": "https://fr.openfoodfacts.org/produit/3228470006002/senseo-corse-philips",
+            "product_name": "Senseo cors\u00e9",
+            "brands": "Philips",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Caf\u00e9s en dosettes, Caf\u00e9s en dosettes compatible Senseo"
+        },
+        {
+            "stores": "Carrefour",
+            "brands": "Carrefour Discount,Carrefour",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Boissons \u00e0 base de v\u00e9g\u00e9taux, Caf\u00e9s, Boissons instantan\u00e9es, Boissons sans alcool, Chicor\u00e9e soluble, Boissons sans sucre ajout\u00e9, Chicoree",
+            "code": "3560070330515",
+            "url": "https://fr.openfoodfacts.org/produit/3560070330515/chicoree-cafe-carrefour-discount",
+            "product_name": "Chicor\u00e9e caf\u00e9"
+        },
+        {
+            "stores": "Carrefour Market,Carrefour",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Boissons instantan\u00e9es, Caf\u00e9s solubles",
+            "brands": "Carrefour",
+            "code": "3560070135127",
+            "url": "https://fr.openfoodfacts.org/produit/3560070135127/cafe-soluble-carrefour",
+            "product_name": "Caf\u00e9 soluble"
+        },
+        {
+            "stores": "Magasins U",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s",
+            "brands": "carte noire",
+            "url": "https://fr.openfoodfacts.org/produit/8000070200340/cafe-moulu-carte-noire",
+            "code": "8000070200340",
+            "product_name": "Caf\u00e9 moulu"
+        },
+        {
+            "product_name": "Velour noir",
+            "code": "8711000523544",
+            "url": "https://fr.openfoodfacts.org/produit/8711000523544/velour-noir-jacobs",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Caf\u00e9s moulus",
+            "brands": "Jacobs,jacobs douwe egberts",
+            "stores": "Intermarch\u00e9, Magasins U"
+        },
+        {
+            "brands": "Jacques Vabre",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s",
+            "stores": "",
+            "product_name": "Jacques Vabre Caf\u00e9 soluble Gringo le bocal de 200 g",
+            "code": "8711000533925",
+            "url": "https://fr.openfoodfacts.org/produit/8711000533925/jacques-vabre-cafe-soluble-gringo-le-bocal-de-200-g"
+        },
+        {
+            "product_name": "Caf\u00e9 Dosette L'Or Caf\u00e9 Long Classique",
+            "url": "https://fr.openfoodfacts.org/produit/8711000539798/cafe-dosette-l-or-cafe-long-classique-tassimo",
+            "code": "8711000539798",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Caf\u00e9s en dosettes, Caf\u00e9s en dosettes compatible Tassimo",
+            "brands": "TASSIMO",
+            "stores": "Magasins U,Auchan,E. Leclerc"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/produit/20769208/bellarom",
+            "code": "20769208",
+            "product_name": "Bellarom",
+            "stores": "Lidl",
+            "categories": "Plant-based foods and beverages, Beverages, Plant-based foods, Coffees, Instant beverages, Instant coffees, en:hot-beverages",
+            "brands": "Bellarom"
+        },
+        {
+            "product_name": "Special filtre d\u00e9caf\u00e9in\u00e9",
+            "url": "https://fr.openfoodfacts.org/produit/3033710076772/special-filtre-decafeine-nescafe",
+            "code": "3033710076772",
+            "categories": "Plant-based foods and beverages, Beverages, Plant-based foods, Hot beverages, Coffees, Unsweetened beverages, en:instant-coffees",
+            "brands": "Nescafe",
+            "stores": "Magasins U"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/produit/3187570015409/supreme-d-arabica-grand-cru-d-exception-malongo",
+            "code": "3187570015409",
+            "product_name": "Supr\u00eame d'Arabica Grand cru d'exception",
+            "stores": "Magasins U",
+            "brands": "Malongo",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Caf\u00e9s moulus, Caf\u00e9 arabica"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/produit/3187570072440/pur-arabica-des-petits-producteurs-l-original-malongo",
+            "code": "3187570072440",
+            "product_name": "Pur Arabica des petits producteurs L'original",
+            "stores": "",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux,Boissons,Aliments d'origine v\u00e9g\u00e9tale,Caf\u00e9s,Caf\u00e9s moulus,Boissons sans sucre ajout\u00e9",
+            "brands": "Malongo"
+        },
+        {
+            "brands": "Maxwell House",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s, Boissons instantan\u00e9es, Boissons sans alcool, Caf\u00e9s solubles",
+            "stores": "Magasins U",
+            "product_name": "Maxwell House",
+            "code": "8711000522998",
+            "url": "https://fr.openfoodfacts.org/produit/8711000522998/maxwell-house"
+        },
+        {
+            "brands": "Bio Village,Marque Rep\u00e8re",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s, Caf\u00e9s moulus",
+            "stores": "Leclerc",
+            "product_name": "Caf\u00e9 moulu d'Ethiopie bio pur Arabica Max Havelaar",
+            "code": "3564707116503",
+            "url": "https://fr.openfoodfacts.org/produit/3564707116503/cafe-moulu-d-ethiopie-bio-pur-arabica-max-havelaar-bio-village"
+        },
+        {
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s, Boissons instantan\u00e9es, Caf\u00e9s solubles",
+            "brands": "Nescaf\u00e9",
+            "stores": "Delhaize,Carrefours",
+            "product_name": "Nescaf\u00e9 Gold dessert",
+            "url": "https://fr.openfoodfacts.org/produit/7613033006937/nescafe-gold-dessert",
+            "code": "7613033006937"
+        },
+        {
+            "product_name": "Cors\u00e9 N\u00b06",
+            "url": "https://fr.openfoodfacts.org/produit/8000070000520/corse-n-6-carte-noire",
+            "code": "8000070000520",
+            "brands": "Carte Noire",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux,Boissons,Aliments d'origine v\u00e9g\u00e9tale,Boissons chaudes,Caf\u00e9s,Caf\u00e9s en dosettes,Caf\u00e9s en dosettes compatible Senseo,Boissons sans sucre ajout\u00e9",
+            "stores": ""
+        },
+        {
+            "product_name": "caf\u00e9 soluble Maxwell House",
+            "code": "8711000523858",
+            "url": "https://fr.openfoodfacts.org/produit/8711000523858/cafe-soluble-maxwell-house",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux,Boissons,Aliments d'origine v\u00e9g\u00e9tale,Boissons chaudes,Caf\u00e9s,Boissons instantan\u00e9es,Boissons sans alcool,Caf\u00e9s solubles",
+            "brands": "Maxwell House",
+            "stores": "Carrefour,Magasins U"
+        },
+        {
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Caf\u00e9s en dosettes, Caf\u00e9s en dosettes compatible Dolce Gusto",
+            "brands": "Nestl\u00e9",
+            "stores": "",
+            "product_name": "Expressl intenso",
+            "code": "7613036868082",
+            "url": "https://fr.openfoodfacts.org/produit/7613036868082/expressl-intenso-nestle"
+        },
+        {
+            "stores": "Maxicoffee, Magasins U, Delhaize",
+            "brands": "Illy",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s, Caf\u00e9s torr\u00e9fi\u00e9s",
+            "code": "8003753900520",
+            "url": "https://fr.openfoodfacts.org/produit/8003753900520/cafe-en-grains-illy-blend-100-arabica",
+            "product_name": "Caf\u00e9 en grains Illy blend 100% arabica"
+        },
+        {
+            "brands": "Jacques Vabre",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s, Caf\u00e9s moulus",
+            "stores": "Magasins U",
+            "product_name": "Caf\u00e9 Popayan Colombie",
+            "code": "8711000523391",
+            "url": "https://fr.openfoodfacts.org/produit/8711000523391/cafe-popayan-colombie-jacques-vabre"
+        },
+        {
+            "product_name": "Tassimo - L'or caf\u00e9 long intense",
+            "url": "https://fr.openfoodfacts.org/produit/8711000539972/tassimo-l-or-cafe-long-intense",
+            "code": "8711000539972",
+            "brands": "Tassimo",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Boissons sans alcool, Caf\u00e9s en dosettes, Caf\u00e9s en dosettes compatible Tassimo",
+            "stores": "Magasins U,Auchan,E. Leclerc"
+        },
+        {
+            "stores": "Carrefour",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Caf\u00e9s moulus",
+            "brands": "Carrefour BIO, Carrefour",
+            "code": "3560070712786",
+            "url": "https://fr.openfoodfacts.org/produit/3560070712786/cafe-moulu-equilibre-carrefour-bio",
+            "product_name": "Caf\u00e9 moulu Equilibr\u00e9"
+        },
+        {
+            "product_name": "Lungo Intenso",
+            "code": "7613033590146",
+            "url": "https://fr.openfoodfacts.org/produit/7613033590146/lungo-intenso-nescafe-dolce-gusto",
+            "brands": "Nescaf\u00e9 Dolce Gusto,Nestl\u00e9,Nescaf\u00e9",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Caf\u00e9s en dosettes, Caf\u00e9s en dosettes compatible Dolce Gusto, Caf\u00e9s moulus",
+            "stores": "Carrefour market, Magasins U, Delhaize"
+        },
+        {
+            "stores": "Magasins U",
+            "categories": "Plant-based foods and beverages,Plant-based foods,Coffees",
+            "brands": "Carte Noire",
+            "code": "8000070200548",
+            "url": "https://fr.openfoodfacts.org/produit/8000070200548/cafe-grains-carte-noire",
+            "product_name": "Caf\u00e9 grains"
+        },
+        {
+            "code": "7613033024191",
+            "url": "https://fr.openfoodfacts.org/produit/7613033024191/d-gus-latt-macc-caramel-nescafe-dolce-gusto",
+            "product_name": "D.gus Latt Macc Caramel Nescafe",
+            "stores": "Magasins U,carrefour",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s",
+            "brands": "Dolce gusto,Nescaf\u00e9 dolce gusto,Nescafe"
+        },
+        {
+            "stores": "",
+            "brands": "Nespresso,Nestl\u00e9",
+            "categories": "Beverages, Unsweetened beverages, en:nespresso-compatible-coffee-capsules",
+            "code": "7630039685416",
+            "url": "https://fr.openfoodfacts.org/produit/7630039685416/nespresso-livanto",
+            "product_name": "NESPRESSO livanto"
+        },
+        {
+            "product_name": "L'Or Espresso",
+            "url": "https://fr.openfoodfacts.org/produit/8711000360477/l-or-espresso",
+            "code": "8711000360477",
+            "brands": "L or",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Caf\u00e9s en dosettes, Caf\u00e9s en dosettes compatible Nespresso",
+            "stores": "cora,Magasins U"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/produit/3228470062008/cafe-moulu-absolu-l-or",
+            "code": "3228470062008",
+            "product_name": "Caf\u00e9 moulu absolu",
+            "stores": "",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s, Boissons instantan\u00e9es, Caf\u00e9s solubles, Boissons sans sucre ajout\u00e9",
+            "brands": "L or,l'or absolu"
+        },
+        {
+            "product_name": "Nescaf\u00e9 Cappuccino Choco",
+            "url": "https://fr.openfoodfacts.org/produit/7613032727222/nescafe-cappuccino-choco",
+            "code": "7613032727222",
+            "brands": "Nescaf\u00e9,Nestl\u00e9",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Boissons avec sucre ajout\u00e9, Petit D\u00e9jeun\u00e9",
+            "stores": "Auchan, Magasins U"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/produit/7613036131971/nescafe-special-filtre-intense",
+            "code": "7613036131971",
+            "product_name": "Nescaf\u00e9 Sp\u00e9cial Filtre Intense",
+            "stores": "Magasins U",
+            "brands": "Nescaf\u00e9,Nestl\u00e9",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s, Boissons instantan\u00e9es, Caf\u00e9s solubles"
+        },
+        {
+            "stores": "",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Caf\u00e9s en dosettes, Caf\u00e9s d\u00e9caf\u00e9in\u00e9s, Caf\u00e9s en dosettes compatible Nespresso, Boissons sans sucre ajout\u00e9",
+            "brands": "Nespresso,Nestl\u00e9",
+            "code": "7630030322976",
+            "url": "https://fr.openfoodfacts.org/produit/7630030322976/volluto-decaffeinato-nespresso",
+            "product_name": "Volluto Decaffeinato"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/produit/3228470065252/cafe-en-dosettes-senseo",
+            "code": "3228470065252",
+            "product_name": "Caf\u00e9 en dosettes",
+            "stores": "Magasins U",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Caf\u00e9s en dosettes, Caf\u00e9s en dosettes compatible Senseo",
+            "brands": "Senseo"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/produit/7613033623271/grande-intenso-nescafe",
+            "code": "7613033623271",
+            "product_name": "Grande Intenso",
+            "stores": "Magasins U, Delhaize",
+            "brands": "Nescaf\u00e9,Nestl\u00e9",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Caf\u00e9s moulus, Boissons sans sucre ajout\u00e9"
+        },
+        {
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Boissons instantan\u00e9es, Boissons sans alcool, Caf\u00e9s solubles, Boissons sans sucre ajout\u00e9",
+            "brands": "Nescaf\u00e9",
+            "stores": "Magasins U",
+            "product_name": "Nescaf\u00e9 Espresso",
+            "url": "https://fr.openfoodfacts.org/produit/7613034870971/nescafe-espresso",
+            "code": "7613034870971"
+        },
+        {
+            "stores": "",
+            "brands": "Marcilla",
+            "categories": "Plant-based foods and beverages, Plant-based foods, Coffees, en:hot-beverages",
+            "url": "https://fr.openfoodfacts.org/produit/8410091180048/gran-aroma-cafe-molido-mezcla-marcilla",
+            "code": "8410091180048",
+            "product_name": "Gran aroma caf\u00e9 molido mezcla"
+        },
+        {
+            "stores": "Magasins U",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Caf\u00e9s en dosettes, Boissons sans sucre ajout\u00e9",
+            "brands": "Nescaf\u00e9,Dolce Gusto",
+            "code": "7613034389398",
+            "url": "https://fr.openfoodfacts.org/produit/7613034389398/espresso-nescafe",
+            "product_name": "Espresso"
+        },
+        {
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s, Boissons instantan\u00e9es, Caf\u00e9s solubles",
+            "brands": "Nescaf\u00e9",
+            "stores": "Magasins U",
+            "product_name": "Nescaf\u00e9 special filtre, fine cr\u00e9ma",
+            "url": "https://fr.openfoodfacts.org/produit/7613034652843/nescafe-special-filtre-fine-crema",
+            "code": "7613034652843"
+        },
+        {
+            "product_name": "Capsule caf\u00e9 classique",
+            "code": "8000070000988",
+            "url": "https://fr.openfoodfacts.org/produit/8000070000988/capsule-cafe-classique-carte-noire",
+            "brands": "Carte noire",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Caf\u00e9s en dosettes, Boissons sans sucre ajout\u00e9",
+            "stores": "AP-HP, Magasins U"
+        },
+        {
+            "brands": "Malongo",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s",
+            "product_name": "Caf\u00e9",
+            "url": "https://fr.openfoodfacts.org/produit/3187570072570/cafe-malongo",
+            "code": "3187570072570"
+        },
+        {
+            "stores": "Lidl",
+            "categories": "en:plant-based-foods-and-beverages,en:beverages,en:plant-based-foods,en:hot-beverages,en:dried-products,en:coffees,en:dried-products-to-be-rehydrated,en:instant-beverages,en:instant-coffees,en:dehydrated-beverages,en:unsweetened-beverages",
+            "brands": "Bellarom",
+            "url": "https://fr.openfoodfacts.org/produit/20769192/bellarom-qualite-filtre",
+            "code": "20769192",
+            "product_name": "Bellarom Qualit\u00e9 filtre"
+        },
+        {
+            "product_name": "Cors\u00e9",
+            "code": "20975074",
+            "url": "https://fr.openfoodfacts.org/produit/20975074/corse-bellarom",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s",
+            "brands": "Bellarom",
+            "stores": "Lidl"
+        },
+        {
+            "stores": "",
+            "categories": "Beverages, Sweetened beverages, Unsweetened beverages, en:decaffeinated-coffees",
+            "brands": "Nescaf\u00e9",
+            "url": "https://fr.openfoodfacts.org/produit/3033710075324/nescafe-capuccino-decafeine",
+            "code": "3033710075324",
+            "product_name": "Nescaf\u00e9 Capuccino  D\u00e9caf\u00e9in\u00e9"
+        },
+        {
+            "brands": "Senseo,Philips,Maison du caf\u00e9",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Caf\u00e9s en dosettes, Caf\u00e9s en dosettes compatible Senseo",
+            "stores": "",
+            "product_name": "18 Dosettes Senseo classiques",
+            "code": "3228470006019",
+            "url": "https://fr.openfoodfacts.org/produit/3228470006019/18-dosettes-senseo-classiques"
+        },
+        {
+            "code": "3270190159179",
+            "url": "https://fr.openfoodfacts.org/produit/3270190159179/chicoree-cafe-au-lait-carrefour",
+            "product_name": "Chicor\u00e9e caf\u00e9 au lait",
+            "stores": "Carrefour",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Boissons \u00e0 base de v\u00e9g\u00e9taux, Caf\u00e9s, Boissons instantan\u00e9es, Caf\u00e9s solubles, Chicor\u00e9e soluble, Boissons sans sucre ajout\u00e9, Chicor\u00e9e",
+            "brands": "Carrefour"
+        },
+        {
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s, Boissons instantan\u00e9es, Caf\u00e9s solubles",
+            "brands": "Nescaf\u00e9 sp\u00e9cial filtre origins, Nescafe",
+            "stores": "",
+            "product_name": "Nescaf\u00e9 sp\u00e9cial filtre origins colombia",
+            "url": "https://fr.openfoodfacts.org/produit/7613036832342/nescafe-special-filtre-origins-colombia",
+            "code": "7613036832342"
+        },
+        {
+            "url": "https://fr.openfoodfacts.org/produit/3564707000598/cafe-moulu-d-amerique-latine-bio-pur-arabica-bio-village",
+            "code": "3564707000598",
+            "product_name": "Caf\u00e9 moulu d'Am\u00e9rique latine bio pur Arabica",
+            "stores": "Leclerc",
+            "brands": "Bio Village,Marque Rep\u00e8re",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Caf\u00e9s moulus, Boissons sans sucre ajout\u00e9"
+        },
+        {
+            "stores": "Magasins U",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s",
+            "brands": "Nescaf\u00e9",
+            "code": "7613034852366",
+            "url": "https://fr.openfoodfacts.org/produit/7613034852366/espresso-azera-intenso-nescafe",
+            "product_name": "Espresso Azera Intenso"
+        },
+        {
+            "product_name": "Caf\u00e9 moulu\nLe Grand Classique",
+            "code": "3270190007920",
+            "url": "https://fr.openfoodfacts.org/produit/3270190007920/cafe-moulu-le-grand-classique-carrefour",
+            "brands": "Carrefour",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s, Caf\u00e9s moulus",
+            "stores": "Carrefour"
+        },
+        {
+            "code": "8711000363706",
+            "url": "https://fr.openfoodfacts.org/produit/8711000363706/tassimo-cafe-l-or-cappuccino",
+            "product_name": "Tassimo Caf\u00e9 L'or Cappuccino",
+            "stores": "Magasins U,Auchan,E. LECLERC",
+            "brands": "Tassimo",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Produits laitiers, Boissons chaudes, Laits, Caf\u00e9s, Caf\u00e9s en dosettes, Boissons avec sucre ajout\u00e9, Caf\u00e9s en dosettes compatible Tassimo"
+        },
+        {
+            "code": "7613036830089",
+            "url": "https://fr.openfoodfacts.org/produit/7613036830089/cafe-espresso-barista-nescafe",
+            "product_name": "Caf\u00e9 espresso barista",
+            "brands": "Nescaf\u00e9",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Caf\u00e9s en dosettes, Caf\u00e9s en dosettes compatible Dolce Gusto"
+        },
+        {
+            "product_name": "Expresso",
+            "code": "20033071",
+            "url": "https://fr.openfoodfacts.org/produit/20033071/expresso-bellarom",
+            "brands": "Bellarom",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux,Aliments d'origine v\u00e9g\u00e9tale,Caf\u00e9s,Caf\u00e9s moulus",
+            "stores": "Lidl"
+        },
+        {
+            "product_name": "Caf\u00e9 en grains Arabica Des petits producteurs.",
+            "code": "3187570072488",
+            "url": "https://fr.openfoodfacts.org/produit/3187570072488/cafe-en-grains-arabica-des-petits-producteurs-malongo",
+            "brands": "Malongo",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s, Caf\u00e9s torr\u00e9fi\u00e9s",
+            "stores": "G\u00e9antCasino, Magasins U"
+        },
+        {
+            "product_name": "Caf\u00e9 Legal",
+            "code": "3227540090040",
+            "url": "https://fr.openfoodfacts.org/produit/3227540090040/cafe-legal",
+            "brands": "Legal",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Boissons instantan\u00e9es, Boissons sans alcool, Caf\u00e9s solubles",
+            "stores": "AUCHAN"
+        },
+        {
+            "code": "3228470064002",
+            "url": "https://fr.openfoodfacts.org/produit/3228470064002/classique-maison-du-cafe",
+            "product_name": "Classique",
+            "stores": "",
+            "brands": "Maison du Caf\u00e9,Senseo,JDE,Jacobs Douwe Egberts",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Caf\u00e9s en dosettes, Caf\u00e9s en dosettes compatible Senseo"
+        },
+        {
+            "brands": "U",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Produits d\u00e9shydrat\u00e9s, Produits lyophilis\u00e9s \u00e0 reconstituer, Caf\u00e9s, Boissons instantan\u00e9es, Boissons lyophilis\u00e9es, Caf\u00e9s solubles",
+            "stores": "Hyper U, Magasins U",
+            "product_name": "Caf\u00e9 lyophilis\u00e9 extra filtre",
+            "code": "3256220321495",
+            "url": "https://fr.openfoodfacts.org/produit/3256220321495/cafe-lyophilise-extra-filtre-u"
+        },
+        {
+            "code": "3564700702130",
+            "url": "https://fr.openfoodfacts.org/produit/3564700702130/48-dosettes-classique-plantation",
+            "product_name": "48 dosettes classique",
+            "stores": "Leclerc",
+            "brands": "Plantation,Marque Rep\u00e8re",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Boissons chaudes, Caf\u00e9s, Caf\u00e9s en dosettes, Caf\u00e9s en dosettes compatible Senseo"
+        },
+        {
+            "stores": "Magasins U",
+            "brands": "U Bio, U",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s, Caf\u00e9s moulus, Boissons sans sucre ajout\u00e9",
+            "url": "https://fr.openfoodfacts.org/produit/3256220370615/cafe-moulu-amerique-du-sud-max-havelaar-u-bio",
+            "code": "3256220370615",
+            "product_name": "Caf\u00e9 moulu Am\u00e9rique du Sud Max Havelaar"
+        },
+        {
+            "stores": "Carrefour",
+            "categories": "Aliments et boissons \u00e0 base de v\u00e9g\u00e9taux, Boissons, Aliments d'origine v\u00e9g\u00e9tale, Caf\u00e9s, Boissons instantan\u00e9es, Caf\u00e9s solubles",
+            "brands": "Alter eco",
+            "code": "3700214610312",
+            "url": "https://fr.openfoodfacts.org/produit/3700214610312/pur-arabica-colombie-alter-eco",
+            "product_name": "Pur Arabica Colombie"
+        }
+    ],
+    "page": 1,
+    "count": "2187",
+    "page_size": 150,
+    "skip": 0
+}

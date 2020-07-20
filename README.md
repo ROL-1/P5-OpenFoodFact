@@ -35,7 +35,12 @@ Le programme retourne la liste des aliments substitués précédemment sauvegard
 Trello : https://trello.com/b/c5Zmq94p/p5-openfoodfacts
 
 ### Fichiers
+Créer la base de données :
+A partir du fichier DBOFF1.sql, avec la commande :
+SOURCE <adresse du fichier>\DBOFF1.sql
+
 MVC avec :  
+
 
 MODEL :  
 mysql.py : classe pour faire le lien entre la base de donnée et le programme  
