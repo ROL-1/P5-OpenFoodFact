@@ -5,6 +5,8 @@ import json
 from dbconnection import DBconnect
 from api_config import FIELDS
 
+
+
 class DBinsert:
     """Insert data in data base. From JSON."""
 
