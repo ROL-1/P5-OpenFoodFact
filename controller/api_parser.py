@@ -27,9 +27,17 @@ class Api_requests:
             # print(type(scraped))#TC            
         return self.scraped
 
-    def api_parser_data(self):        
+
+class Api_Cleaner:
+    """..."""
+
+    def __init__(self,scraped):
+        """..."""
+        pass
+
+    def api_parser_data(self,scraped):        
         """Review each product : if a check failed the product will not be injected in database."""
-        for product in self.scraped['products']:                
+        for product in scraped['products']:                
             # Add field to manage injection in database
             product["injection"] = 'True'
          
@@ -67,51 +75,17 @@ class Api_requests:
                 product["injection"] = 'False'
             
             with open("scraped_file.json", "w") as write_file: #TC
-                json.dump(self.scraped, write_file, indent=4) #TC   
+                json.dump(scraped, write_file, indent=4) #T
+        self.scraped_cleaned = scraped
+        return self.scraped_cleaned
 
-
-CM = DBrequests() #TC
-CHARMAX = CM.characters_max() #TC
-TEST1 = Api_requests() #TC
-TEST1.api_get_data()#TC
-TEST1.api_parser_data()#TC
-
-           
-
-
-    # def api_get_data(self):
-    #     """Create request to pass to the getter and decode the json (dictionary)."""
-    #     endpoint = 'https://fr.openfoodfacts.org/cgi/search.pl?'
-    #     params = '&'.join(REQUEST_PARAMS)+FIELDS+'&tag_0='
-        
-    #     # with open("scraped_file.json", "w") as write_file: #TC
-    #     for category in CATEGORIES:
-    #         request = requests.get(endpoint+params+category)
-    #         scraped = json.loads(request.text)
-    #         # Review each product : if a check failed the product will not be injected in database
-    #         for product in scraped['products']:                
-    #             # Add field with boolean for manage injection in database
-    #             product["injection"] = "True" 
-    #             # Check 1 : if data is missing 
-    #             for value in product.values():                    
-    #                 if value == "" :
-    #                     product["injection"] = "False"
-    #             # Check 2 : if string is too long for database field            
-    #             for field, string in product.items():
-    #                 # Excludes verification for the 'injection' field
-    #                 if field != 'injection':
-    #                     # Make verification only for fields find with characters_max() (char or varchar)
-    #                     if field in CHARMAX.keys():
-    #                         # Make verification only for string with the maximum length for 'categories' and 'brands'.
-    #                         if field == "categories" or field == "brands":                                
-    #                             if len(max(string.split(','), key=len)) > CHARMAX[field]:
-    #                                 product["injection"] = "False"
-    #                         else:
-    #                             if len(string) > CHARMAX[field]:
-    #                                 product["injection"] = "False"
-
-
-    
-        # json.dump(scraped, write_file, indent=4) #TC
-                    
+# TEST
+CM = DBrequests()
+CHARMAX = CM.characters_max()
+TEST1 = Api_requests()
+TEST1.api_get_data()
+print(TEST1.scraped)
+TEST2 = Api_Cleaner(TEST1.scraped)
+TEST2.api_parser_data(TEST1.scraped)
+print(TEST2.scraped_cleaned)
 
