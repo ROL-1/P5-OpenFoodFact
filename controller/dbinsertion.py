@@ -17,9 +17,9 @@ class DBinsert:
             data = json.load(read_file)
             print(data['products'][1]['code'])            
 
-        #connexion
-        B = DBconnect() #TC   
-        cursor = B.cnx.cursor()#TC 
+        # Connexion MySQL
+        Log = DBconnect() #TC   
+        cursor = Log.cnx.cursor()#TC 
 
         # Créer une fonction par type d'ajout // filtrages ?     
 
@@ -28,14 +28,14 @@ class DBinsert:
         data_brand = (data['products'][2]['brands'],) #requette pour ajouter une marque test
 
         # action insérer une nouvelle marque
-        # cursor.execute(add_brand,data_brand)
+        cursor.execute(add_brand,data_brand)
         
 
         # Make sure data is committed to the database
-        B.cnx.commit() #Enregistre l'information
+        Log.cnx.commit() #Enregistre l'information
 
-        DBconnect._close_connection #TC
-        self.connect = DBconnect() #TC 
+        DBconnect.close_connection #TC
+        # self.connect = DBconnect() #TC 
 
 A = DBinsert() #TC
 #https://pynative.com/python-cursor-fetchall-fetchmany-fetchone-to-read-rows-from-table/

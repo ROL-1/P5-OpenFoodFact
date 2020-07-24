@@ -9,7 +9,7 @@ import requests
 from dbrequest import DBrequests
 from api_config import REQUEST_PARAMS,CATEGORIES,FIELDS
 
-class Api_requests:
+class Api_Requests:
     """..."""
 
     def __init__(self):
@@ -35,7 +35,7 @@ class Api_Cleaner:
         """..."""
         pass
 
-    def api_parser_data(self,scraped):        
+    def api_cleaner_data(self,scraped):        
         """Review each product : if a check failed the product will not be injected in database."""
         for product in scraped['products']:                
             # Add field to manage injection in database
@@ -82,10 +82,10 @@ class Api_Cleaner:
 # TEST
 CM = DBrequests()
 CHARMAX = CM.characters_max()
-TEST1 = Api_requests()
+TEST1 = Api_Requests()
 TEST1.api_get_data()
-print(TEST1.scraped)
+# print(TEST1.scraped)
 TEST2 = Api_Cleaner(TEST1.scraped)
-TEST2.api_parser_data(TEST1.scraped)
-print(TEST2.scraped_cleaned)
+TEST2.api_cleaner_data(TEST1.scraped)
+# print(TEST2.scraped_cleaned)
 
