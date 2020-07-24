@@ -3,14 +3,13 @@
 
 import mysql.connector as MC
 
-from dbconfig import HOST,DATABASE,USER,PASSWORD
+from controller.dbconfig import HOST,DATABASE,USER,PASSWORD
 
-class DBconnect : 
+class DBconnect: 
     """Récupère les informations pour la connexion et créé la connexion."""
 
     def __init__(self):
         """Load parameters and call _connection()."""
-        print("Load 'dbconnection.py'")
         self.host = HOST
         self.database = DATABASE
         self.user = USER

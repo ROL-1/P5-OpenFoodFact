@@ -2,7 +2,9 @@
 
 import argparse
 
+from controller.dbcreation import DBcreation
 from controller.dbconnection import DBconnect
+from controller.dbconfig import SQL_FILE
 
 parser = argparse.ArgumentParser(description="Launch the program !")
 parser.add_argument("-v", "--verbose", action="store_true", help="add output verbosity")
@@ -20,7 +22,7 @@ if args.install_database:
     #  soit passer par un sql (comme tu as fait) et que tu parse pour ensuite faire appel à cursor.execute
     #  SOIT tu découpe en méthode de classe
     #  et tu écrit directement dans chaque méthode cursor.execute('CREATE...) ce qui t'évitera de devoir parser le fichier sql.
-    print('INSTALLING DATABASE')
+    TESTcreate = DBcreation(SQL_FILE,args.verbose)
 
     # appel à l'api avec une boucle sur les catégories (données statiques que tu définis toi en config pareil)
     # et appels vers l'api pour récup les infos catégory,product et shop (avec parsing/filtrage des données)
