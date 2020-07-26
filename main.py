@@ -1,40 +1,53 @@
-"""main file to launch program"""
+"""Main file to launch program and install database."""
 
 import argparse
 
-from controller.dbcreation import DBcreation
-from controller.dbconnection import DBconnect
 from controller.dbconfig import SQL_FILE
+from controller.dbconnection import DBconnect
+from controller.dbcreation import DBcreation
+from controller.dbrequest import DBrequests
+from controller.dbinsertion import DBinsert
+from controller.api_cleaner import Api_Requests#, Api_Cleaner
 
-parser = argparse.ArgumentParser(description="Launch the program !")
-parser.add_argument("-v", "--verbose", action="store_true", help="add output verbosity")
-parser.add_argument("--install_database", action="store_true", help="install database")
-args = parser.parse_args()
-# answer = args.x**args.y
-if args.verbose:
-    print("Running '{}'".format(__file__))
 
-if args.install_database:       
-    # Connect to database.
-    Testlog = DBconnect()
-    
-    # Création des tables en python
-    #  soit passer par un sql (comme tu as fait) et que tu parse pour ensuite faire appel à cursor.execute
-    #  SOIT tu découpe en méthode de classe
-    #  et tu écrit directement dans chaque méthode cursor.execute('CREATE...) ce qui t'évitera de devoir parser le fichier sql.
-    TESTcreate = DBcreation(SQL_FILE,args.verbose)
 
-    # appel à l'api avec une boucle sur les catégories (données statiques que tu définis toi en config pareil)
-    # et appels vers l'api pour récup les infos catégory,product et shop (avec parsing/filtrage des données)
+def main():
+    """..."""
+    parser = argparse.ArgumentParser(description="Launch the program !")
+    parser.add_argument("-v", "--verbose", action="store_true", help="add output verbosity")
+    parser.add_argument("--install_database", action="store_true", help="install database")
+    args = parser.parse_args()
+    verbose = args.verbose
 
-    # Insertion en bdd des résultats après filtrage.
+    if args.verbose:
+        print("Running '{}'".format(__file__))
 
-    # Disconnect from database.
-    Testlog.close_connection 
-else:
-    #application utilisateur en s'assurant que la bdd est correctement configuré, affichage du menu ect 
-    print('RUN THE PROGRAM')
-# print(answer)
+    # # Connect to MySQL Server.
+    # Log = DBconnect()
+
+    if args.install_database: 
+        # Create database.   
+        Create_database = DBcreation(SQL_FILE,verbose)
+        # Retrieves the maximum number of characters for the fields (dictionary).
+        Fields_charmax = DBrequests().characters_max()
+        # Retrives datas from Api and reject unsuitable datas.
+        Api_data = Api_Requests(Fields_charmax,verbose).api_get_data(Fields_charmax,verbose)
+        # Insertion in database.
+        DBinsert(Api_data, verbose).insert_data(Api_data, verbose)
+
+        
+    else:
+        #application utilisateur en s'assurant que la bdd est correctement configuré, affichage du menu ect 
+        print('RUN THE PROGRAM')
+
+
+    # # Disconnect from MySQL Server.
+    # Log.close_connection 
+
+if __name__ == "__main__":
+
+    main()
+
 
 # group = parser.add_mutually_exclusive_group()
 # group.add_argument("-v", "--verbose", action="store_true")

@@ -1,14 +1,17 @@
-from api_config import FIELDS
-from dbconnection import DBconnect
+"""Class to retrives informations from database."""
+
+from controller.api_config import FIELDS
+from controller.dbconnection import DBconnect
 
 class DBrequests:
     """Requests for questioning database."""
 
     def __init__(self):
+        """..."""
         pass
 
     def characters_max(self):
-        """Retrieves the maximum number of characters for the fields."""    
+        """Retrieve the maximum number of characters for the fields."""     
         log = DBconnect() #TC
         cursor = log.cnx.cursor()#TC
         char_max = {}

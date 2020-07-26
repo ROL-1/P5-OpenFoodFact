@@ -1,14 +1,9 @@
-""" Create Database """
-# avec DBOFF1.sql
-# optionnel ?
-# indications dans le readme
-# commande : SOURCE <adresse du fichier>\DBOFF1.sql
+"""Create Database."""
 
 import argparse
 from controller.dbconnection import DBconnect
 
 # AJOUTER CONTROLER SUR ERREURS
-
 # Extraire le nom de la database ?
 
 class DBcreation:
@@ -32,13 +27,12 @@ class DBcreation:
         # Connexion to MySQL
         Log = DBconnect()
         cursor = Log.cnx.cursor()
-        # Count for errors
+        # Count for strings skipped.
         i = 0
         # Execute requests from the list.
         if verbose:
             print('Executing requests to database.') 
-        for request in SQLrequests:
-                   
+        for request in SQLrequests:                   
             try:
                 cursor.execute(request)
             except:
@@ -47,9 +41,9 @@ class DBcreation:
                     print("String skipped:'",request,"'")                
         # Save information
         Log.cnx.commit()
+        # Disconnect from MySQL Server.
+        Log.close_connection 
         print("Database created from '{}'".format(sql_file))
         # Print counter if asked
         if verbose:  
             print(i,'string(s) skipped.')
-
-# TESTcreate = DBcreation('DBOFF1.sql')

@@ -19,7 +19,7 @@ class DBconnect:
     def _connection(self):
         """Make connection to database."""
         try:
-            self.cnx = MC.connect(host = self.host, user = self.user, password = self.password) # Gestion du password ??? ## database = self.database##
+            self.cnx = MC.connect(host = self.host, database = self.database, user = self.user, password = self.password) # Gestion du password ??? ## database = self.database##
         except MC.Error as err :
             if err.errno == errorcode.ER_ACCESS_DENIED_ERROR: # .errno = return last error code
                 print("Une information est erronée parmi votre nom d'utilisateur et votre mot de passe.")
