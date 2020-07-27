@@ -5,6 +5,8 @@ from controller.dbconnection import DBconnect
 
 # AJOUTER CONTROLER SUR ERREURS
 # Extraire le nom de la database ?
+# Préremplir Nutriscore_grades
+
 
 class DBcreation:
     """Create database from .sql file."""

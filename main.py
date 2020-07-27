@@ -27,7 +27,7 @@ def main():
 
     if args.install_database: 
         # Create database.   
-        Create_database = DBcreation(SQL_FILE,verbose)
+        # Create_database = DBcreation(SQL_FILE,verbose)
         # Retrieves the maximum number of characters for the fields (dictionary).
         Fields_charmax = DBrequests().characters_max()
         # Retrives datas from Api and reject unsuitable datas.

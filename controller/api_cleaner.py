@@ -58,23 +58,28 @@ class Api_Requests:
                             if field != 'injection':
                                 # Make verification only for fields find with characters_max() (char or varchar)
                                 if field in Fields_charmax.keys():
-                                    # Make verification only for element with the maximum length for 'categories' and 'brands'.
-                                    if field == ("categories" or "brands"):                                
+                                    # Make verification only for element with the maximum length for 'stores'.
+                                    if field == "stores":                                
                                         if len(max(string.split(','), key=len)) > Fields_charmax[field]:
                                             return 'False'
                                     else:
                                         if len(string) > Fields_charmax[field]:
                                             return 'False'
                     
+                    def define_category():
+                        if category in product['categories'].split(','):
+                            product["Db_categories"] = category
+
                     # Launch Checks
+                    Def_cat = define_category()
                     Data = data_missing()
                     Strings = string_length(Fields_charmax)
-                    # Change injection field if a check is failed.
-                    if (Data or Strings) == 'False':
+                    # Change injection field if a check is failed.                   
+                    if ((Data or Strings) == 'False') or ('Db_categories' not in product):
                         product["injection"] = 'False'
 
-                # Check how many products by categories are suitables.
-                # for category in CATEGORIES:
+
+                # Check how many products by categories are suitables.                
                 products_nb = 0
                 for product in scraped:                                               
                     if category in product['categories'].split(','):
