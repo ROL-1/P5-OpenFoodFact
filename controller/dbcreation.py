@@ -1,34 +1,25 @@
-"""Create Database."""
+"""Class to create database."""
 
-import argparse
 from controller.dbconnection import DBconnect
+# from controller.dbname import DATABASE
 
-# AJOUTER CONTROLER SUR ERREURS
-# Extraire le nom de la database ?
-# Préremplir Nutriscore_grades
+class DBcreate:
+    """..."""
 
+    def __init__(self, sql_readed, verbose):        
+        """..."""
 
-class DBcreation:
-    """Create database from .sql file."""
-    
-    def __init__(self, sql_file, verbose):
-        """Launch create_db() and response for verbose."""
-        if verbose:
-            print("Running 'dbcreation.py'")
-        self._create_db(sql_file,verbose)
-
-    def _create_db(self, sql_file, verbose):
-        """Create database from .sql file."""
-        # Open and read file named by user.
-        if verbose:
-            print("Reading '{}'".format(sql_file))
-        with open(sql_file, 'r') as read_sql:
-            sqlFile = read_sql.read()
+    def create_db(self, sql_readed, verbose):
+        """Create database (drop if exists)."""       
         # Split the file to make requests list.
-        SQLrequests = sqlFile.split(';')
+        SQLrequests = sql_readed.split(';')
         # Connexion to MySQL
         Log = DBconnect()
-        cursor = Log.cnx.cursor()
+        cursor = Log.cnn.cursor()
+
+        # Drop database if exist
+        ("DROP DATABASE IF EXISTS {}".format(DATABASE))    
+        Log.cnn.commit()
         # Count for strings skipped.
         i = 0
         # Execute requests from the list.
@@ -42,10 +33,9 @@ class DBcreation:
                 if verbose:
                     print("String skipped:'",request,"'")                
         # Save information
-        Log.cnx.commit()
+        Log.cnn.commit()
         # Disconnect from MySQL Server.
-        Log.close_connection 
-        print("Database created from '{}'".format(sql_file))
+        Log.close_connection         
         # Print counter if asked
-        if verbose:  
+        if verbose: 
             print(i,'string(s) skipped.')

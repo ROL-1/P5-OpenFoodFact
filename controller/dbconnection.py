@@ -2,24 +2,32 @@
 """pip install mysql-connector-python"""
 
 import mysql.connector as MC
+from mysql.connector import errorcode
 
-from controller.dbconfig import HOST,DATABASE,USER,PASSWORD
+from controller.dbconfig import HOST,USER,PASSWORD
+from controller.dbname import DATABASE
 
 class DBconnect: 
     """Récupère les informations pour la connexion et créé la connexion."""
 
     def __init__(self):
-        """Load parameters and call _connection()."""
+        """Load parameters and call connection()."""
         self.host = HOST
-        self.database = DATABASE
         self.user = USER
         self.password = PASSWORD
+        self.database = DATABASE
         self._connection()
 
+
     def _connection(self):
-        """Make connection to database."""
+        """Make connection to database."""        
         try:
-            self.cnx = MC.connect(host = self.host, database = self.database, user = self.user, password = self.password) # Gestion du password ??? ## database = self.database##
+            self.cnn = MC.connect(
+                host = self.host,                
+                user = self.user,
+                database = self.database,
+                password = self.password
+                )
         except MC.Error as err :
             if err.errno == errorcode.ER_ACCESS_DENIED_ERROR: # .errno = return last error code
                 print("Une information est erronée parmi votre nom d'utilisateur et votre mot de passe.")
@@ -27,7 +35,19 @@ class DBconnect:
                 print("La base de données n'existe pas.")
             else:
                 print(err)
-        return self.cnx
+        return self.cnn
+
+    def request(self, request):
+        """Return request after open and close the cursor."""
+        cursor = self.cnn.cursor()
+        cursor.execute(request)
+        result = cursor.fetchall()
+        cursor.close()
+        return result
+
+    def commit(self):
+        """Commit to the database."""
+        commit = self.connection.commit()
 
     def close_connection(self):
         """Close connection to database."""

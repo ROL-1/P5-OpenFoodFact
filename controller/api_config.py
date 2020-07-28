@@ -9,7 +9,7 @@ REQUEST_PARAMS = [
 
 FIELDS = 'product_name_fr,nutriscore_grade,stores,brands,code,categories,url'
 
-CATEGORIES = ['Pizzas','Sandwichs','Sodas','Yaourts','Jambons crus']
+CATEGORIES = ['Pizzas','Sandwichs','Sodas','Yaourts','Jambons']
 
 # Minimum number of products by categories.
 MIN_PROD = 20

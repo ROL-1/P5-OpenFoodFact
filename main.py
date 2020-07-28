@@ -4,7 +4,8 @@ import argparse
 
 from controller.dbconfig import SQL_FILE
 from controller.dbconnection import DBconnect
-from controller.dbcreation import DBcreation
+from controller.dbcreation import DBcreate
+from controller.sqlconfig import DBsql, DBname
 from controller.dbrequest import DBrequests
 from controller.dbinsertion import DBinsert
 from controller.api_cleaner import Api_Requests#, Api_Cleaner
@@ -24,24 +25,31 @@ def main():
 
     # # Connect to MySQL Server.
     # Log = DBconnect()
+    # Log.connection()
 
     if args.install_database: 
-        # Create database.   
-        # Create_database = DBcreation(SQL_FILE,verbose)
+        # Read sql.   
+        ReadSQL = DBsql(SQL_FILE,verbose)
+        sql_readed = ReadSQL.read_sql(SQL_FILE,verbose)
+        # Write database name in dbname.py
+        Database_name = DBname(sql_readed, verbose)
+        Database_name.database_name(sql_readed, verbose)
+        # Create database.
+        Create_database = DBcreate(sql_readed, verbose)
+        Create_database.create_db(sql_readed, verbose)
         # Retrieves the maximum number of characters for the fields (dictionary).
         Fields_charmax = DBrequests().characters_max()
         # Retrives datas from Api and reject unsuitable datas.
         Api_data = Api_Requests(Fields_charmax,verbose).api_get_data(Fields_charmax,verbose)
         # Insertion in database.
         DBinsert(Api_data, verbose).insert_data(Api_data, verbose)
-
         
     else:
         #application utilisateur en s'assurant que la bdd est correctement configuré, affichage du menu ect 
         print('RUN THE PROGRAM')
 
 
-    # # Disconnect from MySQL Server.
+    # # # Disconnect from MySQL Server.
     # Log.close_connection 
 
 if __name__ == "__main__":
@@ -49,25 +57,11 @@ if __name__ == "__main__":
     main()
 
 
-# group = parser.add_mutually_exclusive_group()
-# group.add_argument("-v", "--verbose", action="store_true")
-# group.add_argument("-q", "--quiet", action="store_true")
-# parser.add_argument("x", type=int, help="the base")
-# parser.add_argument("y", type=int, help="the exponent")
-# if args.quiet:
-#     print(answer)
-# elif args.verbose:
-#     print("{} to the power {} equals {}".format(args.x, args.y, answer))
-# else:
-#     print("{}^{} == {}".format(args.x, args.y, answer))
-
-
 # Charge les données de l'api
 # Filtre les données
-    # NON Sauvegarde les données dans un json 
-# Créé la BDD (optionel ?)
+# Vérifie si assez de produits par categories, sinon relance une recherche pour la categorie.
+# Créé la BDD 
 # Remplit la BDD
-# Vérifie la BDD si qté pas atteinte par catégories = relance Remplit la BDD
 # Sollicite l'utilisateur (1. recherche 2.historique)
 # Récupère dans la BDD la liste des catégories
 # Affiche la liste des catégories

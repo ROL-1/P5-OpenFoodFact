@@ -81,9 +81,10 @@ class Api_Requests:
 
                 # Check how many products by categories are suitables.                
                 products_nb = 0
-                for product in scraped:                                               
-                    if category in product['categories'].split(','):
-                        products_nb += 1
+                for product in scraped:
+                    if product["injection"] == 'True':                                              
+                        if category in product['categories'].split(','):
+                            products_nb += 1
                 if products_nb < MIN_PROD:                    
                     page_nb += 1
                 else:                    
