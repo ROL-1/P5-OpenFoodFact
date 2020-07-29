@@ -8,7 +8,7 @@ from controller.dbcreation import DBcreate
 from controller.sqlconfig import DBsql, DBname
 from controller.dbrequest import DBrequests
 from controller.dbinsertion import DBinsert
-from controller.api_cleaner import Api_Requests#, Api_Cleaner
+from controller.api_cleaner2 import Api_Requests#, Api_Cleaner
 
 
 

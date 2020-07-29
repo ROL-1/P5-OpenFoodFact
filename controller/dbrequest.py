@@ -11,18 +11,14 @@ class DBrequests:
 
     def characters_max(self):
         """Retrieve the maximum number of characters for the fields."""     
-        log = DBconnect() #TC
-        cursor = log.cnn.cursor()#TC
+        Log = DBconnect() #TC
         char_max = {}
         for field in FIELDS.split(','):
-            get_char_max = ("""SELECT column_name, character_maximum_length
+            fetch = Log.request("""SELECT column_name, character_maximum_length
                                 FROM information_schema.columns WHERE column_name = '"""
                                 +field
-                                +"""'AND (DATA_TYPE = 'char' OR DATA_TYPE = 'varchar')""")
-            cursor.execute(get_char_max)
-            fetch = cursor.fetchall()         
+                                +"""'AND (DATA_TYPE = 'char' OR DATA_TYPE = 'varchar')""")         
             char_max.update(fetch)
         # print(char_max)#TC
-        log.close_connection #TC
+        Log.close_connection #TC
         return char_max # Code = 3 ???
-
