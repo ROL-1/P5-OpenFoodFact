@@ -2,7 +2,7 @@
 
 import re
 
-class DBsql:
+class Db_sql:
     """Read sql file."""
     
     def __init__(self, sql_file, verbose):
@@ -16,7 +16,7 @@ class DBsql:
             sql_readed = read_sql.read()
         return sql_readed 
 
-class DBname:
+class Db_name:
     """Write database name in dbname.py."""
 
     def __init__(self, sql_readed, verbose):

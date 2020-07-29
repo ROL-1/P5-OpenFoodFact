@@ -1,9 +1,9 @@
 """Class to create database."""
 
-from model.dbconnection import DBconnect
-from model.dbname import DATABASE
+from model.db_connection import Db_connect
+from model.db_name import DATABASE
 
-class DBcreate:
+class Db_create:
     """..."""
 
     def __init__(self, sql_readed, verbose):        
@@ -14,7 +14,7 @@ class DBcreate:
         # Split the file to make requests list.
         SQLrequests = sql_readed.split(';')
         # Connexion to MySQL
-        Log = DBconnect()
+        Log = Db_connect()
         cursor = Log.cnn.cursor()
 
         # Drop database if exist

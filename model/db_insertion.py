@@ -3,13 +3,13 @@
 import os
 import json
 
-from model.dbconnection import DBconnect
+from model.db_connection import Db_connect
 from controller.api_config import FIELDS
 from controller.api_config import CATEGORIES
 
 # IGNORE 
 
-class DBinsert:
+class Db_insert:
     """Insert data in data base. From JSON."""
 
     # Ouvre le json : dans le __init__ ?
@@ -21,7 +21,7 @@ class DBinsert:
         if verbose:
             print('Inserting datas to database')
         # Connexion MySQL
-        Log = DBconnect() #TC   
+        Log = Db_connect() #TC   
         cursor = Log.cnn.cursor()#TC 
         product_count = 0
         for product in Api_data:
@@ -92,10 +92,4 @@ class DBinsert:
         # Make sure data is committed to the database
         Log.cnn.commit() #Enregistre l'information
 
-        DBconnect.close_connection #TC
-        # self.connect = DBconnect() #TC 
-
- 
-#https://pynative.com/python-cursor-fetchall-fetchmany-fetchone-to-read-rows-from-table/
- 
-# infos = (cursor.lastrowid, 'nutella','orangina') #cursor.lastrowid récupère le dernier id 
+        Log.close_connection #TC

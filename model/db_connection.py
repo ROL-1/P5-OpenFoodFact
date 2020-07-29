@@ -4,10 +4,10 @@
 import mysql.connector as MC
 from mysql.connector import errorcode
 
-from model.dbconfig import HOST,USER,PASSWORD
-from model.dbname import DATABASE
+from model.db_config import HOST,USER,PASSWORD
+from model.db_name import DATABASE
 
-class DBconnect: 
+class Db_connect: 
     """Récupère les informations pour la connexion et créé la connexion."""
 
     def __init__(self):

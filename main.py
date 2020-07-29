@@ -2,13 +2,13 @@
 
 import argparse
 
-from model.dbconfig import SQL_FILE
-from model.dbconnection import DBconnect
-from model.dbcreation import DBcreate
-from model.sqlconfig import DBsql, DBname
-from model.dbrequest import DBrequests
-from model.dbinsertion import DBinsert
-from controller.api_cleaner import Api_Requests
+from model.db_config import SQL_FILE
+from model.db_connection import Db_connect
+from model.db_creation import Db_create
+from model.sql_config import Db_sql, Db_name
+from model.db_request import Db_requests
+from model.db_insertion import Db_insert
+from controller.api_requests import Api_requests
 
 
 
@@ -29,20 +29,20 @@ def main():
 
     if args.install_database: 
         # Read sql.   
-        ReadSQL = DBsql(SQL_FILE,verbose)
+        ReadSQL = Db_sql(SQL_FILE,verbose)
         sql_readed = ReadSQL.read_sql(SQL_FILE,verbose)
         # Write database name in dbname.py
-        Database_name = DBname(sql_readed, verbose)
+        Database_name = Db_name(sql_readed, verbose)
         Database_name.database_name(sql_readed, verbose)
         # Create database.
-        Create_database = DBcreate(sql_readed, verbose)
+        Create_database = Db_create(sql_readed, verbose)
         Create_database.create_db(sql_readed, verbose)
         # Retrieves the maximum number of characters for the fields (dictionary).
-        Fields_charmax = DBrequests().characters_max()
+        Fields_charmax = Db_requests().characters_max()
         # Retrives datas from Api and reject unsuitable datas.
-        Api_data = Api_Requests(Fields_charmax,verbose).api_get_data(Fields_charmax,verbose)
+        Api_data = Api_requests(Fields_charmax,verbose).api_get_data(Fields_charmax,verbose)
         # Insertion in database.
-        DBinsert(Api_data, verbose).insert_data(Api_data, verbose)
+        Db_insert(Api_data, verbose).insert_data(Api_data, verbose)
         
     else:
         #application utilisateur en s'assurant que la bdd est correctement configuré, affichage du menu ect 
