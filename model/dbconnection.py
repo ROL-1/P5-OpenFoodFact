@@ -4,8 +4,8 @@
 import mysql.connector as MC
 from mysql.connector import errorcode
 
-from controller.dbconfig import HOST,USER,PASSWORD
-from controller.dbname import DATABASE
+from model.dbconfig import HOST,USER,PASSWORD
+from model.dbname import DATABASE
 
 class DBconnect: 
     """Récupère les informations pour la connexion et créé la connexion."""

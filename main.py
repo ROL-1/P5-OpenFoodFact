@@ -2,12 +2,12 @@
 
 import argparse
 
-from controller.dbconfig import SQL_FILE
-from controller.dbconnection import DBconnect
-from controller.dbcreation import DBcreate
-from controller.sqlconfig import DBsql, DBname
-from controller.dbrequest import DBrequests
-from controller.dbinsertion import DBinsert
+from model.dbconfig import SQL_FILE
+from model.dbconnection import DBconnect
+from model.dbcreation import DBcreate
+from model.sqlconfig import DBsql, DBname
+from model.dbrequest import DBrequests
+from model.dbinsertion import DBinsert
 from controller.api_cleaner import Api_Requests
 
 

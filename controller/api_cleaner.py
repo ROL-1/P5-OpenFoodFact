@@ -7,7 +7,7 @@ import os
 import json
 import requests
 
-from controller.dbrequest import DBrequests
+from model.dbrequest import DBrequests
 from controller.api_config import REQUEST_PARAMS,CATEGORIES,FIELDS,MIN_PROD
 
 class Api_Requests:

@@ -3,7 +3,7 @@
 import os
 import json
 
-from controller.dbconnection import DBconnect
+from model.dbconnection import DBconnect
 from controller.api_config import FIELDS
 from controller.api_config import CATEGORIES
 
@@ -19,14 +19,14 @@ class DBinsert:
     def insert_data(self, Api_data, verbose):
         """..."""
         if verbose:
-            print('Inserting data to database')
+            print('Inserting datas to database')
         # Connexion MySQL
         Log = DBconnect() #TC   
         cursor = Log.cnn.cursor()#TC 
         product_count = 0
         for product in Api_data:
             if product['injection'] == 'True':
-                if verbose:
+                if verbose: #for debug
                     print('Product count:',product_count, '; Product code : ', product['code'])
                 # Table Codes_products_OFF
                 cursor.execute("INSERT IGNORE INTO Codes_products_OFF (code) VALUES (%s)",[product['code']])
@@ -86,7 +86,8 @@ class DBinsert:
                 cursor.execute(data_field, data_string)
                 Log.cnn.commit()
                 product_count +=1  
-        
+        if verbose:
+            print(f'Database filled with {product_count} products.')
 
         # Make sure data is committed to the database
         Log.cnn.commit() #Enregistre l'information

@@ -1,7 +1,7 @@
 """Class to create database."""
 
-from controller.dbconnection import DBconnect
-from controller.dbname import DATABASE
+from model.dbconnection import DBconnect
+from model.dbname import DATABASE
 
 class DBcreate:
     """..."""

@@ -1,7 +1,7 @@
 """Class to retrives informations from database."""
 
 from controller.api_config import FIELDS
-from controller.dbconnection import DBconnect
+from model.dbconnection import DBconnect
 
 class DBrequests:
     """Requests for questioning database."""
