@@ -21,26 +21,25 @@ class Db_insert:
         if verbose:
             print('Inserting datas to database')
         # Connexion MySQL
-        Log = Db_connect() #TC   
-        cursor = Log.cnn.cursor()#TC 
+        Log = Db_connect() #TC 
         product_count = 0
         for product in Api_data:
             if product['injection'] == 'True':
                 if verbose: #for debug
                     print('Product count:',product_count, '; Product code : ', product['code'])
                 # Table Codes_products_OFF
-                cursor.execute("INSERT IGNORE INTO Codes_products_OFF (code) VALUES (%s)",[product['code']])
+                Log.execute("INSERT IGNORE INTO Codes_products_OFF (code) VALUES (%s)",[product['code']])
                 Db_Codes_products_OFF = Log.request("SELECT * from Codes_products_OFF")
 
                 # Table Brands
                 Db_brands = Log.request("SELECT brands from Brands")
                 if product['brands'] not in Db_brands:
-                    cursor.execute("INSERT IGNORE INTO Brands (brands) VALUES (%s)",[product['brands']])                   
+                    Log.execute("INSERT IGNORE INTO Brands (brands) VALUES (%s)",[product['brands']])                   
 
                 # Table Nutriscore_grades
                 Db_Nutriscore_grades =  Log.request("SELECT nutriscore_grade from Nutriscore_grades")
                 if product['nutriscore_grade'] not in Db_Nutriscore_grades:
-                    cursor.execute("INSERT IGNORE INTO Nutriscore_grades (nutriscore_grade) VALUES (%s)",[product['nutriscore_grade']])                    
+                    Log.execute("INSERT IGNORE INTO Nutriscore_grades (nutriscore_grade) VALUES (%s)",[product['nutriscore_grade']])                    
 
                 # Table Db_categories
                 # While = danger ?
@@ -51,7 +50,7 @@ class Db_insert:
                         if category in product['Db_categories']:
                             search_category = False               
                             Product_category = category         
-                            cursor.execute("INSERT IGNORE INTO Db_categories (db_categories) VALUES (%s)",[category])  
+                            Log.execute("INSERT IGNORE INTO Db_categories (db_categories) VALUES (%s)",[category])  
 
                 # Table Stores, multiple values in product['stores'] : use many-to-many relationship.
                 Db_stores = Log.request("SELECT stores from Stores")
@@ -65,25 +64,21 @@ class Db_insert:
 
                 for store in product['stores'].split(','):
                     if store in Db_stores:
-                        StoreID = Log.request("SELECT stores_id FROM Stores WHERE stores = (%s)",[store]) 
-                        cursor.execute("INSERT IGNORE INTO Products_has_Stores VALUES (%s,%s)",[ProductID,StoreID]) 
+                        StoreID = Log.request("SELECT stores_id FROM Stores WHERE stores = (%s)",[store])[0][0]
+                        Log.execute("INSERT IGNORE INTO Products_has_Stores VALUES (%s,%s)",[ProductID,StoreID]) 
                     else:
-                        cursor.execute("INSERT IGNORE INTO Stores (stores) VALUES (%s)",[store])
-                        cursor.execute("SELECT stores_id FROM Stores WHERE stores = (%s)",[store])
-                        StoreID = cursor.fetchall()[0][0]
-                        cursor.execute("INSERT IGNORE INTO Products_has_Stores VALUES (%s,%s)",[ProductID,StoreID])      
+                        Log.execute("INSERT IGNORE INTO Stores (stores) VALUES (%s)",[store])
+                        StoreID = Log.request("SELECT stores_id FROM Stores WHERE stores = (%s)",[store])[0][0]
+                        Log.execute("INSERT IGNORE INTO Products_has_Stores VALUES (%s,%s)",(ProductID,StoreID))      
 
                 # Table Products
                 Codes_products_OFF_id = Log.request("SELECT Codes_products_OFF_id FROM Codes_products_OFF ORDER BY Codes_products_OFF_id DESC LIMIT 1")[0][0]
-                cursor.execute("SELECT brands_id FROM Brands WHERE brands = (%s)",[product['brands']])
-                BrandID = cursor.fetchall()[0][0]
-                cursor.execute("SELECT nutriscore_grade_id FROM Nutriscore_grades WHERE nutriscore_grade = (%s)",[product['nutriscore_grade']])
-                Nutriscores_grades_ID = cursor.fetchall()[0][0]
-                cursor.execute("SELECT db_categories_id FROM Db_categories WHERE Db_categories = (%s)",[Product_category])
-                Product_Db_category_ID = cursor.fetchall()[0][0]                            
+                BrandID = Log.request("SELECT brands_id FROM Brands WHERE brands = (%s)",[product['brands']])[0][0]
+                Nutriscores_grades_ID = Log.request("SELECT nutriscore_grade_id FROM Nutriscore_grades WHERE nutriscore_grade = (%s)",[product['nutriscore_grade']])[0][0]
+                Product_Db_category_ID = Log.request("SELECT db_categories_id FROM Db_categories WHERE Db_categories = (%s)",[Product_category])[0][0]                         
                 data_field = ("INSERT IGNORE INTO Products (Codes_products_OFF_Codes_products_OFF_id, product_name_fr, url, Brands_brands_id, Nutriscore_grade_nutriscore_grade_id, Db_categories_db_categories_id) VALUES (%s,%s,%s,%s,%s,%s)")                    
-                data_string = (Codes_products_OFF_id, product['product_name_fr'],product['url'],BrandID,Nutriscores_grades_ID, Product_Db_category_ID)                     
-                cursor.execute(data_field, data_string)
+                data_string = (Codes_products_OFF_id, product['product_name_fr'],product['url'],BrandID,Nutriscores_grades_ID, Product_Db_category_ID)                
+                Log.execute(data_field, data_string)
                 Log.cnn.commit()
                 product_count +=1  
         if verbose:

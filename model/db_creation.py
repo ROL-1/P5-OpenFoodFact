@@ -15,8 +15,6 @@ class Db_create:
         SQLrequests = sql_readed.split(';')
         # Connexion to MySQL
         Log = Db_connect()
-        cursor = Log.cnn.cursor()
-
         # Drop database if exist
         ("DROP DATABASE IF EXISTS {}".format(DATABASE))    
         Log.cnn.commit()
@@ -27,7 +25,7 @@ class Db_create:
             print('Executing requests to database.') 
         for request in SQLrequests:                   
             try:
-                cursor.execute(request)
+                Log.execute(request)
             except:
                 i+=1
                 if verbose:

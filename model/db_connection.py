@@ -37,10 +37,16 @@ class Db_connect:
                 print(err)
         return self.cnn
 
-    def request(self, request):
+    def execute(self, request,value=None):
+        """Execute request (open and close the cursor, no return)."""
+        cursor = self.cnn.cursor()
+        cursor.execute(request, value)
+        cursor.close()
+
+    def request(self, request, value=None):
         """Return request after open and close the cursor."""
         cursor = self.cnn.cursor()
-        cursor.execute(request)
+        cursor.execute(request, value)
         result = cursor.fetchall()
         cursor.close()
         return result
