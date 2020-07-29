@@ -26,7 +26,7 @@ class Db_name:
         """Find database name in .sql file.""" 
         result = re.search("USE (.*)",sql_readed)
         DATABASE = result.group(1).split("`")[1]
-        with open('controller/dbname.py','w') as write_file:
+        with open('model/db_name.py','w') as write_file:
             write_file.write("DATABASE = '{}'".format(DATABASE))
    
 

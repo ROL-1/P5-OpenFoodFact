@@ -5,7 +5,7 @@ import argparse
 from model.db_config import SQL_FILE
 from model.db_connection import Db_connect
 from model.db_creation import Db_create
-from model.sql_config import Db_sql, Db_name
+from model.sql_read import Db_sql, Db_name
 from model.db_request import Db_requests
 from model.db_insertion import Db_insert
 from controller.api_requests import Api_requests
