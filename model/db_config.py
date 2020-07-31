@@ -5,3 +5,5 @@ USER = 'root'
 PASSWORD = 'mdp123' # Gestion du password 
 
 SQL_FILE = 'DBOFF1.sql'
+
+DATABASE = 'DBOFF1'

@@ -5,7 +5,7 @@ import argparse
 from model.db_config import SQL_FILE
 from model.db_connection import Db_connect
 from model.db_creation import Db_create
-from model.sql_read import Db_sql, Db_name
+from model.sql_read import Db_sql
 from model.db_request import Db_requests
 from model.db_insertion import Db_insert
 from controller.api_requests import Api_requests
@@ -29,14 +29,11 @@ def main():
 
     if args.install_database: 
         # Read sql.   
-        ReadSQL = Db_sql(SQL_FILE,verbose)
-        sql_readed = ReadSQL.read_sql(SQL_FILE,verbose)
+        sql_readed = Db_sql.read_sql(SQL_FILE,verbose)
         # Write database name in dbname.py
-        Database_name = Db_name(sql_readed, verbose)
-        Database_name.database_name(sql_readed, verbose)
+        Database_name = Db_sql.database_name(sql_readed, verbose)
         # Create database.
-        Create_database = Db_create(sql_readed, verbose)
-        Create_database.create_db(sql_readed, verbose)
+        Db_create.create_db(sql_readed, verbose)
         # Retrieves the maximum number of characters for the fields (dictionary).
         Fields_charmax = Db_requests().characters_max()
         # Retrives datas from Api and reject unsuitable datas.

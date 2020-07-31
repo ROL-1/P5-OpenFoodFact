@@ -5,39 +5,38 @@ import mysql.connector as MC
 from mysql.connector import errorcode
 
 from model.db_config import HOST,USER,PASSWORD
-from model.db_name import DATABASE
 
 class Db_connect: 
     """Récupère les informations pour la connexion et créé la connexion."""
 
-    def __init__(self):
+    compteur = 0
+    def __init__(self, database = None):
         """Load parameters and call connection()."""
-        self.host = HOST
-        self.user = USER
-        self.password = PASSWORD
-        self.database = DATABASE
-        self._connection()
+        host = HOST
+        user = USER
+        password = PASSWORD  
+        self._connection(host, user, password, database)    
 
 
-    def _connection(self):
-        """Make connection to database."""        
-        try:
+    def _connection(self, host, user, password, database):
+        """Make connection to database."""               
+        try:                     
             self.cnn = MC.connect(
-                host = self.host,                
-                user = self.user,
-                database = self.database,
-                password = self.password
+                host = host,                
+                user = user,
+                password = password,
+                database = database,
                 )
         except MC.Error as err :
             if err.errno == errorcode.ER_ACCESS_DENIED_ERROR: # .errno = return last error code
                 print("Une information est erronée parmi votre nom d'utilisateur et votre mot de passe.")
-            elif err.errno == errorcode.ER_BAD_DB_ERROR:
+            elif err.errno == errorcode.ER_BAD_DB_ERROR:                 
                 print("La base de données n'existe pas.")
             else:
                 print(err)
         return self.cnn
 
-    def execute(self, request,value=None):
+    def execute(self, request, value=None):
         """Execute request (open and close the cursor, no return)."""
         cursor = self.cnn.cursor()
         cursor.execute(request, value)
@@ -53,7 +52,7 @@ class Db_connect:
 
     def commit(self):
         """Commit to the database."""
-        commit = self.connection.commit()
+        commit = self.cnn.commit()
 
     def close_connection(self):
         """Close connection to database."""

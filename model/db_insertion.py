@@ -7,21 +7,27 @@ from model.db_connection import Db_connect
 from controller.api_config import FIELDS
 from controller.api_config import CATEGORIES
 
+
+
 # IGNORE 
 
 class Db_insert:
     """Insert data in data base. From JSON."""
 
-    # Ouvre le json : dans le __init__ ?
     def __init__ (self, Api_data, verbose):
-        """ ... """               
+        """ ... """
+                       
 
     def insert_data(self, Api_data, verbose):
         """..."""
         if verbose:
             print('Inserting datas to database')
         # Connexion MySQL
-        Log = Db_connect() #TC 
+        with open('model/db_config.py','r') as file :
+           for line in file:
+               if 'DATABASE' in line:
+                   DATABASE = line.split('= ')[1].replace("'","")  
+        Log = Db_connect(DATABASE)
         product_count = 0
         for product in Api_data:
             if product['injection'] == 'True':
@@ -29,17 +35,12 @@ class Db_insert:
                     print('Product count:',product_count, '; Product code : ', product['code'])
                 # Table Codes_products_OFF
                 Log.execute("INSERT IGNORE INTO Codes_products_OFF (code) VALUES (%s)",[product['code']])
-                Db_Codes_products_OFF = Log.request("SELECT * from Codes_products_OFF")
 
                 # Table Brands
-                Db_brands = Log.request("SELECT brands from Brands")
-                if product['brands'] not in Db_brands:
-                    Log.execute("INSERT IGNORE INTO Brands (brands) VALUES (%s)",[product['brands']])                   
+                Log.execute("INSERT IGNORE INTO Brands (brands) VALUES (%s)",[product['brands']])                   
 
                 # Table Nutriscore_grades
-                Db_Nutriscore_grades =  Log.request("SELECT nutriscore_grade from Nutriscore_grades")
-                if product['nutriscore_grade'] not in Db_Nutriscore_grades:
-                    Log.execute("INSERT IGNORE INTO Nutriscore_grades (nutriscore_grade) VALUES (%s)",[product['nutriscore_grade']])                    
+                Log.execute("INSERT IGNORE INTO Nutriscore_grades (nutriscore_grade) VALUES (%s)",[product['nutriscore_grade']])                    
 
                 # Table Db_categories
                 # While = danger ?
