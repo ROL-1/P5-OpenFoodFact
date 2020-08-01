@@ -18,6 +18,7 @@ class Api_requests:
         if verbose:
             print('Getting data from API...')       
         self.scraped  = []
+        self.cleaned_scraped = []
         self.endpoint = 'https://fr.openfoodfacts.org/cgi/search.pl?' 
         self.page_nb = 1               
 
@@ -27,21 +28,35 @@ class Api_requests:
         request = requests.get(self.endpoint+params+category)
         return request 
 
-    def append_scraped(self, request):
+    def add_scraped(self, request):
         """Add products in list scraped."""
         load = json.loads(request.text)
-        for i in load['products'] : self.scraped.append(i)
+        for product in load['products'] : self.scraped.append(product)
 
-    def field_injection(self, scraped):
-        """Add field to manage injection in database."""
-        for product in scraped:
-            product["injection"] = 'True'
+    def define_category(self, product):
+        """Check 1 : Change 'categories' to class the product in database."""
+        search_category = True
+        i = 0        
+        while search_category and i < len(CATEGORIES):
+            for category in CATEGORIES:
+                if category in product['categories'].split(','):                    
+                    product['categories'] = category
+                    search_category = False
+                i +=1
+        if search_category:
+            product['categories'] = ""
     
+    def wrong_caracters (self, product):
+        """Check 2 : Empty string if there is a forbiden caracter."""
+        for field, string in product.items():
+            if ('\n' or '\t' or '\r') in string:
+                product[field] = ""
+
     def data_missing(self, product):
-        """Check 1 : if field or data is missing."""
+        """Check 3 : if field or data is missing."""
         # Field missing
-        for element in FIELDS.split(','):
-            if element not in product.keys():
+        for field in FIELDS.split(','):
+            if field not in product.keys():
                 return 'False'  
         # String missing 
         for string in product.values():    
@@ -49,7 +64,7 @@ class Api_requests:
                 return 'False'
 
     def string_length(self, Fields_charmax, product):
-        """Check 2 : if string is too long for database field."""
+        """Check 4 : if string is too long for database field."""
         for field, string in product.items():
             # Excludes verification for the 'injection' field.
             if field != 'injection':
@@ -61,20 +76,14 @@ class Api_requests:
                             return 'False'
                     else:
                         if len(string) > Fields_charmax[field]:
-                            return 'False'
-    
-    def define_category(self, category, product):
-        """Create 'Db_categories' to class the product in database."""
-        if category in product['categories'].split(','):
-            product["Db_categories"] = category
+                            return 'False' 
 
-    def products_nb(self, scraped, category):
+    def products_nb(self, cleaned_scraped, category):
         """Check how many products by categories are suitables."""
         products_nb = 0
-        for product in scraped:
-            if product["injection"] == 'True':                                              
-                if category in product['categories'].split(','):
-                    products_nb += 1
+        for product in cleaned_scraped:                                            
+            if category in product['categories'].split(','): # Virer split ?
+                products_nb += 1
         if products_nb < MIN_PROD:                    
             category_filled = False
         else:
@@ -83,40 +92,44 @@ class Api_requests:
 
     def api_get_data(self, Fields_charmax, verbose):    
         """Review categories until there is 'MIN_PROD' products for each."""
+         
         for category in CATEGORIES:
             if verbose:
-                print('Loading',category)
-            category_filled = False     
+                print('Loading',category)                 
+            category_filled = False
+            # Loop while there is not enough products for the category.            
             while category_filled is False:
-                request = self.api_request(category)                
-                self.append_scraped(request)
-                # Call cleaner, if category is not filled : loop on next page. 
+                # Create request.
+                request = self.api_request(category)
+                # Add products from the request to 'scraped' list.
+                self.add_scraped(request)               
                 if verbose:
                     print('Cleaning data for',category)
-                # Add field 'injection'.
-                self.field_injection(self.scraped)
                 # Review products.
                 for product in self.scraped:
+                    # Change "categories" product field for only one category, or nothing if not in 'CATEGORIES' list.
+                    self.define_category(product) 
+                    # Erease string if there is a forbidden character.
+                    self.wrong_caracters(product)
                     # Check datas.                
                     Data = self.data_missing(product)
                     Strings = self.string_length(Fields_charmax, product)
-                    # Create category.
-                    self.define_category(category, product) 
-                    # Change injection field if a check is failed.                   
-                    if ((Data or Strings) == 'False') or ('Db_categories' not in product):
-                        product["injection"] = 'False'
+                    # Fill 'cleaned_scraped' list with product if all checks are true.                   
+                    if ('categories' in product) and (category in product['categories']) and (Data != 'False') and (Strings != 'False') :                        
+                        self.cleaned_scraped.append(product)
 
                 # Check how many products by categories are suitables.
-                category_filled = self.products_nb(self.scraped, category)
+                category_filled = self.products_nb(self.cleaned_scraped, category)
                 if category_filled:
                     self.page_nb +=1
                 else:
-                    self.page_nb = 1         
+                    self.page_nb = 1
+          
         if verbose:
             print('Datas cleaned. Founded', MIN_PROD,'products minimum by categories.')
 
         # Write JSON for debug
         with open("scraped_file.json", "w") as write_file:
-            json.dump(self.scraped, write_file, indent=4)  
-        return self.scraped
+            json.dump(self.cleaned_scraped, write_file, indent=4)  
+        return self.cleaned_scraped
          
