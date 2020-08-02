@@ -6,17 +6,13 @@ import json
 from model.db_connection import Db_connect
 from controller.api_config import FIELDS
 from controller.api_config import CATEGORIES
-
-
-
-# IGNORE 
+from model.rom import Rom
 
 class Db_insert:
     """Insert data in data base. From JSON."""
 
     def __init__ (self, Api_data, verbose):
         """ ... """
-                       
 
     def insert_data(self, Api_data, verbose):
         """..."""
@@ -28,58 +24,67 @@ class Db_insert:
                if 'DATABASE' in line:
                    DATABASE = line.split('= ')[1].replace("'","")  
         Log = Db_connect(DATABASE)
+
         product_count = 0
         for product in Api_data:
             if verbose: #for debug
                 print('Product count:',product_count, '; Product code : ', product['code'])
-            # Table Codes_products_OFF
-            Log.execute("INSERT IGNORE INTO Codes_products_OFF (code) VALUES (%s)",[product['code']])
-
-            # Table Brands
-            Log.execute("INSERT IGNORE INTO Brands (brands) VALUES (%s)",[product['brands']])                   
-
-            # Table Nutriscore_grades
-            Log.execute("INSERT IGNORE INTO Nutriscore_grades (nutriscore_grade) VALUES (%s)",[product['nutriscore_grade']])                    
-
-            # Table categories
-            # While = danger ?                
-            search_category = True 
-            while search_category:
-                for category in CATEGORIES:
-                    if category in product['categories']:
-                        search_category = False               
-                        Product_category = category         
-                        Log.execute("INSERT IGNORE INTO Categories (categories) VALUES (%s)",[category])  
-
-            # Table Stores, multiple values in product['stores'] : use many-to-many relationship.
-            Db_stores = Log.request("SELECT stores from Stores")
-
-            # Fin new products_id.
-            Last_Product_ID = Log.request("SELECT products_id FROM Products ORDER BY products_id DESC LIMIT 1")
-            if not(Last_Product_ID):                
-                ProductID = 0
-            else:
-                ProductID =  Last_Product_ID[0][0]+1   
-
+                    
+            # Defines list for insertion in Tables :                
+            Codes_products_OFF = ['Codes_products_OFF', 'code', product['code']]
+            Brands = ['Brands', 'brands', product['brands']]
+            Nutriscore_grades = ['Nutriscore_grades', 'nutriscore_grade', product['nutriscore_grade']]
+            Categories = ['Categories', 'categories', product['categories']]         
+            insert_lists = [Codes_products_OFF, Brands, Nutriscore_grades, Categories]
+            # Defines list for insertion in Table 'Stores' :
             for store in product['stores'].split(','):
-                if store in Db_stores:
-                    StoreID = Log.request("SELECT stores_id FROM Stores WHERE stores = (%s)",[store])[0][0]
-                    Log.execute("INSERT IGNORE INTO Products_has_Stores VALUES (%s,%s)",[ProductID,StoreID]) 
-                else:
-                    Log.execute("INSERT IGNORE INTO Stores (stores) VALUES (%s)",[store])
-                    StoreID = Log.request("SELECT stores_id FROM Stores WHERE stores = (%s)",[store])[0][0]
-                    Log.execute("INSERT IGNORE INTO Products_has_Stores VALUES (%s,%s)",(ProductID,StoreID))      
+                Stores = ['Stores', 'stores', store]
+                insert_lists.append(Stores)
+            # Insert datas in Tables.
+            Rom.simple_insertion(Log, insert_lists)
 
             # Table Products
-            Codes_products_OFF_id = Log.request("SELECT Codes_products_OFF_id FROM Codes_products_OFF ORDER BY Codes_products_OFF_id DESC LIMIT 1")[0][0]
-            BrandID = Log.request("SELECT brands_id FROM Brands WHERE brands = (%s)",[product['brands']])[0][0]
-            Nutriscores_grades_ID = Log.request("SELECT nutriscore_grade_id FROM Nutriscore_grades WHERE nutriscore_grade = (%s)",[product['nutriscore_grade']])[0][0]
-            Product_Db_category_ID = Log.request("SELECT categories_id FROM Categories WHERE categories = (%s)",[Product_category])[0][0]                         
-            data_field = ("INSERT IGNORE INTO Products (Codes_products_OFF_Codes_products_OFF_id, product_name_fr, url, Brands_brands_id, Nutriscore_grade_nutriscore_grade_id, Categories_categories_id) VALUES (%s,%s,%s,%s,%s,%s)")                    
-            data_string = (Codes_products_OFF_id, product['product_name_fr'],product['url'],BrandID,Nutriscores_grades_ID, Product_Db_category_ID)                
-            Log.execute(data_field, data_string)
+            # Get id for fields
+            Codes_products_OFF_id =  ['Codes_products_OFF_id', 'Codes_products_OFF', 'code', product['code']]
+            BrandID = ['brands_id', 'Brands', 'brands', product['brands']]
+            Nutriscores_grades_ID = ['nutriscore_grade_id', 'Nutriscore_grades', 'nutriscore_grade', product['nutriscore_grade']]
+            Product_category_ID = ['categories_id', 'Categories', 'categories', product['categories']]            
+            request_lists = [Codes_products_OFF_id, BrandID, Nutriscores_grades_ID, Product_category_ID]
+            result_list = Rom.simple_request(Log, request_lists)
+            # Define id 
+            Codes_products_OFF_id = result_list[0]
+            BrandID = result_list[1]            
+            Nutriscores_grades_ID = result_list[2]
+            Product_category_ID = result_list[3]
+            # Make request
+            Products = ['Products',
+            'Codes_products_OFF_Codes_products_OFF_id, product_name_fr, url, Brands_brands_id, Nutriscore_grade_nutriscore_grade_id, Categories_categories_id',
+            (Codes_products_OFF_id, product['product_name_fr'], product['url'] ,BrandID, Nutriscores_grades_ID, Product_category_ID)
+            ]
+            insert_lists = [Products,]
+            Rom.multiple_insertion(Log,insert_lists)
+
+            # Table products_has_Stores : (many-to-many relationship).
+            # Get Product_ID
+            ProductID = ['products_id', 'Products', 'product_name_fr', product['product_name_fr']]
+            request_lists = [ProductID,]
+            result_list = Rom.simple_request(Log, request_lists)
+            ProductID = result_list[0]
+            # Get Store_ID and inject.
+            for store in product['stores'].split(','):                
+                StoreID = ['stores_id', 'Stores', 'stores', store]
+                insert_lists = [StoreID,]
+                Rom.simple_request(Log, insert_lists)
+                StoreID = result_list[0]
+                Products_has_Stores = ['Products_has_Stores',(ProductID,StoreID)]
+                insert_lists = [Products_has_Stores,]
+                Rom.two_values_insertion(Log,insert_lists)
+
+            
+            # Commit changes to database.
             Log.cnn.commit()
-            product_count +=1  
+            product_count +=1 
+             
         if verbose:
             print(f'Database filled with {product_count} products.')
 

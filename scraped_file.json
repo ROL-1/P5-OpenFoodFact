@@ -1,2252 +1,1154 @@
 [
     {
-        "product_name_fr": "Ristorante: Pizza vegetale",
-        "nutriscore_grade": "d",
+        "url": "https://fr.openfoodfacts.org/produit/8000300378566/bella-napoli-4-formaggi-buitoni",
+        "brands": "Buitoni,Nestl\u00e9",
         "categories": "Pizzas",
-        "brands": "Dr. Oetker",
-        "url": "https://fr.openfoodfacts.org/produit/4001724819905/ristorante-pizza-vegetale-dr-oetker",
-        "code": "4001724819905",
-        "stores": "Franprix,Magasins U,Delhaize"
-    },
-    {
-        "stores": "Coles,Bilo,Woolworths,Willys,Coop Konsum,Magasins U",
-        "code": "4001724819806",
-        "brands": "Dr. Oetker",
-        "url": "https://fr.openfoodfacts.org/produit/4001724819806/ristorante-pizza-mozzarella-dr-oetker",
-        "categories": "Pizzas",
+        "code": "8000300378566",
         "nutriscore_grade": "c",
-        "product_name_fr": "Ristorante Pizza Mozzarella"
+        "stores": "Leclerc,Carrefour",
+        "product_name_fr": "Bella Napoli 4 formaggi"
     },
     {
-        "product_name_fr": "Dolce Pizza - Regina",
-        "nutriscore_grade": "b",
-        "categories": "Pizzas",
-        "brands": "Sodebo",
-        "url": "https://fr.openfoodfacts.org/produit/3242272347552/dolce-pizza-regina-sodebo",
-        "code": "3242272347552",
-        "stores": "Carrefour,Franprix,Casino,Magasins U"
-    },
-    {
-        "categories": "Pizzas",
-        "url": "https://fr.openfoodfacts.org/produit/4001724818908/ristorante-pizza-quattro-formaggi-dr-oetker",
-        "brands": "Dr.Oetker",
-        "code": "4001724818908",
-        "stores": "Dia,Woolworths,Coles,Intermarch\u00e9,Magasins U",
-        "product_name_fr": "Ristorante pizza quattro formaggi",
-        "nutriscore_grade": "d"
-    },
-    {
-        "product_name_fr": "Sodebo Dolce Pizza - 4 Formaggi",
         "nutriscore_grade": "c",
+        "code": "8000300378580",
+        "url": "https://fr.openfoodfacts.org/produit/8000300378580/bella-napoli-campanella-buitoni",
         "categories": "Pizzas",
-        "brands": "Sodebo",
-        "url": "https://fr.openfoodfacts.org/produit/3242272345053/sodebo-dolce-pizza-4-formaggi",
-        "code": "3242272345053",
-        "stores": "Franprix,Magasins U"
-    },
-    {
-        "categories": "Pizzas",
-        "code": "3270160371983",
-        "stores": "Picard",
-        "url": "https://fr.openfoodfacts.org/produit/3270160371983/pizza-3-fromages-bio-picard",
-        "brands": "picard",
-        "nutriscore_grade": "d",
-        "product_name_fr": "Pizza 3 Fromages Bio"
+        "brands": "Buitoni",
+        "stores": "Carrefour",
+        "product_name_fr": "Bella Napoli - Campanella"
     },
     {
         "nutriscore_grade": "d",
-        "product_name_fr": "Pizza N\u00b011 - Ch\u00e8vre, Miel, Noix",
+        "url": "https://fr.openfoodfacts.org/produit/3560071191306/pizza-3-fromages-carrefour-bio",
         "categories": "Pizzas",
-        "code": "3270160838110",
-        "stores": "Picard",
-        "url": "https://fr.openfoodfacts.org/produit/3270160838110/pizza-n-11-chevre-miel-noix-picard",
-        "brands": "Picard"
+        "code": "3560071191306",
+        "brands": "Carrefour Bio,Carrefour",
+        "stores": "Carrefour",
+        "product_name_fr": "Pizza 3 fromages"
     },
     {
-        "url": "https://fr.openfoodfacts.org/produit/3242272349556/dolce-pizza-primavera-sodebo",
-        "brands": "Sodebo,dolce",
-        "code": "3242272349556",
-        "stores": "Cora",
+        "url": "https://fr.openfoodfacts.org/produit/8000300378566/bella-napoli-4-formaggi-buitoni",
+        "brands": "Buitoni,Nestl\u00e9",
         "categories": "Pizzas",
-        "product_name_fr": "Dolce Pizza - Primavera",
-        "nutriscore_grade": "b"
-    },
-    {
-        "url": "https://fr.openfoodfacts.org/produit/3270160833900/pizza-margherita-picard",
-        "brands": "Picard",
-        "stores": "Picard",
-        "code": "3270160833900",
-        "categories": "Pizzas",
-        "product_name_fr": "Pizza Margherita",
-        "nutriscore_grade": "d"
-    },
-    {
-        "categories": "Pizzas",
-        "brands": "Picard",
-        "url": "https://fr.openfoodfacts.org/produit/3270160890163/pizza-n-9-boeuf-merguez-sauce-salsa-picard",
-        "stores": "Picard",
-        "code": "3270160890163",
-        "product_name_fr": "Pizza N\u00b09 - Boeuf, Merguez, Sauce Salsa",
-        "nutriscore_grade": "c"
-    },
-    {
-        "categories": "Pizzas",
-        "url": "https://fr.openfoodfacts.org/produit/7613035096486/buitoni-pizza-la-grandiosa-fromaggi-generosi",
-        "brands": "buitoni",
-        "stores": "Magasins U",
-        "code": "7613035096486",
-        "product_name_fr": "Buitoni Pizza La grandiosa Fromaggi Generosi",
-        "nutriscore_grade": "d"
-    },
-    {
-        "nutriscore_grade": "b",
-        "product_name_fr": "Pizza Deliziosa Tonno",
-        "categories": "Pizzas",
-        "stores": "LIDL",
-        "code": "20516673",
-        "brands": "Trattoria Alfredo",
-        "url": "https://fr.openfoodfacts.org/produit/20516673/pizza-deliziosa-tonno-trattoria-alfredo"
-    },
-    {
-        "nutriscore_grade": "b",
-        "product_name_fr": "Sodebo Dolce Pizza - Margherita",
-        "categories": "Pizzas",
-        "stores": "Magasins U",
-        "code": "3242272347057",
-        "brands": "Sodebo",
-        "url": "https://fr.openfoodfacts.org/produit/3242272347057/sodebo-dolce-pizza-margherita"
-    },
-    {
-        "code": "3248830719656",
-        "stores": "Magasins U",
-        "brands": "Marie",
-        "url": "https://fr.openfoodfacts.org/produit/3248830719656/marie-crousti-moelleuse-extreme-kebab",
-        "categories": "Pizzas",
+        "code": "8000300378566",
         "nutriscore_grade": "c",
-        "product_name_fr": "Marie Crousti moelleuse extr\u00eame - Kebab"
+        "stores": "Leclerc,Carrefour",
+        "product_name_fr": "Bella Napoli 4 formaggi"
     },
     {
-        "product_name_fr": "Ristorante: Pizza spinaci",
-        "nutriscore_grade": "b",
+        "nutriscore_grade": "c",
+        "code": "8000300378580",
+        "url": "https://fr.openfoodfacts.org/produit/8000300378580/bella-napoli-campanella-buitoni",
         "categories": "Pizzas",
-        "url": "https://fr.openfoodfacts.org/produit/4001724819400/ristorante-pizza-spinaci-dr-oetker",
-        "brands": "Dr. Oetker",
-        "code": "4001724819400",
-        "stores": "Coles,Bilo,Woolworths,Delhaize"
+        "brands": "Buitoni",
+        "stores": "Carrefour",
+        "product_name_fr": "Bella Napoli - Campanella"
     },
     {
         "nutriscore_grade": "d",
-        "product_name_fr": "La Pizz - 4 fromages",
+        "url": "https://fr.openfoodfacts.org/produit/3560071191306/pizza-3-fromages-carrefour-bio",
         "categories": "Pizzas",
-        "code": "3242272501053",
-        "stores": "Leclerc,Magasins U",
-        "url": "https://fr.openfoodfacts.org/produit/3242272501053/la-pizz-4-fromages-sodebo",
-        "brands": "Sodebo,la pizz"
+        "code": "3560071191306",
+        "brands": "Carrefour Bio,Carrefour",
+        "stores": "Carrefour",
+        "product_name_fr": "Pizza 3 fromages"
     },
     {
         "product_name_fr": "Bella Napoli 4 formaggi",
-        "nutriscore_grade": "c",
-        "categories": "Pizzas",
-        "url": "https://fr.openfoodfacts.org/produit/8000300378566/bella-napoli-4-formaggi-buitoni",
-        "brands": "Buitoni,Nestl\u00e9",
         "stores": "Leclerc,Carrefour",
-        "code": "8000300378566"
+        "nutriscore_grade": "c",
+        "url": "https://fr.openfoodfacts.org/produit/8000300378566/bella-napoli-4-formaggi-buitoni",
+        "code": "8000300378566",
+        "categories": "Pizzas",
+        "brands": "Buitoni,Nestl\u00e9"
     },
     {
-        "categories": "Pizzas",
-        "brands": "Buitoni",
         "url": "https://fr.openfoodfacts.org/produit/8000300378580/bella-napoli-campanella-buitoni",
-        "stores": "Carrefour",
+        "brands": "Buitoni",
+        "categories": "Pizzas",
         "code": "8000300378580",
-        "product_name_fr": "Bella Napoli - Campanella",
-        "nutriscore_grade": "c"
+        "nutriscore_grade": "c",
+        "stores": "Carrefour",
+        "product_name_fr": "Bella Napoli - Campanella"
     },
     {
-        "brands": "Carrefour Bio,Carrefour",
+        "categories": "Pizzas",
         "url": "https://fr.openfoodfacts.org/produit/3560071191306/pizza-3-fromages-carrefour-bio",
+        "brands": "Carrefour Bio,Carrefour",
         "code": "3560071191306",
-        "stores": "Carrefour",
-        "categories": "Pizzas",
-        "product_name_fr": "Pizza 3 fromages",
-        "nutriscore_grade": "d"
-    },
-    {
-        "product_name_fr": "Pizza 4 Fromages",
         "nutriscore_grade": "d",
-        "categories": "Pizzas",
-        "brands": "Turini,Marque Rep\u00e8re",
-        "url": "https://fr.openfoodfacts.org/produit/3564700038291/pizza-4-fromages-turini",
-        "code": "3564700038291",
-        "stores": "leclerc"
-    },
-    {
-        "categories": "Pizzas",
         "stores": "Carrefour",
-        "code": "3560070134564",
-        "brands": "Carrefour",
-        "url": "https://fr.openfoodfacts.org/produit/3560070134564/pizza-royale-cuite-au-feu-de-bois-edam-jambon-champignons-carrefour",
-        "nutriscore_grade": "b",
-        "product_name_fr": "Pizza Royale cuite au feu de bois \u00c9dam, Jambon, Champignons"
+        "product_name_fr": "Pizza 3 fromages"
     },
     {
-        "categories": "Pizzas",
-        "brands": "Bio Village,Marque Rep\u00e8re",
-        "url": "https://fr.openfoodfacts.org/produit/3564707119856/pizza-au-5-legumes-bio-village",
-        "code": "3564707119856",
-        "stores": "Leclerc",
-        "product_name_fr": "Pizza au 5 l\u00e9gumes",
-        "nutriscore_grade": "b"
-    },
-    {
-        "nutriscore_grade": "b",
-        "product_name_fr": "Pizza Margherita",
-        "categories": "Pizzas",
-        "code": "3564707128605",
-        "stores": "Leclerc",
-        "url": "https://fr.openfoodfacts.org/produit/3564707128605/pizza-margherita-bio-village",
-        "brands": "Bio Village,Marque Rep\u00e8re"
-    },
-    {
-        "categories": "Pizzas",
-        "brands": "Carrefour",
-        "url": "https://fr.openfoodfacts.org/produit/3560070124817/pizza-cuite-sur-pierre-4-formaggi-carrefour",
-        "stores": "Carrefour",
-        "code": "3560070124817",
-        "product_name_fr": "Pizza cuite sur pierre - 4 Formaggi",
-        "nutriscore_grade": "c"
-    },
-    {
-        "product_name_fr": "Pizza Margherita",
-        "nutriscore_grade": "d",
-        "categories": "Pizzas",
-        "url": "https://fr.openfoodfacts.org/produit/5400101258730/pizza-margherita-carrefour",
-        "brands": "Carrefour",
-        "code": "5400101258730",
-        "stores": "Carrefour"
-    },
-    {
-        "product_name_fr": "Pizza aux fruits de mer",
-        "nutriscore_grade": "a",
-        "url": "https://fr.openfoodfacts.org/produit/3564700007709/pizza-aux-fruits-de-mer-turini",
-        "brands": "Turini,Volpone,Marque Rep\u00e8re",
-        "code": "3564700007709",
-        "stores": "Leclerc",
-        "categories": "Pizzas"
-    },
-    {
-        "product_name_fr": "Pizza Margherita",
-        "nutriscore_grade": "c",
-        "categories": "Pizzas",
-        "url": "https://fr.openfoodfacts.org/produit/3760209680973/pizza-margherita-alice-bio",
-        "brands": "Alice & Bio",
-        "stores": "Auchan",
-        "code": "3760209680973"
-    },
-    {
-        "code": "3596710418374",
-        "stores": "Auchan",
-        "brands": "Auchan",
-        "url": "https://fr.openfoodfacts.org/produit/3596710418374/auchan-kit-pizza-600g",
-        "categories": "Pizzas",
-        "nutriscore_grade": "a",
-        "product_name_fr": "Auchan Kit Pizza 600g"
-    },
-    {
-        "nutriscore_grade": "c",
-        "product_name_fr": "Pizza Mozzarella cuite sur pierre",
-        "stores": "Lidl",
-        "code": "20516680",
-        "url": "https://fr.openfoodfacts.org/produit/20516680/pizza-mozzarella-cuite-sur-pierre-trattoria-alfredo",
-        "brands": "Trattoria alfredo",
-        "categories": "Pizzas"
-    },
-    {
-        "nutriscore_grade": "a",
-        "product_name_fr": "Pizza Poulet (poulet r\u00f4ti, poivrons rouges, oignons)",
-        "categories": "Pizzas",
-        "code": "3564700519714",
-        "stores": "Leclerc",
-        "brands": "Turini,Marque Rep\u00e8re",
-        "url": "https://fr.openfoodfacts.org/produit/3564700519714/pizza-poulet-poulet-roti-poivrons-rouges-oignons-turini"
-    },
-    {
-        "nutriscore_grade": "b",
-        "product_name_fr": "Deliziosa Margherita (XXL)",
-        "categories": "Pizzas",
-        "code": "20290023",
-        "stores": "Lidl",
-        "url": "https://fr.openfoodfacts.org/produit/20290023/deliziosa-margherita-xxl-trattoria-alfredo",
-        "brands": "Trattoria alfredo"
-    },
-    {
-        "categories": "Sandwichs",
-        "brands": "U",
-        "url": "https://fr.openfoodfacts.org/produit/3256224756774/sandwich-de-pain-de-mie-aux-cereales-thon-et-crudites-u",
-        "code": "3256224756774",
-        "stores": "Magasins U",
         "product_name_fr": "Sandwich de pain de mie aux c\u00e9r\u00e9ales thon et crudit\u00e9s",
-        "nutriscore_grade": "a"
+        "nutriscore_grade": "a",
+        "url": "https://fr.openfoodfacts.org/produit/3256224756774/sandwich-de-pain-de-mie-aux-cereales-thon-et-crudites-u",
+        "categories": "Sandwichs",
+        "code": "3256224756774",
+        "brands": "U",
+        "stores": "Magasins U"
     },
     {
-        "nutriscore_grade": "c",
         "product_name_fr": "Poulet Crudit\u00e9",
-        "code": "3560070953202",
         "stores": "Carrefour",
         "url": "https://fr.openfoodfacts.org/produit/3560070953202/poulet-crudite-bon-app",
+        "code": "3560070953202",
+        "categories": "Sandwichs",
         "brands": "Bon app',Carrefour",
-        "categories": "Sandwichs"
+        "nutriscore_grade": "c"
     },
     {
-        "nutriscore_grade": "b",
-        "product_name_fr": "Pause Snack Poulet r\u00f4ti Salade",
-        "stores": "Auchan",
         "code": "3596710413799",
-        "brands": "Auchan",
         "url": "https://fr.openfoodfacts.org/produit/3596710413799/pause-snack-poulet-roti-salade-auchan",
-        "categories": "Sandwichs"
+        "categories": "Sandwichs",
+        "brands": "Auchan",
+        "nutriscore_grade": "b",
+        "stores": "Auchan",
+        "product_name_fr": "Pause Snack Poulet r\u00f4ti Salade"
     },
     {
         "stores": "Lidl",
-        "code": "20146184",
-        "brands": "Chef Select to Go",
-        "url": "https://fr.openfoodfacts.org/produit/20146184/club-crudites-poulet-mayonnaise-allegee-chef-select-to-go",
-        "categories": "Sandwichs",
         "nutriscore_grade": "b",
+        "url": "https://fr.openfoodfacts.org/produit/20146184/club-crudites-poulet-mayonnaise-allegee-chef-select-to-go",
+        "brands": "Chef Select to Go",
+        "categories": "Sandwichs",
+        "code": "20146184",
         "product_name_fr": "Club Crudit\u00e9s Poulet Mayonnaise all\u00e9g\u00e9e"
     },
     {
-        "stores": "Lidl",
-        "code": "20593940",
-        "url": "https://fr.openfoodfacts.org/produit/20593940/maxi-bacon-burger-micro-ondable-chef-select-to-go",
-        "brands": "Chef Select to go,Chef to go Select",
-        "categories": "Sandwichs",
+        "product_name_fr": "Maxi Bacon Burger micro-ondable",
         "nutriscore_grade": "d",
-        "product_name_fr": "Maxi Bacon Burger micro-ondable"
+        "categories": "Sandwichs",
+        "url": "https://fr.openfoodfacts.org/produit/20593940/maxi-bacon-burger-micro-ondable-chef-select-to-go",
+        "code": "20593940",
+        "brands": "Chef Select to go,Chef to go Select",
+        "stores": "Lidl"
+    },
+    {
+        "categories": "Sandwichs",
+        "url": "https://fr.openfoodfacts.org/produit/20843243/maxi-chicken-burger-select-go",
+        "brands": "Select & Go",
+        "code": "20843243",
+        "nutriscore_grade": "d",
+        "stores": "Lidl",
+        "product_name_fr": "Maxi chicken burger"
     },
     {
         "stores": "U Express,Magasins U",
-        "code": "3256222245218",
+        "nutriscore_grade": "c",
         "url": "https://fr.openfoodfacts.org/produit/3256222245218/sandwich-club-poulet-roti-crudites-u",
         "brands": "U",
         "categories": "Sandwichs",
-        "nutriscore_grade": "c",
+        "code": "3256222245218",
         "product_name_fr": "Sandwich club poulet r\u00f4ti crudit\u00e9s"
     },
     {
         "product_name_fr": "Sandwich pain de mie Trio jambon",
         "nutriscore_grade": "c",
+        "code": "3560071005085",
+        "url": "https://fr.openfoodfacts.org/produit/3560071005085/sandwich-pain-de-mie-trio-jambon-bon-app-carrefour",
         "categories": "Sandwichs",
         "brands": "Bon App Carrefour,Bon App.",
-        "url": "https://fr.openfoodfacts.org/produit/3560071005085/sandwich-pain-de-mie-trio-jambon-bon-app-carrefour",
-        "stores": "Carrefour,Carrefour market",
-        "code": "3560071005085"
+        "stores": "Carrefour,Carrefour market"
     },
     {
-        "categories": "Sandwichs",
-        "code": "3596710413713",
+        "product_name_fr": "Pause Snack Thon oeuf",
         "stores": "Simply Market, Auchan",
+        "code": "3596710413713",
         "url": "https://fr.openfoodfacts.org/produit/3596710413713/pause-snack-thon-oeuf-auchan",
+        "categories": "Sandwichs",
         "brands": "Auchan,Pause Snack",
-        "nutriscore_grade": "c",
-        "product_name_fr": "Pause Snack Thon oeuf"
+        "nutriscore_grade": "c"
     },
     {
-        "code": "3560071196400",
+        "product_name_fr": "Sandwich Thon crudit\u00e9s \u0153ufs baguette viennoise",
         "stores": "Carrefour",
+        "categories": "Sandwichs",
         "url": "https://fr.openfoodfacts.org/produit/3560071196400/sandwich-thon-crudites-oeufs-baguette-viennoise-carrefour",
         "brands": "Carrefour",
-        "categories": "Sandwichs",
-        "nutriscore_grade": "b",
-        "product_name_fr": "Sandwich Thon crudit\u00e9s \u0153ufs baguette viennoise"
-    },
-    {
-        "categories": "Sandwichs",
-        "stores": "Lidl",
-        "code": "20637828",
-        "url": "https://fr.openfoodfacts.org/produit/20637828/poulet-emmental-mayonnaise-allegee-chef-select",
-        "brands": "Chef Select",
-        "nutriscore_grade": "d",
-        "product_name_fr": "Poulet Emmental Mayonnaise all\u00e9g\u00e9e"
+        "code": "3560071196400",
+        "nutriscore_grade": "b"
     },
     {
         "stores": "Intermarch\u00e9",
-        "code": "3250392495893",
+        "nutriscore_grade": "d",
+        "categories": "Sandwichs",
         "url": "https://fr.openfoodfacts.org/produit/3250392495893/burger-vegetal-veggie-marche",
         "brands": "Veggie March\u00e9",
-        "categories": "Sandwichs",
-        "nutriscore_grade": "d",
+        "code": "3250392495893",
         "product_name_fr": "Burger vegetal"
     },
     {
-        "code": "3263859494018",
         "stores": "Leader Price",
-        "brands": "Leader Price",
-        "url": "https://fr.openfoodfacts.org/produit/3263859494018/jambon-emmental-pain-de-mie-complet-leader-price",
         "categories": "Sandwichs",
+        "url": "https://fr.openfoodfacts.org/produit/3263859494018/jambon-emmental-pain-de-mie-complet-leader-price",
+        "code": "3263859494018",
+        "brands": "Leader Price",
         "nutriscore_grade": "d",
         "product_name_fr": "Jambon Emmental pain de mie complet"
     },
     {
-        "categories": "Sandwichs",
+        "stores": "Leader Price",
         "url": "https://fr.openfoodfacts.org/produit/3263859494711/poulet-a-l-indienne-leader-price",
+        "categories": "Sandwichs",
         "brands": "Leader Price",
         "code": "3263859494711",
-        "stores": "Leader Price",
-        "product_name_fr": "Poulet \u00e0 l'indienne",
-        "nutriscore_grade": "b"
+        "nutriscore_grade": "b",
+        "product_name_fr": "Poulet \u00e0 l'indienne"
     },
     {
-        "brands": "C\u00f4t\u00e9 Snack,Marque Rep\u00e8re",
+        "product_name_fr": "Sandwich thon-crudit\u00e9s",
+        "stores": "Leclerc",
+        "nutriscore_grade": "b",
+        "categories": "Sandwichs",
         "url": "https://fr.openfoodfacts.org/produit/3564700329252/sandwich-thon-crudites-cote-snack",
         "code": "3564700329252",
-        "stores": "Leclerc",
-        "categories": "Sandwichs",
-        "product_name_fr": "Sandwich thon-crudit\u00e9s",
-        "nutriscore_grade": "b"
+        "brands": "C\u00f4t\u00e9 Snack,Marque Rep\u00e8re"
     },
     {
         "nutriscore_grade": "a",
-        "product_name_fr": "thon oeuf crudit\u00e9s",
-        "stores": "Intermarch\u00e9",
-        "code": "3250392765019",
         "url": "https://fr.openfoodfacts.org/produit/3250392765019/thon-oeuf-crudites-monique-ranou",
+        "categories": "Sandwichs",
         "brands": "Monique Ranou",
-        "categories": "Sandwichs"
+        "code": "3250392765019",
+        "stores": "Intermarch\u00e9",
+        "product_name_fr": "thon oeuf crudit\u00e9s"
     },
     {
         "product_name_fr": "Jambon Cheddar",
-        "nutriscore_grade": "d",
-        "brands": "Chef Select to Go",
         "url": "https://fr.openfoodfacts.org/produit/20267674/jambon-cheddar-chef-select-to-go",
-        "code": "20267674",
-        "stores": "LIDL",
-        "categories": "Sandwichs"
-    },
-    {
+        "brands": "Chef Select to Go",
         "categories": "Sandwichs",
-        "url": "https://fr.openfoodfacts.org/produit/20637835/wraps-cheddar-sauce-burger-chef-select-to-go",
-        "brands": "Chef Select To Go,Lidl",
-        "stores": "Lidl",
-        "code": "20637835",
-        "product_name_fr": "Wraps cheddar sauce burger",
-        "nutriscore_grade": "c"
+        "code": "20267674",
+        "nutriscore_grade": "d",
+        "stores": "LIDL"
     },
     {
-        "product_name_fr": "3 Maxi Sandwichs Jambon Emmental",
+        "stores": "Lidl",
+        "brands": "Chef Select To Go,Lidl",
+        "url": "https://fr.openfoodfacts.org/produit/20637835/wraps-cheddar-sauce-burger-chef-select-to-go",
+        "categories": "Sandwichs",
+        "code": "20637835",
+        "nutriscore_grade": "c",
+        "product_name_fr": "Wraps cheddar sauce burger"
+    },
+    {
         "nutriscore_grade": "c",
         "url": "https://fr.openfoodfacts.org/produit/26052311/3-maxi-sandwichs-jambon-emmental-bisto",
-        "brands": "Bisto",
+        "categories": "Sandwichs",
         "code": "26052311",
+        "brands": "Bisto",
         "stores": "Aldi",
-        "categories": "Sandwichs"
+        "product_name_fr": "3 Maxi Sandwichs Jambon Emmental"
     },
     {
         "product_name_fr": "Sandwich Saumon fum\u00e9 Aneth - Pain polaire",
         "nutriscore_grade": "b",
-        "categories": "Sandwichs",
-        "url": "https://fr.openfoodfacts.org/produit/3222475401688/sandwich-saumon-fume-aneth-pain-polaire-casino",
         "brands": "Casino",
+        "url": "https://fr.openfoodfacts.org/produit/3222475401688/sandwich-saumon-fume-aneth-pain-polaire-casino",
+        "categories": "Sandwichs",
         "code": "3222475401688",
         "stores": "Casino"
     },
     {
-        "categories": "Sandwichs",
-        "brands": "Sodebo, le mega bun",
-        "url": "https://fr.openfoodfacts.org/produit/3242272952558/le-mega-bun-denver-sodebo",
-        "stores": "Carrefour Market",
-        "code": "3242272952558",
         "product_name_fr": "Le M\u00e9ga Bun DENVER",
-        "nutriscore_grade": "b"
+        "categories": "Sandwichs",
+        "url": "https://fr.openfoodfacts.org/produit/3242272952558/le-mega-bun-denver-sodebo",
+        "brands": "Sodebo, le mega bun",
+        "code": "3242272952558",
+        "nutriscore_grade": "b",
+        "stores": "Carrefour Market"
     },
     {
         "product_name_fr": "Sandwich au pain de mie complet garni de rosette de Lyon et de cornichons",
-        "nutriscore_grade": "e",
-        "brands": "U",
+        "stores": "Super U, Magasins U",
+        "categories": "Sandwichs",
         "url": "https://fr.openfoodfacts.org/produit/3256224756835/sandwich-au-pain-de-mie-complet-garni-de-rosette-de-lyon-et-de-cornichons-u",
         "code": "3256224756835",
-        "stores": "Super U, Magasins U",
-        "categories": "Sandwichs"
+        "brands": "U",
+        "nutriscore_grade": "e"
     },
     {
-        "categories": "Sandwichs",
-        "brands": "Carrefour",
-        "url": "https://fr.openfoodfacts.org/produit/3560070563654/bacon-oeuf-mimosa-carrefour",
-        "stores": "Carrefour Market, Carrefour",
-        "code": "3560070563654",
         "product_name_fr": "Bacon Oeuf Mimosa",
+        "stores": "Carrefour Market, Carrefour",
+        "url": "https://fr.openfoodfacts.org/produit/3560070563654/bacon-oeuf-mimosa-carrefour",
+        "brands": "Carrefour",
+        "categories": "Sandwichs",
+        "code": "3560070563654",
         "nutriscore_grade": "c"
     },
     {
-        "product_name_fr": "Pause Snack Thon Oeuf",
         "nutriscore_grade": "b",
-        "categories": "Sandwichs",
-        "brands": "Auchan",
         "url": "https://fr.openfoodfacts.org/produit/3596710413829/pause-snack-thon-oeuf-auchan",
+        "brands": "Auchan",
+        "categories": "Sandwichs",
+        "code": "3596710413829",
         "stores": "Auchan",
-        "code": "3596710413829"
+        "product_name_fr": "Pause Snack Thon Oeuf"
     },
     {
-        "nutriscore_grade": "d",
-        "product_name_fr": "Le Burger Rosti",
-        "categories": "Sandwichs",
         "stores": "Cora,Simply Market",
-        "code": "3181232137805",
+        "categories": "Sandwichs",
         "url": "https://fr.openfoodfacts.org/produit/3181232137805/le-burger-rosti-charal",
-        "brands": "Charal"
-    },
-    {
-        "categories": "Sandwichs",
-        "stores": "Magasins U",
-        "code": "3242272907152",
-        "url": "https://fr.openfoodfacts.org/produit/3242272907152/sandwich-maxi-simple-bon-jambon-beurre-sodebo",
-        "brands": "Sodebo,maxi simple & bon club",
-        "nutriscore_grade": "c",
-        "product_name_fr": "Sandwich Maxi Simple & Bon ! - Jambon Beurre"
-    },
-    {
-        "nutriscore_grade": "d",
-        "product_name_fr": "Le Ciabatta",
-        "stores": "Carrefour, Magasins U",
-        "code": "3367651007039",
-        "url": "https://fr.openfoodfacts.org/produit/3367651007039/le-ciabatta-daunat",
-        "brands": "Daunat",
-        "categories": "Sandwichs"
-    },
-    {
-        "code": "3181232138321",
-        "stores": "Magasins U",
-        "url": "https://fr.openfoodfacts.org/produit/3181232138321/2-bacons-burger-charal",
         "brands": "Charal",
-        "categories": "Sandwichs",
+        "code": "3181232137805",
         "nutriscore_grade": "d",
-        "product_name_fr": "2 Bacons Burger"
+        "product_name_fr": "Le Burger Rosti"
     },
     {
+        "product_name_fr": "Sandwich Maxi Simple & Bon ! - Jambon Beurre",
+        "url": "https://fr.openfoodfacts.org/produit/3242272907152/sandwich-maxi-simple-bon-jambon-beurre-sodebo",
         "categories": "Sandwichs",
-        "stores": "Carrefour Market,Banque alimentaire",
-        "code": "3242272848059",
-        "brands": "Sodebo",
-        "url": "https://fr.openfoodfacts.org/produit/3242272848059/le-sandwich-du-chef-jambon-cheddar-sodebo",
+        "brands": "Sodebo,maxi simple & bon club",
+        "code": "3242272907152",
         "nutriscore_grade": "c",
+        "stores": "Magasins U"
+    },
+    {
+        "stores": "Carrefour, Magasins U",
+        "nutriscore_grade": "d",
+        "url": "https://fr.openfoodfacts.org/produit/3367651007039/le-ciabatta-daunat",
+        "code": "3367651007039",
+        "categories": "Sandwichs",
+        "brands": "Daunat",
+        "product_name_fr": "Le Ciabatta"
+    },
+    {
+        "product_name_fr": "2 Bacons Burger",
+        "stores": "Magasins U",
+        "nutriscore_grade": "d",
+        "url": "https://fr.openfoodfacts.org/produit/3181232138321/2-bacons-burger-charal",
+        "categories": "Sandwichs",
+        "brands": "Charal",
+        "code": "3181232138321"
+    },
+    {
+        "nutriscore_grade": "c",
+        "url": "https://fr.openfoodfacts.org/produit/3242272848059/le-sandwich-du-chef-jambon-cheddar-sodebo",
+        "brands": "Sodebo",
+        "categories": "Sandwichs",
+        "code": "3242272848059",
+        "stores": "Carrefour Market,Banque alimentaire",
         "product_name_fr": "Le Sandwich du Chef Jambon Cheddar"
     },
     {
-        "categories": "Sandwichs",
+        "product_name_fr": "Sandwich Simple & Bon ! Club Viennois - Thon Crudit\u00e9s",
         "code": "3242272867050",
-        "stores": "Magasins U",
         "url": "https://fr.openfoodfacts.org/produit/3242272867050/sandwich-simple-bon-club-viennois-thon-crudites-sodebo",
+        "categories": "Sandwichs",
         "brands": "Sodebo, simple & bon club",
         "nutriscore_grade": "b",
-        "product_name_fr": "Sandwich Simple & Bon ! Club Viennois - Thon Crudit\u00e9s"
+        "stores": "Magasins U"
     },
     {
-        "categories": "Sandwichs",
-        "stores": "Picard",
-        "code": "3270160473441",
-        "url": "https://fr.openfoodfacts.org/produit/3270160473441/mini-croque-monsieur-picard",
-        "brands": "Picard",
-        "nutriscore_grade": "d",
-        "product_name_fr": "Mini Croque-Monsieur"
-    },
-    {
-        "product_name_fr": "LE BIG TASTY\u2122",
-        "nutriscore_grade": "d",
-        "url": "https://fr.openfoodfacts.org/produit/2000000025785/le-big-tasty-mcdonald-s",
         "brands": "McDonald's",
-        "stores": "McDonald's",
+        "url": "https://fr.openfoodfacts.org/produit/2000000025785/le-big-tasty-mcdonald-s",
+        "categories": "Sandwichs",
         "code": "2000000025785",
-        "categories": "Sandwichs"
+        "nutriscore_grade": "d",
+        "stores": "McDonald's",
+        "product_name_fr": "LE BIG TASTY\u2122"
     },
     {
-        "product_name_fr": "Salade Poulet R\u00f4ti sauce Tandoori",
-        "nutriscore_grade": "c",
-        "brands": "Chef Select to Go",
         "url": "https://fr.openfoodfacts.org/produit/20638634/salade-poulet-roti-sauce-tandoori-chef-select-to-go",
         "code": "20638634",
+        "categories": "Sandwichs",
+        "brands": "Chef Select to Go",
+        "nutriscore_grade": "c",
         "stores": "LIDL",
-        "categories": "Sandwichs"
+        "product_name_fr": "Salade Poulet R\u00f4ti sauce Tandoori"
     },
     {
+        "product_name_fr": "Sandwich Le M\u00e9ga - Baguette - Jambon Chorizo Mayo l\u00e9g\u00e8re",
+        "stores": "Magasins U",
+        "nutriscore_grade": "c",
+        "url": "https://fr.openfoodfacts.org/produit/3242272920557/sandwich-le-mega-baguette-jambon-chorizo-mayo-legere-sodebo",
+        "brands": "Sodebo,le mega baguette",
+        "categories": "Sandwichs",
+        "code": "3242272920557"
+    },
+    {
+        "product_name_fr": "Poulet r\u00f4ti sauce Caesar",
+        "url": "https://fr.openfoodfacts.org/produit/3263859100117/poulet-roti-sauce-caesar-leader-price",
+        "brands": "Leader Price",
         "categories": "Sandwichs",
         "code": "3263859100117",
-        "stores": "Leader Price",
-        "brands": "Leader Price",
-        "url": "https://fr.openfoodfacts.org/produit/3263859100117/poulet-roti-sauce-caesar-leader-price",
         "nutriscore_grade": "a",
-        "product_name_fr": "Poulet r\u00f4ti sauce Caesar"
+        "stores": "Leader Price"
     },
     {
-        "nutriscore_grade": "b",
-        "product_name_fr": "Wrap Poulet Caesar",
         "stores": "Monoprix",
-        "code": "3350033181977",
+        "nutriscore_grade": "b",
+        "categories": "Sandwichs",
         "url": "https://fr.openfoodfacts.org/produit/3350033181977/wrap-poulet-caesar-monoprix",
+        "code": "3350033181977",
         "brands": "Monoprix",
-        "categories": "Sandwichs"
+        "product_name_fr": "Wrap Poulet Caesar"
     },
     {
-        "product_name_fr": "Loves Mie Poulet Emmental",
         "nutriscore_grade": "c",
+        "code": "3367651003895",
+        "url": "https://fr.openfoodfacts.org/produit/3367651003895/loves-mie-poulet-emmental-daunat",
         "categories": "Sandwichs",
         "brands": "Daunat",
-        "url": "https://fr.openfoodfacts.org/produit/3367651003895/loves-mie-poulet-emmental-daunat",
-        "code": "3367651003895",
-        "stores": "Auchan, Magasins U"
+        "stores": "Auchan, Magasins U",
+        "product_name_fr": "Loves Mie Poulet Emmental"
     },
     {
-        "product_name_fr": "Bagel Saumon Fum\u00e9",
-        "nutriscore_grade": "c",
-        "categories": "Sandwichs",
-        "url": "https://fr.openfoodfacts.org/produit/3560070903238/bagel-saumon-fume-bon-app",
-        "brands": "Bon App,Carrefour",
         "stores": "Carrefour",
-        "code": "3560070903238"
-    },
-    {
-        "url": "https://fr.openfoodfacts.org/produit/3596710348800/sandwich-grand-viennois-thon-tomate-oeuf-auchan",
-        "brands": "Auchan",
-        "code": "3596710348800",
-        "stores": "Auchan",
+        "code": "3560070903238",
+        "url": "https://fr.openfoodfacts.org/produit/3560070903238/bagel-saumon-fume-bon-app",
         "categories": "Sandwichs",
-        "product_name_fr": "Sandwich Grand Viennois Thon Tomate Oeuf",
-        "nutriscore_grade": "b"
+        "brands": "Bon App,Carrefour",
+        "nutriscore_grade": "c",
+        "product_name_fr": "Bagel Saumon Fum\u00e9"
     },
     {
+        "product_name_fr": "Sandwich Grand Viennois Thon Tomate Oeuf",
+        "stores": "Auchan",
+        "nutriscore_grade": "b",
+        "url": "https://fr.openfoodfacts.org/produit/3596710348800/sandwich-grand-viennois-thon-tomate-oeuf-auchan",
+        "code": "3596710348800",
+        "categories": "Sandwichs",
+        "brands": "Auchan"
+    },
+    {
+        "stores": "Simply Market,Auchan",
+        "nutriscore_grade": "c",
+        "brands": "Auchan,Pause Snack",
+        "url": "https://fr.openfoodfacts.org/produit/3596710378227/pause-snack-duo-de-saumon-auchan",
         "categories": "Sandwichs",
         "code": "3596710378227",
-        "stores": "Simply Market,Auchan",
-        "url": "https://fr.openfoodfacts.org/produit/3596710378227/pause-snack-duo-de-saumon-auchan",
-        "brands": "Auchan,Pause Snack",
-        "nutriscore_grade": "c",
         "product_name_fr": "Pause Snack Duo de Saumon"
     },
     {
-        "nutriscore_grade": "d",
-        "product_name_fr": "Pause Snack Jambon Emmental",
-        "categories": "Sandwichs",
         "stores": "Simply Market,Auchan",
-        "code": "3596710413737",
         "url": "https://fr.openfoodfacts.org/produit/3596710413737/pause-snack-jambon-emmental-auchan",
-        "brands": "Auchan,Pause Snack"
+        "code": "3596710413737",
+        "categories": "Sandwichs",
+        "brands": "Auchan,Pause Snack",
+        "nutriscore_grade": "d",
+        "product_name_fr": "Pause Snack Jambon Emmental"
     },
     {
-        "categories": "Sandwichs",
-        "stores": "Picard",
-        "code": "3270160861637",
-        "brands": "Picard",
-        "url": "https://fr.openfoodfacts.org/produit/3270160861637/burrito-bowl-picard",
+        "product_name_fr": "Burrito bowl",
         "nutriscore_grade": "a",
-        "product_name_fr": "Burrito bowl"
+        "code": "3270160861637",
+        "url": "https://fr.openfoodfacts.org/produit/3270160861637/burrito-bowl-picard",
+        "categories": "Sandwichs",
+        "brands": "Picard",
+        "stores": "Picard"
     },
     {
-        "product_name_fr": "Sandwich Jambon Emmental Pain de mie complet",
         "nutriscore_grade": "d",
-        "brands": "Casino",
         "url": "https://fr.openfoodfacts.org/produit/3222472642473/sandwich-jambon-emmental-pain-de-mie-complet-casino",
+        "categories": "Sandwichs",
         "code": "3222472642473",
+        "brands": "Casino",
         "stores": "Vival, Casino",
-        "categories": "Sandwichs"
+        "product_name_fr": "Sandwich Jambon Emmental Pain de mie complet"
     },
     {
-        "product_name_fr": "Sandwich Le Grand Classic - Poulet r\u00f4ti Mayo l\u00e9g\u00e8re Oeuf",
+        "stores": "Casino",
+        "nutriscore_grade": "b",
+        "url": "https://fr.openfoodfacts.org/produit/3222475401527/sandwich-poulet-roti-moutarde-casino",
+        "code": "3222475401527",
+        "categories": "Sandwichs",
+        "brands": "Casino",
+        "product_name_fr": "Sandwich poulet r\u00f4ti moutarde"
+    },
+    {
+        "stores": "Cora,France",
         "nutriscore_grade": "b",
         "categories": "Sandwichs",
-        "brands": "Sodebo,le grand classic baguette",
         "url": "https://fr.openfoodfacts.org/produit/3242272884156/sandwich-le-grand-classic-poulet-roti-mayo-legere-oeuf-sodebo",
+        "brands": "Sodebo,le grand classic baguette",
         "code": "3242272884156",
-        "stores": "Cora,France"
+        "product_name_fr": "Sandwich Le Grand Classic - Poulet r\u00f4ti Mayo l\u00e9g\u00e8re Oeuf"
     },
     {
-        "nutriscore_grade": "d",
         "product_name_fr": "Sandwich au pain sp\u00e9cial garni de jambon cuit choix, d'emmental et desalade",
-        "categories": "Sandwichs",
         "stores": "Magasins U",
-        "code": "3256224756781",
+        "nutriscore_grade": "d",
+        "url": "https://fr.openfoodfacts.org/produit/3256224756781/sandwich-au-pain-special-garni-de-jambon-cuit-choix-d-emmental-et-desalade-u",
         "brands": "U",
-        "url": "https://fr.openfoodfacts.org/produit/3256224756781/sandwich-au-pain-special-garni-de-jambon-cuit-choix-d-emmental-et-desalade-u"
-    },
-    {
         "categories": "Sandwichs",
-        "brands": "U",
-        "url": "https://fr.openfoodfacts.org/produit/3256224756897/sandwich-baguette-viennoise-filet-de-poulet-et-crudites-u",
-        "stores": "Super U, Magasins U",
-        "code": "3256224756897",
-        "product_name_fr": "Sandwich baguette viennoise filet de poulet et crudit\u00e9s",
-        "nutriscore_grade": "b"
+        "code": "3256224756781"
     },
     {
-        "product_name_fr": "Sandwich au pain de mie complet garni de thon \u00e9minc\u00e9 au naturel, de crudit\u00e9s et d'oeuf",
+        "product_name_fr": "Sandwich baguette viennoise filet de poulet et crudit\u00e9s",
         "nutriscore_grade": "b",
         "categories": "Sandwichs",
+        "url": "https://fr.openfoodfacts.org/produit/3256224756897/sandwich-baguette-viennoise-filet-de-poulet-et-crudites-u",
+        "code": "3256224756897",
         "brands": "U",
-        "url": "https://fr.openfoodfacts.org/produit/3256224759355/sandwich-au-pain-de-mie-complet-garni-de-thon-emince-au-naturel-de-crudites-et-d-oeuf-u",
-        "code": "3256224759355",
         "stores": "Super U, Magasins U"
     },
     {
-        "brands": "Monop'Daily",
-        "url": "https://fr.openfoodfacts.org/produit/3350033021150/le-club-jambon-emmental-monop-daily",
-        "stores": "Monoprix",
-        "code": "3350033021150",
-        "categories": "Sandwichs",
-        "product_name_fr": "Le club jambon emmental",
-        "nutriscore_grade": "d"
-    },
-    {
+        "stores": "Super U, Magasins U",
         "nutriscore_grade": "b",
-        "product_name_fr": "Wrap jambon tzatziki",
-        "code": "3350033181953",
-        "stores": "TGV Paris-Lyon, Monoprix",
-        "brands": "Monoprix",
-        "url": "https://fr.openfoodfacts.org/produit/3350033181953/wrap-jambon-tzatziki-monoprix",
-        "categories": "Sandwichs"
+        "brands": "U",
+        "url": "https://fr.openfoodfacts.org/produit/3256224759355/sandwich-au-pain-de-mie-complet-garni-de-thon-emince-au-naturel-de-crudites-et-d-oeuf-u",
+        "categories": "Sandwichs",
+        "code": "3256224759355",
+        "product_name_fr": "Sandwich au pain de mie complet garni de thon \u00e9minc\u00e9 au naturel, de crudit\u00e9s et d'oeuf"
     },
     {
-        "stores": "Auchan",
+        "product_name_fr": "Le club jambon emmental",
+        "stores": "Monoprix",
+        "nutriscore_grade": "d",
+        "url": "https://fr.openfoodfacts.org/produit/3350033021150/le-club-jambon-emmental-monop-daily",
+        "brands": "Monop'Daily",
+        "categories": "Sandwichs",
+        "code": "3350033021150"
+    },
+    {
+        "stores": "TGV Paris-Lyon, Monoprix",
+        "nutriscore_grade": "b",
+        "code": "3350033181953",
+        "url": "https://fr.openfoodfacts.org/produit/3350033181953/wrap-jambon-tzatziki-monoprix",
+        "categories": "Sandwichs",
+        "brands": "Monoprix",
+        "product_name_fr": "Wrap jambon tzatziki"
+    },
+    {
         "code": "3367651002553",
         "url": "https://fr.openfoodfacts.org/produit/3367651002553/jambon-comte-a-o-p-daunature",
-        "brands": "Daunature,Daunat",
         "categories": "Sandwichs",
+        "brands": "Daunature,Daunat",
         "nutriscore_grade": "c",
+        "stores": "Auchan",
         "product_name_fr": "Jambon Comt\u00e9 A.O.P"
     },
     {
         "stores": "Leclerc, Magasins U",
-        "code": "3367651004540",
+        "categories": "Sandwichs",
         "url": "https://fr.openfoodfacts.org/produit/3367651004540/le-gouteux-rosette-de-lyon-cornichons-daunat",
         "brands": "Daunat",
-        "categories": "Sandwichs",
+        "code": "3367651004540",
         "nutriscore_grade": "d",
         "product_name_fr": "Le Go\u00fbteux, Rosette de Lyon cornichons"
     },
     {
-        "product_name_fr": "Le Club classique pain complet Poulet r\u00f4ti crudit\u00e9s",
-        "nutriscore_grade": "b",
-        "brands": "Daunat,Le Club",
-        "url": "https://fr.openfoodfacts.org/produit/3367651005059/le-club-classique-pain-complet-poulet-roti-crudites-daunat",
-        "code": "3367651005059",
         "stores": "Carrefour",
-        "categories": "Sandwichs"
+        "categories": "Sandwichs",
+        "url": "https://fr.openfoodfacts.org/produit/3367651005059/le-club-classique-pain-complet-poulet-roti-crudites-daunat",
+        "brands": "Daunat,Le Club",
+        "code": "3367651005059",
+        "nutriscore_grade": "b",
+        "product_name_fr": "Le Club classique pain complet Poulet r\u00f4ti crudit\u00e9s"
     },
     {
-        "nutriscore_grade": "d",
-        "product_name_fr": "Sandwich jambon beurre",
-        "code": "3564700329092",
-        "stores": "Leclerc",
+        "categories": "Sandwichs",
         "url": "https://fr.openfoodfacts.org/produit/3564700329092/sandwich-jambon-beurre-cote-snack",
         "brands": "C\u00f4t\u00e9 Snack, Marque Rep\u00e8re",
-        "categories": "Sandwichs"
-    },
-    {
-        "categories": "Sandwichs",
-        "url": "https://fr.openfoodfacts.org/produit/7613036278621/tendre-croc-herta",
-        "brands": "Herta",
-        "stores": "Magasins U,Carrefour",
-        "code": "7613036278621",
-        "product_name_fr": "Tendre croc'",
-        "nutriscore_grade": "d"
-    },
-    {
-        "brands": "Chef to go select",
-        "url": "https://fr.openfoodfacts.org/produit/20711528/sandwich-rosette-chef-to-go-select",
-        "stores": "Lidl",
-        "code": "20711528",
-        "categories": "Sandwichs",
-        "product_name_fr": "Sandwich rosette",
-        "nutriscore_grade": "e"
-    },
-    {
-        "nutriscore_grade": "b",
-        "product_name_fr": "Croque-monsieur gratin\u00e9s jambon fromage",
-        "stores": "Aldi",
-        "code": "26066714",
-        "url": "https://fr.openfoodfacts.org/produit/26066714/croque-monsieur-gratines-jambon-fromage-bistro-vite",
-        "brands": "Bistro'vite!",
-        "categories": "Sandwichs"
-    },
-    {
-        "categories": "Sandwichs",
-        "code": "3181232138635",
-        "stores": "Cora,Carrefour",
-        "brands": "Charal",
-        "url": "https://fr.openfoodfacts.org/produit/3181232138635/kebab-au-boeuf-charal",
+        "code": "3564700329092",
         "nutriscore_grade": "d",
-        "product_name_fr": "Kebab au boeuf"
+        "stores": "Leclerc",
+        "product_name_fr": "Sandwich jambon beurre"
     },
     {
-        "nutriscore_grade": "b",
-        "product_name_fr": "Bacon oeuf tomates",
+        "stores": "Magasins U,Carrefour",
+        "nutriscore_grade": "d",
+        "code": "7613036278621",
+        "url": "https://fr.openfoodfacts.org/produit/7613036278621/tendre-croc-herta",
         "categories": "Sandwichs",
-        "code": "3560070711840",
+        "brands": "Herta",
+        "product_name_fr": "Tendre croc'"
+    },
+    {
+        "product_name_fr": "Sandwich rosette",
+        "nutriscore_grade": "e",
+        "categories": "Sandwichs",
+        "url": "https://fr.openfoodfacts.org/produit/20711528/sandwich-rosette-chef-to-go-select",
+        "brands": "Chef to go select",
+        "code": "20711528",
+        "stores": "Lidl"
+    },
+    {
+        "stores": "Aldi",
+        "url": "https://fr.openfoodfacts.org/produit/26066714/croque-monsieur-gratines-jambon-fromage-bistro-vite",
+        "categories": "Sandwichs",
+        "brands": "Bistro'vite!",
+        "code": "26066714",
+        "nutriscore_grade": "b",
+        "product_name_fr": "Croque-monsieur gratin\u00e9s jambon fromage"
+    },
+    {
+        "product_name_fr": "Bacon oeuf tomates",
         "stores": "Carrefour market, Carrefour",
         "brands": "Bon app',Carrefour",
-        "url": "https://fr.openfoodfacts.org/produit/3560070711840/bacon-oeuf-tomates-bon-app"
-    },
-    {
+        "url": "https://fr.openfoodfacts.org/produit/3560070711840/bacon-oeuf-tomates-bon-app",
         "categories": "Sandwichs",
-        "stores": "Auchan",
-        "code": "3596710414031",
-        "url": "https://fr.openfoodfacts.org/produit/3596710414031/sandwich-poulet-tandoori-auchan",
-        "brands": "Auchan",
-        "nutriscore_grade": "b",
-        "product_name_fr": "Sandwich Poulet Tandoori"
-    },
-    {
-        "product_name_fr": "Pause snack 3x Poulets emmental - salade - pain su\u00e9dois",
-        "nutriscore_grade": "b",
-        "categories": "Sandwichs",
-        "url": "https://fr.openfoodfacts.org/produit/3596710434152/pause-snack-3x-poulets-emmental-salade-pain-suedois-auchan",
-        "brands": "Auchan,Pause Snack",
-        "code": "3596710434152",
-        "stores": "Auchan"
-    },
-    {
-        "url": "https://fr.openfoodfacts.org/produit/3596710452521/pause-snack-auchan",
-        "brands": "Auchan",
-        "code": "3596710452521",
-        "stores": "Auchan",
-        "categories": "Sandwichs",
-        "product_name_fr": "Pause snack",
+        "code": "3560070711840",
         "nutriscore_grade": "b"
     },
     {
-        "nutriscore_grade": "b",
-        "product_name_fr": "Sandwich jambon emmental",
-        "stores": "Intermarch\u00e9",
-        "code": "3250392764982",
-        "url": "https://fr.openfoodfacts.org/produit/3250392764982/sandwich-jambon-emmental-monique-ranou",
-        "brands": "Monique Ranou",
-        "categories": "Sandwichs"
+        "product_name_fr": "Sandwich Poulet Tandoori",
+        "stores": "Auchan",
+        "url": "https://fr.openfoodfacts.org/produit/3596710414031/sandwich-poulet-tandoori-auchan",
+        "categories": "Sandwichs",
+        "code": "3596710414031",
+        "brands": "Auchan",
+        "nutriscore_grade": "b"
     },
     {
-        "product_name_fr": "20 mini-croque poulet",
+        "stores": "Auchan",
+        "brands": "Auchan,Pause Snack",
+        "url": "https://fr.openfoodfacts.org/produit/3596710434152/pause-snack-3x-poulets-emmental-salade-pain-suedois-auchan",
+        "categories": "Sandwichs",
+        "code": "3596710434152",
+        "nutriscore_grade": "b",
+        "product_name_fr": "Pause snack 3x Poulets emmental - salade - pain su\u00e9dois"
+    },
+    {
+        "stores": "Auchan",
+        "nutriscore_grade": "b",
+        "url": "https://fr.openfoodfacts.org/produit/3596710452521/pause-snack-auchan",
+        "brands": "Auchan",
+        "categories": "Sandwichs",
+        "code": "3596710452521",
+        "product_name_fr": "Pause snack"
+    },
+    {
+        "product_name_fr": "Sandwich jambon emmental",
+        "stores": "Intermarch\u00e9",
+        "nutriscore_grade": "b",
+        "categories": "Sandwichs",
+        "url": "https://fr.openfoodfacts.org/produit/3250392764982/sandwich-jambon-emmental-monique-ranou",
+        "brands": "Monique Ranou",
+        "code": "3250392764982"
+    },
+    {
+        "stores": "Picard",
         "nutriscore_grade": "c",
         "brands": "picard",
         "url": "https://fr.openfoodfacts.org/produit/3270160891054/20-mini-croque-poulet-picard",
-        "stores": "Picard",
+        "categories": "Sandwichs",
         "code": "3270160891054",
-        "categories": "Sandwichs"
+        "product_name_fr": "20 mini-croque poulet"
     },
     {
         "product_name_fr": "McWrap Poulet et Bacon",
+        "stores": "McDonald's",
         "nutriscore_grade": "b",
         "categories": "Sandwichs",
-        "brands": "McDonald's",
         "url": "https://fr.openfoodfacts.org/produit/2000000027169/mcwrap-poulet-et-bacon-mcdonald-s",
-        "code": "2000000027169",
-        "stores": "McDonald's"
+        "brands": "McDonald's",
+        "code": "2000000027169"
     },
     {
-        "categories": "Sandwichs",
-        "code": "26040851",
+        "product_name_fr": "Cheese Burger Maxi",
         "stores": "Aldi",
         "url": "https://fr.openfoodfacts.org/produit/26040851/cheese-burger-maxi-bistro-vite",
+        "categories": "Sandwichs",
         "brands": "Bistro vite",
-        "nutriscore_grade": "c",
-        "product_name_fr": "Cheese Burger Maxi"
-    },
-    {
-        "categories": "Sandwichs",
-        "code": "3222472642329",
-        "stores": "Casino",
-        "url": "https://fr.openfoodfacts.org/produit/3222472642329/sandwich-jambon-beurre-pain-de-mie-au-son-de-ble-casino",
-        "brands": "Casino",
-        "nutriscore_grade": "d",
-        "product_name_fr": "Sandwich Jambon beurre - Pain de mie au son de bl\u00e9"
-    },
-    {
-        "product_name_fr": "Sandwich Le Classic - Jambon sup\u00e9rieur Emmental",
-        "nutriscore_grade": "d",
-        "brands": "Sodebo, le classic baguette",
-        "url": "https://fr.openfoodfacts.org/produit/3242272875055/sandwich-le-classic-jambon-superieur-emmental-sodebo",
-        "stores": "Distributeur",
-        "code": "3242272875055",
-        "categories": "Sandwichs"
-    },
-    {
-        "nutriscore_grade": "c",
-        "product_name_fr": "Le FRESH jambon cru & fromage frais",
-        "stores": "carrefour",
-        "code": "3242272968054",
-        "brands": "sodebo",
-        "url": "https://fr.openfoodfacts.org/produit/3242272968054/le-fresh-jambon-cru-fromage-frais-sodebo",
-        "categories": "Sandwichs"
-    },
-    {
-        "stores": "Intermarch\u00e9",
-        "code": "3242272980957",
-        "url": "https://fr.openfoodfacts.org/produit/3242272980957/sandwich-le-mega-club-jambon-fume-oeuf-x3-pain-viennois-sodebo",
-        "brands": "Sodebo, le mega club",
-        "categories": "Sandwichs",
-        "nutriscore_grade": "c",
-        "product_name_fr": "Sandwich Le M\u00e9ga - Club - Jambon fum\u00e9 \u0152uf x3 / pain viennois"
-    },
-    {
-        "brands": "U",
-        "url": "https://fr.openfoodfacts.org/produit/3256221415766/sandwich-polaire-garni-de-poulet-roti-traite-en-salaison-et-sauce-assaisonnee-kebab-u",
-        "stores": "Magasins U",
-        "code": "3256221415766",
-        "categories": "Sandwichs",
-        "product_name_fr": "Sandwich polaire garni de poulet roti trait\u00e9 en salaison et sauce assaisonn\u00e9e kebab",
-        "nutriscore_grade": "b"
-    },
-    {
-        "url": "https://fr.openfoodfacts.org/produit/3256224759331/sandwich-maxi-jambon-emmental-et-crudites-u",
-        "brands": "U",
-        "stores": "Magasins U",
-        "code": "3256224759331",
-        "categories": "Sandwichs",
-        "product_name_fr": "Sandwich maxi jambon emmental et crudit\u00e9s",
-        "nutriscore_grade": "b"
-    },
-    {
-        "product_name_fr": "Wrap jambon cuit crudit\u00e9s tzatziki",
-        "nutriscore_grade": "b",
-        "brands": "U",
-        "url": "https://fr.openfoodfacts.org/produit/3256225038350/wrap-jambon-cuit-crudites-tzatziki-u",
-        "stores": "Magasins U",
-        "code": "3256225038350",
-        "categories": "Sandwichs"
-    },
-    {
-        "product_name_fr": "Sandwich maxi club, pain polaire, jambon cheddar",
-        "nutriscore_grade": "d",
-        "categories": "Sandwichs",
-        "url": "https://fr.openfoodfacts.org/produit/3256225436460/sandwich-maxi-club-pain-polaire-jambon-cheddar-u",
-        "brands": "U",
-        "stores": "Magasins U",
-        "code": "3256225436460"
-    },
-    {
-        "code": "3263859494612",
-        "stores": "Leader Price",
-        "url": "https://fr.openfoodfacts.org/produit/3263859494612/jambon-beurre-leader-price",
-        "brands": "Leader Price",
-        "categories": "Sandwichs",
-        "nutriscore_grade": "d",
-        "product_name_fr": "Jambon Beurre"
-    },
-    {
-        "product_name_fr": "Maxi Jambon Beurre",
-        "nutriscore_grade": "d",
-        "brands": "Bon App',Carrefour",
-        "url": "https://fr.openfoodfacts.org/produit/3560070564248/maxi-jambon-beurre-bon-app",
-        "stores": "Carrefour",
-        "code": "3560070564248",
-        "categories": "Sandwichs"
-    },
-    {
-        "categories": "Sandwichs",
-        "url": "https://fr.openfoodfacts.org/produit/3564700511503/sandwich-polaire-saumon-fume-et-fromage-cote-snack",
-        "brands": "C\u00f4t\u00e9 Snack,Marque Rep\u00e8re",
-        "code": "3564700511503",
-        "stores": "Leclerc",
-        "product_name_fr": "Sandwich polaire saumon fum\u00e9 et fromage",
+        "code": "26040851",
         "nutriscore_grade": "c"
     },
     {
+        "product_name_fr": "Sandwich Jambon beurre - Pain de mie au son de bl\u00e9",
+        "nutriscore_grade": "d",
+        "url": "https://fr.openfoodfacts.org/produit/3222472642329/sandwich-jambon-beurre-pain-de-mie-au-son-de-ble-casino",
+        "brands": "Casino",
         "categories": "Sandwichs",
-        "stores": "auchan V2, Auchan",
-        "code": "3596710399277",
-        "url": "https://fr.openfoodfacts.org/produit/3596710399277/wrap-poulet-sauce-cesar-auchan",
-        "brands": "AUCHAN",
+        "code": "3222472642329",
+        "stores": "Casino"
+    },
+    {
+        "product_name_fr": "Sandwich Le Classic - Jambon sup\u00e9rieur Emmental",
+        "url": "https://fr.openfoodfacts.org/produit/3242272875055/sandwich-le-classic-jambon-superieur-emmental-sodebo",
+        "brands": "Sodebo, le classic baguette",
+        "categories": "Sandwichs",
+        "code": "3242272875055",
+        "nutriscore_grade": "d",
+        "stores": "Distributeur"
+    },
+    {
+        "product_name_fr": "Le FRESH jambon cru & fromage frais",
+        "stores": "carrefour",
+        "nutriscore_grade": "c",
+        "categories": "Sandwichs",
+        "url": "https://fr.openfoodfacts.org/produit/3242272968054/le-fresh-jambon-cru-fromage-frais-sodebo",
+        "brands": "sodebo",
+        "code": "3242272968054"
+    },
+    {
+        "product_name_fr": "Sandwich Le M\u00e9ga - Club - Jambon fum\u00e9 \u0152uf x3 / pain viennois",
+        "nutriscore_grade": "c",
+        "url": "https://fr.openfoodfacts.org/produit/3242272980957/sandwich-le-mega-club-jambon-fume-oeuf-x3-pain-viennois-sodebo",
+        "brands": "Sodebo, le mega club",
+        "categories": "Sandwichs",
+        "code": "3242272980957",
+        "stores": "Intermarch\u00e9"
+    },
+    {
+        "product_name_fr": "Sandwich polaire garni de poulet roti trait\u00e9 en salaison et sauce assaisonn\u00e9e kebab",
+        "stores": "Magasins U",
         "nutriscore_grade": "b",
-        "product_name_fr": "Wrap poulet sauce c\u00e9sar"
+        "url": "https://fr.openfoodfacts.org/produit/3256221415766/sandwich-polaire-garni-de-poulet-roti-traite-en-salaison-et-sauce-assaisonnee-kebab-u",
+        "categories": "Sandwichs",
+        "brands": "U",
+        "code": "3256221415766"
+    },
+    {
+        "product_name_fr": "Sandwich maxi jambon emmental et crudit\u00e9s",
+        "url": "https://fr.openfoodfacts.org/produit/3256224759331/sandwich-maxi-jambon-emmental-et-crudites-u",
+        "brands": "U",
+        "categories": "Sandwichs",
+        "code": "3256224759331",
+        "nutriscore_grade": "b",
+        "stores": "Magasins U"
+    },
+    {
+        "product_name_fr": "Wrap jambon cuit crudit\u00e9s tzatziki",
+        "stores": "Magasins U",
+        "nutriscore_grade": "b",
+        "url": "https://fr.openfoodfacts.org/produit/3256225038350/wrap-jambon-cuit-crudites-tzatziki-u",
+        "code": "3256225038350",
+        "categories": "Sandwichs",
+        "brands": "U"
+    },
+    {
+        "product_name_fr": "Sandwich maxi club, pain polaire, jambon cheddar",
+        "stores": "Magasins U",
+        "nutriscore_grade": "d",
+        "url": "https://fr.openfoodfacts.org/produit/3256225436460/sandwich-maxi-club-pain-polaire-jambon-cheddar-u",
+        "categories": "Sandwichs",
+        "code": "3256225436460",
+        "brands": "U"
+    },
+    {
+        "product_name_fr": "Jambon Beurre",
+        "url": "https://fr.openfoodfacts.org/produit/3263859494612/jambon-beurre-leader-price",
+        "brands": "Leader Price",
+        "categories": "Sandwichs",
+        "code": "3263859494612",
+        "nutriscore_grade": "d",
+        "stores": "Leader Price"
+    },
+    {
+        "product_name_fr": "Maxi Jambon Beurre",
+        "stores": "Carrefour",
+        "nutriscore_grade": "d",
+        "code": "3560070564248",
+        "url": "https://fr.openfoodfacts.org/produit/3560070564248/maxi-jambon-beurre-bon-app",
+        "categories": "Sandwichs",
+        "brands": "Bon App',Carrefour"
+    },
+    {
+        "product_name_fr": "Sandwich polaire saumon fum\u00e9 et fromage",
+        "stores": "Leclerc",
+        "nutriscore_grade": "c",
+        "code": "3564700511503",
+        "url": "https://fr.openfoodfacts.org/produit/3564700511503/sandwich-polaire-saumon-fume-et-fromage-cote-snack",
+        "categories": "Sandwichs",
+        "brands": "C\u00f4t\u00e9 Snack,Marque Rep\u00e8re"
+    },
+    {
+        "product_name_fr": "Wrap poulet sauce c\u00e9sar",
+        "nutriscore_grade": "b",
+        "url": "https://fr.openfoodfacts.org/produit/3596710399277/wrap-poulet-sauce-cesar-auchan",
+        "categories": "Sandwichs",
+        "brands": "AUCHAN",
+        "code": "3596710399277",
+        "stores": "auchan V2, Auchan"
     },
     {
         "product_name_fr": "Pause Snack Poulet r\u00f4ti",
         "nutriscore_grade": "c",
+        "code": "3596710413720",
+        "url": "https://fr.openfoodfacts.org/produit/3596710413720/pause-snack-poulet-roti-auchan",
         "categories": "Sandwichs",
         "brands": "Auchan,Pause Snack",
-        "url": "https://fr.openfoodfacts.org/produit/3596710413720/pause-snack-poulet-roti-auchan",
-        "code": "3596710413720",
         "stores": "Simply Market, Auchan"
     },
     {
-        "nutriscore_grade": "c",
         "product_name_fr": "Crudit\u00e9s \u0152uf Emmental (Pain de mie Complet)",
+        "brands": "Pause Snack Veggie,Pause Snack,Auchan",
+        "url": "https://fr.openfoodfacts.org/produit/3596710452651/crudites-oeuf-emmental-pain-de-mie-complet-pause-snack-veggie",
         "categories": "Sandwichs",
         "code": "3596710452651",
-        "stores": "Auchan",
-        "brands": "Pause Snack Veggie,Pause Snack,Auchan",
-        "url": "https://fr.openfoodfacts.org/produit/3596710452651/crudites-oeuf-emmental-pain-de-mie-complet-pause-snack-veggie"
+        "nutriscore_grade": "c",
+        "stores": "Auchan"
     },
     {
-        "product_name_fr": "LE CROQUE McDo\u2122",
-        "nutriscore_grade": "d",
-        "categories": "Sandwichs",
         "url": "https://fr.openfoodfacts.org/produit/2000000002605/le-croque-mcdo-mcdonald-s",
+        "categories": "Sandwichs",
         "brands": "McDonald's",
         "code": "2000000002605",
-        "stores": "McDonald's"
-    },
-    {
-        "nutriscore_grade": "b",
-        "product_name_fr": "Filet-O-Fish",
-        "categories": "Sandwichs",
-        "stores": "McDonald's",
-        "code": "2000000003765",
-        "brands": "Mcdonald's",
-        "url": "https://fr.openfoodfacts.org/produit/2000000003765/filet-o-fish-mcdonald-s"
-    },
-    {
         "nutriscore_grade": "d",
-        "product_name_fr": "Cheeseburger",
+        "stores": "McDonald's",
+        "product_name_fr": "LE CROQUE McDo\u2122"
+    },
+    {
+        "stores": "McDonald's",
+        "nutriscore_grade": "b",
+        "url": "https://fr.openfoodfacts.org/produit/2000000003765/filet-o-fish-mcdonald-s",
+        "brands": "Mcdonald's",
         "categories": "Sandwichs",
+        "code": "2000000003765",
+        "product_name_fr": "Filet-O-Fish"
+    },
+    {
         "stores": "Quick",
-        "code": "2000000003964",
+        "nutriscore_grade": "d",
         "url": "https://fr.openfoodfacts.org/produit/2000000003964/cheeseburger-quick",
-        "brands": "Quick"
+        "brands": "Quick",
+        "categories": "Sandwichs",
+        "code": "2000000003964",
+        "product_name_fr": "Cheeseburger"
     },
     {
         "product_name_fr": "Grand Double Cheese",
         "nutriscore_grade": "d",
         "categories": "Sandwichs",
-        "brands": "McDonald's",
         "url": "https://fr.openfoodfacts.org/produit/2000000017899/grand-double-cheese-mcdonald-s",
         "code": "2000000017899",
+        "brands": "McDonald's",
         "stores": "McDonald's"
     },
     {
         "product_name_fr": "Mon club sandwich jambon beurre",
-        "nutriscore_grade": "e",
-        "brands": "Asia Green Garden, Bistro vite",
-        "url": "https://fr.openfoodfacts.org/produit/26084855/mon-club-sandwich-jambon-beurre-asia-green-garden",
-        "code": "26084855",
         "stores": "Aldi",
-        "categories": "Sandwichs"
-    },
-    {
-        "nutriscore_grade": "d",
-        "product_name_fr": "Sandwich TRIO Jambon beurre - pain de mie complet",
+        "code": "26084855",
+        "url": "https://fr.openfoodfacts.org/produit/26084855/mon-club-sandwich-jambon-beurre-asia-green-garden",
         "categories": "Sandwichs",
-        "stores": "Casino",
-        "code": "3222474500870",
-        "url": "https://fr.openfoodfacts.org/produit/3222474500870/sandwich-trio-jambon-beurre-pain-de-mie-complet-casino",
-        "brands": "Casino"
+        "brands": "Asia Green Garden, Bistro vite",
+        "nutriscore_grade": "e"
     },
     {
+        "product_name_fr": "Sandwich TRIO Jambon beurre - pain de mie complet",
+        "nutriscore_grade": "d",
+        "url": "https://fr.openfoodfacts.org/produit/3222474500870/sandwich-trio-jambon-beurre-pain-de-mie-complet-casino",
+        "code": "3222474500870",
+        "categories": "Sandwichs",
+        "brands": "Casino",
+        "stores": "Casino"
+    },
+    {
+        "nutriscore_grade": "e",
+        "brands": "Casino",
+        "url": "https://fr.openfoodfacts.org/produit/3222475401657/sandwich-rosette-casino",
+        "categories": "Sandwichs",
         "code": "3222475401657",
         "stores": "Casino",
-        "url": "https://fr.openfoodfacts.org/produit/3222475401657/sandwich-rosette-casino",
-        "brands": "Casino",
-        "categories": "Sandwichs",
-        "nutriscore_grade": "e",
         "product_name_fr": "Sandwich Rosette"
     },
     {
-        "nutriscore_grade": "b",
         "product_name_fr": "Poulet \u00e0 l'indienne",
-        "categories": "Sandwichs",
-        "code": "3222475401664",
         "stores": "Casino",
+        "nutriscore_grade": "b",
         "url": "https://fr.openfoodfacts.org/produit/3222475401664/poulet-a-l-indienne-casino",
+        "code": "3222475401664",
+        "categories": "Sandwichs",
         "brands": "Casino"
     },
     {
+        "product_name_fr": "Poulet r\u00f4ti crudit\u00e9s pain de mie au son",
         "stores": "Nano Franprix,Leader Price",
-        "code": "3263859494216",
-        "brands": "Leader Price",
-        "url": "https://fr.openfoodfacts.org/produit/3263859494216/poulet-roti-crudites-pain-de-mie-au-son-leader-price",
-        "categories": "Sandwichs",
         "nutriscore_grade": "a",
-        "product_name_fr": "Poulet r\u00f4ti crudit\u00e9s pain de mie au son"
+        "categories": "Sandwichs",
+        "url": "https://fr.openfoodfacts.org/produit/3263859494216/poulet-roti-crudites-pain-de-mie-au-son-leader-price",
+        "code": "3263859494216",
+        "brands": "Leader Price"
     },
     {
         "product_name_fr": "Poulet r\u00f4ti crudit\u00e9s Maxi",
         "nutriscore_grade": "a",
-        "brands": "Leader Price",
         "url": "https://fr.openfoodfacts.org/produit/3263859494810/poulet-roti-crudites-maxi-leader-price",
-        "code": "3263859494810",
-        "stores": "Leader Price",
-        "categories": "Sandwichs"
-    },
-    {
         "categories": "Sandwichs",
-        "brands": "Monoprix",
-        "url": "https://fr.openfoodfacts.org/produit/3350030177447/jambon-emmental-monoprix",
-        "stores": "Monoprix",
-        "code": "3350030177447",
-        "product_name_fr": "Jambon emmental",
-        "nutriscore_grade": "d"
+        "code": "3263859494810",
+        "brands": "Leader Price",
+        "stores": "Leader Price"
     },
     {
-        "nutriscore_grade": "c",
-        "product_name_fr": "Jambon Beurre",
+        "product_name_fr": "Jambon emmental",
+        "nutriscore_grade": "d",
+        "url": "https://fr.openfoodfacts.org/produit/3350030177447/jambon-emmental-monoprix",
+        "brands": "Monoprix",
+        "categories": "Sandwichs",
+        "code": "3350030177447",
+        "stores": "Monoprix"
+    },
+    {
         "stores": "Monoprix",
+        "nutriscore_grade": "c",
+        "categories": "Sandwichs",
+        "url": "https://fr.openfoodfacts.org/produit/3350033021143/jambon-beurre-monop-daily",
         "code": "3350033021143",
         "brands": "Monop'Daily,Monoprix",
-        "url": "https://fr.openfoodfacts.org/produit/3350033021143/jambon-beurre-monop-daily",
-        "categories": "Sandwichs"
+        "product_name_fr": "Jambon Beurre"
     },
     {
         "product_name_fr": "Le Club Oeuf Jambon Bacon",
-        "nutriscore_grade": "c",
-        "categories": "Sandwichs",
-        "url": "https://fr.openfoodfacts.org/produit/3350033038868/le-club-oeuf-jambon-bacon-dailymonop",
-        "brands": "Dailymonop,Monoprix",
         "stores": "Monoprix",
+        "nutriscore_grade": "c",
+        "brands": "Dailymonop,Monoprix",
+        "url": "https://fr.openfoodfacts.org/produit/3350033038868/le-club-oeuf-jambon-bacon-dailymonop",
+        "categories": "Sandwichs",
         "code": "3350033038868"
     },
     {
-        "product_name_fr": "Sandwich polaire jambon-cheddar",
-        "nutriscore_grade": "d",
-        "categories": "Sandwichs",
-        "brands": "C\u00f4t\u00e9 Snack,Marque Rep\u00e8re",
-        "url": "https://fr.openfoodfacts.org/produit/3564700405413/sandwich-polaire-jambon-cheddar-cote-snack",
         "stores": "Leclerc",
-        "code": "3564700405413"
+        "categories": "Sandwichs",
+        "url": "https://fr.openfoodfacts.org/produit/3564700405413/sandwich-polaire-jambon-cheddar-cote-snack",
+        "brands": "C\u00f4t\u00e9 Snack,Marque Rep\u00e8re",
+        "code": "3564700405413",
+        "nutriscore_grade": "d",
+        "product_name_fr": "Sandwich polaire jambon-cheddar"
     },
     {
-        "nutriscore_grade": "d",
         "product_name_fr": "Emmental Poivrons grill\u00e9s Roquette Sauce Basilic (Pain de mie complet)",
-        "stores": "Auchan",
+        "nutriscore_grade": "d",
         "code": "3596710452644",
         "url": "https://fr.openfoodfacts.org/produit/3596710452644/emmental-poivrons-grilles-roquette-sauce-basilic-pain-de-mie-complet-pause-snack-veggie",
+        "categories": "Sandwichs",
         "brands": "Pause Snack Veggie,Pause Snack,Auchan",
-        "categories": "Sandwichs"
+        "stores": "Auchan"
     },
     {
+        "product_name_fr": "mini sandwich frais",
+        "nutriscore_grade": "d",
         "categories": "Sandwichs",
-        "code": "27017043",
-        "stores": "aldi",
         "url": "https://fr.openfoodfacts.org/produit/27017043/mini-sandwich-frais-aldi",
         "brands": "Aldi",
-        "nutriscore_grade": "d",
-        "product_name_fr": "mini sandwich frais"
+        "code": "27017043",
+        "stores": "aldi"
     },
     {
-        "nutriscore_grade": "b",
-        "product_name_fr": "Maxi Poulet Crudit\u00e9s & sauce Mayonnaise all\u00e9g\u00e9e",
-        "code": "3283040348104",
+        "product_name_fr": "Jambon beurre pain de mie complet",
+        "nutriscore_grade": "d",
+        "url": "https://fr.openfoodfacts.org/produit/3250390702016/jambon-beurre-pain-de-mie-complet-monique-ranou",
+        "categories": "Sandwichs",
+        "brands": "Monique Ranou",
+        "code": "3250390702016",
+        "stores": "Intermarch\u00e9,Carrefour"
+    },
+    {
         "stores": "Auchan, Magasins U",
+        "nutriscore_grade": "b",
         "url": "https://fr.openfoodfacts.org/produit/3283040348104/maxi-poulet-crudites-sauce-mayonnaise-allegee-reghalal",
         "brands": "R\u00e9ghalal",
-        "categories": "Sandwichs"
+        "categories": "Sandwichs",
+        "code": "3283040348104",
+        "product_name_fr": "Maxi Poulet Crudit\u00e9s & sauce Mayonnaise all\u00e9g\u00e9e"
     },
     {
-        "url": "https://fr.openfoodfacts.org/produit/3323790322075/sandwich-thon-oeuf-mayonnaise-allegee-roland-monterrat",
-        "brands": "Roland Monterrat",
+        "product_name_fr": "Sandwich Thon Oeuf Mayonnaise all\u00e9g\u00e9e",
         "stores": "Auchan",
+        "url": "https://fr.openfoodfacts.org/produit/3323790322075/sandwich-thon-oeuf-mayonnaise-allegee-roland-monterrat",
         "code": "3323790322075",
         "categories": "Sandwichs",
-        "product_name_fr": "Sandwich Thon Oeuf Mayonnaise all\u00e9g\u00e9e",
+        "brands": "Roland Monterrat",
         "nutriscore_grade": "b"
     },
     {
-        "product_name_fr": "Mirinda go\u00fbt fraise",
-        "nutriscore_grade": "e",
-        "brands": "Mirinda",
-        "url": "https://fr.openfoodfacts.org/produit/3502110002884/mirinda-gout-fraise",
-        "stores": "Magasins U",
-        "code": "3502110002884",
-        "categories": "Sodas"
-    },
-    {
-        "nutriscore_grade": "d",
         "product_name_fr": "Original Ice Tea P\u00e9tillant",
-        "code": "8712100720451",
-        "stores": "Lidl",
-        "brands": "Lipton",
-        "url": "https://fr.openfoodfacts.org/produit/8712100720451/original-ice-tea-petillant-lipton",
-        "categories": "Sodas"
-    },
-    {
-        "nutriscore_grade": "b",
-        "product_name_fr": "Sprite z\u00e9ro",
-        "stores": "Carrefour",
-        "code": "5449000106704",
-        "url": "https://fr.openfoodfacts.org/produit/5449000106704/sprite-zero",
-        "brands": "Sprite",
-        "categories": "Sodas"
-    },
-    {
-        "product_name_fr": "Blle Pet 2L Mirinda Orange",
-        "nutriscore_grade": "e",
-        "categories": "Sodas",
-        "url": "https://fr.openfoodfacts.org/produit/3502110002679/blle-pet-2l-mirinda-orange",
-        "brands": "Mirinda",
-        "code": "3502110002679",
-        "stores": "Magasins U"
-    },
-    {
-        "categories": "Sodas",
-        "stores": "Magasins U",
-        "code": "3124480186911",
-        "url": "https://fr.openfoodfacts.org/produit/3124480186911/indian-tonic-zero-schweppes",
-        "brands": "Schweppes",
-        "nutriscore_grade": "b",
-        "product_name_fr": "Indian Tonic Z\u00e9ro"
-    },
-    {
-        "categories": "Sodas",
-        "brands": "Freeway,Lidl",
-        "url": "https://fr.openfoodfacts.org/produit/20023034/freeway-lemon",
-        "code": "20023034",
-        "stores": "Lidl",
-        "product_name_fr": "Freeway Lemon",
-        "nutriscore_grade": "e"
-    },
-    {
-        "product_name_fr": "Cola",
-        "nutriscore_grade": "e",
-        "url": "https://fr.openfoodfacts.org/produit/3289196810045/cola-vitamont",
-        "brands": "Vitamont",
-        "code": "3289196810045",
-        "stores": "Horizon vert",
-        "categories": "Sodas"
-    },
-    {
-        "brands": "Look",
-        "url": "https://fr.openfoodfacts.org/produit/3250390145905/look-cola-classic-50-cl",
-        "stores": "Intermarch\u00e9",
-        "code": "3250390145905",
-        "categories": "Sodas",
-        "product_name_fr": "Look Cola Classic 50 cl",
-        "nutriscore_grade": "e"
-    },
-    {
-        "categories": "Sodas",
-        "brands": "Mirinda",
-        "url": "https://fr.openfoodfacts.org/produit/3502110004192/mirinda-strawberry-soda",
-        "stores": "hfc",
-        "code": "3502110004192",
-        "product_name_fr": "Mirinda Strawberry Soda",
-        "nutriscore_grade": "e"
-    },
-    {
-        "nutriscore_grade": "e",
-        "product_name_fr": "Ascania limonade fraise",
-        "code": "4630001590260",
-        "stores": "Franprix",
-        "url": "https://fr.openfoodfacts.org/produit/4630001590260/ascania-limonade-fraise-ascania-premium",
-        "brands": "Ascania Premium",
-        "categories": "Sodas"
-    },
-    {
-        "categories": "Sodas",
-        "brands": "Coca Cola",
-        "url": "https://fr.openfoodfacts.org/produit/5449000030375/coca-cola-sans-cafeine",
-        "stores": "Magasins U",
-        "code": "5449000030375",
-        "product_name_fr": "Coca-cola sans cafeine",
-        "nutriscore_grade": "e"
-    },
-    {
-        "product_name_fr": "Mirinda go\u00fbt fraise",
-        "nutriscore_grade": "e",
-        "brands": "Mirinda",
-        "url": "https://fr.openfoodfacts.org/produit/3502110002884/mirinda-gout-fraise",
-        "stores": "Magasins U",
-        "code": "3502110002884",
-        "categories": "Sodas"
-    },
-    {
         "nutriscore_grade": "d",
+        "categories": "Sodas",
+        "url": "https://fr.openfoodfacts.org/produit/8712100720451/original-ice-tea-petillant-lipton",
+        "brands": "Lipton",
+        "code": "8712100720451",
+        "stores": "Lidl"
+    },
+    {
         "product_name_fr": "Original Ice Tea P\u00e9tillant",
-        "code": "8712100720451",
-        "stores": "Lidl",
-        "brands": "Lipton",
+        "nutriscore_grade": "d",
+        "categories": "Sodas",
         "url": "https://fr.openfoodfacts.org/produit/8712100720451/original-ice-tea-petillant-lipton",
-        "categories": "Sodas"
-    },
-    {
-        "nutriscore_grade": "b",
-        "product_name_fr": "Sprite z\u00e9ro",
-        "stores": "Carrefour",
-        "code": "5449000106704",
-        "url": "https://fr.openfoodfacts.org/produit/5449000106704/sprite-zero",
-        "brands": "Sprite",
-        "categories": "Sodas"
-    },
-    {
-        "product_name_fr": "Blle Pet 2L Mirinda Orange",
-        "nutriscore_grade": "e",
-        "categories": "Sodas",
-        "url": "https://fr.openfoodfacts.org/produit/3502110002679/blle-pet-2l-mirinda-orange",
-        "brands": "Mirinda",
-        "code": "3502110002679",
-        "stores": "Magasins U"
-    },
-    {
-        "categories": "Sodas",
-        "stores": "Magasins U",
-        "code": "3124480186911",
-        "url": "https://fr.openfoodfacts.org/produit/3124480186911/indian-tonic-zero-schweppes",
-        "brands": "Schweppes",
-        "nutriscore_grade": "b",
-        "product_name_fr": "Indian Tonic Z\u00e9ro"
-    },
-    {
-        "categories": "Sodas",
-        "brands": "Freeway,Lidl",
-        "url": "https://fr.openfoodfacts.org/produit/20023034/freeway-lemon",
-        "code": "20023034",
-        "stores": "Lidl",
-        "product_name_fr": "Freeway Lemon",
-        "nutriscore_grade": "e"
-    },
-    {
-        "product_name_fr": "Cola",
-        "nutriscore_grade": "e",
-        "url": "https://fr.openfoodfacts.org/produit/3289196810045/cola-vitamont",
-        "brands": "Vitamont",
-        "code": "3289196810045",
-        "stores": "Horizon vert",
-        "categories": "Sodas"
-    },
-    {
-        "brands": "Look",
-        "url": "https://fr.openfoodfacts.org/produit/3250390145905/look-cola-classic-50-cl",
-        "stores": "Intermarch\u00e9",
-        "code": "3250390145905",
-        "categories": "Sodas",
-        "product_name_fr": "Look Cola Classic 50 cl",
-        "nutriscore_grade": "e"
-    },
-    {
-        "categories": "Sodas",
-        "brands": "Mirinda",
-        "url": "https://fr.openfoodfacts.org/produit/3502110004192/mirinda-strawberry-soda",
-        "stores": "hfc",
-        "code": "3502110004192",
-        "product_name_fr": "Mirinda Strawberry Soda",
-        "nutriscore_grade": "e"
-    },
-    {
-        "nutriscore_grade": "e",
-        "product_name_fr": "Ascania limonade fraise",
-        "code": "4630001590260",
-        "stores": "Franprix",
-        "url": "https://fr.openfoodfacts.org/produit/4630001590260/ascania-limonade-fraise-ascania-premium",
-        "brands": "Ascania Premium",
-        "categories": "Sodas"
-    },
-    {
-        "categories": "Sodas",
-        "brands": "Coca Cola",
-        "url": "https://fr.openfoodfacts.org/produit/5449000030375/coca-cola-sans-cafeine",
-        "stores": "Magasins U",
-        "code": "5449000030375",
-        "product_name_fr": "Coca-cola sans cafeine",
-        "nutriscore_grade": "e"
-    },
-    {
-        "product_name_fr": "Orangina",
-        "nutriscore_grade": "e",
-        "categories": "Sodas",
-        "brands": "Orangina",
-        "url": "https://fr.openfoodfacts.org/produit/3249760000654/orangina",
-        "code": "3249760000654",
-        "stores": "Franprix,Magasins U,Delhaize"
-    },
-    {
-        "nutriscore_grade": "d",
-        "product_name_fr": "Agrumes",
-        "categories": "Sodas",
-        "stores": "Magasins U,leclerc",
-        "code": "3124480002501",
-        "url": "https://fr.openfoodfacts.org/produit/3124480002501/agrumes-schweppes",
-        "brands": "Schweppes"
-    },
-    {
-        "nutriscore_grade": "e",
-        "product_name_fr": "Lipton Ice Tea saveur P\u00eache",
-        "code": "3502110005922",
-        "stores": "Franprix,Leclerc,Magasins U,Auchan",
         "brands": "Lipton",
-        "url": "https://fr.openfoodfacts.org/produit/3502110005922/lipton-ice-tea-saveur-peche",
-        "categories": "Sodas"
+        "code": "8712100720451",
+        "stores": "Lidl"
     },
     {
-        "nutriscore_grade": "e",
-        "product_name_fr": "Coca Cola",
-        "stores": "Cora,Migros",
-        "code": "5449000000439",
-        "brands": "Coca-Cola",
-        "url": "https://fr.openfoodfacts.org/produit/5449000000439/coca-cola",
-        "categories": "Sodas"
-    },
-    {
-        "categories": "Sodas",
-        "stores": "Distributeur automatique,OKCon 2013,M!P restaurants at CICG",
-        "code": "5449000011527",
-        "brands": "Fanta",
-        "url": "https://fr.openfoodfacts.org/produit/5449000011527/orange-fanta",
-        "nutriscore_grade": "e",
-        "product_name_fr": "Orange"
-    },
-    {
-        "product_name_fr": "Coca Cola Light",
-        "nutriscore_grade": "b",
-        "categories": "Sodas",
-        "url": "https://fr.openfoodfacts.org/produit/5449000050205/coca-cola-light",
-        "brands": "Coca-Cola",
-        "code": "5449000050205",
-        "stores": "OKCon 2013,M!P restaurants at CICG,Ahorram\u00e1s"
-    },
-    {
-        "product_name_fr": "Indian tonic",
+        "product_name_fr": "Original Ice Tea P\u00e9tillant",
         "nutriscore_grade": "d",
         "categories": "Sodas",
-        "brands": "Schweppes",
-        "url": "https://fr.openfoodfacts.org/produit/3124480186850/indian-tonic-schweppes",
-        "stores": "leclerc",
-        "code": "3124480186850"
+        "url": "https://fr.openfoodfacts.org/produit/8712100720451/original-ice-tea-petillant-lipton",
+        "brands": "Lipton",
+        "code": "8712100720451",
+        "stores": "Lidl"
     },
     {
-        "nutriscore_grade": "e",
-        "product_name_fr": "Monster Energy",
-        "code": "5060335632302",
-        "stores": "Monoprix,Leader Price,Magasins U",
-        "brands": "Monster Energy,Monster,Monster Energy Company",
-        "url": "https://fr.openfoodfacts.org/produit/5060335632302/monster-energy",
-        "categories": "Sodas"
-    },
-    {
-        "categories": "Sodas",
-        "brands": "Coca-Cola",
-        "url": "https://fr.openfoodfacts.org/produit/5000112611748/coca-cola",
-        "stores": "Magasins U,Auchan",
-        "code": "5000112611748",
-        "product_name_fr": "Coca cola",
-        "nutriscore_grade": "e"
-    },
-    {
-        "product_name_fr": "Schweppes agrum'",
-        "nutriscore_grade": "d",
-        "url": "https://fr.openfoodfacts.org/produit/3124480186898/schweppes-agrum",
-        "brands": "Schweppes,Orangina Schweppes",
-        "code": "3124480186898",
-        "stores": "Leclerc",
-        "categories": "Sodas"
-    },
-    {
-        "categories": "Sodas",
-        "brands": "Coca-Cola",
-        "url": "https://fr.openfoodfacts.org/produit/5449000223555/coca-cola-zero-sans-cafeine",
-        "stores": "Magasins U,Auchan",
-        "code": "5449000223555",
-        "product_name_fr": "Coca-cola zero sans cafeine",
-        "nutriscore_grade": "b"
-    },
-    {
-        "product_name_fr": "Schweppes Lemon",
+        "product_name_fr": "Original Ice Tea P\u00e9tillant",
         "nutriscore_grade": "d",
         "categories": "Sodas",
-        "brands": "Schweppes",
-        "url": "https://fr.openfoodfacts.org/produit/3124480183927/schweppes-lemon",
-        "stores": "Magasins U",
-        "code": "3124480183927"
+        "url": "https://fr.openfoodfacts.org/produit/8712100720451/original-ice-tea-petillant-lipton",
+        "brands": "Lipton",
+        "code": "8712100720451",
+        "stores": "Lidl"
     },
     {
-        "stores": "Spar,Biedronka,norma",
-        "code": "5449000130389",
-        "brands": "The Coca-Cola Company,Coca-Cola,\u0643\u0648\u0643\u0627 \u0643\u0648\u0644\u0627",
-        "url": "https://fr.openfoodfacts.org/produit/5449000130389/coca-cola-the-coca-cola-company",
-        "categories": "Sodas",
-        "nutriscore_grade": "e",
-        "product_name_fr": "Coca-Cola"
-    },
-    {
-        "stores": "Sp\u00e4ti",
-        "code": "4029764001807",
-        "url": "https://fr.openfoodfacts.org/produit/4029764001807/club-mate-loscher",
-        "brands": "Loscher,Club-Mat\u00e9",
-        "categories": "Sodas",
+        "product_name_fr": "Original Ice Tea P\u00e9tillant",
         "nutriscore_grade": "d",
-        "product_name_fr": "Club-Mat\u00e9"
-    },
-    {
-        "code": "3551720022935",
-        "stores": "Carrefour,Magasins U",
-        "url": "https://fr.openfoodfacts.org/produit/3551720022935/limonade-zero-lorina",
-        "brands": "Lorina",
         "categories": "Sodas",
-        "nutriscore_grade": "b",
-        "product_name_fr": "Limonade Zero"
+        "url": "https://fr.openfoodfacts.org/produit/8712100720451/original-ice-tea-petillant-lipton",
+        "brands": "Lipton",
+        "code": "8712100720451",
+        "stores": "Lidl"
     },
     {
-        "nutriscore_grade": "d",
-        "product_name_fr": "Dr Pepper",
-        "categories": "Sodas",
-        "code": "5017818800116",
-        "stores": "Carrefour,Intermarch\u00e9",
-        "brands": "Dr Pepper",
-        "url": "https://fr.openfoodfacts.org/produit/5017818800116/dr-pepper"
-    },
-    {
-        "categories": "Yaourts",
-        "stores": "Magasins U,Carrefour",
-        "code": "3033491325519",
-        "url": "https://fr.openfoodfacts.org/produit/3033491325519/activia-mangue-danone",
-        "brands": "Danone",
-        "nutriscore_grade": "b",
-        "product_name_fr": "Activia - Mangue"
-    },
-    {
-        "nutriscore_grade": "b",
-        "product_name_fr": "Yaourt nature",
-        "stores": "Leclerc",
-        "code": "3564707000925",
-        "brands": "Marque Rep\u00e8re,Bio Village",
-        "url": "https://fr.openfoodfacts.org/produit/3564707000925/yaourt-nature-marque-repere",
-        "categories": "Yaourts"
-    },
-    {
-        "categories": "Yaourts",
+        "product_name_fr": "Yaos Le Yaourt \u00e0 la Greque Pulpe de Citron",
         "stores": "Monoprix",
-        "code": "3023290032022",
-        "brands": "Nestl\u00e9",
+        "nutriscore_grade": "c",
+        "categories": "Yaourts",
         "url": "https://fr.openfoodfacts.org/produit/3023290032022/yaos-le-yaourt-a-la-greque-pulpe-de-citron-nestle",
-        "nutriscore_grade": "c",
-        "product_name_fr": "Yaos Le Yaourt \u00e0 la Greque Pulpe de Citron"
-    },
-    {
-        "product_name_fr": "Taillefine fruits jaunes",
-        "nutriscore_grade": "a",
-        "brands": "Danone",
-        "url": "https://fr.openfoodfacts.org/produit/3033491215278/taillefine-fruits-jaunes-danone",
-        "code": "3033491215278",
-        "stores": "Magasins U",
-        "categories": "Yaourts"
-    },
-    {
-        "nutriscore_grade": "a",
-        "product_name_fr": "Taillefine cerise",
-        "code": "3033491215216",
-        "stores": "Magasins U,Carrefour market",
-        "url": "https://fr.openfoodfacts.org/produit/3033491215216/taillefine-cerise-danone",
-        "brands": "Danone",
-        "categories": "Yaourts"
-    },
-    {
-        "product_name_fr": "Yaos bio",
-        "nutriscore_grade": "c",
         "brands": "Nestl\u00e9",
+        "code": "3023290032022"
+    },
+    {
+        "stores": "Carrefour",
+        "nutriscore_grade": "c",
         "url": "https://fr.openfoodfacts.org/produit/3023290028766/yaos-bio-nestle",
         "code": "3023290028766",
-        "stores": "Carrefour",
-        "categories": "Yaourts"
-    },
-    {
         "categories": "Yaourts",
-        "stores": "Auchan",
-        "code": "3273220083758",
-        "brands": "Sojasun",
-        "url": "https://fr.openfoodfacts.org/produit/3273220083758/dessert-vegetal-fruits-mixes-mandarine-citron-vert-4-pots-sojasun",
-        "nutriscore_grade": "b",
-        "product_name_fr": "Dessert v\u00e9g\u00e9tal, Fruits mix\u00e9s (Mandarine-Citron Vert) 4 Pots"
+        "brands": "Nestl\u00e9",
+        "product_name_fr": "Yaos bio"
     },
     {
-        "nutriscore_grade": "c",
-        "product_name_fr": "Recette cr\u00e9meuse aux morceaux fruits",
-        "categories": "Yaourts",
-        "stores": "LIDL",
-        "code": "20448653",
-        "url": "https://fr.openfoodfacts.org/produit/20448653/recette-cremeuse-aux-morceaux-fruits-envia",
-        "brands": "envia"
-    },
-    {
-        "nutriscore_grade": "b",
         "product_name_fr": "Panier de Yoplait abricot",
-        "categories": "Yaourts",
-        "code": "3329770063457",
         "stores": "Carrefour",
         "brands": "Yoplait",
-        "url": "https://fr.openfoodfacts.org/produit/3329770063457/panier-de-yoplait-abricot"
-    },
-    {
-        "categories": "Yaourts",
-        "stores": "Magasins U,Carrefour",
-        "code": "3033491325519",
-        "url": "https://fr.openfoodfacts.org/produit/3033491325519/activia-mangue-danone",
-        "brands": "Danone",
-        "nutriscore_grade": "b",
-        "product_name_fr": "Activia - Mangue"
-    },
-    {
-        "nutriscore_grade": "b",
-        "product_name_fr": "Yaourt nature",
-        "stores": "Leclerc",
-        "code": "3564707000925",
-        "brands": "Marque Rep\u00e8re,Bio Village",
-        "url": "https://fr.openfoodfacts.org/produit/3564707000925/yaourt-nature-marque-repere",
-        "categories": "Yaourts"
-    },
-    {
-        "categories": "Yaourts",
-        "stores": "Monoprix",
-        "code": "3023290032022",
-        "brands": "Nestl\u00e9",
-        "url": "https://fr.openfoodfacts.org/produit/3023290032022/yaos-le-yaourt-a-la-greque-pulpe-de-citron-nestle",
-        "nutriscore_grade": "c",
-        "product_name_fr": "Yaos Le Yaourt \u00e0 la Greque Pulpe de Citron"
-    },
-    {
-        "product_name_fr": "Taillefine fruits jaunes",
-        "nutriscore_grade": "a",
-        "brands": "Danone",
-        "url": "https://fr.openfoodfacts.org/produit/3033491215278/taillefine-fruits-jaunes-danone",
-        "code": "3033491215278",
-        "stores": "Magasins U",
-        "categories": "Yaourts"
-    },
-    {
-        "nutriscore_grade": "a",
-        "product_name_fr": "Taillefine cerise",
-        "code": "3033491215216",
-        "stores": "Magasins U,Carrefour market",
-        "url": "https://fr.openfoodfacts.org/produit/3033491215216/taillefine-cerise-danone",
-        "brands": "Danone",
-        "categories": "Yaourts"
-    },
-    {
-        "product_name_fr": "Yaos bio",
-        "nutriscore_grade": "c",
-        "brands": "Nestl\u00e9",
-        "url": "https://fr.openfoodfacts.org/produit/3023290028766/yaos-bio-nestle",
-        "code": "3023290028766",
-        "stores": "Carrefour",
-        "categories": "Yaourts"
-    },
-    {
-        "categories": "Yaourts",
-        "stores": "Auchan",
-        "code": "3273220083758",
-        "brands": "Sojasun",
-        "url": "https://fr.openfoodfacts.org/produit/3273220083758/dessert-vegetal-fruits-mixes-mandarine-citron-vert-4-pots-sojasun",
-        "nutriscore_grade": "b",
-        "product_name_fr": "Dessert v\u00e9g\u00e9tal, Fruits mix\u00e9s (Mandarine-Citron Vert) 4 Pots"
-    },
-    {
-        "nutriscore_grade": "c",
-        "product_name_fr": "Recette cr\u00e9meuse aux morceaux fruits",
-        "categories": "Yaourts",
-        "stores": "LIDL",
-        "code": "20448653",
-        "url": "https://fr.openfoodfacts.org/produit/20448653/recette-cremeuse-aux-morceaux-fruits-envia",
-        "brands": "envia"
-    },
-    {
-        "nutriscore_grade": "b",
-        "product_name_fr": "Panier de Yoplait abricot",
+        "url": "https://fr.openfoodfacts.org/produit/3329770063457/panier-de-yoplait-abricot",
         "categories": "Yaourts",
         "code": "3329770063457",
-        "stores": "Carrefour",
-        "brands": "Yoplait",
-        "url": "https://fr.openfoodfacts.org/produit/3329770063457/panier-de-yoplait-abricot"
-    },
-    {
-        "categories": "Yaourts",
-        "url": "https://fr.openfoodfacts.org/produit/3023290634578/yaos-nature-nestle",
-        "brands": "Nestl\u00e9",
-        "stores": "Monoprix",
-        "code": "3023290634578",
-        "product_name_fr": "Yaos Nature",
-        "nutriscore_grade": "c"
-    },
-    {
-        "categories": "Yaourts",
-        "code": "3023291122005",
-        "stores": "Magasins U",
-        "url": "https://fr.openfoodfacts.org/produit/3023291122005/le-yaourt-a-la-grecque-nature-nestle",
-        "brands": "Nestl\u00e9",
-        "nutriscore_grade": "c",
-        "product_name_fr": "Le Yaourt \u00e0 la Grecque Nature"
-    },
-    {
-        "product_name_fr": "Yaourt au lait entier nature",
-        "nutriscore_grade": "b",
-        "categories": "Yaourts",
-        "brands": "Carrefour Bio,Carrefour",
-        "url": "https://fr.openfoodfacts.org/produit/3560070845408/yaourt-au-lait-entier-nature-carrefour-bio",
-        "stores": "Carrefour",
-        "code": "3560070845408"
-    },
-    {
-        "stores": "Magasins U,intermarch\u00e9,Delhaize,Carrefour",
-        "code": "3033491350795",
-        "url": "https://fr.openfoodfacts.org/produit/3033491350795/activia-saveur-citron-danone",
-        "brands": "Danone,Activia",
-        "categories": "Yaourts",
-        "nutriscore_grade": "b",
-        "product_name_fr": "Activia saveur citron"
-    },
-    {
-        "product_name_fr": "Le yaourt \u00e0 la vanille",
-        "nutriscore_grade": "c",
-        "categories": "Yaourts",
-        "brands": "La Laiti\u00e8re,Nestl\u00e9",
-        "url": "https://fr.openfoodfacts.org/produit/3023290021286/le-yaourt-a-la-vanille-la-laitiere",
-        "code": "3023290021286",
-        "stores": "Magasins U"
-    },
-    {
-        "categories": "Yaourts",
-        "brands": "Danone,Activia",
-        "url": "https://fr.openfoodfacts.org/produit/3033491350863/activia-saveur-coco-danone",
-        "stores": "Magasins U,Delhaize",
-        "code": "3033491350863",
-        "product_name_fr": "Activia saveur coco",
         "nutriscore_grade": "b"
     },
     {
+        "product_name_fr": "Yaos Le Yaourt \u00e0 la Greque Pulpe de Citron",
+        "stores": "Monoprix",
+        "nutriscore_grade": "c",
         "categories": "Yaourts",
-        "brands": "Soignon",
-        "url": "https://fr.openfoodfacts.org/produit/3523230026680/yaourt-au-lait-de-chevre-nature-0-mg-soignon",
-        "code": "3523230026680",
-        "stores": "Magasins U",
-        "product_name_fr": "Yaourt au lait de ch\u00e8vre nature 0% MG",
-        "nutriscore_grade": "a"
+        "url": "https://fr.openfoodfacts.org/produit/3023290032022/yaos-le-yaourt-a-la-greque-pulpe-de-citron-nestle",
+        "brands": "Nestl\u00e9",
+        "code": "3023290032022"
     },
     {
-        "product_name_fr": "Le Nature",
-        "nutriscore_grade": "a",
-        "url": "https://fr.openfoodfacts.org/produit/3033490004538/le-nature-danone",
-        "brands": "Danone",
-        "stores": "Magasins U",
-        "code": "3033490004538",
-        "categories": "Yaourts"
+        "stores": "Carrefour",
+        "nutriscore_grade": "c",
+        "url": "https://fr.openfoodfacts.org/produit/3023290028766/yaos-bio-nestle",
+        "code": "3023290028766",
+        "categories": "Yaourts",
+        "brands": "Nestl\u00e9",
+        "product_name_fr": "Yaos bio"
     },
     {
-        "categories": "Yaourts",
+        "product_name_fr": "Panier de Yoplait abricot",
+        "stores": "Carrefour",
         "brands": "Yoplait",
+        "url": "https://fr.openfoodfacts.org/produit/3329770063457/panier-de-yoplait-abricot",
+        "categories": "Yaourts",
+        "code": "3329770063457",
+        "nutriscore_grade": "b"
+    },
+    {
         "url": "https://fr.openfoodfacts.org/produit/3329770063280/yop-framboise-yoplait",
+        "categories": "Yaourts",
         "code": "3329770063280",
+        "brands": "Yoplait",
+        "nutriscore_grade": "b",
         "stores": "G20",
-        "product_name_fr": "Yop framboise",
-        "nutriscore_grade": "b"
+        "product_name_fr": "Yop framboise"
     },
     {
-        "categories": "Yaourts",
-        "url": "https://fr.openfoodfacts.org/produit/3033491139444/activia-nature-danone",
-        "brands": "Danone,Activia",
-        "code": "3033491139444",
-        "stores": "INTERMARCHE,Magasins U",
-        "product_name_fr": "Activia Nature",
-        "nutriscore_grade": "b"
-    },
-    {
-        "nutriscore_grade": "a",
         "product_name_fr": "Skyr Light & Free Framboise",
-        "code": "3033491461460",
         "stores": "ID STOCK",
-        "brands": "Danone",
+        "nutriscore_grade": "a",
         "url": "https://fr.openfoodfacts.org/produit/3033491461460/skyr-light-free-framboise-danone",
-        "categories": "Yaourts"
-    },
-    {
+        "code": "3033491461460",
         "categories": "Yaourts",
-        "code": "3033490004514",
-        "stores": "Leclerc,Magasins U",
-        "brands": "Danone,D.P.F.F.,Danone Produits Frais France",
-        "url": "https://fr.openfoodfacts.org/produit/3033490004514/le-nature-danone",
-        "nutriscore_grade": "a",
-        "product_name_fr": "Le Nature"
+        "brands": "Danone"
     },
     {
-        "nutriscore_grade": "b",
-        "product_name_fr": "Activia fraise",
-        "categories": "Yaourts",
-        "stores": "Magasins U,Carrefour",
-        "code": "3033491325250",
-        "brands": "Danone,Activia",
-        "url": "https://fr.openfoodfacts.org/produit/3033491325250/activia-fraise-danone"
-    },
-    {
-        "categories": "Yaourts",
-        "code": "3033491215209",
-        "stores": "Intermarch\u00e9,Magasins U,Carrefour market",
-        "brands": "Danone",
-        "url": "https://fr.openfoodfacts.org/produit/3033491215209/taillefine-fraise-0-danone",
-        "nutriscore_grade": "a",
-        "product_name_fr": "Taillefine fraise 0%"
-    },
-    {
-        "product_name_fr": "La fermi\u00e8re, vanille",
+        "product_name_fr": "YAOS nature Bio",
         "nutriscore_grade": "c",
-        "categories": "Yaourts",
-        "brands": "La fermiere",
-        "url": "https://fr.openfoodfacts.org/produit/3279231149001/la-fermiere-vanille",
-        "code": "3279231149001",
-        "stores": "Franprix,Magasins U,Delhaize,Intermarch\u00e9"
-    },
-    {
-        "product_name_fr": "Taillefine citron 0%",
-        "nutriscore_grade": "a",
-        "categories": "Yaourts",
-        "url": "https://fr.openfoodfacts.org/produit/3033491215223/taillefine-citron-0-danone",
-        "brands": "Danone",
-        "code": "3033491215223",
-        "stores": "carrefour"
-    },
-    {
-        "product_name_fr": "Yaourts natures",
-        "nutriscore_grade": "a",
-        "url": "https://fr.openfoodfacts.org/produit/20620400/yaourts-natures-envia",
-        "brands": "Envia,Milbona,Novandie",
-        "stores": "Lidl",
-        "code": "20620400",
-        "categories": "Yaourts"
-    },
-    {
-        "nutriscore_grade": "c",
-        "product_name_fr": "Yaourt au lait de ch\u00e8vre - Vanille naturelle",
-        "stores": "Auchan,Magasins U,Carrefour Market",
-        "code": "3523230014243",
-        "url": "https://fr.openfoodfacts.org/produit/3523230014243/yaourt-au-lait-de-chevre-vanille-naturelle-soignon",
-        "brands": "Soignon",
-        "categories": "Yaourts"
-    },
-    {
-        "product_name_fr": "Light & Free P\u00eache & Fruit de la passion",
-        "nutriscore_grade": "a",
-        "brands": "Danone",
-        "url": "https://fr.openfoodfacts.org/produit/3033491333941/light-free-peche-fruit-de-la-passion-danone",
-        "code": "3033491333941",
-        "stores": "Magasins U",
-        "categories": "Yaourts"
-    },
-    {
-        "product_name_fr": "Actimel",
-        "nutriscore_grade": "b",
-        "categories": "Yaourts",
-        "brands": "Danone,Actimel",
-        "url": "https://fr.openfoodfacts.org/produit/3033491213205/actimel-danone",
-        "stores": "Magasins U",
-        "code": "3033491213205"
-    },
-    {
-        "categories": "Yaourts",
-        "code": "3023290019658",
-        "stores": "Delhaize",
         "url": "https://fr.openfoodfacts.org/produit/3023290019658/yaos-nature-bio-nestle",
-        "brands": "NESTLE",
-        "nutriscore_grade": "c",
-        "product_name_fr": "YAOS nature Bio"
-    },
-    {
-        "product_name_fr": "Activia  au bifidus, nature",
-        "nutriscore_grade": "b",
+        "code": "3023290019658",
         "categories": "Yaourts",
-        "url": "https://fr.openfoodfacts.org/produit/3033491139819/activia-au-bifidus-nature-16x125g",
-        "brands": "16x125g,Activia,Danone",
-        "code": "3033491139819",
-        "stores": "Magasins U"
+        "brands": "NESTLE",
+        "stores": "Delhaize"
     },
     {
-        "nutriscore_grade": "c",
-        "product_name_fr": "D\u00e9s de jambon - 25% de sel",
-        "categories": "Jambons",
-        "code": "3661112096496",
-        "stores": "Leclerc",
-        "brands": "Tradil\u00e8ge,Marque Rep\u00e8re",
-        "url": "https://fr.openfoodfacts.org/produit/3661112096496/des-de-jambon-25-de-sel-tradilege"
-    },
-    {
-        "categories": "Jambons",
-        "url": "https://fr.openfoodfacts.org/produit/7613035386884/le-bon-paris-a-la-broche-herta",
-        "brands": "Herta,Le Bon Paris",
-        "stores": "Cora,Magasins U,Carrefour",
-        "code": "7613035386884",
-        "product_name_fr": "Le Bon Paris \u00e0 la Broche",
-        "nutriscore_grade": "c"
-    },
-    {
-        "nutriscore_grade": "c",
-        "product_name_fr": "Jambon sup\u00e9rieur Sans couenne",
-        "code": "3250391306206",
-        "stores": "Intermarch\u00e9",
-        "url": "https://fr.openfoodfacts.org/produit/3250391306206/jambon-superieur-sans-couenne-monique-ranou",
-        "brands": "Monique Ranou,intermarch\u00e9,producteurs & commer\u00e7ants",
-        "categories": "Jambons"
-    },
-    {
-        "brands": "Herta",
-        "url": "https://fr.openfoodfacts.org/produit/7613035831995/tendre-noix-a-la-broche-herta",
-        "stores": "Carrefour",
-        "code": "7613035831995",
-        "categories": "Jambons",
-        "product_name_fr": "Tendre Noix \u00e0 la Broche",
-        "nutriscore_grade": "c"
-    },
-    {
-        "categories": "Jambons",
-        "url": "https://fr.openfoodfacts.org/produit/3067162255454/coeur-de-jambon-de-bayonne-delpeyrat",
-        "brands": "Delpeyrat",
-        "stores": "Super U,Magasins U",
-        "code": "3067162255454",
-        "product_name_fr": "Coeur de jambon de Bayonne",
-        "nutriscore_grade": "d"
-    },
-    {
-        "categories": "Jambons",
-        "brands": "Auchan",
-        "url": "https://fr.openfoodfacts.org/produit/3596710353224/jambon-superieur-25-de-sel-auchan",
-        "code": "3596710353224",
-        "stores": "Auchan",
-        "product_name_fr": "Jambon sup\u00e9rieur (-25% de sel)",
-        "nutriscore_grade": "c"
-    },
-    {
-        "code": "3067162211856",
-        "stores": "Leclerc,Magasins U",
-        "url": "https://fr.openfoodfacts.org/produit/3067162211856/le-jambon-de-bayonne-delpeyrat",
-        "brands": "Delpeyrat",
-        "categories": "Jambons",
-        "nutriscore_grade": "e",
-        "product_name_fr": "Le Jambon de Bayonne"
-    },
-    {
-        "brands": "Carrefour",
-        "url": "https://fr.openfoodfacts.org/produit/3270190199960/jambon-sec-qualite-superieure-carrefour",
-        "code": "3270190199960",
-        "stores": "carrefour",
-        "categories": "Jambons",
-        "product_name_fr": "Jambon sec Qualit\u00e9 sup\u00e9rieure",
-        "nutriscore_grade": "e"
-    },
-    {
-        "categories": "Jambons",
-        "stores": "Carrefour",
-        "code": "3560070458370",
-        "url": "https://fr.openfoodfacts.org/produit/3560070458370/jambon-cuit-superieur-carrefour-bio",
-        "brands": "Carrefour Bio,Carrefour",
-        "nutriscore_grade": "c",
-        "product_name_fr": "Jambon cuit sup\u00e9rieur"
-    },
-    {
-        "nutriscore_grade": "d",
-        "product_name_fr": "Jambon de Bayonne IGP",
-        "categories": "Jambons",
-        "stores": "Carrefour Market,Carrefour",
-        "code": "3245390062390",
-        "url": "https://fr.openfoodfacts.org/produit/3245390062390/jambon-de-bayonne-igp-reflets-de-france",
-        "brands": "Reflets de France"
-    },
-    {
-        "nutriscore_grade": "c",
-        "product_name_fr": "D\u00e9s de jambon - 25% de sel",
-        "categories": "Jambons",
-        "code": "3661112096496",
-        "stores": "Leclerc",
-        "brands": "Tradil\u00e8ge,Marque Rep\u00e8re",
-        "url": "https://fr.openfoodfacts.org/produit/3661112096496/des-de-jambon-25-de-sel-tradilege"
-    },
-    {
-        "categories": "Jambons",
-        "url": "https://fr.openfoodfacts.org/produit/7613035386884/le-bon-paris-a-la-broche-herta",
-        "brands": "Herta,Le Bon Paris",
-        "stores": "Cora,Magasins U,Carrefour",
-        "code": "7613035386884",
-        "product_name_fr": "Le Bon Paris \u00e0 la Broche",
-        "nutriscore_grade": "c"
-    },
-    {
-        "nutriscore_grade": "c",
-        "product_name_fr": "Jambon sup\u00e9rieur Sans couenne",
-        "code": "3250391306206",
-        "stores": "Intermarch\u00e9",
-        "url": "https://fr.openfoodfacts.org/produit/3250391306206/jambon-superieur-sans-couenne-monique-ranou",
-        "brands": "Monique Ranou,intermarch\u00e9,producteurs & commer\u00e7ants",
-        "categories": "Jambons"
-    },
-    {
-        "brands": "Herta",
-        "url": "https://fr.openfoodfacts.org/produit/7613035831995/tendre-noix-a-la-broche-herta",
-        "stores": "Carrefour",
-        "code": "7613035831995",
-        "categories": "Jambons",
-        "product_name_fr": "Tendre Noix \u00e0 la Broche",
-        "nutriscore_grade": "c"
-    },
-    {
-        "categories": "Jambons",
-        "url": "https://fr.openfoodfacts.org/produit/3067162255454/coeur-de-jambon-de-bayonne-delpeyrat",
-        "brands": "Delpeyrat",
-        "stores": "Super U,Magasins U",
-        "code": "3067162255454",
-        "product_name_fr": "Coeur de jambon de Bayonne",
-        "nutriscore_grade": "d"
-    },
-    {
-        "categories": "Jambons",
-        "brands": "Auchan",
-        "url": "https://fr.openfoodfacts.org/produit/3596710353224/jambon-superieur-25-de-sel-auchan",
-        "code": "3596710353224",
-        "stores": "Auchan",
-        "product_name_fr": "Jambon sup\u00e9rieur (-25% de sel)",
-        "nutriscore_grade": "c"
-    },
-    {
-        "code": "3067162211856",
-        "stores": "Leclerc,Magasins U",
-        "url": "https://fr.openfoodfacts.org/produit/3067162211856/le-jambon-de-bayonne-delpeyrat",
-        "brands": "Delpeyrat",
-        "categories": "Jambons",
-        "nutriscore_grade": "e",
-        "product_name_fr": "Le Jambon de Bayonne"
-    },
-    {
-        "brands": "Carrefour",
-        "url": "https://fr.openfoodfacts.org/produit/3270190199960/jambon-sec-qualite-superieure-carrefour",
-        "code": "3270190199960",
-        "stores": "carrefour",
-        "categories": "Jambons",
-        "product_name_fr": "Jambon sec Qualit\u00e9 sup\u00e9rieure",
-        "nutriscore_grade": "e"
-    },
-    {
-        "categories": "Jambons",
-        "stores": "Carrefour",
-        "code": "3560070458370",
-        "url": "https://fr.openfoodfacts.org/produit/3560070458370/jambon-cuit-superieur-carrefour-bio",
-        "brands": "Carrefour Bio,Carrefour",
-        "nutriscore_grade": "c",
-        "product_name_fr": "Jambon cuit sup\u00e9rieur"
-    },
-    {
-        "nutriscore_grade": "d",
-        "product_name_fr": "Jambon de Bayonne IGP",
-        "categories": "Jambons",
-        "stores": "Carrefour Market,Carrefour",
-        "code": "3245390062390",
-        "url": "https://fr.openfoodfacts.org/produit/3245390062390/jambon-de-bayonne-igp-reflets-de-france",
-        "brands": "Reflets de France"
-    },
-    {
-        "nutriscore_grade": "b",
-        "product_name_fr": "Le bon Paris -25% de sel",
-        "code": "7613036024419",
-        "stores": "Magasins U",
-        "brands": "Herta",
-        "url": "https://fr.openfoodfacts.org/produit/7613036024419/le-bon-paris-25-de-sel-herta",
-        "categories": "Jambons"
-    },
-    {
-        "product_name_fr": "Le bon Paris",
-        "nutriscore_grade": "c",
-        "categories": "Jambons",
-        "url": "https://fr.openfoodfacts.org/produit/7613035989443/le-bon-paris-herta",
-        "brands": "Herta",
-        "stores": "Magasins U",
-        "code": "7613035989443"
-    },
-    {
-        "code": "7613035336100",
-        "stores": "Carrefour Market,Magasins U,Carrefour",
-        "url": "https://fr.openfoodfacts.org/produit/7613035336100/le-bon-paris-a-l-etouffee-herta",
-        "brands": "Herta,Le Bon Paris",
-        "categories": "Jambons",
-        "nutriscore_grade": "c",
-        "product_name_fr": "Le Bon Paris \u00e0 l'\u00c9touff\u00e9e"
-    },
-    {
-        "brands": "Herta",
-        "url": "https://fr.openfoodfacts.org/produit/7613035989566/le-bon-paris-herta",
-        "stores": "carrefour",
-        "code": "7613035989566",
-        "categories": "Jambons",
-        "product_name_fr": "Le bon paris",
-        "nutriscore_grade": "c"
-    },
-    {
-        "product_name_fr": "Le Bon Paris a l'Etouff\u00e9e",
-        "nutriscore_grade": "c",
-        "categories": "Jambons",
-        "url": "https://fr.openfoodfacts.org/produit/7613035336131/le-bon-paris-a-l-etouffee-herta",
-        "brands": "Herta",
-        "code": "7613035336131",
-        "stores": "Carrefour,Magasins U"
-    },
-    {
-        "nutriscore_grade": "c",
-        "product_name_fr": "Mon Jambon Blanc VPF 4tr",
-        "categories": "Jambons",
-        "stores": "Carrefour",
-        "code": "3180940079506",
-        "brands": "Madrange",
-        "url": "https://fr.openfoodfacts.org/produit/3180940079506/mon-jambon-blanc-vpf-4tr-madrange"
-    },
-    {
-        "categories": "Jambons",
-        "code": "3095758857010",
-        "stores": "Super U,Magasins U,Leclerc",
-        "url": "https://fr.openfoodfacts.org/produit/3095758857010/le-paris-sans-couenne-25-de-sel-4tr-fleury-michon",
-        "brands": "Fleury Michon",
-        "nutriscore_grade": "b",
-        "product_name_fr": "Le Paris sans couenne - 25% de Sel*- 4tr"
-    },
-    {
-        "categories": "Jambons",
-        "code": "7613035832022",
-        "stores": "Magasins U,Auchan",
-        "url": "https://fr.openfoodfacts.org/produit/7613035832022/tendre-noix-broche-herta",
-        "brands": "Herta",
-        "nutriscore_grade": "c",
-        "product_name_fr": "Tendre Noix Broche"
-    },
-    {
-        "nutriscore_grade": "c",
-        "product_name_fr": "Le sup\u00e9rieur Label Rouge - 4 tranches sans couenne",
-        "categories": "Jambons",
-        "stores": "Magasins U,Record",
-        "code": "3095758585012",
-        "url": "https://fr.openfoodfacts.org/produit/3095758585012/le-superieur-label-rouge-4-tranches-sans-couenne-fleury-michon",
-        "brands": "Fleury Michon"
-    },
-    {
-        "product_name_fr": "Jambon Le Tradition",
-        "nutriscore_grade": "c",
-        "categories": "Jambons",
-        "url": "https://fr.openfoodfacts.org/produit/3250392605414/jambon-le-tradition-monique-ranou",
-        "brands": "Monique RANOU",
-        "code": "3250392605414",
-        "stores": "INTERMARCHE"
-    },
-    {
-        "url": "https://fr.openfoodfacts.org/produit/20021160/des-de-jambon-nature-saint-alby",
-        "brands": "Saint Alby",
-        "stores": "Lidl",
-        "code": "20021160",
-        "categories": "Jambons",
-        "product_name_fr": "D\u00e9s de Jambon NATURE",
-        "nutriscore_grade": "c"
-    },
-    {
-        "product_name_fr": "Le Bon Paris Fum\u00e9",
-        "nutriscore_grade": "c",
-        "brands": "Herta,Le Bon Paris",
-        "url": "https://fr.openfoodfacts.org/produit/7613035386792/le-bon-paris-fume-herta",
-        "stores": "Carrefour Market,Leclerc,Magasins U,Carrefour",
-        "code": "7613035386792",
-        "categories": "Jambons"
-    },
-    {
-        "nutriscore_grade": "c",
-        "product_name_fr": "J'aime le jambon - 4 tranches",
-        "code": "3095757901011",
-        "stores": "Cora,Magasins U",
-        "brands": "Fleury Michon",
-        "url": "https://fr.openfoodfacts.org/produit/3095757901011/j-aime-le-jambon-4-tranches-fleury-michon",
-        "categories": "Jambons"
-    },
-    {
-        "nutriscore_grade": "d",
-        "product_name_fr": "D\u00e9s de jambon - Cuit \u00e0 l'\u00e9touff\u00e9e",
-        "stores": "Leclerc",
-        "code": "3661112056261",
-        "url": "https://fr.openfoodfacts.org/produit/3661112056261/des-de-jambon-cuit-a-l-etouffee-tradilege",
-        "brands": "Tradil\u00e8ge,Marque Rep\u00e8re,Scamark (Filiale E. Leclerc)",
-        "categories": "Jambons"
-    },
-    {
-        "categories": "Jambons",
-        "brands": "Madrange",
-        "url": "https://fr.openfoodfacts.org/produit/3180940084647/mon-jambon-superieur-label-rouge-vpf-4tr-madrange",
-        "code": "3180940084647",
-        "stores": "GrandFrais",
-        "product_name_fr": "Mon Jambon Sup\u00e9rieur Label Rouge VPF 4tr",
-        "nutriscore_grade": "c"
-    },
-    {
-        "nutriscore_grade": "c",
         "product_name_fr": "Le sup\u00e9rieur cuit \u00e0 l'\u00e9touff\u00e9e - 4tr",
-        "categories": "Jambons",
-        "code": "3302749896027",
-        "stores": "Carrefour",
-        "brands": "fleury michon",
-        "url": "https://fr.openfoodfacts.org/produit/3302749896027/le-superieur-cuit-a-l-etouffee-4tr-fleury-michon"
-    },
-    {
         "nutriscore_grade": "c",
-        "product_name_fr": "Mon Jambon Sup\u00e9rieur \u00e0 l'\u00e9touff\u00e9e VPF 4tr",
-        "stores": "Magasins U",
-        "code": "3180940083138",
-        "url": "https://fr.openfoodfacts.org/produit/3180940083138/mon-jambon-superieur-a-l-etouffee-vpf-4tr-madrange",
-        "brands": "Madrange",
-        "categories": "Jambons"
+        "categories": "Jambons",
+        "url": "https://fr.openfoodfacts.org/produit/3302749896027/le-superieur-cuit-a-l-etouffee-4tr-fleury-michon",
+        "code": "3302749896027",
+        "brands": "fleury michon",
+        "stores": "Carrefour"
     },
     {
-        "categories": "Jambons",
-        "code": "3449865304200",
-        "stores": "supermarch\u00e9,hypermarch\u00e9",
+        "product_name_fr": "Noix de jambon - Aoste",
         "url": "https://fr.openfoodfacts.org/produit/3449865304200/noix-de-jambon-aoste",
         "brands": "Aoste",
+        "categories": "Jambons",
+        "code": "3449865304200",
         "nutriscore_grade": "d",
+        "stores": "supermarch\u00e9,hypermarch\u00e9"
+    },
+    {
+        "product_name_fr": "Les Grandes Tranches",
+        "categories": "Jambons",
+        "url": "https://fr.openfoodfacts.org/produit/3449865293375/les-grandes-tranches-aoste",
+        "brands": "Aoste",
+        "code": "3449865293375",
+        "nutriscore_grade": "e",
+        "stores": "supermarch\u00e9,hypermarch\u00e9"
+    },
+    {
+        "product_name_fr": "Le sup\u00e9rieur cuit \u00e0 l'\u00e9touff\u00e9e - 4tr",
+        "nutriscore_grade": "c",
+        "categories": "Jambons",
+        "url": "https://fr.openfoodfacts.org/produit/3302749896027/le-superieur-cuit-a-l-etouffee-4tr-fleury-michon",
+        "code": "3302749896027",
+        "brands": "fleury michon",
+        "stores": "Carrefour"
+    },
+    {
+        "product_name_fr": "Noix de jambon - Aoste",
+        "url": "https://fr.openfoodfacts.org/produit/3449865304200/noix-de-jambon-aoste",
+        "brands": "Aoste",
+        "categories": "Jambons",
+        "code": "3449865304200",
+        "nutriscore_grade": "d",
+        "stores": "supermarch\u00e9,hypermarch\u00e9"
+    },
+    {
+        "product_name_fr": "Les Grandes Tranches",
+        "categories": "Jambons",
+        "url": "https://fr.openfoodfacts.org/produit/3449865293375/les-grandes-tranches-aoste",
+        "brands": "Aoste",
+        "code": "3449865293375",
+        "nutriscore_grade": "e",
+        "stores": "supermarch\u00e9,hypermarch\u00e9"
+    },
+    {
+        "product_name_fr": "Le sup\u00e9rieur cuit \u00e0 l'\u00e9touff\u00e9e - 4tr",
+        "nutriscore_grade": "c",
+        "url": "https://fr.openfoodfacts.org/produit/3302749896027/le-superieur-cuit-a-l-etouffee-4tr-fleury-michon",
+        "code": "3302749896027",
+        "categories": "Jambons",
+        "brands": "fleury michon",
+        "stores": "Carrefour"
+    },
+    {
+        "categories": "Jambons",
+        "url": "https://fr.openfoodfacts.org/produit/3449865304200/noix-de-jambon-aoste",
+        "code": "3449865304200",
+        "brands": "Aoste",
+        "nutriscore_grade": "d",
+        "stores": "supermarch\u00e9,hypermarch\u00e9",
         "product_name_fr": "Noix de jambon - Aoste"
     },
     {
-        "nutriscore_grade": "e",
         "product_name_fr": "Les Grandes Tranches",
-        "code": "3449865293375",
         "stores": "supermarch\u00e9,hypermarch\u00e9",
-        "url": "https://fr.openfoodfacts.org/produit/3449865293375/les-grandes-tranches-aoste",
+        "nutriscore_grade": "e",
         "brands": "Aoste",
-        "categories": "Jambons"
-    },
-    {
-        "brands": "Saint Azay,Marque Rep\u00e8re",
-        "url": "https://fr.openfoodfacts.org/produit/3564700038062/jambon-cru-recette-italienne-saint-azay",
-        "stores": "Leclerc",
-        "code": "3564700038062",
+        "url": "https://fr.openfoodfacts.org/produit/3449865293375/les-grandes-tranches-aoste",
         "categories": "Jambons",
-        "product_name_fr": "Jambon cru recette italienne",
-        "nutriscore_grade": "d"
-    },
-    {
-        "code": "3250392602253",
-        "stores": "Intermarch\u00e9",
-        "url": "https://fr.openfoodfacts.org/produit/3250392602253/jambon-le-tradition-sans-nitrite-monique-ranou",
-        "brands": "Monique Ranou,Intermarch\u00e9",
-        "categories": "Jambons",
-        "nutriscore_grade": "c",
-        "product_name_fr": "Jambon Le Tradition sans nitrite"
-    },
-    {
-        "categories": "Jambons",
-        "brands": "Carrefour",
-        "url": "https://fr.openfoodfacts.org/produit/3560070949229/jambon-decouenne-degraisse-carrefour",
-        "stores": "Carrefour",
-        "code": "3560070949229",
-        "product_name_fr": "Jambon d\u00e9couenn\u00e9 d\u00e9graiss\u00e9",
-        "nutriscore_grade": "c"
-    },
-    {
-        "product_name_fr": "Jambon sec italien",
-        "nutriscore_grade": "d",
-        "categories": "Jambons",
-        "url": "https://fr.openfoodfacts.org/produit/3250391204915/jambon-sec-italien-itineraire-des-saveurs",
-        "brands": "Itin\u00e9raire des saveurs",
-        "code": "3250391204915",
-        "stores": "Intermarch\u00e9"
-    },
-    {
-        "product_name_fr": "Jambon de Bayonne",
-        "nutriscore_grade": "d",
-        "brands": "Saint alby",
-        "url": "https://fr.openfoodfacts.org/produit/20127510/jambon-de-bayonne-saint-alby",
-        "code": "20127510",
-        "stores": "Lidl",
-        "categories": "Jambons"
-    },
-    {
-        "url": "https://fr.openfoodfacts.org/produit/3180940079650/mon-jambon-blanc-6-tr-madrange",
-        "brands": "Madrange",
-        "code": "3180940079650",
-        "stores": "Auchan",
-        "categories": "Jambons",
-        "product_name_fr": "Mon Jambon Blanc 6 tr",
-        "nutriscore_grade": "c"
-    },
-    {
-        "product_name_fr": "Jambon sup\u00e9rieur Decou\u00e9nn\u00e9 (-25% de sel)",
-        "nutriscore_grade": "c",
-        "categories": "Jambons",
-        "url": "https://fr.openfoodfacts.org/produit/3596710353217/jambon-superieur-decouenne-25-de-sel-auchan",
-        "brands": "Auchan",
-        "stores": "Auchan",
-        "code": "3596710353217"
+        "code": "3449865293375"
     }
 ]
