@@ -1,7 +1,9 @@
 """Interface with user."""
 
-from controller.api_config import CATEGORIES
+
 from model.db_request import Db_requests
+from model.db_config import NBPRODUCTS
+from controller.api_config import CATEGORIES
 
 class Ui():
     """Allows the user to interact with the program."""
@@ -68,8 +70,28 @@ class Ui():
     def products(self, category):
         """Display products to the user."""
         print(f"\nDans la categorie {category},")
-        print("vous pouvez rechercher un substitut pour un des produits suivant :")
-        fetched_products = Db_requests(category).fetch_products(category)
-        for product in fetched_products:
-            print(product)
+        print("vous pouvez rechercher un substitut pour un des produits suivant :\n")
+        fetched_products = Db_requests().fetch_products(category)
+        for count, product in enumerate(fetched_products):
+            print(count+1,'-',product)
+        choices = NBPRODUCTS
+        user_input = input("\nVotre choix : ")
+        choice = self._user_choices(user_input, choices)
+        if choice != False:
+            for i in range(NBPRODUCTS):
+                if i+1 == choice:                
+                    self.substitute(fetched_products[choice-1][0], category)
+                    return ################## OK ? 
+            self.products(category)
+        else:
+            self.products(category)
 
+    def substitute(self, product_id, category):
+        """Display substitute to the user."""
+        substitute = Db_requests().fetch_substitute(category)
+        print('\nLe produit suivant obtient un meilleur Nutriscore, dans la même Catégorie:')
+        print(substitute[0])
+        print('\nCe produit peut substituer le produit que vous aviez sélectionné :')
+        old_product = Db_requests().fetch_product(product_id)
+        print(old_product[0])
+    
