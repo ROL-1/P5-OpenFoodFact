@@ -1,15 +1,12 @@
 """Insert data in data base. From JSON."""
 
-import os
-import json
-
 from model.db_connection import Db_connect
 from controller.api_config import FIELDS
 from controller.api_config import CATEGORIES
 from model.rom import Rom
 
 class Db_insert:
-    """Insert data in data base. From JSON."""
+    """Insert data in data base."""
 
     def __init__ (self, Api_data, verbose):
         """ ... """
@@ -79,7 +76,6 @@ class Db_insert:
                 Products_has_Stores = ['Products_has_Stores',(ProductID,StoreID)]
                 insert_lists = [Products_has_Stores,]
                 Rom.two_values_insertion(Log,insert_lists)
-
             
             # Commit changes to database.
             Log.cnn.commit()

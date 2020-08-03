@@ -3,7 +3,7 @@
 REQUEST_PARAMS = [
     'action=process','tagtype_0=categories','tag_contains_0=contains',
     'json=1',
-    'page_size=150',
+    'page_size=10',
     'fields='
 ]
 

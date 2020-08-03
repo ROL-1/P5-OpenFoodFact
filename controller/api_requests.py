@@ -39,7 +39,7 @@ class Api_requests:
         i = 0        
         while search_category and i < len(CATEGORIES):
             for category in CATEGORIES:
-                if category in product['categories'].split(','):                    
+                if category in product['categories'].split(', '):                    
                     product['categories'] = category
                     search_category = False
                 i +=1
@@ -82,7 +82,7 @@ class Api_requests:
         """Check how many products by categories are suitables."""
         products_nb = 0
         for product in cleaned_scraped:                                            
-            if category in product['categories'].split(','): # Virer split ?
+            if category == product['categories']:
                 products_nb += 1
         if products_nb < MIN_PROD:                    
             category_filled = False
@@ -106,6 +106,7 @@ class Api_requests:
                 if verbose:
                     print('Cleaning data for',category)
                 # Review products.
+                
                 for product in self.scraped:
                     # Change "categories" product field for only one category, or nothing if not in 'CATEGORIES' list.
                     self.define_category(product) 
@@ -114,13 +115,12 @@ class Api_requests:
                     # Check datas.                
                     Data = self.data_missing(product)
                     Strings = self.string_length(Fields_charmax, product)
-                    # Fill 'cleaned_scraped' list with product if all checks are true.                   
+                    # Fill 'cleaned_scraped' list with product if all checks are true.
                     if ('categories' in product) and (category in product['categories']) and (Data != 'False') and (Strings != 'False') :                        
                         self.cleaned_scraped.append(product)
-
                 # Check how many products by categories are suitables.
                 category_filled = self.products_nb(self.cleaned_scraped, category)
-                if category_filled:
+                if category_filled is False:
                     self.page_nb +=1
                 else:
                     self.page_nb = 1
