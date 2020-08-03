@@ -1,335 +1,1217 @@
 [
     {
-        "product_name_fr": "Restaurant Pizza Tonno",
         "stores": "Magasins U, Delhaize",
-        "brands": "Dr Oetker",
+        "nutriscore_grade": "d",
         "url": "https://fr.openfoodfacts.org/produit/4001724819301/restaurant-pizza-tonno-dr-oetker",
         "categories": "Pizzas",
         "code": "4001724819301",
-        "nutriscore_grade": "d"
+        "brands": "Dr Oetker",
+        "product_name_fr": "Restaurant Pizza Tonno"
     },
     {
         "product_name_fr": "Pizza 4 Saisons",
-        "nutriscore_grade": "b",
         "categories": "Pizzas",
         "url": "https://fr.openfoodfacts.org/produit/3270160717668/pizza-4-saisons-picard",
         "brands": "Picard",
         "code": "3270160717668",
+        "nutriscore_grade": "b",
         "stores": "Picard"
     },
     {
-        "nutriscore_grade": "d",
-        "code": "4001724819905",
-        "url": "https://fr.openfoodfacts.org/produit/4001724819905/ristorante-pizza-vegetale-dr-oetker",
-        "categories": "Pizzas",
-        "brands": "Dr. Oetker",
         "stores": "Franprix,Magasins U,Delhaize",
+        "nutriscore_grade": "d",
+        "url": "https://fr.openfoodfacts.org/produit/4001724819905/ristorante-pizza-vegetale-dr-oetker",
+        "brands": "Dr. Oetker",
+        "categories": "Pizzas",
+        "code": "4001724819905",
         "product_name_fr": "Ristorante: Pizza vegetale"
     },
     {
+        "product_name_fr": "Ristorante Pizza Mozzarella",
         "stores": "Coles,Bilo,Woolworths,Willys,Coop Konsum,Magasins U",
-        "categories": "Pizzas",
-        "url": "https://fr.openfoodfacts.org/produit/4001724819806/ristorante-pizza-mozzarella-dr-oetker",
-        "code": "4001724819806",
-        "brands": "Dr. Oetker",
         "nutriscore_grade": "c",
-        "product_name_fr": "Ristorante Pizza Mozzarella"
+        "code": "4001724819806",
+        "url": "https://fr.openfoodfacts.org/produit/4001724819806/ristorante-pizza-mozzarella-dr-oetker",
+        "categories": "Pizzas",
+        "brands": "Dr. Oetker"
     },
     {
-        "code": "3242272347552",
+        "stores": "Carrefour,Franprix,Casino,Magasins U",
         "url": "https://fr.openfoodfacts.org/produit/3242272347552/dolce-pizza-regina-sodebo",
         "categories": "Pizzas",
         "brands": "Sodebo",
+        "code": "3242272347552",
         "nutriscore_grade": "b",
-        "stores": "Carrefour,Franprix,Casino,Magasins U",
         "product_name_fr": "Dolce Pizza - Regina"
     },
     {
-        "product_name_fr": "Ristorante pizza quattro formaggi",
         "stores": "Dia,Woolworths,Coles,Intermarch\u00e9,Magasins U",
         "nutriscore_grade": "d",
         "url": "https://fr.openfoodfacts.org/produit/4001724818908/ristorante-pizza-quattro-formaggi-dr-oetker",
         "categories": "Pizzas",
+        "code": "4001724818908",
         "brands": "Dr.Oetker",
-        "code": "4001724818908"
+        "product_name_fr": "Ristorante pizza quattro formaggi"
     },
     {
         "product_name_fr": "Fraich'up Italian Burger",
-        "stores": "Cora",
         "url": "https://fr.openfoodfacts.org/produit/06147877/fraich-up-italian-burger-buitoni",
         "brands": "Buitoni,Nestl\u00e9",
         "categories": "Pizzas",
         "code": "06147877",
-        "nutriscore_grade": "c"
+        "nutriscore_grade": "c",
+        "stores": "Cora"
     },
     {
-        "product_name_fr": "Dolce Pizza - Campanella",
-        "code": "3242272345558",
+        "nutriscore_grade": "c",
         "url": "https://fr.openfoodfacts.org/produit/3242272345558/dolce-pizza-campanella-sodebo",
         "categories": "Pizzas",
         "brands": "Sodebo,dolce",
-        "nutriscore_grade": "c",
-        "stores": "Leclerc,Casino,Magasins U"
+        "code": "3242272345558",
+        "stores": "Leclerc,Casino,Magasins U",
+        "product_name_fr": "Dolce Pizza - Campanella"
     },
     {
         "product_name_fr": "Pizza N\u00b03 - L\u00e9gumes, Pesto, Parmesano Reggiano",
-        "stores": "Picard",
-        "nutriscore_grade": "c",
         "categories": "Pizzas",
         "url": "https://fr.openfoodfacts.org/produit/3270160890170/pizza-n-3-legumes-pesto-parmesano-reggiano-picard",
+        "code": "3270160890170",
         "brands": "Picard",
-        "code": "3270160890170"
+        "nutriscore_grade": "c",
+        "stores": "Picard"
     },
     {
-        "product_name_fr": "Pizza surgel\u00e9e Jambon Speck Roquette Mozzarella",
-        "stores": "Picard",
-        "categories": "Pizzas",
-        "url": "https://fr.openfoodfacts.org/produit/3270160717323/pizza-surgelee-jambon-speck-roquette-mozzarella-picard",
+        "nutriscore_grade": "b",
         "code": "3270160717323",
+        "url": "https://fr.openfoodfacts.org/produit/3270160717323/pizza-surgelee-jambon-speck-roquette-mozzarella-picard",
+        "categories": "Pizzas",
         "brands": "Picard",
-        "nutriscore_grade": "b"
+        "stores": "Picard",
+        "product_name_fr": "Pizza surgel\u00e9e Jambon Speck Roquette Mozzarella"
     },
     {
-        "product_name_fr": "J'ai envie d'un Su\u00e9dois - Duo de saumon",
+        "stores": "Magasins U, Delhaize",
+        "nutriscore_grade": "d",
+        "url": "https://fr.openfoodfacts.org/produit/4001724819301/restaurant-pizza-tonno-dr-oetker",
+        "categories": "Pizzas",
+        "code": "4001724819301",
+        "brands": "Dr Oetker",
+        "product_name_fr": "Restaurant Pizza Tonno"
+    },
+    {
+        "product_name_fr": "Pizza 4 Saisons",
+        "categories": "Pizzas",
+        "url": "https://fr.openfoodfacts.org/produit/3270160717668/pizza-4-saisons-picard",
+        "brands": "Picard",
+        "code": "3270160717668",
+        "nutriscore_grade": "b",
+        "stores": "Picard"
+    },
+    {
+        "stores": "Franprix,Magasins U,Delhaize",
+        "nutriscore_grade": "d",
+        "url": "https://fr.openfoodfacts.org/produit/4001724819905/ristorante-pizza-vegetale-dr-oetker",
+        "brands": "Dr. Oetker",
+        "categories": "Pizzas",
+        "code": "4001724819905",
+        "product_name_fr": "Ristorante: Pizza vegetale"
+    },
+    {
+        "product_name_fr": "Ristorante Pizza Mozzarella",
+        "stores": "Coles,Bilo,Woolworths,Willys,Coop Konsum,Magasins U",
+        "nutriscore_grade": "c",
+        "code": "4001724819806",
+        "url": "https://fr.openfoodfacts.org/produit/4001724819806/ristorante-pizza-mozzarella-dr-oetker",
+        "categories": "Pizzas",
+        "brands": "Dr. Oetker"
+    },
+    {
+        "stores": "Carrefour,Franprix,Casino,Magasins U",
+        "url": "https://fr.openfoodfacts.org/produit/3242272347552/dolce-pizza-regina-sodebo",
+        "categories": "Pizzas",
+        "brands": "Sodebo",
+        "code": "3242272347552",
+        "nutriscore_grade": "b",
+        "product_name_fr": "Dolce Pizza - Regina"
+    },
+    {
+        "stores": "Dia,Woolworths,Coles,Intermarch\u00e9,Magasins U",
+        "nutriscore_grade": "d",
+        "url": "https://fr.openfoodfacts.org/produit/4001724818908/ristorante-pizza-quattro-formaggi-dr-oetker",
+        "categories": "Pizzas",
+        "code": "4001724818908",
+        "brands": "Dr.Oetker",
+        "product_name_fr": "Ristorante pizza quattro formaggi"
+    },
+    {
+        "product_name_fr": "Fraich'up Italian Burger",
+        "url": "https://fr.openfoodfacts.org/produit/06147877/fraich-up-italian-burger-buitoni",
+        "brands": "Buitoni,Nestl\u00e9",
+        "categories": "Pizzas",
+        "code": "06147877",
+        "nutriscore_grade": "c",
+        "stores": "Cora"
+    },
+    {
+        "nutriscore_grade": "c",
+        "url": "https://fr.openfoodfacts.org/produit/3242272345558/dolce-pizza-campanella-sodebo",
+        "categories": "Pizzas",
+        "brands": "Sodebo,dolce",
+        "code": "3242272345558",
+        "stores": "Leclerc,Casino,Magasins U",
+        "product_name_fr": "Dolce Pizza - Campanella"
+    },
+    {
+        "product_name_fr": "Pizza N\u00b03 - L\u00e9gumes, Pesto, Parmesano Reggiano",
+        "categories": "Pizzas",
+        "url": "https://fr.openfoodfacts.org/produit/3270160890170/pizza-n-3-legumes-pesto-parmesano-reggiano-picard",
+        "code": "3270160890170",
+        "brands": "Picard",
+        "nutriscore_grade": "c",
+        "stores": "Picard"
+    },
+    {
+        "nutriscore_grade": "b",
+        "code": "3270160717323",
+        "url": "https://fr.openfoodfacts.org/produit/3270160717323/pizza-surgelee-jambon-speck-roquette-mozzarella-picard",
+        "categories": "Pizzas",
+        "brands": "Picard",
+        "stores": "Picard",
+        "product_name_fr": "Pizza surgel\u00e9e Jambon Speck Roquette Mozzarella"
+    },
+    {
+        "stores": "Franprix,Magasins U",
+        "categories": "Pizzas",
+        "url": "https://fr.openfoodfacts.org/produit/3242272345053/sodebo-dolce-pizza-4-formaggi",
+        "brands": "Sodebo",
+        "code": "3242272345053",
+        "nutriscore_grade": "c",
+        "product_name_fr": "Sodebo Dolce Pizza - 4 Formaggi"
+    },
+    {
+        "product_name_fr": "Pizza 3 Fromages Bio",
+        "stores": "Picard",
+        "url": "https://fr.openfoodfacts.org/produit/3270160371983/pizza-3-fromages-bio-picard",
+        "categories": "Pizzas",
+        "code": "3270160371983",
+        "brands": "picard",
+        "nutriscore_grade": "d"
+    },
+    {
+        "nutriscore_grade": "d",
+        "categories": "Pizzas",
+        "url": "https://fr.openfoodfacts.org/produit/4001724819509/dr-oetker-ristorante-pizza-speciale",
+        "brands": "Dr. Oetker",
+        "code": "4001724819509",
+        "stores": "Franprix,Magasins U,Delhaize",
+        "product_name_fr": "Dr. Oetker Ristorante Pizza Speciale"
+    },
+    {
+        "stores": "Match,Magasins U",
+        "categories": "Pizzas",
+        "url": "https://fr.openfoodfacts.org/produit/4001724006923/ristorante-pizza-royale-dr-oetker",
+        "code": "4001724006923",
+        "brands": "Dr Oetker,Dr. Oetker",
+        "nutriscore_grade": "c",
+        "product_name_fr": "Ristorante Pizza royale"
+    },
+    {
+        "stores": "Magasins U",
+        "categories": "Pizzas",
+        "url": "https://fr.openfoodfacts.org/produit/7613034225795/pizza-fraich-up-royale-buitoni",
+        "brands": "Buitoni,Nestl\u00e9",
+        "code": "7613034225795",
+        "nutriscore_grade": "c",
+        "product_name_fr": "Pizza Fraich'up Royale"
+    },
+    {
+        "url": "https://fr.openfoodfacts.org/produit/3242273050550/sodebo-pizza-crust-farmer",
+        "categories": "Pizzas",
+        "code": "3242273050550",
+        "brands": "Sodebo",
+        "nutriscore_grade": "b",
+        "stores": "Magasins U,Leclerc",
+        "product_name_fr": "Sodebo Pizza Crust - Farmer"
+    },
+    {
+        "product_name_fr": "Sodebo Pizza Crust - Classic",
+        "stores": "Franprix,Casino,Magasins U",
+        "categories": "Pizzas",
+        "url": "https://fr.openfoodfacts.org/produit/3242273050055/sodebo-pizza-crust-classic",
+        "code": "3242273050055",
+        "brands": "Sodebo,pizza crust",
+        "nutriscore_grade": "c"
+    },
+    {
+        "stores": "Franprix,Casino,Carrefour Market,Magasins U",
+        "url": "https://fr.openfoodfacts.org/produit/3242273204052/sodebo-l-ovale-jambon-fromages",
+        "code": "3242273204052",
+        "categories": "Pizzas",
+        "brands": "Sodebo",
+        "nutriscore_grade": "d",
+        "product_name_fr": "Sodebo L'Ovale Jambon Fromages"
+    },
+    {
+        "nutriscore_grade": "b",
+        "categories": "Pizzas",
+        "url": "https://fr.openfoodfacts.org/produit/3242273050451/sodebo-pizza-crust-buffalo-boeuf-epice-poivrons-grilles",
+        "brands": "Sodebo,pizza crust",
+        "code": "3242273050451",
+        "stores": "Intermarch\u00e9,Magasins U,Leclerc",
+        "product_name_fr": "Sodebo Pizza Crust - Buffalo b\u0153uf \u00e9pic\u00e9 poivrons grill\u00e9s"
+    },
+    {
+        "url": "https://fr.openfoodfacts.org/produit/3242273050253/sodebo-pizza-crust-cheesy",
+        "categories": "Pizzas",
+        "brands": "Sodebo,pizza crust",
+        "code": "3242273050253",
+        "nutriscore_grade": "d",
+        "stores": "Franprix,Magasins U",
+        "product_name_fr": "Sodebo Pizza Crust - Cheesy"
+    },
+    {
         "stores": "Casino,Carrefour Market",
-        "code": "3242272890751",
         "url": "https://fr.openfoodfacts.org/produit/3242272890751/j-ai-envie-d-un-suedois-duo-de-saumon-sodebo",
+        "code": "3242272890751",
         "categories": "Sandwichs",
         "brands": "Sodebo,j'ai envie d'un...suedois",
-        "nutriscore_grade": "b"
+        "nutriscore_grade": "b",
+        "product_name_fr": "J'ai envie d'un Su\u00e9dois - Duo de saumon"
     },
     {
-        "product_name_fr": "Sandwich Le M\u00e9ga - Baguette  - Poulet r\u00f4ti Oeuf  Mayo l\u00e9g\u00e8re",
-        "stores": "Magasins U",
         "categories": "Sandwichs",
         "url": "https://fr.openfoodfacts.org/produit/3242272921059/sandwich-le-mega-baguette-poulet-roti-oeuf-mayo-legere-sodebo",
-        "code": "3242272921059",
         "brands": "Sodebo,le mega baguette",
-        "nutriscore_grade": "b"
+        "code": "3242272921059",
+        "nutriscore_grade": "b",
+        "stores": "Magasins U",
+        "product_name_fr": "Sandwich Le M\u00e9ga - Baguette  - Poulet r\u00f4ti Oeuf  Mayo l\u00e9g\u00e8re"
     },
     {
+        "product_name_fr": "Sandwich Le M\u00e9ga - Baguette - Thon  \u0152uf Sauce cocktail",
         "stores": "SuperU,Cora,Magasins U,Carrefour,Auchan,Netto,E-LECLERC",
         "nutriscore_grade": "b",
         "url": "https://fr.openfoodfacts.org/produit/3242272922056/sandwich-le-mega-baguette-thon-oeuf-sauce-cocktail-sodebo",
         "brands": "Sodebo,le mega baguette",
         "categories": "Sandwichs",
-        "code": "3242272922056",
-        "product_name_fr": "Sandwich Le M\u00e9ga - Baguette - Thon  \u0152uf Sauce cocktail"
+        "code": "3242272922056"
     },
     {
+        "product_name_fr": "Poulet roti",
         "stores": "Magasins U",
-        "nutriscore_grade": "b",
         "url": "https://fr.openfoodfacts.org/produit/3367651000832/poulet-roti-daunat",
-        "code": "3367651000832",
         "categories": "Sandwichs",
+        "code": "3367651000832",
         "brands": "Daunat",
-        "product_name_fr": "Poulet roti"
+        "nutriscore_grade": "b"
     },
     {
-        "stores": "Carrefour,Magasins U",
-        "nutriscore_grade": "a",
+        "product_name_fr": "Sandwich Le M\u00e9ga - Club - Poulet r\u00f4ti Crudit\u00e9s x3 / pain viennois",
         "categories": "Sandwichs",
         "url": "https://fr.openfoodfacts.org/produit/3242272980858/sandwich-le-mega-club-poulet-roti-crudites-x3-pain-viennois-sodebo",
         "brands": "Sodebo,le mega club",
         "code": "3242272980858",
-        "product_name_fr": "Sandwich Le M\u00e9ga - Club - Poulet r\u00f4ti Crudit\u00e9s x3 / pain viennois"
+        "nutriscore_grade": "a",
+        "stores": "Carrefour,Magasins U"
     },
     {
+        "stores": "Carrefour, Magasins U",
+        "nutriscore_grade": "d",
         "url": "https://fr.openfoodfacts.org/produit/3367651001884/les-minis-maxi-moelleux-jambon-emmental-daunat",
+        "brands": "Daunat",
         "categories": "Sandwichs",
         "code": "3367651001884",
-        "brands": "Daunat",
-        "nutriscore_grade": "d",
-        "stores": "Carrefour, Magasins U",
         "product_name_fr": "Les Minis Maxi Moelleux Jambon Emmental"
     },
     {
         "product_name_fr": "Sandwich Le M\u00e9ga - Club - Poulet r\u00f4ti Oeuf x3 / pain su\u00e9dois",
-        "stores": "Carrefour,Magasins U",
         "code": "3242272981558",
         "url": "https://fr.openfoodfacts.org/produit/3242272981558/sandwich-le-mega-club-poulet-roti-oeuf-x3-pain-suedois-sodebo",
         "categories": "Sandwichs",
         "brands": "Sodebo,le mega club",
-        "nutriscore_grade": "b"
+        "nutriscore_grade": "b",
+        "stores": "Carrefour,Magasins U"
     },
     {
+        "product_name_fr": "Le moelleux Poulet r\u00f4ti Crudit\u00e9s Mayonnaise",
+        "stores": "Magasins U",
         "nutriscore_grade": "b",
-        "code": "3367651002881",
         "url": "https://fr.openfoodfacts.org/produit/3367651002881/le-moelleux-poulet-roti-crudites-mayonnaise-daunat",
         "categories": "Sandwichs",
         "brands": "Daunat",
+        "code": "3367651002881"
+    },
+    {
+        "stores": "Casino,Carrefour Market",
+        "url": "https://fr.openfoodfacts.org/produit/3242272890751/j-ai-envie-d-un-suedois-duo-de-saumon-sodebo",
+        "code": "3242272890751",
+        "categories": "Sandwichs",
+        "brands": "Sodebo,j'ai envie d'un...suedois",
+        "nutriscore_grade": "b",
+        "product_name_fr": "J'ai envie d'un Su\u00e9dois - Duo de saumon"
+    },
+    {
+        "categories": "Sandwichs",
+        "url": "https://fr.openfoodfacts.org/produit/3242272921059/sandwich-le-mega-baguette-poulet-roti-oeuf-mayo-legere-sodebo",
+        "brands": "Sodebo,le mega baguette",
+        "code": "3242272921059",
+        "nutriscore_grade": "b",
         "stores": "Magasins U",
-        "product_name_fr": "Le moelleux Poulet r\u00f4ti Crudit\u00e9s Mayonnaise"
+        "product_name_fr": "Sandwich Le M\u00e9ga - Baguette  - Poulet r\u00f4ti Oeuf  Mayo l\u00e9g\u00e8re"
+    },
+    {
+        "product_name_fr": "Sandwich Le M\u00e9ga - Baguette - Thon  \u0152uf Sauce cocktail",
+        "stores": "SuperU,Cora,Magasins U,Carrefour,Auchan,Netto,E-LECLERC",
+        "nutriscore_grade": "b",
+        "url": "https://fr.openfoodfacts.org/produit/3242272922056/sandwich-le-mega-baguette-thon-oeuf-sauce-cocktail-sodebo",
+        "brands": "Sodebo,le mega baguette",
+        "categories": "Sandwichs",
+        "code": "3242272922056"
+    },
+    {
+        "product_name_fr": "Poulet roti",
+        "stores": "Magasins U",
+        "url": "https://fr.openfoodfacts.org/produit/3367651000832/poulet-roti-daunat",
+        "categories": "Sandwichs",
+        "code": "3367651000832",
+        "brands": "Daunat",
+        "nutriscore_grade": "b"
+    },
+    {
+        "product_name_fr": "Sandwich Le M\u00e9ga - Club - Poulet r\u00f4ti Crudit\u00e9s x3 / pain viennois",
+        "categories": "Sandwichs",
+        "url": "https://fr.openfoodfacts.org/produit/3242272980858/sandwich-le-mega-club-poulet-roti-crudites-x3-pain-viennois-sodebo",
+        "brands": "Sodebo,le mega club",
+        "code": "3242272980858",
+        "nutriscore_grade": "a",
+        "stores": "Carrefour,Magasins U"
+    },
+    {
+        "stores": "Carrefour, Magasins U",
+        "nutriscore_grade": "d",
+        "url": "https://fr.openfoodfacts.org/produit/3367651001884/les-minis-maxi-moelleux-jambon-emmental-daunat",
+        "brands": "Daunat",
+        "categories": "Sandwichs",
+        "code": "3367651001884",
+        "product_name_fr": "Les Minis Maxi Moelleux Jambon Emmental"
+    },
+    {
+        "product_name_fr": "Sandwich Le M\u00e9ga - Club - Poulet r\u00f4ti Oeuf x3 / pain su\u00e9dois",
+        "code": "3242272981558",
+        "url": "https://fr.openfoodfacts.org/produit/3242272981558/sandwich-le-mega-club-poulet-roti-oeuf-x3-pain-suedois-sodebo",
+        "categories": "Sandwichs",
+        "brands": "Sodebo,le mega club",
+        "nutriscore_grade": "b",
+        "stores": "Carrefour,Magasins U"
+    },
+    {
+        "product_name_fr": "Le moelleux Poulet r\u00f4ti Crudit\u00e9s Mayonnaise",
+        "stores": "Magasins U",
+        "nutriscore_grade": "b",
+        "url": "https://fr.openfoodfacts.org/produit/3367651002881/le-moelleux-poulet-roti-crudites-mayonnaise-daunat",
+        "categories": "Sandwichs",
+        "brands": "Daunat",
+        "code": "3367651002881"
+    },
+    {
+        "product_name_fr": "XXL Pain complet Jambon Emmental Salade",
+        "nutriscore_grade": "c",
+        "categories": "Sandwichs",
+        "url": "https://fr.openfoodfacts.org/produit/3367651000825/xxl-pain-complet-jambon-emmental-salade-daunat",
+        "code": "3367651000825",
+        "brands": "Daunat",
+        "stores": "Magasins U,Leclerc"
+    },
+    {
+        "stores": "Dia,Magasins U",
+        "nutriscore_grade": "d",
+        "url": "https://fr.openfoodfacts.org/produit/3367651001891/les-minis-maxi-moelleux-blanc-de-poulet-emmental-daunat",
+        "brands": "Daunat",
+        "categories": "Sandwichs",
+        "code": "3367651001891",
+        "product_name_fr": "Les Minis Maxi Moelleux Blanc de Poulet Emmental"
+    },
+    {
+        "stores": "Cora,Carrefour,Magasins U",
+        "nutriscore_grade": "c",
+        "code": "3242272861553",
+        "url": "https://fr.openfoodfacts.org/produit/3242272861553/sandwich-simple-bon-club-jambon-emmental-sodebo",
+        "categories": "Sandwichs",
+        "brands": "Sodebo,simple & bon club",
+        "product_name_fr": "Sandwich Simple & Bon ! Club - Jambon Emmental"
+    },
+    {
+        "nutriscore_grade": "d",
+        "url": "https://fr.openfoodfacts.org/produit/3242272890959/j-ai-envie-d-un-suedois-jambon-cheddar-fondu-sodebo",
+        "categories": "Sandwichs",
+        "code": "3242272890959",
+        "brands": "Sodebo,j'ai envie d'un...suedois",
+        "stores": "Magasins U,Carrefour",
+        "product_name_fr": "J'ai envie d'un Su\u00e9dois - Jambon Cheddar fondu"
+    },
+    {
+        "stores": "Casino,Magasins U",
+        "url": "https://fr.openfoodfacts.org/produit/7613035512863/tendre-croc-comte-herta",
+        "categories": "Sandwichs",
+        "brands": "Herta",
+        "code": "7613035512863",
+        "nutriscore_grade": "d",
+        "product_name_fr": "Tendre Croc' Comt\u00e9"
+    },
+    {
+        "nutriscore_grade": "d",
+        "brands": "Herta",
+        "url": "https://fr.openfoodfacts.org/produit/7613035512894/herta-tendre-croc",
+        "categories": "Sandwichs",
+        "code": "7613035512894",
+        "stores": "Franprix, Magasins U",
+        "product_name_fr": "Herta Tendre Croc"
+    },
+    {
+        "stores": "Magasins U",
+        "categories": "Sandwichs",
+        "url": "https://fr.openfoodfacts.org/produit/3367651001853/sandwich-daunat",
+        "code": "3367651001853",
+        "brands": "Daunat",
+        "nutriscore_grade": "c",
+        "product_name_fr": "Sandwich"
+    },
+    {
+        "product_name_fr": "XXL poulet r\u00f4ti et mayonnaise (3 parts)",
+        "nutriscore_grade": "c",
+        "code": "3367651002416",
+        "url": "https://fr.openfoodfacts.org/produit/3367651002416/xxl-poulet-roti-et-mayonnaise-3-parts-daunat",
+        "categories": "Sandwichs",
+        "brands": "Daunat",
+        "stores": "Carrefour,Leclerc,Magasins U"
+    },
+    {
+        "stores": "Super U,Magasins U",
+        "url": "https://fr.openfoodfacts.org/produit/3367651004274/be-wrappy-poulet-roti-facon-fajitas-daunat",
+        "brands": "Daunat",
+        "categories": "Sandwichs",
+        "code": "3367651004274",
+        "nutriscore_grade": "c",
+        "product_name_fr": "Be Wrappy Poulet r\u00f4ti fa\u00e7on Fajitas"
+    },
+    {
+        "stores": "Carrefour, Magasins U",
+        "code": "3367651000054",
+        "url": "https://fr.openfoodfacts.org/produit/3367651000054/plaisir-vrai-poulet-roti-mayonnaise-daunat",
+        "categories": "Sandwichs",
+        "brands": "Daunat",
+        "nutriscore_grade": "c",
+        "product_name_fr": "Plaisir vrai! Poulet r\u00f4ti Mayonnaise"
     },
     {
         "product_name_fr": "Original taste",
+        "stores": "Super U",
         "nutriscore_grade": "e",
-        "brands": "Coca-Cola",
-        "url": "https://fr.openfoodfacts.org/produit/5000112611861/original-taste-coca-cola",
         "categories": "Sodas",
-        "code": "5000112611861",
-        "stores": "Super U"
+        "url": "https://fr.openfoodfacts.org/produit/5000112611861/original-taste-coca-cola",
+        "brands": "Coca-Cola",
+        "code": "5000112611861"
     },
     {
+        "product_name_fr": "Coca-Cola",
+        "stores": "Carrefour,Magasins U,Bim",
         "nutriscore_grade": "e",
+        "code": "5449000054227",
         "url": "https://fr.openfoodfacts.org/produit/5449000054227/coca-cola",
         "categories": "Sodas",
-        "brands": "Coca-Cola",
-        "code": "5449000054227",
-        "stores": "Carrefour,Magasins U,Bim",
-        "product_name_fr": "Coca-Cola"
+        "brands": "Coca-Cola"
     },
     {
-        "product_name_fr": "Coca-Cola zero\u00ae sans sucres",
-        "stores": "U Express,Magasins U,Bi1",
         "nutriscore_grade": "b",
+        "code": "5000112611762",
         "url": "https://fr.openfoodfacts.org/produit/5000112611762/coca-cola-zero-sans-sucres-the-coca-cola-company",
         "categories": "Sodas",
         "brands": "The Coca-Cola Company",
-        "code": "5000112611762"
+        "stores": "U Express,Magasins U,Bi1",
+        "product_name_fr": "Coca-Cola zero\u00ae sans sucres"
     },
     {
-        "url": "https://fr.openfoodfacts.org/produit/3502110009357/pepsi-max-zero",
-        "code": "3502110009357",
-        "categories": "Sodas",
-        "brands": "Pepsi",
-        "nutriscore_grade": "b",
+        "product_name_fr": "Pepsi max zero",
         "stores": "Carrefour Market,Magasins U",
-        "product_name_fr": "Pepsi max zero"
+        "url": "https://fr.openfoodfacts.org/produit/3502110009357/pepsi-max-zero",
+        "brands": "Pepsi",
+        "categories": "Sodas",
+        "code": "3502110009357",
+        "nutriscore_grade": "b"
     },
     {
         "product_name_fr": "Coca Z\u00e9ro",
         "stores": "Magasins U,Bi1,Kaufland",
+        "nutriscore_grade": "b",
         "url": "https://fr.openfoodfacts.org/produit/5449000133328/coca-zero-coca-cola",
         "categories": "Sodas",
-        "code": "5449000133328",
         "brands": "Coca cola",
+        "code": "5449000133328"
+    },
+    {
+        "product_name_fr": "Original taste",
+        "stores": "Super U",
+        "nutriscore_grade": "e",
+        "categories": "Sodas",
+        "url": "https://fr.openfoodfacts.org/produit/5000112611861/original-taste-coca-cola",
+        "brands": "Coca-Cola",
+        "code": "5000112611861"
+    },
+    {
+        "product_name_fr": "Coca-Cola",
+        "stores": "Carrefour,Magasins U,Bim",
+        "nutriscore_grade": "e",
+        "code": "5449000054227",
+        "url": "https://fr.openfoodfacts.org/produit/5449000054227/coca-cola",
+        "categories": "Sodas",
+        "brands": "Coca-Cola"
+    },
+    {
+        "nutriscore_grade": "b",
+        "code": "5000112611762",
+        "url": "https://fr.openfoodfacts.org/produit/5000112611762/coca-cola-zero-sans-sucres-the-coca-cola-company",
+        "categories": "Sodas",
+        "brands": "The Coca-Cola Company",
+        "stores": "U Express,Magasins U,Bi1",
+        "product_name_fr": "Coca-Cola zero\u00ae sans sucres"
+    },
+    {
+        "product_name_fr": "Pepsi max zero",
+        "stores": "Carrefour Market,Magasins U",
+        "url": "https://fr.openfoodfacts.org/produit/3502110009357/pepsi-max-zero",
+        "brands": "Pepsi",
+        "categories": "Sodas",
+        "code": "3502110009357",
         "nutriscore_grade": "b"
     },
     {
-        "product_name_fr": "Le nature",
+        "product_name_fr": "Coca Z\u00e9ro",
+        "stores": "Magasins U,Bi1,Kaufland",
+        "nutriscore_grade": "b",
+        "url": "https://fr.openfoodfacts.org/produit/5449000133328/coca-zero-coca-cola",
+        "categories": "Sodas",
+        "brands": "Coca cola",
+        "code": "5449000133328"
+    },
+    {
+        "url": "https://fr.openfoodfacts.org/produit/3249760000654/orangina",
+        "code": "3249760000654",
+        "categories": "Sodas",
+        "brands": "Orangina",
+        "nutriscore_grade": "e",
+        "stores": "Franprix,Magasins U,Delhaize",
+        "product_name_fr": "Orangina"
+    },
+    {
+        "product_name_fr": "Agrumes",
+        "stores": "Magasins U,leclerc",
+        "nutriscore_grade": "d",
+        "url": "https://fr.openfoodfacts.org/produit/3124480002501/agrumes-schweppes",
+        "categories": "Sodas",
+        "code": "3124480002501",
+        "brands": "Schweppes"
+    },
+    {
+        "product_name_fr": "Lipton Ice Tea saveur P\u00eache",
+        "stores": "Franprix,Leclerc,Magasins U,Auchan",
+        "categories": "Sodas",
+        "url": "https://fr.openfoodfacts.org/produit/3502110005922/lipton-ice-tea-saveur-peche",
+        "brands": "Lipton",
+        "code": "3502110005922",
+        "nutriscore_grade": "e"
+    },
+    {
+        "product_name_fr": "Orangina \u00c9dition Limit\u00e9e Rugby",
+        "stores": "Leclerc,Auchan,E Leclerc",
+        "nutriscore_grade": "e",
+        "categories": "Sodas",
+        "url": "https://fr.openfoodfacts.org/produit/3124480184344/orangina-edition-limitee-rugby",
+        "code": "3124480184344",
+        "brands": "Orangina,Orangina Schweppes France,Schweppes International Limited"
+    },
+    {
+        "brands": "Fanta",
+        "url": "https://fr.openfoodfacts.org/produit/5449000011527/orange-fanta",
+        "categories": "Sodas",
+        "code": "5449000011527",
+        "nutriscore_grade": "e",
+        "stores": "Distributeur automatique,OKCon 2013,M!P restaurants at CICG",
+        "product_name_fr": "Orange"
+    },
+    {
+        "product_name_fr": "Schweppes Zero Agrum'",
         "stores": "Intermarch\u00e9,Magasins U",
-        "nutriscore_grade": "a",
-        "url": "https://fr.openfoodfacts.org/produit/3033490004521/le-nature-danone",
+        "nutriscore_grade": "c",
+        "brands": "Schweppes",
+        "url": "https://fr.openfoodfacts.org/produit/3124480002686/schweppes-zero-agrum",
+        "categories": "Sodas",
+        "code": "3124480002686"
+    },
+    {
+        "product_name_fr": "Original taste",
+        "stores": "Super U",
+        "nutriscore_grade": "e",
+        "categories": "Sodas",
+        "url": "https://fr.openfoodfacts.org/produit/5000112611861/original-taste-coca-cola",
+        "brands": "Coca-Cola",
+        "code": "5000112611861"
+    },
+    {
+        "product_name_fr": "Coca-Cola",
+        "stores": "Carrefour,Magasins U,Bim",
+        "nutriscore_grade": "e",
+        "code": "5449000054227",
+        "url": "https://fr.openfoodfacts.org/produit/5449000054227/coca-cola",
+        "categories": "Sodas",
+        "brands": "Coca-Cola"
+    },
+    {
+        "nutriscore_grade": "b",
+        "code": "5000112611762",
+        "url": "https://fr.openfoodfacts.org/produit/5000112611762/coca-cola-zero-sans-sucres-the-coca-cola-company",
+        "categories": "Sodas",
+        "brands": "The Coca-Cola Company",
+        "stores": "U Express,Magasins U,Bi1",
+        "product_name_fr": "Coca-Cola zero\u00ae sans sucres"
+    },
+    {
+        "product_name_fr": "Pepsi max zero",
+        "stores": "Carrefour Market,Magasins U",
+        "url": "https://fr.openfoodfacts.org/produit/3502110009357/pepsi-max-zero",
+        "brands": "Pepsi",
+        "categories": "Sodas",
+        "code": "3502110009357",
+        "nutriscore_grade": "b"
+    },
+    {
+        "product_name_fr": "Coca Z\u00e9ro",
+        "stores": "Magasins U,Bi1,Kaufland",
+        "nutriscore_grade": "b",
+        "url": "https://fr.openfoodfacts.org/produit/5449000133328/coca-zero-coca-cola",
+        "categories": "Sodas",
+        "brands": "Coca cola",
+        "code": "5449000133328"
+    },
+    {
+        "url": "https://fr.openfoodfacts.org/produit/3249760000654/orangina",
+        "code": "3249760000654",
+        "categories": "Sodas",
+        "brands": "Orangina",
+        "nutriscore_grade": "e",
+        "stores": "Franprix,Magasins U,Delhaize",
+        "product_name_fr": "Orangina"
+    },
+    {
+        "product_name_fr": "Agrumes",
+        "stores": "Magasins U,leclerc",
+        "nutriscore_grade": "d",
+        "url": "https://fr.openfoodfacts.org/produit/3124480002501/agrumes-schweppes",
+        "categories": "Sodas",
+        "code": "3124480002501",
+        "brands": "Schweppes"
+    },
+    {
+        "product_name_fr": "Lipton Ice Tea saveur P\u00eache",
+        "stores": "Franprix,Leclerc,Magasins U,Auchan",
+        "categories": "Sodas",
+        "url": "https://fr.openfoodfacts.org/produit/3502110005922/lipton-ice-tea-saveur-peche",
+        "brands": "Lipton",
+        "code": "3502110005922",
+        "nutriscore_grade": "e"
+    },
+    {
+        "product_name_fr": "Orangina \u00c9dition Limit\u00e9e Rugby",
+        "stores": "Leclerc,Auchan,E Leclerc",
+        "nutriscore_grade": "e",
+        "categories": "Sodas",
+        "url": "https://fr.openfoodfacts.org/produit/3124480184344/orangina-edition-limitee-rugby",
+        "code": "3124480184344",
+        "brands": "Orangina,Orangina Schweppes France,Schweppes International Limited"
+    },
+    {
+        "brands": "Fanta",
+        "url": "https://fr.openfoodfacts.org/produit/5449000011527/orange-fanta",
+        "categories": "Sodas",
+        "code": "5449000011527",
+        "nutriscore_grade": "e",
+        "stores": "Distributeur automatique,OKCon 2013,M!P restaurants at CICG",
+        "product_name_fr": "Orange"
+    },
+    {
+        "product_name_fr": "Schweppes Zero Agrum'",
+        "stores": "Intermarch\u00e9,Magasins U",
+        "nutriscore_grade": "c",
+        "brands": "Schweppes",
+        "url": "https://fr.openfoodfacts.org/produit/3124480002686/schweppes-zero-agrum",
+        "categories": "Sodas",
+        "code": "3124480002686"
+    },
+    {
+        "url": "https://fr.openfoodfacts.org/produit/54491472/coca-cola",
+        "categories": "Sodas",
+        "code": "54491472",
+        "brands": "Coca-Cola,Coke",
+        "nutriscore_grade": "e",
+        "stores": "Carrefour,OKCon 2013,M!P restaurants at CICG,Action,TESCO,Jumbo",
+        "product_name_fr": "Coca-Cola"
+    },
+    {
+        "product_name_fr": "Fanta Orange",
+        "brands": "Fanta",
+        "url": "https://fr.openfoodfacts.org/produit/5449000052179/fanta-orange",
+        "categories": "Sodas",
+        "code": "5449000052179",
+        "nutriscore_grade": "e",
+        "stores": "Intermarch\u00e9,Magasins U"
+    },
+    {
+        "url": "https://fr.openfoodfacts.org/produit/5000112558265/coca-cola-zero",
+        "code": "5000112558265",
+        "categories": "Sodas",
+        "brands": "Coca-Cola",
+        "nutriscore_grade": "b",
+        "stores": "Intermarch\u00e9,Casino",
+        "product_name_fr": "Coca-Cola Zero"
+    },
+    {
+        "product_name_fr": "Coca Cola Light",
+        "nutriscore_grade": "b",
+        "url": "https://fr.openfoodfacts.org/produit/5449000050205/coca-cola-light",
+        "categories": "Sodas",
+        "code": "5449000050205",
+        "brands": "Coca-Cola",
+        "stores": "OKCon 2013,M!P restaurants at CICG,Ahorram\u00e1s"
+    },
+    {
+        "nutriscore_grade": "b",
+        "categories": "Sodas",
+        "url": "https://fr.openfoodfacts.org/produit/5449000131843/coca-cola-zero",
+        "code": "5449000131843",
+        "brands": "Coca-Cola",
+        "stores": "Franprix,Lidl",
+        "product_name_fr": "Coca-Cola Zero"
+    },
+    {
+        "nutriscore_grade": "c",
+        "url": "https://fr.openfoodfacts.org/produit/5410221305108/schweppes-agrumes-zero",
+        "code": "5410221305108",
+        "categories": "Sodas",
+        "brands": "Schweppes",
+        "stores": "Colruyt",
+        "product_name_fr": "Schweppes Agrumes Zero"
+    },
+    {
+        "stores": "Carrefour",
+        "url": "https://fr.openfoodfacts.org/produit/8002270356520/san-pellegrino-limonata",
+        "code": "8002270356520",
+        "categories": "Sodas",
+        "brands": "San Pellegrino",
+        "nutriscore_grade": "e",
+        "product_name_fr": "San Pellegrino limonata"
+    },
+    {
         "categories": "Yaourts",
+        "url": "https://fr.openfoodfacts.org/produit/3033490004521/le-nature-danone",
+        "brands": "Danone",
         "code": "3033490004521",
-        "brands": "Danone"
+        "nutriscore_grade": "a",
+        "stores": "Intermarch\u00e9,Magasins U",
+        "product_name_fr": "Le nature"
     },
     {
         "product_name_fr": "Yaos Nature",
-        "categories": "Yaourts",
+        "stores": "Monoprix",
+        "nutriscore_grade": "c",
         "url": "https://fr.openfoodfacts.org/produit/3023290634578/yaos-nature-nestle",
         "code": "3023290634578",
-        "brands": "Nestl\u00e9",
-        "nutriscore_grade": "c",
-        "stores": "Monoprix"
+        "categories": "Yaourts",
+        "brands": "Nestl\u00e9"
     },
     {
         "product_name_fr": "Les 2 vaches Vanille de Madagascar",
         "stores": "Super U,Leclerc,Magasins U,Casino,Monoprix",
-        "nutriscore_grade": "c",
-        "brands": "Les 2 Vaches",
         "url": "https://fr.openfoodfacts.org/produit/3661344070769/les-2-vaches-vanille-de-madagascar",
         "categories": "Yaourts",
-        "code": "3661344070769"
-    },
-    {
-        "product_name_fr": "Le Yaourt \u00e0 la Grecque Nature",
-        "stores": "Magasins U",
-        "brands": "Nestl\u00e9",
-        "url": "https://fr.openfoodfacts.org/produit/3023291122005/le-yaourt-a-la-grecque-nature-nestle",
-        "categories": "Yaourts",
-        "code": "3023291122005",
+        "brands": "Les 2 Vaches",
+        "code": "3661344070769",
         "nutriscore_grade": "c"
     },
     {
+        "product_name_fr": "Le Yaourt \u00e0 la Grecque Nature",
+        "nutriscore_grade": "c",
+        "url": "https://fr.openfoodfacts.org/produit/3023291122005/le-yaourt-a-la-grecque-nature-nestle",
+        "code": "3023291122005",
         "categories": "Yaourts",
-        "url": "https://fr.openfoodfacts.org/produit/20665241/yaourt-a-la-grecque-nature-envia",
-        "code": "20665241",
+        "brands": "Nestl\u00e9",
+        "stores": "Magasins U"
+    },
+    {
         "brands": "envia",
+        "url": "https://fr.openfoodfacts.org/produit/20665241/yaourt-a-la-grecque-nature-envia",
+        "categories": "Yaourts",
+        "code": "20665241",
         "nutriscore_grade": "c",
         "stores": "Lidl",
         "product_name_fr": "Yaourt \u00e0 la grecque nature"
     },
     {
         "stores": "Magasins U,Intermarch\u00e9",
-        "nutriscore_grade": "b",
+        "categories": "Yaourts",
         "url": "https://fr.openfoodfacts.org/produit/3033490004590/veloute-nature",
         "brands": "Veloute",
-        "categories": "Yaourts",
         "code": "3033490004590",
+        "nutriscore_grade": "b",
         "product_name_fr": "Velout\u00e9 nature"
     },
     {
-        "product_name_fr": "Le Bon Paris \u00e0 l'\u00e9touff\u00e9e conservation sans nitrite",
-        "stores": "Magasins U,Leclerc",
-        "url": "https://fr.openfoodfacts.org/produit/7613035989535/le-bon-paris-a-l-etouffee-conservation-sans-nitrite-herta",
-        "brands": "Herta",
-        "categories": "Jambons",
-        "code": "7613035989535",
+        "categories": "Yaourts",
+        "url": "https://fr.openfoodfacts.org/produit/3033490004521/le-nature-danone",
+        "brands": "Danone",
+        "code": "3033490004521",
+        "nutriscore_grade": "a",
+        "stores": "Intermarch\u00e9,Magasins U",
+        "product_name_fr": "Le nature"
+    },
+    {
+        "product_name_fr": "Yaos Nature",
+        "stores": "Monoprix",
+        "nutriscore_grade": "c",
+        "url": "https://fr.openfoodfacts.org/produit/3023290634578/yaos-nature-nestle",
+        "code": "3023290634578",
+        "categories": "Yaourts",
+        "brands": "Nestl\u00e9"
+    },
+    {
+        "product_name_fr": "Les 2 vaches Vanille de Madagascar",
+        "stores": "Super U,Leclerc,Magasins U,Casino,Monoprix",
+        "url": "https://fr.openfoodfacts.org/produit/3661344070769/les-2-vaches-vanille-de-madagascar",
+        "categories": "Yaourts",
+        "brands": "Les 2 Vaches",
+        "code": "3661344070769",
         "nutriscore_grade": "c"
     },
     {
-        "product_name_fr": "Le sup\u00e9rieur cuit \u00e0 l'\u00e9touff\u00e9e -25%  sel* - 4 tranches",
+        "product_name_fr": "Le Yaourt \u00e0 la Grecque Nature",
+        "nutriscore_grade": "c",
+        "url": "https://fr.openfoodfacts.org/produit/3023291122005/le-yaourt-a-la-grecque-nature-nestle",
+        "code": "3023291122005",
+        "categories": "Yaourts",
+        "brands": "Nestl\u00e9",
+        "stores": "Magasins U"
+    },
+    {
+        "brands": "envia",
+        "url": "https://fr.openfoodfacts.org/produit/20665241/yaourt-a-la-grecque-nature-envia",
+        "categories": "Yaourts",
+        "code": "20665241",
+        "nutriscore_grade": "c",
+        "stores": "Lidl",
+        "product_name_fr": "Yaourt \u00e0 la grecque nature"
+    },
+    {
+        "stores": "Magasins U,Intermarch\u00e9",
+        "categories": "Yaourts",
+        "url": "https://fr.openfoodfacts.org/produit/3033490004590/veloute-nature",
+        "brands": "Veloute",
+        "code": "3033490004590",
         "nutriscore_grade": "b",
+        "product_name_fr": "Velout\u00e9 nature"
+    },
+    {
+        "brands": "Carrefour Bio,Carrefour",
+        "url": "https://fr.openfoodfacts.org/produit/3560070845408/yaourt-au-lait-entier-nature-carrefour-bio",
+        "categories": "Yaourts",
+        "code": "3560070845408",
+        "nutriscore_grade": "b",
+        "stores": "Carrefour",
+        "product_name_fr": "Yaourt au lait entier nature"
+    },
+    {
+        "categories": "Yaourts",
+        "url": "https://fr.openfoodfacts.org/produit/3329770058699/perle-de-lait-nature-yoplait",
+        "code": "3329770058699",
+        "brands": "Yoplait",
+        "nutriscore_grade": "c",
+        "stores": "Auchan,Intermarch\u00e9,Magasins U",
+        "product_name_fr": "Perle de Lait Nature"
+    },
+    {
+        "product_name_fr": "Velout\u00e9 Fruix",
+        "nutriscore_grade": "b",
+        "url": "https://fr.openfoodfacts.org/produit/3033490004651/veloute-fruix-danone",
+        "brands": "Danone",
+        "categories": "Yaourts",
+        "code": "3033490004651",
+        "stores": "Magasins U"
+    },
+    {
+        "nutriscore_grade": "b",
+        "categories": "Yaourts",
+        "url": "https://fr.openfoodfacts.org/produit/3033491351082/activia-vanille-danone",
+        "brands": "danone,Activia",
+        "code": "3033491351082",
+        "stores": "Magasins U,Delhaize",
+        "product_name_fr": "Activia vanille"
+    },
+    {
+        "stores": "Magasins U",
+        "nutriscore_grade": "c",
+        "brands": "Les 2 Vaches",
+        "url": "https://fr.openfoodfacts.org/produit/3661344221796/framboise-delicate-les-2-vaches",
+        "categories": "Yaourts",
+        "code": "3661344221796",
+        "product_name_fr": "Framboise delicate"
+    },
+    {
+        "product_name_fr": "Yaourt saveur myrtille sauvage",
+        "stores": "Magasins U,Monoprix,carrefour",
+        "brands": "Les 2 Vaches",
+        "url": "https://fr.openfoodfacts.org/produit/3661344221772/yaourt-saveur-myrtille-sauvage-les-2-vaches",
+        "categories": "Yaourts",
+        "code": "3661344221772",
+        "nutriscore_grade": "b"
+    },
+    {
+        "categories": "Yaourts",
+        "url": "https://fr.openfoodfacts.org/produit/3033491235375/activia-au-bifidus-cereales-danone",
+        "brands": "Danone,Activia",
+        "code": "3033491235375",
+        "nutriscore_grade": "b",
+        "stores": "Intermarch\u00e9,Auchan,Magasins U",
+        "product_name_fr": "Activia au bifidus C\u00e9r\u00e9ales"
+    },
+    {
+        "stores": "Leclerc,Carrefour",
+        "code": "3329770047891",
+        "url": "https://fr.openfoodfacts.org/produit/3329770047891/mini-yop-fraise-yoplait",
+        "categories": "Yaourts",
+        "brands": "Yoplait,Yop",
+        "nutriscore_grade": "b",
+        "product_name_fr": "Mini Yop Fraise"
+    },
+    {
+        "product_name_fr": "Yaourt Le Nature",
+        "nutriscore_grade": "a",
+        "url": "https://fr.openfoodfacts.org/produit/3033490004545/yaourt-le-nature-danone",
+        "code": "3033490004545",
+        "categories": "Yaourts",
+        "brands": "Danone",
+        "stores": "Leclerc,Magasins U"
+    },
+    {
+        "nutriscore_grade": "c",
         "categories": "Jambons",
-        "url": "https://fr.openfoodfacts.org/produit/3095757370015/le-superieur-cuit-a-l-etouffee-25-sel-4-tranches-fleury-michon",
+        "url": "https://fr.openfoodfacts.org/produit/7613035989535/le-bon-paris-a-l-etouffee-conservation-sans-nitrite-herta",
+        "brands": "Herta",
+        "code": "7613035989535",
+        "stores": "Magasins U,Leclerc",
+        "product_name_fr": "Le Bon Paris \u00e0 l'\u00e9touff\u00e9e conservation sans nitrite"
+    },
+    {
         "brands": "Fleury Michon",
+        "url": "https://fr.openfoodfacts.org/produit/3095757370015/le-superieur-cuit-a-l-etouffee-25-sel-4-tranches-fleury-michon",
+        "categories": "Jambons",
         "code": "3095757370015",
-        "stores": "Super U,Magasins U"
+        "nutriscore_grade": "b",
+        "stores": "Super U,Magasins U",
+        "product_name_fr": "Le sup\u00e9rieur cuit \u00e0 l'\u00e9touff\u00e9e -25%  sel* - 4 tranches"
     },
     {
         "product_name_fr": "Le bon Paris -25% de sel",
         "stores": "Magasins U",
-        "categories": "Jambons",
-        "url": "https://fr.openfoodfacts.org/produit/7613036024419/le-bon-paris-25-de-sel-herta",
-        "brands": "Herta",
+        "nutriscore_grade": "b",
         "code": "7613036024419",
-        "nutriscore_grade": "b"
+        "url": "https://fr.openfoodfacts.org/produit/7613036024419/le-bon-paris-25-de-sel-herta",
+        "categories": "Jambons",
+        "brands": "Herta"
     },
     {
-        "code": "7613035989443",
+        "stores": "Magasins U",
         "url": "https://fr.openfoodfacts.org/produit/7613035989443/le-bon-paris-herta",
         "categories": "Jambons",
         "brands": "Herta",
+        "code": "7613035989443",
         "nutriscore_grade": "c",
-        "stores": "Magasins U",
         "product_name_fr": "Le bon Paris"
     },
     {
+        "product_name_fr": "Le bon paris",
         "nutriscore_grade": "c",
-        "url": "https://fr.openfoodfacts.org/produit/7613035989566/le-bon-paris-herta",
-        "brands": "Herta",
-        "categories": "Jambons",
         "code": "7613035989566",
-        "stores": "carrefour",
-        "product_name_fr": "Le bon paris"
+        "url": "https://fr.openfoodfacts.org/produit/7613035989566/le-bon-paris-herta",
+        "categories": "Jambons",
+        "brands": "Herta",
+        "stores": "carrefour"
     },
     {
         "product_name_fr": "Le Bon Paris a l'Etouff\u00e9e",
-        "brands": "Herta",
         "url": "https://fr.openfoodfacts.org/produit/7613035336131/le-bon-paris-a-l-etouffee-herta",
         "categories": "Jambons",
         "code": "7613035336131",
+        "brands": "Herta",
         "nutriscore_grade": "c",
         "stores": "Carrefour,Magasins U"
     },
     {
-        "stores": "Simply Market,Casino Supermarch\u00e9",
+        "product_name_fr": "Le Bon Paris \u00e0 l'\u00e9touff\u00e9e (Conservation sans nitrite)",
         "url": "https://fr.openfoodfacts.org/produit/7613035989597/le-bon-paris-a-l-etouffee-conservation-sans-nitrite-herta",
         "categories": "Jambons",
-        "brands": "Herta,Le Bon Paris",
         "code": "7613035989597",
+        "brands": "Herta,Le Bon Paris",
         "nutriscore_grade": "c",
-        "product_name_fr": "Le Bon Paris \u00e0 l'\u00e9touff\u00e9e (Conservation sans nitrite)"
+        "stores": "Simply Market,Casino Supermarch\u00e9"
     },
     {
-        "product_name_fr": "Allumettes de jambon - 2x75g.",
-        "categories": "Jambons",
         "url": "https://fr.openfoodfacts.org/produit/3095758914010/allumettes-de-jambon-2x75g-fleury-michon",
         "brands": "Fleury Michon",
+        "categories": "Jambons",
         "code": "3095758914010",
         "nutriscore_grade": "c",
-        "stores": "Magasins U,G\u00e9ant Casino"
+        "stores": "Magasins U,G\u00e9ant Casino",
+        "product_name_fr": "Allumettes de jambon - 2x75g."
+    },
+    {
+        "nutriscore_grade": "c",
+        "categories": "Jambons",
+        "url": "https://fr.openfoodfacts.org/produit/7613035989535/le-bon-paris-a-l-etouffee-conservation-sans-nitrite-herta",
+        "brands": "Herta",
+        "code": "7613035989535",
+        "stores": "Magasins U,Leclerc",
+        "product_name_fr": "Le Bon Paris \u00e0 l'\u00e9touff\u00e9e conservation sans nitrite"
+    },
+    {
+        "brands": "Fleury Michon",
+        "url": "https://fr.openfoodfacts.org/produit/3095757370015/le-superieur-cuit-a-l-etouffee-25-sel-4-tranches-fleury-michon",
+        "categories": "Jambons",
+        "code": "3095757370015",
+        "nutriscore_grade": "b",
+        "stores": "Super U,Magasins U",
+        "product_name_fr": "Le sup\u00e9rieur cuit \u00e0 l'\u00e9touff\u00e9e -25%  sel* - 4 tranches"
+    },
+    {
+        "product_name_fr": "Le bon Paris -25% de sel",
+        "stores": "Magasins U",
+        "nutriscore_grade": "b",
+        "code": "7613036024419",
+        "url": "https://fr.openfoodfacts.org/produit/7613036024419/le-bon-paris-25-de-sel-herta",
+        "categories": "Jambons",
+        "brands": "Herta"
+    },
+    {
+        "stores": "Magasins U",
+        "url": "https://fr.openfoodfacts.org/produit/7613035989443/le-bon-paris-herta",
+        "categories": "Jambons",
+        "brands": "Herta",
+        "code": "7613035989443",
+        "nutriscore_grade": "c",
+        "product_name_fr": "Le bon Paris"
+    },
+    {
+        "product_name_fr": "Le bon paris",
+        "nutriscore_grade": "c",
+        "code": "7613035989566",
+        "url": "https://fr.openfoodfacts.org/produit/7613035989566/le-bon-paris-herta",
+        "categories": "Jambons",
+        "brands": "Herta",
+        "stores": "carrefour"
+    },
+    {
+        "product_name_fr": "Le Bon Paris a l'Etouff\u00e9e",
+        "url": "https://fr.openfoodfacts.org/produit/7613035336131/le-bon-paris-a-l-etouffee-herta",
+        "categories": "Jambons",
+        "code": "7613035336131",
+        "brands": "Herta",
+        "nutriscore_grade": "c",
+        "stores": "Carrefour,Magasins U"
+    },
+    {
+        "product_name_fr": "Le Bon Paris \u00e0 l'\u00e9touff\u00e9e (Conservation sans nitrite)",
+        "url": "https://fr.openfoodfacts.org/produit/7613035989597/le-bon-paris-a-l-etouffee-conservation-sans-nitrite-herta",
+        "categories": "Jambons",
+        "code": "7613035989597",
+        "brands": "Herta,Le Bon Paris",
+        "nutriscore_grade": "c",
+        "stores": "Simply Market,Casino Supermarch\u00e9"
+    },
+    {
+        "url": "https://fr.openfoodfacts.org/produit/3095758914010/allumettes-de-jambon-2x75g-fleury-michon",
+        "brands": "Fleury Michon",
+        "categories": "Jambons",
+        "code": "3095758914010",
+        "nutriscore_grade": "c",
+        "stores": "Magasins U,G\u00e9ant Casino",
+        "product_name_fr": "Allumettes de jambon - 2x75g."
+    },
+    {
+        "stores": "Carrefour",
+        "categories": "Jambons",
+        "url": "https://fr.openfoodfacts.org/produit/3180940079506/mon-jambon-blanc-vpf-4tr-madrange",
+        "code": "3180940079506",
+        "brands": "Madrange",
+        "nutriscore_grade": "c",
+        "product_name_fr": "Mon Jambon Blanc VPF 4tr"
+    },
+    {
+        "stores": "Super U,Magasins U,Leclerc",
+        "brands": "Fleury Michon",
+        "url": "https://fr.openfoodfacts.org/produit/3095758857010/le-paris-sans-couenne-25-de-sel-4tr-fleury-michon",
+        "categories": "Jambons",
+        "code": "3095758857010",
+        "nutriscore_grade": "b",
+        "product_name_fr": "Le Paris sans couenne - 25% de Sel*- 4tr"
+    },
+    {
+        "product_name_fr": "Le torchon cuit \u00e0 l'\u00e9touff\u00e9e - tranches fines - 25% de sel* - 4tr",
+        "stores": "magasin U,carrefour",
+        "url": "https://fr.openfoodfacts.org/produit/3095758049019/le-torchon-cuit-a-l-etouffee-tranches-fines-25-de-sel-4tr-fleury-michon",
+        "categories": "Jambons",
+        "code": "3095758049019",
+        "brands": "Fleury Michon",
+        "nutriscore_grade": "b"
+    },
+    {
+        "product_name_fr": "Le Bon Paris -25% de Sel",
+        "stores": "Intermarch\u00e9",
+        "nutriscore_grade": "b",
+        "url": "https://fr.openfoodfacts.org/produit/7613036024389/le-bon-paris-25-de-sel-herta",
+        "brands": "Herta,Nestl\u00e9",
+        "categories": "Jambons",
+        "code": "7613036024389"
+    },
+    {
+        "product_name_fr": "Le sup\u00e9rieur cuit \u00e0 l'\u00e9touff\u00e9e - 25% de sel* - 2 tranches",
+        "url": "https://fr.openfoodfacts.org/produit/3095757369019/le-superieur-cuit-a-l-etouffee-25-de-sel-2-tranches-fleury-michon",
+        "code": "3095757369019",
+        "categories": "Jambons",
+        "brands": "Fleury Michon",
+        "nutriscore_grade": "b",
+        "stores": "Auchan"
+    },
+    {
+        "product_name_fr": "Tendre Noix Broche",
+        "stores": "Magasins U,Auchan",
+        "nutriscore_grade": "c",
+        "categories": "Jambons",
+        "url": "https://fr.openfoodfacts.org/produit/7613035832022/tendre-noix-broche-herta",
+        "brands": "Herta",
+        "code": "7613035832022"
+    },
+    {
+        "product_name_fr": "Jambon de Paris sans couenne",
+        "url": "https://fr.openfoodfacts.org/produit/20345365/jambon-de-paris-sans-couenne-saint-alby",
+        "code": "20345365",
+        "categories": "Jambons",
+        "brands": "Saint Alby,L'Espiguette",
+        "nutriscore_grade": "c",
+        "stores": "Lidl,LIDL"
+    },
+    {
+        "code": "3095757413019",
+        "url": "https://fr.openfoodfacts.org/produit/3095757413019/le-superieur-cuit-a-l-etouffee-tranches-fines-25-de-sel-6-tranches-fleury-michon",
+        "categories": "Jambons",
+        "brands": "Fleury Michon",
+        "nutriscore_grade": "b",
+        "stores": "Carrefour",
+        "product_name_fr": "Le sup\u00e9rieur cuit \u00e0 l'\u00e9touff\u00e9e - tranches fines - 25% de sel * - 6 tranches"
     }
 ]

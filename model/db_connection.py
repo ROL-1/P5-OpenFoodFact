@@ -15,8 +15,16 @@ class Db_connect:
         host = HOST
         user = USER
         password = PASSWORD  
-        self._connection(host, user, password, database)    
+        self._connection(host, user, password, database)
 
+    def database_log(self):
+        """Look for database name for connection."""
+        with open('model/db_config.py','r') as file:
+           for line in file:
+               if 'DATABASE' in line:
+                   DATABASE = line.split('= ')[1].replace("'","")  
+        Log = Db_connect(DATABASE)
+        return Log
 
     def _connection(self, host, user, password, database):
         """Make connection to database."""               

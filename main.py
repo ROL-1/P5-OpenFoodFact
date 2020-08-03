@@ -9,6 +9,7 @@ from model.sql_read import Db_sql
 from model.db_request import Db_requests
 from model.db_insertion import Db_insert
 from controller.api_requests import Api_requests
+from view.interface import Ui
 
 
 
@@ -44,6 +45,7 @@ def main():
     else:
         #application utilisateur en s'assurant que la bdd est correctement configuré, affichage du menu ect 
         print('RUN THE PROGRAM')
+        Menu = Ui()
 
 
     # # # Disconnect from MySQL Server.
