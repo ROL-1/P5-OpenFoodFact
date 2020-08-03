@@ -44,7 +44,6 @@ def main():
         
     else:
         #application utilisateur en s'assurant que la bdd est correctement configuré, affichage du menu ect 
-        print('RUN THE PROGRAM')
         Menu = Ui()
 
 
