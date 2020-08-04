@@ -42,29 +42,35 @@ def main():
         # Ask for user name and password.
          
         # Check if database is ready
-        # Log_server = Db_connect()
+        TestLog = Db_connect().cnn.is_connected()
+        print(TestLog)
         # Log_database = Db_connect().database_log()
-        # if Err == 1:
-        #     print('GO TO DEFINE USER NAME AND PASSWORD')
-        # elif Err == 2:
-        #     print('Veuillez utiliser la commande : --install (option : -v = verbose)')
-        # elif Err == 3:
-        #     print('WARNING')
-
         # Display menu.
         Run = Ui()
-        choice = Run.menu()
-        # Display categories
-        if choice == 1 :            
+        choice = Run.menu()        
+        while choice == False :
+            choice = Run.menu()        
+        if choice == 1 :
+            # Display categories            
             category = Run.categories()
+            while choice == False :
+                category = Run.categories()
+            # Display products.
+            product_id = Run.products(category)
+            while choice == False :
+                product_id = Run.products(category)
+            # Display substitute
+            substitute = Run.substitute(product_id, category)
+            while choice == False :
+                substitute = Run.substitute(product_id, category)
+            # Save result, leave or loop.
+
         # Display saved searches.
         elif choice == 2 :
             print('SAUVEGARDES')
-        # Display products.
-        product_id = Run.products(category)
-        # Display substitute
-        substitute = Run.substitute(product_id, category)
-        # Save result, leave or loop.
+        else:
+            print('FAIL')
+
 
 if __name__ == "__main__":
 

@@ -6,8 +6,6 @@ class Rom():
     def simple_insertion(Log, insert_lists):
         """Insert datas to database."""
         for args in insert_lists:
-            # table = insert_list[0]
-            # column = insert_list[1]
             string = args[-1]
             Log.execute("INSERT IGNORE INTO {} ({}) VALUES (%s)".format(*args),[string])
 

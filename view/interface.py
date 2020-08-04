@@ -17,12 +17,12 @@ class Ui:
     def _user_choices(self, user_input, choices):
         """Manage user choices."""
         try:
-            int(user_input)
+            user_input = int(user_input)
             for i in range(choices):
-                if (int(user_input) < 1) or (int(user_input) > choices):
+                if (user_input < 1) or (user_input > choices):
                     print("Ce n'est pas un choix valide.")
                     return False
-                elif int(user_input) == i+1:                    
+                elif (i+1) == user_input:                    
                     return (i+1)
         except ValueError:
             print("Ce n'est pas un choix valide.")
@@ -45,32 +45,30 @@ class Ui:
         choices = 2
         user_input = input("Votre choix : ")
         choice = self._user_choices(user_input, choices)
-        if choice != False:
-            if choice <= 2:
-                return choice 
-            else:
-                self.menu()
+        # Loop if wrong choice.
+        if (choice == False) or (choice not in [1,2]):
+            return False
         else:
-            self.menu()
+            return choice
+
 
     def categories(self):
         """Display categories to the user."""
         # Categories menu.
         print("\nPour quelle catégorie de produits voulez-vous faire une recherche ?")
         print("Sélectionnez une catégorie :\n")
+        
         for count, category in enumerate(CATEGORIES):
             print(count+1,'-', category)
         # User's choices.
         choices = len(CATEGORIES)
         user_input = input("\nVotre choix : ")
         choice = self._user_choices(user_input, choices)
-        if choice != False:
-            for count, category in enumerate(CATEGORIES):
-                if choice == (count+1):
-                    return category
+        if choice == False:
             self.categories()
-        else:
-            self.categories()
+        for count, category in enumerate(CATEGORIES):
+            if choice == (count+1):
+                return category
     
     def products(self, category):
         """Display products to the user."""

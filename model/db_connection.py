@@ -1,6 +1,7 @@
 """Class to filter(really?) api informations and transmit it to the database."""
 """pip install mysql-connector-python"""
 
+import os
 import mysql.connector as MC
 from mysql.connector import errorcode
 
@@ -37,14 +38,11 @@ class Db_connect:
                 )
         except MC.Error as err :
             if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
-                print("Une information est erronée parmi votre nom d'utilisateur et votre mot de passe.")
-                return 1 #TC               
+                print("Une information est erronée parmi votre nom d'utilisateur et votre mot de passe.")        
             elif err.errno == errorcode.ER_BAD_DB_ERROR:                 
-                print("La base de données n'existe pas.")
-                return 2 #TC              
+                print("La base de données n'existe pas.")        
             else:
                 print(err)                
-                return 3 #TC
         return self.cnn
 
     def execute(self, request, value=None):
