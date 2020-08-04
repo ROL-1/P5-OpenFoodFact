@@ -24,10 +24,6 @@ def main():
     if args.verbose:
         print("Running '{}'".format(__file__))
 
-    # # Connect to MySQL Server.
-    # Log = DBconnect()
-    # Log.connection()
-
     if args.install_database: 
         # Read sql.   
         sql_readed = Db_sql.read_sql(SQL_FILE,verbose)
@@ -38,13 +34,23 @@ def main():
         # Retrieves the maximum number of characters for the fields (dictionary).
         Fields_charmax = Db_requests().characters_max()
         # Retrives datas from Api and reject unsuitable datas.
-        Api_data = Api_requests(Fields_charmax,verbose).api_get_data(Fields_charmax,verbose)
+        Api_data = Api_requests().api_get_data(Fields_charmax,verbose)
         # Insertion in database.
         Db_insert(Api_data, verbose).insert_data(Api_data, verbose)
         
-    else: 
+    else:
+        # Ask for user name and password.
+         
         # Check if database is ready
-               
+        # Log_server = Db_connect()
+        # Log_database = Db_connect().database_log()
+        # if Err == 1:
+        #     print('GO TO DEFINE USER NAME AND PASSWORD')
+        # elif Err == 2:
+        #     print('Veuillez utiliser la commande : --install (option : -v = verbose)')
+        # elif Err == 3:
+        #     print('WARNING')
+
         # Display menu.
         Run = Ui()
         choice = Run.menu()

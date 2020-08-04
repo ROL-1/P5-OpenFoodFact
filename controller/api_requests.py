@@ -13,7 +13,7 @@ from controller.api_config import REQUEST_PARAMS,CATEGORIES,FIELDS,MIN_PROD
 class Api_requests:
     """..."""
 
-    def __init__(self, Fields_charmax, verbose):
+    def __init__(self, Fields_charmax=None, verbose=None):
         """Get datas from api by looping on each category until it's filled."""
         if verbose:
             print('Getting data from API...')       

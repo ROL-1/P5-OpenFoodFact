@@ -10,18 +10,17 @@ class Db_requests:
     def __init__(self, category=None, choice=None, product_id=None):
         """..."""
         self.NBPRODUCTS = NBPRODUCTS
+        self.Log = Db_connect().database_log()
 
     def characters_max(self):
         """Retrieve the maximum number of characters for the fields."""
-        Log = Db_connect().database_log()
         char_max = {}
         for field in FIELDS.split(','):
-            fetch = Log.request("""SELECT column_name, character_maximum_length
+            fetch = self.Log.request("""SELECT column_name, character_maximum_length
                                 FROM information_schema.columns WHERE column_name = '"""
                                 +field
                                 +"""'AND (DATA_TYPE = 'char' OR DATA_TYPE = 'varchar')""")         
             char_max.update(fetch)
-        Log.close_connection
         return char_max
     
     def fetch_products(self, category):
@@ -41,8 +40,7 @@ class Db_requests:
             ORDER BY RAND ()            
             LIMIT {self.NBPRODUCTS}
             """
-        Log = Db_connect().database_log()
-        fetched_products = Log.request(request) 
+        fetched_products = self.Log.request(request) 
         return fetched_products    
     
     def fetch_substitute(self, category):
@@ -62,8 +60,7 @@ class Db_requests:
             ORDER BY RAND ()            
             LIMIT 1
             """
-        Log = Db_connect().database_log()
-        fetched_substitute = Log.request(request) 
+        fetched_substitute = self.Log.request(request) 
         return fetched_substitute
     
     def fetch_product(self, product_id):
@@ -81,8 +78,7 @@ class Db_requests:
             WHERE Products.products_id = '{product_id}'
             LIMIT 1
             """
-        Log = Db_connect().database_log()
-        fetched_product = Log.request(request) 
+        fetched_product = self.Log.request(request) 
         return fetched_product
 
     def fetch_stores(self, product_id):
@@ -95,8 +91,7 @@ class Db_requests:
             INNER JOIN Stores ON Products_has_Stores.Stores_stores_id = Stores.stores_id
             WHERE Products_products_id = '{product_id}'
             """
-        Log = Db_connect().database_log()
-        fetched_stores = Log.request(request)
+        fetched_stores = self.Log.request(request)
         return fetched_stores    
 
         # request = f"""

@@ -36,12 +36,15 @@ class Db_connect:
                 database = database,
                 )
         except MC.Error as err :
-            if err.errno == errorcode.ER_ACCESS_DENIED_ERROR: # .errno = return last error code
+            if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
                 print("Une information est erronée parmi votre nom d'utilisateur et votre mot de passe.")
+                return 1 #TC               
             elif err.errno == errorcode.ER_BAD_DB_ERROR:                 
                 print("La base de données n'existe pas.")
+                return 2 #TC              
             else:
-                print(err)
+                print(err)                
+                return 3 #TC
         return self.cnn
 
     def execute(self, request, value=None):
