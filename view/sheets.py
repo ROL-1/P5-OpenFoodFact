@@ -2,13 +2,13 @@
 
 class Sheets:
     """Give structure for products sheets."""
-
       
     def sheet(product, stores):
         """Sheet."""        
         print('Nom :', product[1])
         print('Marque :', product[2])
         print('Nutriscore :', product[3])
+        # Remove unwanted characters in 'stores'.
         stores = str(stores)
         remove_char = ['[','(','\'',']']
         stores = stores.replace(',)', "")
@@ -19,10 +19,11 @@ class Sheets:
     
     def list_sheet(count, product):
         """Product list sheet."""
+        # First row.
         if count == 0:
             print("Nb",'|',"{:>12}".format('Nutriscores'),'|',"{:50}".format('Marques'),'|','Produits')
-            print('----------------------------------------------------------\
-----------------------------------------------------------------------------')
+            print('-'*120)
+        # Rows.
         print("{:>2}".format(count+1),'|',"{:>12}".format(product[3]),'|',"{:50}".format(product[2]),'|',product[1])
 
 

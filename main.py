@@ -42,13 +42,23 @@ def main():
         # Insertion in database.
         Db_insert(Api_data, verbose).insert_data(Api_data, verbose)
         
-    else:
-        #application utilisateur en s'assurant que la bdd est correctement configuré, affichage du menu ect 
-        Menu = Ui()
-
-
-    # # # Disconnect from MySQL Server.
-    # Log.close_connection 
+    else: 
+        # Check if database is ready
+               
+        # Display menu.
+        Run = Ui()
+        choice = Run.menu()
+        # Display categories
+        if choice == 1 :            
+            category = Run.categories()
+        # Display saved searches.
+        elif choice == 2 :
+            print('SAUVEGARDES')
+        # Display products.
+        product_id = Run.products(category)
+        # Display substitute
+        substitute = Run.substitute(product_id, category)
+        # Save result, leave or loop.
 
 if __name__ == "__main__":
 

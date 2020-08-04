@@ -1,6 +1,5 @@
 """Class to retrives informations from database."""
 
-import os
 from controller.api_config import FIELDS
 from model.db_connection import Db_connect
 from model.db_config import NBPRODUCTS
@@ -99,11 +98,6 @@ class Db_requests:
         Log = Db_connect().database_log()
         fetched_stores = Log.request(request)
         return fetched_stores    
-
-
-        # select * from Products_has_stores order by Products_products_id asc;
-
-
 
         # request = f"""
         #         SELECT products_id as ID, 
