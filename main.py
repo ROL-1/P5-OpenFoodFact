@@ -24,7 +24,8 @@ def main():
     if args.verbose:
         print("Running '{}'".format(__file__))
     # Ask parameters for sql server connection.
-    host, user, password = Ui().connection_params()
+    Run = Ui()
+    host, user, password = Run.connection_params()
 
     if args.install_database: 
         # Server sql connection.
@@ -46,31 +47,50 @@ def main():
         # Server connection.
         Log = Db_connect(host, user, password)
         # Database connection.
-        Log.database_log()
+        Log_db = Log.database_log()        
         # Booleans for loops.
-        choice = False
+        log_choice = False
+        menu_choice = False
         category = False 
         product_id = False
         substitute = False
-        # Display menu. 
-        Run = Ui()            
-        while choice == False :
-            choice = Run.menu()
+        save_choice = False
+
+        # User acount.
+        while log_choice == False:
+            log_choice = Run.log_menu()
+        if log_choice == 1:
+            log_user = Run.log_user()
+        elif log_choice == 2:
+            user_name = Run.create_user()
+            insert_lists = Db_requests(Log).user_insert(user_name)
+            Db_insert(Log_db).insert_user(insert_lists)
+
+        # Display menu.
+        while menu_choice == False:
+            menu_choice = Run.menu()
         # Launch search for substitute.        
-        if choice == 1 :
+        if menu_choice == 1 :
             # Display categories
-            while category == False :
+            while category == False:
                 category = Run.categories()
             # Display products.
-            while product_id == False :
+            while product_id == False:
                 product_id = Run.products(Log, category)
             # Display substitute
-            while substitute == False :
+            while substitute == False:
                 substitute = Run.substitute(Log, product_id, category)
             # Save result, leave or loop.
+            while save_choice == False:
+                save_choice = Run.save_menu(Log)
+            if save_choice == 1:
+                print('save search')
+            elif save_choice == 2:
+                print('loop to menu')
+
 
         # Display saved searches.
-        elif choice == 2 :
+        elif menu_choice == 2 :
             print('SAUVEGARDES')
         else:
             print('FAIL')

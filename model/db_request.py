@@ -1,7 +1,6 @@
 """Class to retrives informations from database."""
 
 from controller.api_config import FIELDS
-from model.db_connection import Db_connect
 from model.db_config import NBPRODUCTS, NUTRISCORE_MIN
 
 class Db_requests:
@@ -81,26 +80,53 @@ class Db_requests:
             WHERE Products_products_id = '%s'
             """ % (product_id)
         fetched_stores = self.Log.request(request)
-        return fetched_stores    
+        return fetched_stores
 
-        # request = f"""
-        #         SELECT products_id as ID, 
-        #         Codes_products_OFF.code as OFF_code, 
-        #         product_name_fr as Produits, 
-        #         Brands.brands as Marque, 
-        #         Nutriscore_grades.nutriscore_grade as Nutriscore, 
-        #         Categories.categories as Categories, 
-        #         Stores.stores as Magasins, 
-        #         url 
-        #         FROM Products 
-        #         INNER JOIN Brands ON Brands.brands_id = Products.Brands_brands_id 
-        #         INNER JOIN Codes_products_OFF ON Codes_products_OFF.Codes_products_OFF_id = Products.Codes_products_OFF_Codes_products_OFF_id
-        #         INNER JOIN Nutriscore_grades ON Nutriscore_grades.Nutriscore_grade_id = Products.Nutriscore_grades_Nutriscore_grade_id
-        #         INNER JOIN Categories ON Categories.categories_id = Products.Categories_categories_id
-        #         INNER JOIN Products_has_Stores ON Products.products_id = Products_has_Stores.Products_products_id
-        #         INNER JOIN Stores ON Products_has_Stores.Stores_stores_id = Stores.stores_id
-        #         WHERE Categories.categories = '{category}'
-        #         AND Nutriscore_grades.nutriscore_grade > 'C'
-        #         ORDER BY RAND ()               
-        #         LIMIT {self.NBPRODUCTS}    
-        #         """
+    def user_insert(self, user_name):
+        """User acount : create request for insertion."""
+        User_name = ['Users', 'username', user_name]        
+        insert_lists = [User_name,]
+        return insert_lists  
+
+    def tables_list(self, product):
+        """Tables : create request for insertion."""
+        Codes_products_OFF = ['Codes_products_OFF', 'code', product['code']]
+        Brands = ['Brands', 'brands', product['brands']]
+        Nutriscore_grades = ['Nutriscore_grades', 'nutriscore_grade', product['nutriscore_grade']]
+        Categories = ['Categories', 'categories', product['categories']]
+        insert_lists = [Codes_products_OFF, Brands, Nutriscore_grades, Categories]
+        # Defines list for insertion in Table 'Stores' :
+        for store in product['stores'].split(','):                
+            Stores = ['Stores', 'stores', store]
+            insert_lists.append(Stores)
+        return insert_lists
+    
+    def get_id_list(self, product):
+        """Table Products : create request to get fields id."""
+        Codes_products_OFF_id =  ['Codes_products_OFF_id', 'Codes_products_OFF', 'code', product['code']]
+        BrandID = ['brands_id', 'Brands', 'brands', product['brands']]
+        Nutriscores_grades_ID = ['nutriscore_grade_id', 'Nutriscore_grades', 'nutriscore_grade', product['nutriscore_grade']]
+        Product_category_ID = ['categories_id', 'Categories', 'categories', product['categories']]            
+        id_list = [Codes_products_OFF_id, BrandID, Nutriscores_grades_ID, Product_category_ID]
+        return id_list
+
+    def products_list(self, product, Codes_products_OFF_id, BrandID, Nutriscores_grades_ID, Product_category_ID):
+        """Table Products : create request for insertion."""
+        Products = ['Products',
+            'Codes_products_OFF_Codes_products_OFF_id, product_name_fr, generic_name_fr, url, Brands_brands_id, Nutriscore_grades_nutriscore_grade_id, Categories_categories_id',
+            (Codes_products_OFF_id, product['product_name_fr'], product['generic_name_fr'], product['url'] ,BrandID, Nutriscores_grades_ID, Product_category_ID)
+            ]
+        insert_lists = [Products,]    
+        return insert_lists
+    
+    def phs_id(self, product):
+        """Create request to get Product_ID."""
+        ProductID = ['products_id', 'Products', 'product_name_fr', product['product_name_fr']]
+        request_lists = [ProductID,]
+        return request_lists
+
+    def store_id(self, store):
+        """Create request to get store_ID."""
+        StoreID = ['stores_id', 'Stores', 'stores', store]
+        request_lists = [StoreID,]
+        return request_lists

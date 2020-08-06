@@ -1,7 +1,6 @@
 """Class to filter(really?) api informations and transmit it to the database."""
 """pip install mysql-connector-python"""
 
-import os
 import mysql.connector as MC
 from mysql.connector import errorcode
 
@@ -62,20 +61,8 @@ class Db_connect:
 
     def commit(self):
         """Commit to the database."""
-        commit = self.cnn.commit()
+        self.cnn.commit()
 
     def close_connection(self):
         """Close connection to database."""
-        #cursor.close() #TC
-        self.connection.close()
-
-    # def test_connection(self):
-    #     """Test if database is ready."""
-    #     test_server = self.cnn.is_connected()
-    #     # (test_server != True)
-    #     Log = self.database_log()
-    #     print('Log',Log)
-    #     print('Log._connection',Log._connection)
-    #     if  Log._connection != True:
-    #         print('Veuillez relancer le programme avec la commande : -- install_database')
-    #         exit() 
+        self.cnn.close()

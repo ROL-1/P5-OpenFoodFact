@@ -15,13 +15,39 @@ class Ui:
         self.menu_counter = 0
     
     def connection_params(self):
-        """Get parameters for connection to server sql."""
-        print('Veuillez saisir les paramètres de connection au serveur sql:')
+        """Ask parameters for connection to server sql."""
+        print('\nVeuillez saisir les paramètres de connection au serveur sql:')
         host = input('host : ')
         user = input('user : ')
         password = getpass()
         return host, user, password
- 
+
+    def log_menu(self) :
+        """Log menu."""
+        print('\nCompte utilisateur :')
+        print('1. Se connecter.')
+        print('2. Créer un compte utilisateur.')
+        choices = 2
+        user_input = input("Votre choix : ")
+        log_choice = self._user_choices(user_input, choices)
+        if log_choice == False:
+            return False
+        else:
+            return log_choice
+
+    def log_user(self):
+        """Ask user informations, to log."""        
+        print('\nConnexion au compte utilisateur :')
+        print("\nSaisissez votre nom d'utilisateur :")
+        log_user = input("Votre choix : ")
+        return log_user
+
+    def create_user(self):
+        """Ask user informations, to register."""        
+        print('\nCréer un compte utilisateur :')
+        print("\nChoisissez un nom d'utilisateur (25 caractères maximum) :")
+        user_name = input("Votre choix : ")
+        return user_name
 
     def _user_choices(self, user_input, choices):
         """Manage user choices."""
@@ -53,12 +79,12 @@ class Ui:
         # User's choices.
         choices = 2
         user_input = input("Votre choix : ")
-        choice = self._user_choices(user_input, choices)
+        menu_choice = self._user_choices(user_input, choices)
         # Loop if wrong choice, else return choice.
-        if choice == False:
+        if menu_choice == False:
             return False
         else:
-            return choice
+            return menu_choice
 
     def categories(self):
         """Display categories to the user."""
@@ -113,6 +139,22 @@ class Ui:
         old_product = Db_requests(Log).fetch_product(product_id)
         stores = Db_requests(Log).fetch_stores(old_product[0][0])
         Sheets.sheet(old_product[0], stores)
+
+    def save_menu(self, Log):
+        """Save or loop to menu."""
+        print('\nQue souhaitez vous faire à présent ?')
+        print('1. Sauvegarder cette recherche ?')
+        print('2. Effectuer une nouvelle recherche ?')
+        choices = 2
+        user_input = input("Votre choix : ")
+        save_choice = self._user_choices(user_input, choices)
+        if save_choice == False:
+            return False
+        else:
+            return save_choice
+
+
+
 
 
     
