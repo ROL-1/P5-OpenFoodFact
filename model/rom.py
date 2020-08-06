@@ -19,12 +19,12 @@ class Rom():
         """Insert datas to database."""
         for args in insert_lists:
             string = args[-1]
-            Log.execute("INSERT IGNORE INTO {} ({}) VALUES (%s,%s,%s,%s,%s,%s)".format(*args),string)
+            Log.execute("INSERT IGNORE INTO {} ({}) VALUES (%s,%s,%s,%s,%s,%s,%s)".format(*args),string)
 
     def simple_request(Log, request_lists):
         """Insert datas to database."""
         result_list = []
-        for args in request_lists:
+        for args in request_lists:            
             string = args[-1]
             result = Log.request("SELECT {} FROM {} WHERE {} = (%s)".format(*args),[string])[0][0]
             result_list.append(result)

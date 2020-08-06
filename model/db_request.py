@@ -26,7 +26,7 @@ class Db_requests:
     def fetch_products(self, category):
         """Return 'NBPRODUCTS' products from a category."""
         request = """
-            SELECT DISTINCT products_id, product_name_fr, b.brands, n.nutriscore_grade
+            SELECT DISTINCT products_id, product_name_fr, generic_name_fr, b.brands, n.nutriscore_grade
             FROM Products p
             INNER JOIN Brands b ON b.brands_id = p.Brands_brands_id
             INNER JOIN Nutriscore_grades n ON n.Nutriscore_grade_id = p.Nutriscore_grades_Nutriscore_grade_id
@@ -44,7 +44,7 @@ class Db_requests:
     def fetch_substitute(self, category):
         """Find substitute : product with better nutriscore from the same category."""
         request = """
-            SELECT products_id, product_name_fr, b.brands, n.nutriscore_grade, url
+            SELECT products_id, product_name_fr, generic_name_fr, b.brands, n.nutriscore_grade, url
             FROM Products p
             INNER JOIN Brands b ON b.brands_id = p.Brands_brands_id
             INNER JOIN Nutriscore_grades n ON n.Nutriscore_grade_id = p.Nutriscore_grades_Nutriscore_grade_id
@@ -60,7 +60,7 @@ class Db_requests:
     def fetch_product(self, product_id):
         """Find product datas."""
         request = """
-            SELECT products_id, product_name_fr, b.brands, n.nutriscore_grade, url
+            SELECT products_id, product_name_fr, generic_name_fr, b.brands, n.nutriscore_grade, url
             FROM Products p
             INNER JOIN Brands b ON b.brands_id = p.Brands_brands_id
             INNER JOIN Nutriscore_grades n ON n.Nutriscore_grade_id = p.Nutriscore_grades_Nutriscore_grade_id

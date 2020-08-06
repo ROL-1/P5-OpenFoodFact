@@ -44,7 +44,7 @@ class Db_insert:
             BrandID = ['brands_id', 'Brands', 'brands', product['brands']]
             Nutriscores_grades_ID = ['nutriscore_grade_id', 'Nutriscore_grades', 'nutriscore_grade', product['nutriscore_grade']]
             Product_category_ID = ['categories_id', 'Categories', 'categories', product['categories']]            
-            request_lists = [Codes_products_OFF_id, BrandID, Nutriscores_grades_ID, Product_category_ID]
+            request_lists = [Codes_products_OFF_id, BrandID, Nutriscores_grades_ID, Product_category_ID]            
             result_list = Rom.simple_request(self.Log, request_lists)
             # Define id
             Codes_products_OFF_id = result_list[0]
@@ -53,8 +53,8 @@ class Db_insert:
             Product_category_ID = result_list[3]
             # Make request
             Products = ['Products',
-            'Codes_products_OFF_Codes_products_OFF_id, product_name_fr, url, Brands_brands_id, Nutriscore_grades_nutriscore_grade_id, Categories_categories_id',
-            (Codes_products_OFF_id, product['product_name_fr'], product['url'] ,BrandID, Nutriscores_grades_ID, Product_category_ID)
+            'Codes_products_OFF_Codes_products_OFF_id, product_name_fr, generic_name_fr, url, Brands_brands_id, Nutriscore_grades_nutriscore_grade_id, Categories_categories_id',
+            (Codes_products_OFF_id, product['product_name_fr'], product['generic_name_fr'], product['url'] ,BrandID, Nutriscores_grades_ID, Product_category_ID)
             ]
             insert_lists = [Products,]
             Rom.multiple_insertion(self.Log,insert_lists)

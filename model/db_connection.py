@@ -5,8 +5,6 @@ import os
 import mysql.connector as MC
 from mysql.connector import errorcode
 
-from model.db_config import HOST,USER,PASSWORD
-
 class Db_connect: 
     """Récupère les informations pour la connexion et créé la connexion."""
 

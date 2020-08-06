@@ -23,6 +23,7 @@ def main():
 
     if args.verbose:
         print("Running '{}'".format(__file__))
+    # Ask parameters for sql server connection.
     host, user, password = Ui().connection_params()
 
     if args.install_database: 

@@ -6,8 +6,9 @@ class Sheets:
     def sheet(product, stores):
         """Sheet."""        
         print('Nom :', product[1])
-        print('Marque :', product[2])
-        print('Nutriscore :', product[3])
+        print('Description :', product[2])
+        print('Marque :', product[3])
+        print('Nutriscore :', product[4])
         # Remove unwanted characters in 'stores'.
         stores = str(stores)  #TC
         remove_char = ['[','(','\'',']']
@@ -15,7 +16,7 @@ class Sheets:
         for char in remove_char:
             stores = stores.replace(char, "")        
         print('Magasins :', stores)
-        print('Lien OpenFoodFact :',product[4])
+        print('Lien OpenFoodFact :',product[5])
     
     def list_sheet(count, product):
         """Product list sheet."""
@@ -24,7 +25,7 @@ class Sheets:
             print("Nb",'|',"{:>12}".format('Nutriscores'),'|',"{:50}".format('Marques'),'|','Produits')
             print('-'*120)
         # Rows.
-        print("{:>2}".format(count+1),'|',"{:>12}".format(product[3]),'|',"{:50}".format(product[2]),'|',product[1])
+        print("{:>2}".format(count+1),'|',"{:>12}".format(product[4]),'|',"{:50}".format(product[3]),'|',product[1])
 
 
 
