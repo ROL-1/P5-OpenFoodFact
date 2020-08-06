@@ -23,29 +23,30 @@ def main():
 
     if args.verbose:
         print("Running '{}'".format(__file__))
+    host, user, password = Ui().connection_params()
 
     if args.install_database: 
+        # Server sql connection.
+        Log = Db_connect(host, user, password)
         # Read sql.   
         sql_readed = Db_sql.read_sql(SQL_FILE,verbose)
         # Write database name in dbname.py
         Database_name = Db_sql.database_name(sql_readed, verbose)
         # Create database.
-        Db_create.create_db(sql_readed, verbose)
+        Db_create.create_db(Log, sql_readed, verbose)
         # Retrieves the maximum number of characters for the fields (dictionary).
-        Fields_charmax = Db_requests().characters_max()
+        Fields_charmax = Db_requests(Log).characters_max()
         # Retrives datas from Api and reject unsuitable datas.
         Api_data = Api_requests().api_get_data(Fields_charmax,verbose)
         # Insertion in database.
-        Db_insert(Api_data, verbose).insert_data(Api_data, verbose)
+        Db_insert(Log, Api_data, verbose).insert_data(Api_data, verbose)
         
     else:
-        # Ask for user name and password.
-         
-        # Check if database is ready
-        TestLog = Db_connect().cnn.is_connected()
-        if TestLog
-        # Log_database = Db_connect().database_log()
-        # Define booleans for loops.
+        # Server connection.
+        Log = Db_connect(host, user, password)
+        # Database connection.
+        Log.database_log()
+        # Booleans for loops.
         choice = False
         category = False 
         product_id = False
@@ -61,10 +62,10 @@ def main():
                 category = Run.categories()
             # Display products.
             while product_id == False :
-                product_id = Run.products(category)
+                product_id = Run.products(Log, category)
             # Display substitute
             while substitute == False :
-                substitute = Run.substitute(product_id, category)
+                substitute = Run.substitute(Log, product_id, category)
             # Save result, leave or loop.
 
         # Display saved searches.

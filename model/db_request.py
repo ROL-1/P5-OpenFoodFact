@@ -7,10 +7,10 @@ from model.db_config import NBPRODUCTS, NUTRISCORE_MIN
 class Db_requests:
     """Requests for questioning database."""
 
-    def __init__(self, category=None, choice=None, product_id=None):
+    def __init__(self, Log, category=None, choice=None, product_id=None):
         """..."""
         self.NBPRODUCTS = NBPRODUCTS
-        self.Log = Db_connect().database_log()
+        self.Log = Log.database_log()
 
     def characters_max(self):
         """Retrieve the maximum number of characters for the fields."""

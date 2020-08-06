@@ -4,6 +4,7 @@ from model.db_request import Db_requests
 from model.db_config import NBPRODUCTS
 from controller.api_config import CATEGORIES
 from view.sheets import Sheets
+from getpass import getpass
 
 class Ui:
     """Allows the user to interact with the program."""
@@ -12,6 +13,14 @@ class Ui:
         """..."""
         # Counter for welcome message input.
         self.menu_counter = 0
+    
+    def connection_params(self):
+        """Get parameters for connection to server sql."""
+        print('Veuillez saisir les paramètres de connection au serveur sql:')
+        host = input('host : ')
+        user = input('user : ')
+        password = getpass()
+        return host, user, password
  
 
     def _user_choices(self, user_input, choices):
@@ -70,13 +79,13 @@ class Ui:
                 if choice == (count+1):
                     return category
     
-    def products(self, category):
+    def products(self, Log, category):
         """Display products to the user."""
         # Products menu.
         print(f"\nDans la categorie {category},")
         print("vous pouvez rechercher un substitut pour un des produits suivant :")
         print("Sélectionnez un produit.\n")
-        fetched_products = Db_requests().fetch_products(category)        
+        fetched_products = Db_requests(Log).fetch_products(category)        
         for count, product in enumerate(fetched_products):
             Sheets.list_sheet(count, product)
         # User's choices.
@@ -92,17 +101,17 @@ class Ui:
                     product_id = fetched_products[choice-1][0]
                     return product_id
 
-    def substitute(self, product_id, category):
+    def substitute(self, Log, product_id, category):
         """Display substitute to the user."""
         # Substitute display.
-        substitute = Db_requests().fetch_substitute(category)
-        stores = Db_requests().fetch_stores(substitute[0][0]) 
+        substitute = Db_requests(Log).fetch_substitute(category)
+        stores = Db_requests(Log).fetch_stores(substitute[0][0]) 
         print(f'\nLe produit suivant obtient un meilleur Nutriscore, dans la catégorie: {category}\n')
         Sheets.sheet(substitute[0], stores)
         # Substituted product display.
         print('\nCe produit peut substituer le produit que vous aviez sélectionné :\n')
-        old_product = Db_requests().fetch_product(product_id)
-        stores = Db_requests().fetch_stores(old_product[0][0])
+        old_product = Db_requests(Log).fetch_product(product_id)
+        stores = Db_requests(Log).fetch_stores(old_product[0][0])
         Sheets.sheet(old_product[0], stores)
 
 

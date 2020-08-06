@@ -9,15 +9,16 @@ from model.rom import Rom
 class Db_insert:
     """Insert data in data base."""
 
-    def __init__ (self, Api_data, verbose):
+    def __init__ (self, Log, Api_data, verbose):
         """ ... """
+        self.Log = Log
 
     def insert_data(self, Api_data, verbose):
         """..."""
         if verbose:
             print('Inserting datas to database')
         # Connexion MySQL
-        Log = Db_connect().database_log()
+        # Log = Db_connect().database_log()
 
         product_count = 0
         for product in Api_data:
@@ -35,7 +36,7 @@ class Db_insert:
                 Stores = ['Stores', 'stores', store]
                 insert_lists.append(Stores)
             # Insert datas in Tables.
-            Rom.simple_insertion(Log, insert_lists)
+            Rom.simple_insertion(self.Log, insert_lists)
 
             # Table Products
             # Get id for fields
@@ -44,7 +45,7 @@ class Db_insert:
             Nutriscores_grades_ID = ['nutriscore_grade_id', 'Nutriscore_grades', 'nutriscore_grade', product['nutriscore_grade']]
             Product_category_ID = ['categories_id', 'Categories', 'categories', product['categories']]            
             request_lists = [Codes_products_OFF_id, BrandID, Nutriscores_grades_ID, Product_category_ID]
-            result_list = Rom.simple_request(Log, request_lists)
+            result_list = Rom.simple_request(self.Log, request_lists)
             # Define id
             Codes_products_OFF_id = result_list[0]
             BrandID = result_list[1]            
@@ -56,31 +57,31 @@ class Db_insert:
             (Codes_products_OFF_id, product['product_name_fr'], product['url'] ,BrandID, Nutriscores_grades_ID, Product_category_ID)
             ]
             insert_lists = [Products,]
-            Rom.multiple_insertion(Log,insert_lists)
+            Rom.multiple_insertion(self.Log,insert_lists)
 
             # Table products_has_Stores : (many-to-many relationship).
             # Get Product_ID
             ProductID = ['products_id', 'Products', 'product_name_fr', product['product_name_fr']]
             request_lists = [ProductID,]
-            result_list = Rom.simple_request(Log, request_lists)
+            result_list = Rom.simple_request(self.Log, request_lists)
             ProductID = result_list[0]
             # Get Store_ID and inject.
             for store in product['stores'].split(','):
                 StoreID = ['stores_id', 'Stores', 'stores', store]
                 insert_lists = [StoreID,]
-                result_list = Rom.simple_request(Log, insert_lists)
+                result_list = Rom.simple_request(self.Log, insert_lists)
                 StoreID = result_list[0] 
                 Products_has_Stores = ['Products_has_Stores',(ProductID,StoreID)]
                 insert_lists = [Products_has_Stores,]
-                Rom.two_values_insertion(Log,insert_lists)
+                Rom.two_values_insertion(self.Log,insert_lists)
             # Commit changes to database.
-            Log.cnn.commit()
+            self.Log.cnn.commit()
             product_count +=1 
              
         if verbose:
             print(f'Database filled with {product_count} products.')
 
         # Make sure data is committed to the database
-        Log.cnn.commit() #Enregistre l'information
+        self.Log.cnn.commit() #TC
 
-        Log.close_connection #TC
+        self.Log.close_connection #TC
