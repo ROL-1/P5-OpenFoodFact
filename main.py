@@ -43,25 +43,27 @@ def main():
          
         # Check if database is ready
         TestLog = Db_connect().cnn.is_connected()
-        print(TestLog)
+        if TestLog
         # Log_database = Db_connect().database_log()
-        # Display menu.
-        Run = Ui()
-        choice = Run.menu()        
+        # Define booleans for loops.
+        choice = False
+        category = False 
+        product_id = False
+        substitute = False
+        # Display menu. 
+        Run = Ui()            
         while choice == False :
-            choice = Run.menu()        
+            choice = Run.menu()
+        # Launch search for substitute.        
         if choice == 1 :
-            # Display categories            
-            category = Run.categories()
-            while choice == False :
+            # Display categories
+            while category == False :
                 category = Run.categories()
             # Display products.
-            product_id = Run.products(category)
-            while choice == False :
+            while product_id == False :
                 product_id = Run.products(category)
             # Display substitute
-            substitute = Run.substitute(product_id, category)
-            while choice == False :
+            while substitute == False :
                 substitute = Run.substitute(product_id, category)
             # Save result, leave or loop.
 

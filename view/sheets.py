@@ -9,7 +9,7 @@ class Sheets:
         print('Marque :', product[2])
         print('Nutriscore :', product[3])
         # Remove unwanted characters in 'stores'.
-        stores = str(stores)
+        stores = str(stores)  #TC
         remove_char = ['[','(','\'',']']
         stores = stores.replace(',)', "")
         for char in remove_char:

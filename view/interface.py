@@ -45,30 +45,30 @@ class Ui:
         choices = 2
         user_input = input("Votre choix : ")
         choice = self._user_choices(user_input, choices)
-        # Loop if wrong choice.
-        if (choice == False) or (choice not in [1,2]):
+        # Loop if wrong choice, else return choice.
+        if choice == False:
             return False
         else:
             return choice
-
 
     def categories(self):
         """Display categories to the user."""
         # Categories menu.
         print("\nPour quelle catégorie de produits voulez-vous faire une recherche ?")
-        print("Sélectionnez une catégorie :\n")
-        
-        for count, category in enumerate(CATEGORIES):
-            print(count+1,'-', category)
+        print("Sélectionnez une catégorie :\n")        
+        for count, cat in enumerate(CATEGORIES):
+            print(count+1,'-', cat)
         # User's choices.
         choices = len(CATEGORIES)
         user_input = input("\nVotre choix : ")
-        choice = self._user_choices(user_input, choices)
+        choice = self._user_choices(user_input, choices)    
+        # Loop if wrong choice, else return category.
         if choice == False:
-            self.categories()
-        for count, category in enumerate(CATEGORIES):
-            if choice == (count+1):
-                return category
+            return False
+        else:
+            for count, category in enumerate(CATEGORIES):
+                if choice == (count+1):
+                    return category
     
     def products(self, category):
         """Display products to the user."""
@@ -83,14 +83,14 @@ class Ui:
         choices = NBPRODUCTS
         user_input = input("\nVotre choix : ")
         choice = self._user_choices(user_input, choices)
-        if choice != False:
+        # Loop if wrong choice, else return product_id.
+        if choice == False:
+            return False           
+        else:
             for i in range(NBPRODUCTS):
                 if i+1 == choice:                
                     product_id = fetched_products[choice-1][0]
-                    return product_id 
-            self.products(category)
-        else:
-            self.products(category)
+                    return product_id
 
     def substitute(self, product_id, category):
         """Display substitute to the user."""
