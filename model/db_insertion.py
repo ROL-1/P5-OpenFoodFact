@@ -14,7 +14,11 @@ class Db_insert:
         """Insert user account in database."""
         Rom.simple_insertion(self.Log, insert_lists)
         self.Log.commit()
-        self.Log.close_connection() 
+    
+    def insert_save(self, insert_lists):
+        """Save search in database."""
+        Rom.triple_values_insertion(self.Log, insert_lists)
+        self.Log.commit()
 
     def insert_data(self, Api_data, verbose):
         """..."""

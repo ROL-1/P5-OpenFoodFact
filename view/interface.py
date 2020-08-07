@@ -139,6 +139,7 @@ class Ui:
         old_product = Db_fetch(Log).fetch_product(product_id)
         stores = Db_fetch(Log).fetch_stores(old_product[0][0])
         Sheets.sheet(old_product[0], stores)
+        return substitute[0][0]
 
     def save_menu(self, Log):
         """Save or loop to menu."""

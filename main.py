@@ -54,7 +54,7 @@ def main():
         menu_choice = False
         category = False 
         product_id = False
-        substitute = False
+        substitute_id = False
         save_choice = False
 
         # User account.
@@ -71,13 +71,13 @@ def main():
                     logged = True
                 except IndexError:
                     print("Ce nom d'utilisateur n'existe pas.")
-
         # User create account.
         elif log_choice == 2:
             user_name = Run.create_user()
             insert_lists = Db_requests_lists().user_insert(user_name)
             Db_insert(Log_db).insert_user(insert_lists)
-            # GET USER ID
+            request_lists = Db_requests_lists().user_id(user_name)
+            user_id = Rom.simple_request(Log_db, request_lists)[0]
 
         # Display menu.
         while menu_choice == False:
@@ -91,17 +91,15 @@ def main():
             while product_id == False:
                 product_id = Run.products(Log, category)
             # Display substitute
-            while substitute == False:
-                substitute = Run.substitute(Log, product_id, category)
+            while substitute_id == False:
+                substitute_id = Run.substitute(Log, product_id, category)
             # Save result, leave or loop.
             while save_choice == False:
                 save_choice = Run.save_menu(Log)
             if save_choice == 1:
-                # get user id, product id, substitute id
-                user_id
-                # make liste to insert
-                # insert Search_saved
-                print('save search')
+                insert_lists = Db_requests_lists().save_search(product_id, substitute_id, user_id)
+                Db_insert(Log_db).insert_save(insert_lists)
+                print('Search saved.')
             elif save_choice == 2:
                 print('loop to menu')
 
@@ -110,6 +108,9 @@ def main():
             print('SAUVEGARDES')
         else:
             print('FAIL')
+        # Close connection
+        print('close')
+        Log_db.close_connection()
 
 if __name__ == "__main__":
 

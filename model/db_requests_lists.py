@@ -15,6 +15,15 @@ class Db_requests_lists:
         request_lists = [userID,]
         return request_lists
 
+    def save_search(self, product_id, substitute_id, user_id):
+        """Create request to save search."""
+        save_search = ['Searches_saved',
+            'product_id, substitute_id, Users_user_id',
+            (product_id, substitute_id, user_id)
+            ]
+        insert_lists = [save_search,]    
+        return insert_lists
+
     def tables_list(self, product):
         """Tables : create request for insertion."""
         Codes_products_OFF = ['Codes_products_OFF', 'code', product['code']]
