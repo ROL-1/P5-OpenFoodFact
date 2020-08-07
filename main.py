@@ -105,11 +105,13 @@ def main():
 
         # Display saved searches.
         elif menu_choice == 2 :
-            print('SAUVEGARDES')
+            Run.saves_display(Log_db, user_id)
+
         else:
             print('FAIL')
         # Close connection
-        print('close')
+        if args.verbose:
+            print("Close connection.")
         Log_db.close_connection()
 
 if __name__ == "__main__":

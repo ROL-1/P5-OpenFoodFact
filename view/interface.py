@@ -153,6 +153,14 @@ class Ui:
             return False
         else:
             return save_choice
+    
+    def saves_display(self, Log, user_id):
+        """Display searches saved."""
+        fetched_products = Db_fetch(Log).fetch_saved_searches(user_id)
+        print("\n Voici vos anciennes recherches :")
+        for count, save in enumerate(fetched_products):
+            Sheets.saves_sheet(count, save)
+
 
 
 
