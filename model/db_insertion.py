@@ -1,7 +1,7 @@
 """Insert data in data base. From JSON."""
 
-from model.db_request import Db_requests
 from model.rom import Rom
+from model.db_requests_lists import Db_requests_lists
 
 class Db_insert:
     """Insert data in data base."""
@@ -26,12 +26,12 @@ class Db_insert:
             if verbose: #for debug
                 print('Product count:',product_count, '; Product code : ', product['code'])                    
             # Tables : defines listes for insertion.
-            insert_lists = Db_requests(self.Log).tables_list(product)
+            insert_lists = Db_requests_lists().tables_list(product)
             # Tables : datas insertion.
             Rom.simple_insertion(self.Log, insert_lists)
 
             # Table Products : get id for fields. 
-            request_lists = Db_requests(self.Log).get_id_list(product)            
+            request_lists = Db_requests_lists().get_id_list(product)            
             id_list = Rom.simple_request(self.Log, request_lists)
             # Table Products : define id.
             Codes_products_OFF_id = id_list[0]
@@ -39,17 +39,17 @@ class Db_insert:
             Nutriscores_grades_ID = id_list[2]
             Product_category_ID = id_list[3]
             # Table Products : insertion.
-            insert_lists = Db_requests(self.Log).products_list(product, Codes_products_OFF_id, BrandID, Nutriscores_grades_ID, Product_category_ID)
+            insert_lists = Db_requests_lists().products_list(product, Codes_products_OFF_id, BrandID, Nutriscores_grades_ID, Product_category_ID)
             Rom.multiple_insertion(self.Log, insert_lists)
 
             # Table products_has_Stores : (many-to-many relationship).
-            request_lists = Db_requests(self.Log).phs_id(product)
+            request_lists = Db_requests_lists().phs_id(product)
             result_list = Rom.simple_request(self.Log, request_lists)
             # Table products_has_Stores : define ProductID.
             ProductID = result_list[0]
             # Table Stores : Get Store_ID and insertion in products_has_Stores.
             for store in product['stores'].split(','):
-                request_lists = Db_requests(self.Log).store_id(store)
+                request_lists = Db_requests_lists().store_id(store)
                 result_list = Rom.simple_request(self.Log, request_lists)
                 # Table Stores : define id.
                 StoreID = result_list[0] 
@@ -66,3 +66,4 @@ class Db_insert:
         # Make sure data is committed to the database
         self.Log.commit() #TC
         self.Log.close_connection()  #TC
+

@@ -1,6 +1,6 @@
 """Interface with user."""
 
-from model.db_request import Db_requests
+from model.db_fetch import Db_fetch
 from model.db_config import NBPRODUCTS
 from controller.api_config import CATEGORIES
 from view.sheets import Sheets
@@ -111,7 +111,7 @@ class Ui:
         print(f"\nDans la categorie {category},")
         print("vous pouvez rechercher un substitut pour un des produits suivant :")
         print("Sélectionnez un produit.\n")
-        fetched_products = Db_requests(Log).fetch_products(category)        
+        fetched_products = Db_fetch(Log).fetch_products(category)        
         for count, product in enumerate(fetched_products):
             Sheets.list_sheet(count, product)
         # User's choices.
@@ -130,14 +130,14 @@ class Ui:
     def substitute(self, Log, product_id, category):
         """Display substitute to the user."""
         # Substitute display.
-        substitute = Db_requests(Log).fetch_substitute(category)
-        stores = Db_requests(Log).fetch_stores(substitute[0][0]) 
+        substitute = Db_fetch(Log).fetch_substitute(category)
+        stores = Db_fetch(Log).fetch_stores(substitute[0][0]) 
         print(f'\nLe produit suivant obtient un meilleur Nutriscore, dans la catégorie: {category}\n')
         Sheets.sheet(substitute[0], stores)
         # Substituted product display.
         print('\nCe produit peut substituer le produit que vous aviez sélectionné :\n')
-        old_product = Db_requests(Log).fetch_product(product_id)
-        stores = Db_requests(Log).fetch_stores(old_product[0][0])
+        old_product = Db_fetch(Log).fetch_product(product_id)
+        stores = Db_fetch(Log).fetch_stores(old_product[0][0])
         Sheets.sheet(old_product[0], stores)
 
     def save_menu(self, Log):

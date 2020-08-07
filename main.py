@@ -6,7 +6,7 @@ from model.db_config import SQL_FILE
 from model.db_connection import Db_connect
 from model.db_creation import Db_create
 from model.sql_read import Db_sql
-from model.db_request import Db_requests
+from model.db_fetch import Db_fetch
 from model.db_insertion import Db_insert
 from controller.api_requests import Api_requests
 from view.interface import Ui
@@ -37,7 +37,7 @@ def main():
         # Create database.
         Db_create.create_db(Log, sql_readed, verbose)
         # Retrieves the maximum number of characters for the fields (dictionary).
-        Fields_charmax = Db_requests(Log).characters_max()
+        Fields_charmax = Db_fetch(Log).characters_max()
         # Retrives datas from Api and reject unsuitable datas.
         Api_data = Api_requests().api_get_data(Fields_charmax,verbose)
         # Insertion in database.
@@ -63,7 +63,7 @@ def main():
             log_user = Run.log_user()
         elif log_choice == 2:
             user_name = Run.create_user()
-            insert_lists = Db_requests(Log).user_insert(user_name)
+            insert_lists = Db_fetch(Log).user_insert(user_name)
             Db_insert(Log_db).insert_user(insert_lists)
 
         # Display menu.

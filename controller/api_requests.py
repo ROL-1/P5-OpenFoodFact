@@ -3,11 +3,9 @@
 
 """class to get informations from API."""
 
-import os
 import json
 import requests
 
-from model.db_request import Db_requests
 from controller.api_config import REQUEST_PARAMS,CATEGORIES,FIELDS,MIN_PROD
 
 class Api_requests:
