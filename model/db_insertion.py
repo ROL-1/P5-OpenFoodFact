@@ -11,7 +11,7 @@ class Db_insert:
         self.Log = Log
 
     def insert_user(self, insert_lists):
-        """Insert user acount in database."""
+        """Insert user account in database."""
         Rom.simple_insertion(self.Log, insert_lists)
         self.Log.commit()
         self.Log.close_connection() 

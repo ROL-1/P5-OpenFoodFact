@@ -1,13 +1,19 @@
-"""Contains lists to make requests to database, to db_insertion.py."""
+"""Contains lists to make requests to database, with db_insertion.py and rom.py."""
 
 class Db_requests_lists:
     """Contains lists to make requests to database."""
 
     def user_insert(self, user_name):
-        """User acount : create request for insertion."""
+        """User account : create request for insertion."""
         User_name = ['Users', 'username', user_name]        
         insert_lists = [User_name,]
-        return insert_lists  
+        return insert_lists
+
+    def user_id(self, user_name):
+        """Create request to get user_id."""
+        userID =  ['user_id', 'Users', 'username', user_name]
+        request_lists = [userID,]
+        return request_lists
 
     def tables_list(self, product):
         """Tables : create request for insertion."""
@@ -28,8 +34,8 @@ class Db_requests_lists:
         BrandID = ['brands_id', 'Brands', 'brands', product['brands']]
         Nutriscores_grades_ID = ['nutriscore_grade_id', 'Nutriscore_grades', 'nutriscore_grade', product['nutriscore_grade']]
         Product_category_ID = ['categories_id', 'Categories', 'categories', product['categories']]            
-        id_list = [Codes_products_OFF_id, BrandID, Nutriscores_grades_ID, Product_category_ID]
-        return id_list
+        request_lists = [Codes_products_OFF_id, BrandID, Nutriscores_grades_ID, Product_category_ID]
+        return request_lists
 
     def products_list(self, product, Codes_products_OFF_id, BrandID, Nutriscores_grades_ID, Product_category_ID):
         """Table Products : create request for insertion."""

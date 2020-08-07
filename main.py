@@ -7,10 +7,11 @@ from model.db_connection import Db_connect
 from model.db_creation import Db_create
 from model.sql_read import Db_sql
 from model.db_fetch import Db_fetch
-from model.db_insertion import Db_insert
 from controller.api_requests import Api_requests
+from model.db_requests_lists import Db_requests_lists
+from model.db_insertion import Db_insert
 from view.interface import Ui
-
+from model.rom import Rom
 
 
 def main():
@@ -56,15 +57,27 @@ def main():
         substitute = False
         save_choice = False
 
-        # User acount.
+        # User account.
         while log_choice == False:
             log_choice = Run.log_menu()
+        # User log.
         if log_choice == 1:
-            log_user = Run.log_user()
+            logged = False
+            while logged == False:
+                user_name = Run.log_user()
+                request_lists = Db_requests_lists().user_id(user_name)            
+                try:
+                    user_id = Rom.simple_request(Log_db, request_lists)[0]
+                    logged = True
+                except IndexError:
+                    print("Ce nom d'utilisateur n'existe pas.")
+
+        # User create account.
         elif log_choice == 2:
             user_name = Run.create_user()
-            insert_lists = Db_fetch(Log).user_insert(user_name)
+            insert_lists = Db_requests_lists().user_insert(user_name)
             Db_insert(Log_db).insert_user(insert_lists)
+            # GET USER ID
 
         # Display menu.
         while menu_choice == False:
@@ -84,17 +97,19 @@ def main():
             while save_choice == False:
                 save_choice = Run.save_menu(Log)
             if save_choice == 1:
+                # get user id, product id, substitute id
+                user_id
+                # make liste to insert
+                # insert Search_saved
                 print('save search')
             elif save_choice == 2:
                 print('loop to menu')
-
 
         # Display saved searches.
         elif menu_choice == 2 :
             print('SAUVEGARDES')
         else:
             print('FAIL')
-
 
 if __name__ == "__main__":
 
