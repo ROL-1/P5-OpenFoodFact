@@ -28,7 +28,8 @@ def main():
     Run = Ui()
     host, user, password = Run.connection_params()
 
-    if args.install_database: 
+    if args.install_database:
+        print('Installing...') 
         # Server sql connection.
         Log = Db_connect(host, user, password)
         # Read sql.   
@@ -43,6 +44,7 @@ def main():
         Api_data = Api_requests().api_get_data(Fields_charmax,verbose)
         # Insertion in database.
         Db_insert(Log, Api_data, verbose).insert_data(Api_data, verbose)
+        print('Database installed.')
         
     else:
         # Server connection.
@@ -50,13 +52,8 @@ def main():
         # Database connection.
         Log_db = Log.database_log()        
         # Booleans for loops.
+        Loop = False
         log_choice = False
-        menu_choice = False
-        category = False 
-        product_id = False
-        substitute_id = False
-        save_choice = False
-
         # User account.
         while log_choice == False:
             log_choice = Run.log_menu()
@@ -79,36 +76,41 @@ def main():
             request_lists = Db_requests_lists().user_id(user_name)
             user_id = Rom.simple_request(Log_db, request_lists)[0]
 
-        # Display menu.
-        while menu_choice == False:
-            menu_choice = Run.menu()
-        # Launch search for substitute.        
-        if menu_choice == 1 :
-            # Display categories
-            while category == False:
-                category = Run.categories()
-            # Display products.
-            while product_id == False:
-                product_id = Run.products(Log, category)
-            # Display substitute
-            while substitute_id == False:
-                substitute_id = Run.substitute(Log, product_id, category)
-            # Save result, leave or loop.
-            while save_choice == False:
-                save_choice = Run.save_menu(Log)
-            if save_choice == 1:
-                insert_lists = Db_requests_lists().save_search(product_id, substitute_id, user_id)
-                Db_insert(Log_db).insert_save(insert_lists)
-                print('Search saved.')
-            elif save_choice == 2:
-                print('loop to menu')
+        while Loop == False:
+            # Booleans for loops.
+            menu_choice = False
+            category = False 
+            product_id = False
+            substitute_id = False
+            save_choice = False
+            # Display menu.
+            while menu_choice == False:
+                menu_choice = Run.menu()
+            # Launch search for substitute.        
+            if menu_choice == 1 :
+                # Display categories
+                while category == False:
+                    category = Run.categories()
+                # Display products.
+                while product_id == False:
+                    product_id = Run.products(Log, category)
+                # Display substitute
+                while substitute_id == False:
+                    substitute_id = Run.substitute(Log, product_id, category)
+                # Save result, leave or loop.
+                while save_choice == False:
+                    save_choice = Run.save_menu(Log)
+                if save_choice == 1:
+                    insert_lists = Db_requests_lists().save_search(product_id, substitute_id, user_id)
+                    Db_insert(Log_db).insert_save(insert_lists)
+                    print('Recherche sauvegardée.') 
+                elif save_choice == 2:
+                    exit()                    
 
-        # Display saved searches.
-        elif menu_choice == 2 :
-            Run.saves_display(Log_db, user_id)
+            # Display saved searches.
+            elif menu_choice == 2:
+                Run.saves_display(Log_db, user_id)
 
-        else:
-            print('FAIL')
         # Close connection
         if args.verbose:
             print("Close connection.")
@@ -117,19 +119,3 @@ def main():
 if __name__ == "__main__":
 
     main()
-
-
-# Charge les données de l'api
-# Filtre les données
-# Vérifie si assez de produits par categories, sinon relance une recherche pour la categorie.
-# Créé la BDD 
-# Remplit la BDD
-# Sollicite l'utilisateur (1. recherche 2.historique)
-# Récupère dans la BDD la liste des catégories
-# Affiche la liste des catégories
-# Récupère dans la BDD la liste des produits de la catégorie
-# Affiche la liste des produits de la catégorie
-# Interroge l'api pour trouver un substitut ? (même catégorie, meilleur nutriscore)(ou dans la bdd ?)
-# Affiche la fiche du substitut pour ce produit
-# Propose de sauvegarder la recherche
-# Retour au menu

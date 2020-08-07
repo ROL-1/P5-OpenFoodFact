@@ -145,7 +145,7 @@ class Ui:
         """Save or loop to menu."""
         print('\nQue souhaitez vous faire à présent ?')
         print('1. Sauvegarder cette recherche ?')
-        print('2. Effectuer une nouvelle recherche ?')
+        print('2. Quitter le programme ?')
         choices = 2
         user_input = input("Votre choix : ")
         save_choice = self._user_choices(user_input, choices)

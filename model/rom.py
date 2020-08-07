@@ -11,7 +11,6 @@ class Rom():
 
     def two_values_insertion(Log, insert_lists):
         """Insert datas to database."""
-        print(insert_lists)
         for args in insert_lists:           
             string = args[-1]
             Log.execute("INSERT IGNORE INTO {} VALUES (%s,%s)".format(*args),string)
