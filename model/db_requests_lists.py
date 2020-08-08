@@ -1,4 +1,4 @@
-"""Contains lists to make requests to database, with db_insertion.py and rom.py."""
+"""Contains lists to make requests to database, with db_insertion.py and orm.py."""
 
 class Db_requests_lists:
     """Contains lists to make requests to database."""

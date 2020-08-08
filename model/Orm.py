@@ -1,6 +1,6 @@
-"""ROM class."""
+"""Object-relational Mapper (ORM) class."""
 
-class Rom():
+class Orm():
     """Translate from ptyhon to sql."""
 
     def simple_insertion(Log, insert_lists):

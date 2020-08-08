@@ -11,7 +11,7 @@ from controller.api_requests import Api_requests
 from model.db_requests_lists import Db_requests_lists
 from model.db_insertion import Db_insert
 from view.interface import Ui
-from model.rom import Rom
+from model.orm import Orm
 
 
 def main():
@@ -64,7 +64,7 @@ def main():
                 user_name = Run.log_user()
                 request_lists = Db_requests_lists().user_id(user_name)            
                 try:
-                    user_id = Rom.simple_request(Log_db, request_lists)[0]
+                    user_id = Orm.simple_request(Log_db, request_lists)[0]
                     logged = True
                 except IndexError:
                     print("Ce nom d'utilisateur n'existe pas.")
@@ -74,7 +74,7 @@ def main():
             insert_lists = Db_requests_lists().user_insert(user_name)
             Db_insert(Log_db).insert_user(insert_lists)
             request_lists = Db_requests_lists().user_id(user_name)
-            user_id = Rom.simple_request(Log_db, request_lists)[0]
+            user_id = Orm.simple_request(Log_db, request_lists)[0]
 
         while Loop == False:
             # Booleans for loops.
