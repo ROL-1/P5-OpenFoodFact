@@ -4,7 +4,7 @@
 import mysql.connector as MC
 from mysql.connector import errorcode
 
-class Db_connect: 
+class Connection: 
     """Récupère les informations pour la connexion et créé la connexion."""
 
     compteur = 0
@@ -18,11 +18,11 @@ class Db_connect:
 
     def database_log(self):
         """Look for database name for connection."""
-        with open('model/db_config.py','r') as file:
+        with open('model/config.py','r') as file:
            for line in file:
                if 'DATABASE' in line:
                    DATABASE = line.split('= ')[1].replace("'","")          
-        Log = Db_connect(self.host, self.user, self.password, DATABASE)
+        Log = Connection(self.host, self.user, self.password, DATABASE)
         return Log
 
     def connection(self):

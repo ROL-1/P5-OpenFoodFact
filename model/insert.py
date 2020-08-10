@@ -1,9 +1,9 @@
 """Insert data in data base. From JSON."""
 
 from model.orm import Orm
-from model.db_requests_lists import Db_requests_lists
+from model.requests_lists import Requests_lists
 
-class Db_insert:
+class Insert:
     """Insert data in data base."""
 
     def __init__ (self, Log, Api_data=None, verbose=None):
@@ -30,12 +30,12 @@ class Db_insert:
             if verbose: #for debug
                 print('Product count:',product_count, '; Product code : ', product['code'])                    
             # Tables : defines listes for insertion.
-            insert_lists = Db_requests_lists().tables_list(product)
+            insert_lists = Requests_lists().tables_list(product)
             # Tables : datas insertion.
             Orm.simple_insertion(self.Log, insert_lists)
 
             # Table Products : get id for fields. 
-            request_lists = Db_requests_lists().get_id_list(product)            
+            request_lists = Requests_lists().get_id_list(product)            
             id_list = Orm.simple_request(self.Log, request_lists)
             # Table Products : define id.
             Codes_products_OFF_id = id_list[0]
@@ -43,17 +43,17 @@ class Db_insert:
             Nutriscores_grades_ID = id_list[2]
             Product_category_ID = id_list[3]
             # Table Products : insertion.
-            insert_lists = Db_requests_lists().products_list(product, Codes_products_OFF_id, BrandID, Nutriscores_grades_ID, Product_category_ID)
+            insert_lists = Requests_lists().products_list(product, Codes_products_OFF_id, BrandID, Nutriscores_grades_ID, Product_category_ID)
             Orm.multiple_insertion(self.Log, insert_lists)
 
             # Table products_has_Stores : (many-to-many relationship).
-            request_lists = Db_requests_lists().phs_id(product)
+            request_lists = Requests_lists().phs_id(product)
             result_list = Orm.simple_request(self.Log, request_lists)
             # Table products_has_Stores : define ProductID.
             ProductID = result_list[0]
             # Table Stores : Get Store_ID and insertion in products_has_Stores.
             for store in product['stores'].split(','):
-                request_lists = Db_requests_lists().store_id(store)
+                request_lists = Requests_lists().store_id(store)
                 result_list = Orm.simple_request(self.Log, request_lists)
                 # Table Stores : define id.
                 StoreID = result_list[0] 

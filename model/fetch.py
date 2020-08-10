@@ -1,9 +1,9 @@
 """Class to retrives informations from database."""
 
 from controller.api_config import FIELDS
-from model.db_config import NBPRODUCTS, NUTRISCORE_MIN
+from model.config import NBPRODUCTS, NUTRISCORE_MIN
 
-class Db_fetch:
+class Fetch:
     """Requests for questioning database."""
 
     def __init__(self, Log, category=None, choice=None, product_id=None):

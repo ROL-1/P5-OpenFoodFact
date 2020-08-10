@@ -1,7 +1,7 @@
 """Interface with user."""
 
-from model.db_fetch import Db_fetch
-from model.db_config import NBPRODUCTS
+from model.fetch import Fetch
+from model.config import NBPRODUCTS
 from controller.api_config import CATEGORIES
 from view.sheets import Sheets
 from getpass import getpass
@@ -111,7 +111,7 @@ class Ui:
         print(f"\nDans la categorie {category},")
         print("vous pouvez rechercher un substitut pour un des produits suivant :")
         print("Sélectionnez un produit.\n")
-        fetched_products = Db_fetch(Log).fetch_products(category)        
+        fetched_products = Fetch(Log).fetch_products(category)        
         for count, product in enumerate(fetched_products):
             Sheets.list_sheet(count, product)
         # User's choices.
@@ -130,14 +130,14 @@ class Ui:
     def substitute(self, Log, product_id, category):
         """Display substitute to the user."""
         # Substitute display.
-        substitute = Db_fetch(Log).fetch_substitute(category)
-        stores = Db_fetch(Log).fetch_stores(substitute[0][0]) 
+        substitute = Fetch(Log).fetch_substitute(category)
+        stores = Fetch(Log).fetch_stores(substitute[0][0]) 
         print(f'\nLe produit suivant obtient un meilleur Nutriscore, dans la catégorie: {category}\n')
         Sheets.sheet(substitute[0], stores)
         # Substituted product display.
         print('\nCe produit peut substituer le produit que vous aviez sélectionné :\n')
-        old_product = Db_fetch(Log).fetch_product(product_id)
-        stores = Db_fetch(Log).fetch_stores(old_product[0][0])
+        old_product = Fetch(Log).fetch_product(product_id)
+        stores = Fetch(Log).fetch_stores(old_product[0][0])
         Sheets.sheet(old_product[0], stores)
         return substitute[0][0]
 
@@ -156,7 +156,7 @@ class Ui:
     
     def saves_display(self, Log, user_id):
         """Display searches saved."""
-        fetched_products = Db_fetch(Log).fetch_saved_searches(user_id)
+        fetched_products = Fetch(Log).fetch_saved_searches(user_id)
         print("\n Voici vos anciennes recherches :")
         for count, save in enumerate(fetched_products):
             Sheets.saves_sheet(count, save)

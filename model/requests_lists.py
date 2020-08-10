@@ -1,6 +1,6 @@
-"""Contains lists to make requests to database, with db_insertion.py and orm.py."""
+"""Contains lists to make requests to database, with Insertion.py and orm.py."""
 
-class Db_requests_lists:
+class Requests_lists:
     """Contains lists to make requests to database."""
 
     def user_insert(self, user_name):

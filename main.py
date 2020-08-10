@@ -1,17 +1,19 @@
 """Main file to launch program and install database."""
 
 import argparse
+import json
 
-from model.db_config import SQL_FILE
-from model.db_connection import Db_connect
-from model.db_creation import Db_create
+from model.config import SQL_FILE
+from model.connection import Connection
+from model.create import Create
 from model.sql_read import Db_sql
-from model.db_fetch import Db_fetch
+from model.fetch import Fetch
 from controller.api_requests import Api_requests
-from model.db_requests_lists import Db_requests_lists
-from model.db_insertion import Db_insert
+from model.requests_lists import Requests_lists
+from model.insert import Insert
 from view.interface import Ui
 from model.orm import Orm
+from model.json import Json
 
 
 def main():
@@ -23,38 +25,42 @@ def main():
     verbose = args.verbose
 
     if args.verbose:
-        print("Running '{}'".format(__file__))
-    # Ask parameters for sql server connection.
-    Run = Ui()
-    host, user, password = Run.connection_params()
+        print("Running '{}'".format(__file__))    
 
     if args.install_database:
+        # Ask parameters for sql server connection and save in Json.
+        Run = Ui()
+        host, user, password = Run.connection_params()
+        Json().save_connection_params(host, user, password)        
         print('Installing...') 
         # Server sql connection.
-        Log = Db_connect(host, user, password)
+        Log = Connection(host, user, password)
         # Read sql.   
         sql_readed = Db_sql.read_sql(SQL_FILE,verbose)
         # Write database name in dbname.py
-        Database_name = Db_sql.database_name(sql_readed, verbose)
+        Db_sql.database_name(sql_readed, verbose)
         # Create database.
-        Db_create.create_db(Log, sql_readed, verbose)
+        Create.create_db(Log, sql_readed, verbose)
         # Retrieves the maximum number of characters for the fields (dictionary).
-        Fields_charmax = Db_fetch(Log).characters_max()
+        Fields_charmax = Fetch(Log).characters_max()
         # Retrives datas from Api and reject unsuitable datas.
         Api_data = Api_requests().api_get_data(Fields_charmax,verbose)
         # Insertion in database.
-        Db_insert(Log, Api_data, verbose).insert_data(Api_data, verbose)
+        Insert(Log, Api_data, verbose).insert_data(Api_data, verbose)
         print('Database installed.')
         
     else:
+        # Load connection parameters from json.
+        host, user, password = Json().read_connection_params()
         # Server connection.
-        Log = Db_connect(host, user, password)
+        Log = Connection(host, user, password)
         # Database connection.
         Log_db = Log.database_log()        
         # Booleans for loops.
         Loop = False
         log_choice = False
         # User account.
+        Run = Ui()
         while log_choice == False:
             log_choice = Run.log_menu()
         # User log.
@@ -62,7 +68,7 @@ def main():
             logged = False
             while logged == False:
                 user_name = Run.log_user()
-                request_lists = Db_requests_lists().user_id(user_name)            
+                request_lists = Requests_lists().user_id(user_name)            
                 try:
                     user_id = Orm.simple_request(Log_db, request_lists)[0]
                     logged = True
@@ -71,9 +77,9 @@ def main():
         # User create account.
         elif log_choice == 2:
             user_name = Run.create_user()
-            insert_lists = Db_requests_lists().user_insert(user_name)
-            Db_insert(Log_db).insert_user(insert_lists)
-            request_lists = Db_requests_lists().user_id(user_name)
+            insert_lists = Requests_lists().user_insert(user_name)
+            Insert(Log_db).insert_user(insert_lists)
+            request_lists = Requests_lists().user_id(user_name)
             user_id = Orm.simple_request(Log_db, request_lists)[0]
 
         while Loop == False:
@@ -101,8 +107,8 @@ def main():
                 while save_choice == False:
                     save_choice = Run.save_menu(Log)
                 if save_choice == 1:
-                    insert_lists = Db_requests_lists().save_search(product_id, substitute_id, user_id)
-                    Db_insert(Log_db).insert_save(insert_lists)
+                    insert_lists = Requests_lists().save_search(product_id, substitute_id, user_id)
+                    Insert(Log_db).insert_save(insert_lists)
                     print('Recherche sauvegardée.') 
                 elif save_choice == 2:
                     exit()                    

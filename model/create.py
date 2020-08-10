@@ -1,8 +1,8 @@
 """Class to create database."""
 
-from model.db_connection import Db_connect
+from model.connection import Connection
 
-class Db_create:
+class Create:
     """..."""
 
     def create_db(Log, sql_readed, verbose):
@@ -10,7 +10,7 @@ class Db_create:
         # Split the file to make requests list.
         SQLrequests = sql_readed.split(';')
         # Drop database if exist
-        with open('model/db_config.py','r') as file :
+        with open('model/config.py','r') as file :
            for line in file:
                if 'DATABASE' in line:
                    DATABASE = line.split('= ')[1].replace("'","")  
