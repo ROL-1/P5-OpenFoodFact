@@ -35,18 +35,19 @@ def main():
         print('Installing...') 
         # Server sql connection.
         Log = Connection(host, user, password)
-        # Read sql.   
-        sql_readed = Db_sql.read_sql(SQL_FILE,verbose)
+        # Read sql.
+        Sql = Db_sql(verbose)  
+        sql_readed = Sql.read_sql(SQL_FILE)
         # Write database name in dbname.py
-        Db_sql.database_name(sql_readed, verbose)
+        Sql.database_name(sql_readed)
         # Create database.
-        Create.create_db(Log, sql_readed, verbose)
+        Create(Log, sql_readed).create_db(verbose)
         # Retrieves the maximum number of characters for the fields (dictionary).
         Fields_charmax = Fetch(Log).characters_max()
         # Retrives datas from Api and reject unsuitable datas.
         Api_data = Api_requests().api_get_data(Fields_charmax,verbose)
         # Insertion in database.
-        Insert(Log, Api_data, verbose).insert_data(Api_data, verbose)
+        Insert(Log, verbose).insert_data(Api_data)
         print('Database installed.')
         
     else:
@@ -70,7 +71,7 @@ def main():
                 user_name = Run.log_user()
                 request_lists = Requests_lists().user_id(user_name)            
                 try:
-                    user_id = Orm.simple_request(Log_db, request_lists)[0]
+                    user_id = Orm(Log_db).simple_request(request_lists)[0]
                     logged = True
                 except IndexError:
                     print("Ce nom d'utilisateur n'existe pas.")
@@ -78,9 +79,9 @@ def main():
         elif log_choice == 2:
             user_name = Run.create_user()
             insert_lists = Requests_lists().user_insert(user_name)
-            Insert(Log_db).insert_user(insert_lists)
+            Insert(Log_db, verbose).insert_user(insert_lists)
             request_lists = Requests_lists().user_id(user_name)
-            user_id = Orm.simple_request(Log_db, request_lists)[0]
+            user_id = Orm(Log_db).simple_request(request_lists)[0]
 
         while Loop == False:
             # Booleans for loops.
@@ -108,7 +109,7 @@ def main():
                     save_choice = Run.save_menu(Log)
                 if save_choice == 1:
                     insert_lists = Requests_lists().save_search(product_id, substitute_id, user_id)
-                    Insert(Log_db).insert_save(insert_lists)
+                    Insert(Log_db, verbose).insert_save(insert_lists)
                     print('Recherche sauvegardée.') 
                 elif save_choice == 2:
                     exit()                    

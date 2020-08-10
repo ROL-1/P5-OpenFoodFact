@@ -2,36 +2,38 @@
 
 class Orm():
     """Translate from ptyhon to sql."""
+    def __init__(self, Log):
+        self.Log = Log
 
-    def simple_insertion(Log, insert_lists):
+    def simple_insertion(self, insert_lists):
         """Insert datas to database."""
         for args in insert_lists:
             string = args[-1]
-            Log.execute("INSERT IGNORE INTO {} ({}) VALUES (%s)".format(*args),[string])
+            self.Log.execute("INSERT IGNORE INTO {} ({}) VALUES (%s)".format(*args),[string])
 
-    def two_values_insertion(Log, insert_lists):
+    def two_values_insertion(self, insert_lists):
         """Insert datas to database."""
         for args in insert_lists:           
             string = args[-1]
-            Log.execute("INSERT IGNORE INTO {} VALUES (%s,%s)".format(*args),string)
+            self.Log.execute("INSERT IGNORE INTO {} VALUES (%s,%s)".format(*args),string)
     
-    def triple_values_insertion(Log, insert_lists):
+    def triple_values_insertion(self, insert_lists):
         """Insert datas to database."""
         for args in insert_lists:           
             string = args[-1]
-            Log.execute("INSERT IGNORE INTO {} ({}) VALUES (%s,%s,%s)".format(*args),string)
+            self.Log.execute("INSERT IGNORE INTO {} ({}) VALUES (%s,%s,%s)".format(*args),string)
     
-    def multiple_insertion(Log, insert_lists):
+    def multiple_insertion(self, insert_lists):
         """Insert datas to database."""
         for args in insert_lists:
             string = args[-1]
-            Log.execute("INSERT IGNORE INTO {} ({}) VALUES (%s,%s,%s,%s,%s,%s,%s)".format(*args),string)
+            self.Log.execute("INSERT IGNORE INTO {} ({}) VALUES (%s,%s,%s,%s,%s,%s,%s)".format(*args),string)
 
-    def simple_request(Log, request_lists):
+    def simple_request(self, request_lists):
         """Insert datas to database."""
         result_list = []
         for args in request_lists:            
             string = args[-1]
-            result = Log.request("SELECT {} FROM {} WHERE {} = (%s)".format(*args),[string])[0][0]
+            result = self.Log.request("SELECT {} FROM {} WHERE {} = (%s)".format(*args),[string])[0][0]
             result_list.append(result)
         return result_list
