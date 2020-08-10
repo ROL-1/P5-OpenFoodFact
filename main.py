@@ -112,11 +112,16 @@ def main():
                     Insert(Log_db, verbose).insert_save(insert_lists)
                     print('Recherche sauvegardée.') 
                 elif save_choice == 2:
+                    pass 
+                elif save_choice == 3:
                     exit()                    
-
+                                      
             # Display saved searches.
             elif menu_choice == 2:
                 Run.saves_display(Log_db, user_id)
+            # Quit.
+            elif menu_choice == 3:
+                exit()
 
         # Close connection
         if args.verbose:

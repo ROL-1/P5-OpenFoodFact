@@ -73,11 +73,11 @@ class Ui:
                 "Avec l'api OpenFoodFact\n")
         # Main menu.
         print("\nVoulez-vous :\n",
-              "1. - Trouver un produit de substitution pour un aliment ? - (Appuyez sur 1.)\n",
-              "2. - Consulter vos produits de substitution sauvegardés ? - (Appuyez sur 2.)\n",
-                )
+              "1. - Trouver un produit de substitution pour un aliment ? - (Appuyez sur 1)\n",
+              "2. - Consulter vos produits de substitution sauvegardés ? - (Appuyez sur 2)\n",
+              "3. - Quitter le programme ? - (Appuyez sur 3)\n")
         # User's choices.
-        choices = 2
+        choices = 3
         user_input = input("Votre choix : ")
         menu_choice = self._user_choices(user_input, choices)
         # Loop if wrong choice, else return choice.
@@ -143,10 +143,12 @@ class Ui:
 
     def save_menu(self, Log):
         """Save or loop to menu."""
-        print('\nQue souhaitez vous faire à présent ?')
-        print('1. Sauvegarder cette recherche ?')
-        print('2. Quitter le programme ?')
-        choices = 2
+        print("\nQue souhaitez vous faire à présent ?\n",
+              "1. - Sauvegarder cette recherche ? - (Appuyez sur 1)\n",
+              "2. - Revenir au menu initial ? - (Appuyez sur 2)\n",
+              "3. - Quitter le programme ? - (Appuyez sur 3)\n"
+        )
+        choices = 3
         user_input = input("Votre choix : ")
         save_choice = self._user_choices(user_input, choices)
         if save_choice == False:

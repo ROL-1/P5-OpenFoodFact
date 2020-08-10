@@ -1,3 +1,4 @@
 venv/
 .vscode/
 model/conn_params.json
+scraped_file.json
