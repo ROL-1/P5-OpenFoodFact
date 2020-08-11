@@ -1,4 +1,5 @@
 venv/
 .vscode/
 model/conn_params.json
+model/database_name.json
 scraped_file.json

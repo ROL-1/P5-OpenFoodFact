@@ -126,8 +126,8 @@ class Api_requests:
         if verbose:
             print('Datas cleaned. Founded', MIN_PROD,'products minimum by categories.')
 
-        # Write JSON for debug
-        with open("scraped_file.json", "w") as write_file:
-            json.dump(self.cleaned_scraped, write_file, indent=4)  
+        # # Write JSON for debug
+        # with open("scraped_file.json", "w") as write_file:
+        #     json.dump(self.cleaned_scraped, write_file, indent=4)  
         return self.cleaned_scraped
          

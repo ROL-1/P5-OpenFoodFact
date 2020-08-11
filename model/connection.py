@@ -3,6 +3,7 @@
 
 import mysql.connector as MC
 from mysql.connector import errorcode
+from model.json import Json
 
 class Connection: 
     """Récupère les informations pour la connexion et créé la connexion."""
@@ -18,10 +19,7 @@ class Connection:
 
     def database_log(self):
         """Look for database name for connection."""
-        with open('model/config.py','r') as file:
-           for line in file:
-               if 'DATABASE' in line:
-                   DATABASE = line.split('= ')[1].replace("'","")          
+        DATABASE = Json.read_database_name()       
         Log = Connection(self.host, self.user, self.password, DATABASE)
         return Log
 
