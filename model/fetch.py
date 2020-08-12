@@ -88,7 +88,7 @@ class Fetch:
         request = """
             SELECT p1.product_name_fr as Produits, p2.product_name_fr as Substituts, create_time as Date
             FROM Searches_saved s
-            INNER JOIN Products p1 ON p1.products_id = s.product_id
+            INNER JOIN Products p1 ON p1.products_id = s.Products_products_id
             INNER JOIN Products p2 ON p2.products_id = s.substitute_id
             WHERE Users_user_id = '%s'
             """ % (user_id)

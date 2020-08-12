@@ -1,6 +1,7 @@
 """Class to create database."""
 
 from model.connection import Connection
+from model.json import Json
 
 class Create:
     """Create database."""
@@ -11,12 +12,9 @@ class Create:
 
     def create_db(self, verbose):
         """Create database (drop if exists)."""       
-        with open('model/config.py','r') as file :
-           for line in file:
-               if 'DATABASE' in line:
-                   DATABASE = line.split('= ')[1].replace("'","")  
-        # Drop database if exist
-        self.Log.execute("DROP DATABASE IF EXISTS {}".format(DATABASE))    
+        # Look for database name and erase database if exists.
+        DATABASE = Json.read_database_name() 
+        self.Log.execute(f"DROP DATABASE IF EXISTS {DATABASE}")   
         self.Log.commit()
         # Count for strings skipped.
         i = 0

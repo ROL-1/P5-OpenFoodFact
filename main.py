@@ -1,3 +1,5 @@
+#! /usr/bin/env python3
+# coding: utf-8 
 """Main file to launch program and install database."""
 
 import argparse

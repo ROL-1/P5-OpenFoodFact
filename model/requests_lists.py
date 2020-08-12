@@ -18,7 +18,7 @@ class Requests_lists:
     def save_search(self, product_id, substitute_id, user_id):
         """Create request to save search."""
         save_search = ['Searches_saved',
-            'product_id, substitute_id, Users_user_id',
+            'Products_products_id, substitute_id, Users_user_id',
             (product_id, substitute_id, user_id)
             ]
         insert_lists = [save_search,]    

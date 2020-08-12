@@ -12,7 +12,7 @@ class Json:
 
     def read_connection_params(self):
         """Load and return connection parameters from Json."""
-        with open('model\conn_params.json') as json_file:
+        with open('model/conn_params.json') as json_file:
             params = json.load(json_file)
         return params['host'],params['user'],params['password']
     
