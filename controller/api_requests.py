@@ -1,3 +1,5 @@
+#! /usr/bin/env python3
+# coding: utf-8
 """class to get informations from API."""
 
 import json
@@ -5,7 +7,7 @@ import requests
 
 from controller.api_config import REQUEST_PARAMS,CATEGORIES,FIELDS,MIN_PROD
 
-class Api_requests:
+class ApiRequests:
     """..."""
 
     def __init__(self, Fields_charmax=None, verbose=None):

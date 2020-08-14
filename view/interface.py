@@ -1,3 +1,5 @@
+#! /usr/bin/env python3
+# coding: utf-8
 """Interface with user."""
 
 from model.fetch import Fetch
@@ -5,6 +7,7 @@ from model.config import NBPRODUCTS
 from controller.api_config import CATEGORIES
 from view.sheets import Sheets
 from getpass import getpass
+from view.menus import menus
 
 class Ui:
     """Allows the user to interact with the program."""
@@ -22,13 +25,16 @@ class Ui:
         password = getpass()
         return host, user, password
 
+    def print_menu(self, sub_menu):
+        for line in menus[sub_menu]:
+            print(line)
+
     def log_menu(self) :
         """Log menu."""
-        print('\nCompte utilisateur :')
-        print('1. Se connecter.')
-        print('2. Créer un compte utilisateur.')
-        choices = 2
-        user_input = input("Votre choix : ")
+        self.print_menu('log_menu')
+        self.print_menu('log_menu_choices')
+        choices = len(menus['log_menu_choices'])
+        user_input = input("\n Votre choix : ")
         log_choice = self._user_choices(user_input, choices)
         if log_choice == False:
             return False
@@ -40,14 +46,20 @@ class Ui:
         print('\nConnexion au compte utilisateur :')
         print("\nSaisissez votre nom d'utilisateur :")
         log_user = input("Votre choix : ")
-        return log_user
+        if log_user == "":
+            return False
+        else:
+            return log_user
 
     def create_user(self):
         """Ask user informations, to register."""        
         print('\nCréer un compte utilisateur :')
         print("\nChoisissez un nom d'utilisateur (25 caractères maximum) :")
         user_name = input("Votre choix : ")
-        return user_name
+        if user_name == "":
+            return False
+        else:
+            return user_name
 
     def _user_choices(self, user_input, choices):
         """Manage user choices."""
@@ -57,7 +69,7 @@ class Ui:
                 if (user_input < 1) or (user_input > choices):
                     print("Ce n'est pas un choix valide.")
                     return False
-                elif (i+1) == user_input:                    
+                elif (i+1) == user_input:
                     return (i+1)
         except ValueError:
             print("Ce n'est pas un choix valide.")
@@ -68,16 +80,12 @@ class Ui:
         # Welcome message
         self.menu_counter +=1
         if self.menu_counter == 1:
-            print("\nBIENVENUE DANS LE PROGRAMME DE RECHERCHE DE PRODUITS DE SUBSTITUTION.\n",
-                "Par l'entreprise Pur Beurre.\n",
-                "Avec l'api OpenFoodFact\n")
+            self.print_menu('main_menu_welcome')
         # Main menu.
-        print("\nVoulez-vous :\n",
-              "1. - Trouver un produit de substitution pour un aliment ? - (Appuyez sur 1)\n",
-              "2. - Consulter vos produits de substitution sauvegardés ? - (Appuyez sur 2)\n",
-              "3. - Quitter le programme ? - (Appuyez sur 3)\n")
+        self.print_menu('main_menu')
+        self.print_menu('main_menu_choices')
         # User's choices.
-        choices = 3
+        choices = len(menus['main_menu_choices'])
         user_input = input("Votre choix : ")
         menu_choice = self._user_choices(user_input, choices)
         # Loop if wrong choice, else return choice.
@@ -89,8 +97,7 @@ class Ui:
     def categories(self):
         """Display categories to the user."""
         # Categories menu.
-        print("\nPour quelle catégorie de produits voulez-vous faire une recherche ?")
-        print("Sélectionnez une catégorie :\n")        
+        self.print_menu('categories_menu')
         for count, cat in enumerate(CATEGORIES):
             print(count+1,'-', cat)
         # User's choices.
@@ -109,8 +116,7 @@ class Ui:
         """Display products to the user."""
         # Products menu.
         print(f"\nDans la categorie {category},")
-        print("vous pouvez rechercher un substitut pour un des produits suivant :")
-        print("Sélectionnez un produit.\n")
+        self.print_menu('products_menu')        
         fetched_products = Fetch(Log).fetch_products(category)        
         for count, product in enumerate(fetched_products):
             Sheets.list_sheet(count, product)
@@ -143,25 +149,28 @@ class Ui:
 
     def save_menu(self, Log):
         """Save or loop to menu."""
-        print("\nQue souhaitez vous faire à présent ?\n",
-              "1. - Sauvegarder cette recherche ? - (Appuyez sur 1)\n",
-              "2. - Revenir au menu initial ? - (Appuyez sur 2)\n",
-              "3. - Quitter le programme ? - (Appuyez sur 3)\n"
-        )
-        choices = 3
+        self.print_menu('save_menu')
+        self.print_menu('save_menu_choices')
+        choices = len(menus['save_menu_choices'])
         user_input = input("Votre choix : ")
         save_choice = self._user_choices(user_input, choices)
         if save_choice == False:
             return False
         else:
             return save_choice
-    
+
     def saves_display(self, Log, user_id):
         """Display searches saved."""
         fetched_products = Fetch(Log).fetch_saved_searches(user_id)
         print("\n Voici vos anciennes recherches :")
         for count, save in enumerate(fetched_products):
             Sheets.saves_sheet(count, save)
+
+    def bye_message(self, user_name):
+        if user_name != False:
+            print('\nA bientôt \"{}\" !'.format(user_name))
+        else:
+            print('\nA bientôt !')
 
 
 

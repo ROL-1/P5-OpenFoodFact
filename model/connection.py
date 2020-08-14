@@ -1,3 +1,5 @@
+#! /usr/bin/env python3
+# coding: utf-8
 """Class to filter(really?) api informations and transmit it to the database."""
 """pip install mysql-connector-python"""
 

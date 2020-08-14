@@ -1,3 +1,5 @@
+#! /usr/bin/env python3
+# coding: utf-8
 """Class to retrives informations from database."""
 
 from controller.api_config import FIELDS

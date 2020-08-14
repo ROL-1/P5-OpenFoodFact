@@ -1,3 +1,5 @@
+#! /usr/bin/env python3
+# coding: utf-8
 """Class to create database."""
 
 from model.connection import Connection
@@ -11,7 +13,9 @@ class Create:
         self.SQLrequests = sql_readed.split(';')
 
     def create_db(self, verbose):
-        """Create database (drop if exists)."""       
+        """Create database (drop if exists)."""
+        if verbose:
+            print('Erase database if exists.')      
         # Look for database name and erase database if exists.
         DATABASE = Json.read_database_name() 
         self.Log.execute(f"DROP DATABASE IF EXISTS {DATABASE}")   

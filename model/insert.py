@@ -1,3 +1,5 @@
+#! /usr/bin/env python3
+# coding: utf-8
 """Insert data in data base. From JSON."""
 
 from model.orm import Orm

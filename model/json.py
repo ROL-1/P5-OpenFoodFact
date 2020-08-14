@@ -1,3 +1,5 @@
+#! /usr/bin/env python3
+# coding: utf-8
 """Actions with Json files."""
 import json
 
