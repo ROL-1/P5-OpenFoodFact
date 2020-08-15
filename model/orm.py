@@ -14,8 +14,6 @@ class Orm:
     def multiple_insertion(self, insert_lists):
         """Insert datas to database."""
         for args in insert_lists:
-            print(args[-1])
-            print(type(args[-1]))
             self.Log.execute(" ".join(["INSERT IGNORE INTO {} ({})".format(*args), 
                              self.build_params_values(args[-1])]),args[-1])
     

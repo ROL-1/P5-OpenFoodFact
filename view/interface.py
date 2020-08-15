@@ -162,9 +162,13 @@ class Ui:
     def saves_display(self, Log, user_id):
         """Display searches saved."""
         fetched_products = Fetch(Log).fetch_saved_searches(user_id)
-        print("\n Voici vos anciennes recherches :")
-        for count, save in enumerate(fetched_products):
-            Sheets.saves_sheet(count, save)
+        if fetched_products == []:
+            print("Vous n'avez aucune recherche sauvegardée.")
+        else:     
+            print("\n Voici vos anciennes recherches :")
+            Sheets.saves_sheet(fetched_products)
+            # for count, save in enumerate(fetched_products):
+            #     Sheets.saves_sheet(count, save)
 
     def bye_message(self, user_name):
         if user_name != False:

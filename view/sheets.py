@@ -2,6 +2,8 @@
 # coding: utf-8
 """Structure for products sheets."""
 
+import pandas as pd
+
 class Sheets:
     """Give structure for products sheets."""
       
@@ -29,15 +31,23 @@ class Sheets:
         # Rows.
         print("{:>2}".format(count+1),'|',"{:>12}".format(product[4]),'|',"{:50}".format(product[3]),'|',product[1])
 
-    def saves_sheet(count, save):
+    def saves_sheet(fetched_products):
         """Searches saved list sheet."""
-        # First row.
-        if count == 0:
-            print("Nb",'|',"{:>60}".format('Produits'),'|',"{:60}".format('Substituts'),'|','Date')
-            print('-'*150)
-        # Rows.
-        print("{:>2}".format(count+1),'|',"{:>60}".format(save[0]),'|',"{:60}".format(save[1]),'|',save[2])
-
+        products = []
+        substitutes = [] 
+        urls = []
+        for save in fetched_products:
+            products.append(save[0])
+            substitutes.append(save[1])
+            urls.append(save[2])
+        frame = pd.DataFrame(
+            {
+                "Produits" : products,
+                "Substituts" : substitutes,
+                "Url" : urls,
+            }
+        )
+        print(frame)
 
 
 
