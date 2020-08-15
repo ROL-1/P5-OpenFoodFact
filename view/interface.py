@@ -117,9 +117,9 @@ class Ui:
         # Products menu.
         print(f"\nDans la categorie {category},")
         self.print_menu('products_menu')        
-        fetched_products = Fetch(Log).fetch_products(category)        
-        for count, product in enumerate(fetched_products):
-            Sheets.list_sheet(count, product)
+        fetched_products = Fetch(Log).fetch_products(category)
+        Sheets.list_sheet(fetched_products)
+            
         # User's choices.
         choices = NBPRODUCTS
         user_input = input("\nVotre choix : ")

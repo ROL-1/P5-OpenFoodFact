@@ -22,24 +22,42 @@ class Sheets:
         print('Magasins :', stores)
         print('Lien OpenFoodFact :',product[5])
     
-    def list_sheet(count, product):
+    def list_sheet(fetched_products):
         """Product list sheet."""
-        # First row.
-        if count == 0:
-            print("Nb",'|',"{:>12}".format('Nutriscores'),'|',"{:50}".format('Marques'),'|','Produits')
-            print('-'*120)
-        # Rows.
-        print("{:>2}".format(count+1),'|',"{:>12}".format(product[4]),'|',"{:50}".format(product[3]),'|',product[1])
+        nutriscores = []
+        brands = [] 
+        products = []
+        for fp in fetched_products:
+            nutriscores.append(fp[4])
+            brands.append(fp[3])
+            products.append(fp[1])
+        frame = pd.DataFrame(
+            {
+                "Nutriscores" : nutriscores,
+                "Produits" : products,
+                "Marques" : brands,                
+            }
+        )   
+        frame.index = [i+1 for i in range(len(fetched_products))]
+        print(frame)
+
+        # if count == 0:
+        #     print("Nb",'|',"{:>12}".format('Nutriscores'),'|',"{:50}".format('Marques'),'|','Produits')
+        #     print('-'*120)
+        # # Rows.
+        # print("{:>2}".format(count+1),'|',"{:>12}".format(product[4]),'|',"{:50}".format(product[3]),'|',product[1])
 
     def saves_sheet(fetched_products):
         """Searches saved list sheet."""
+        # Create lists for frame.
         products = []
         substitutes = [] 
         codeOFF = []
-        for save in fetched_products:
-            products.append(save[0])
-            substitutes.append(save[1])
-            codeOFF.append(save[2])
+        for fp in fetched_products:
+            products.append(fp[0])
+            substitutes.append(fp[1])
+            codeOFF.append(fp[2])
+        # Create frame.
         frame = pd.DataFrame(
             {
                 "Produits" : products,
@@ -47,6 +65,7 @@ class Sheets:
                 "https://fr.openfoodfacts.org/" : codeOFF,
             }
         )
+        frame.index = [i+1 for i in range(len(fetched_products))]
         print(frame)
 
 
