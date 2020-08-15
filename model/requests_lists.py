@@ -2,12 +2,12 @@
 # coding: utf-8
 """Contains lists to make requests to database, with Insertion.py and orm.py."""
 
-class Requests_lists:
+class RequestsLists:
     """Contains lists to make requests to database."""
 
     def user_insert(self, user_name):
         """User account : create request for insertion."""
-        User_name = ['Users', 'username', user_name]        
+        User_name = ['Users', 'username', [user_name]]        
         insert_lists = [User_name,]
         return insert_lists
 
@@ -28,14 +28,14 @@ class Requests_lists:
 
     def tables_list(self, product):
         """Tables : create request for insertion."""
-        Codes_products_OFF = ['Codes_products_OFF', 'code', product['code']]
-        Brands = ['Brands', 'brands', product['brands']]
-        Nutriscore_grades = ['Nutriscore_grades', 'nutriscore_grade', product['nutriscore_grade']]
-        Categories = ['Categories', 'categories', product['categories']]
+        Codes_products_OFF = ['Codes_products_OFF', 'code', [product['code']]]
+        Brands = ['Brands', 'brands', [product['brands']]]
+        Nutriscore_grades = ['Nutriscore_grades', 'nutriscore_grade', [product['nutriscore_grade']]]
+        Categories = ['Categories', 'categories', [product['categories']]]
         insert_lists = [Codes_products_OFF, Brands, Nutriscore_grades, Categories]
         # Defines list for insertion in Table 'Stores' :
         for store in product['stores'].split(','):                
-            Stores = ['Stores', 'stores', store]
+            Stores = ['Stores', 'stores', [store]]
             insert_lists.append(Stores)
         return insert_lists
     

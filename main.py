@@ -8,10 +8,10 @@ import json
 from model.config import SQL_FILE
 from model.connection import Connection
 from model.create import Create
-from model.sql_read import Db_sql
+from model.sql_read import SqlRead
 from model.fetch import Fetch
 from controller.api_requests import ApiRequests
-from model.requests_lists import Requests_lists
+from model.requests_lists import RequestsLists
 from model.insert import Insert
 from view.interface import Ui
 from model.orm import Orm
@@ -39,7 +39,7 @@ def main():
             # Server sql connection.
             Log = Connection(host, user, password)
             # Read sql.
-            Sql = Db_sql(verbose)  
+            Sql = SqlRead(verbose)  
             sql_readed = Sql.read_sql(SQL_FILE)
             # Write database name in dbname.py
             Sql.database_name(sql_readed)
@@ -74,7 +74,7 @@ def main():
                 while logged == False:
                     user_name = Run.log_user()                                
                     try:
-                        request_lists = Requests_lists().user_id(user_name)
+                        request_lists = RequestsLists().user_id(user_name)
                         user_id = Orm(Log_db).simple_request(request_lists)[0]
                         logged = True
                     except IndexError:
@@ -84,14 +84,14 @@ def main():
                 while user_name == False:
                     user_name = Run.create_user()
                     try:
-                        request_lists = Requests_lists().user_id(user_name)
+                        request_lists = RequestsLists().user_id(user_name)
                         user = Orm(Log_db).simple_request(request_lists)
                         user_name = False
                         print("\nCe nom d'utilisateur existe déjà.")
                     except IndexError:                    
-                        insert_lists = Requests_lists().user_insert(user_name)
+                        insert_lists = RequestsLists().user_insert(user_name)
                         Insert(Log_db, verbose).insert_user(insert_lists)
-                        request_lists = Requests_lists().user_id(user_name)
+                        request_lists = RequestsLists().user_id(user_name)
                         user_id = Orm(Log_db).simple_request(request_lists)[0]
 
             while Loop == False:
@@ -119,7 +119,7 @@ def main():
                     while save_choice == False:
                         save_choice = Run.save_menu(Log)
                     if save_choice == 1:
-                        insert_lists = Requests_lists().save_search(product_id, substitute_id, user_id)
+                        insert_lists = RequestsLists().save_search(product_id, substitute_id, user_id)
                         Insert(Log_db, verbose).insert_save(insert_lists)
                         print('\nRecherche sauvegardée.') 
                     elif save_choice == 2:

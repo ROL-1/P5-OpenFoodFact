@@ -1,3 +1,7 @@
+#! /usr/bin/env python3
+# coding: utf-8
+"""Dictionary of lists to make menus."""
+
 menus = { 
 'log_menu' : [
     "\nA tout moment, vous pouvez quitter le programme en pressant : [CTRL + C]", 

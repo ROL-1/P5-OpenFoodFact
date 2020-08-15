@@ -2,35 +2,23 @@
 # coding: utf-8
 """Object-relational Mapper (ORM) class."""
 
-class Orm():
+class Orm:
     """Translate from ptyhon to sql."""
     def __init__(self, Log):
         self.Log = Log
 
-    def simple_insertion(self, insert_lists):
-        """Insert datas to database."""
-        for args in insert_lists:
-            string = args[-1]
-            self.Log.execute("INSERT IGNORE INTO {} ({}) VALUES (%s)".format(*args),[string])
+    def build_params_values(self, values_list):
+        nb_params = ",".join("%s" for value in values_list)
+        return "VALUES ({})".format(nb_params)
 
-    def two_values_insertion(self, insert_lists):
-        """Insert datas to database."""
-        for args in insert_lists:           
-            string = args[-1]
-            self.Log.execute("INSERT IGNORE INTO {} VALUES (%s,%s)".format(*args),string)
-    
-    def triple_values_insertion(self, insert_lists):
-        """Insert datas to database."""
-        for args in insert_lists:           
-            string = args[-1]
-            self.Log.execute("INSERT IGNORE INTO {} ({}) VALUES (%s,%s,%s)".format(*args),string)
-    
     def multiple_insertion(self, insert_lists):
         """Insert datas to database."""
         for args in insert_lists:
-            string = args[-1]
-            self.Log.execute("INSERT IGNORE INTO {} ({}) VALUES (%s,%s,%s,%s,%s,%s,%s)".format(*args),string)
-
+            print(args[-1])
+            print(type(args[-1]))
+            self.Log.execute(" ".join(["INSERT IGNORE INTO {} ({})".format(*args), 
+                             self.build_params_values(args[-1])]),args[-1])
+    
     def simple_request(self, request_lists):
         """Insert datas to database."""
         result_list = []

@@ -24,7 +24,7 @@ class Create:
         i = 0
         # Execute requests from the list.
         if verbose:
-            print('Executing requests to database.') 
+            print('Executing database creation requests.') 
         for request in self.SQLrequests:                   
             try:
                 self.Log.execute(request)

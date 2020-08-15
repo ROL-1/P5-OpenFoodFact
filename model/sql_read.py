@@ -5,7 +5,7 @@
 import re
 from model.json import Json
 
-class Db_sql:
+class SqlRead:
     """Read sql file."""
     def __init__(self, verbose):
         self.verbose = verbose
