@@ -8,7 +8,7 @@ class Sheets:
     """Give structure for products sheets."""
       
     def sheet(product, stores):
-        """Sheet."""        
+        """Sheet."""
         print('Nom :', product[1])
         print('Description :', product[2])
         print('Marque :', product[3])
@@ -35,16 +35,16 @@ class Sheets:
         """Searches saved list sheet."""
         products = []
         substitutes = [] 
-        urls = []
+        codeOFF = []
         for save in fetched_products:
             products.append(save[0])
             substitutes.append(save[1])
-            urls.append(save[2])
+            codeOFF.append(save[2])
         frame = pd.DataFrame(
             {
                 "Produits" : products,
                 "Substituts" : substitutes,
-                "Url" : urls,
+                "https://fr.openfoodfacts.org/" : codeOFF,
             }
         )
         print(frame)

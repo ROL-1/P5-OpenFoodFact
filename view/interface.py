@@ -167,8 +167,6 @@ class Ui:
         else:     
             print("\n Voici vos anciennes recherches :")
             Sheets.saves_sheet(fetched_products)
-            # for count, save in enumerate(fetched_products):
-            #     Sheets.saves_sheet(count, save)
 
     def bye_message(self, user_name):
         if user_name != False:

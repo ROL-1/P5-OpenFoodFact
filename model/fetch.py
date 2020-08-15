@@ -88,10 +88,11 @@ class Fetch:
     def fetch_saved_searches(self, user_id):
         """Find all saved searches for user."""
         request = """
-            SELECT p1.product_name_fr as Produits, p2.product_name_fr as Substituts, p2.url as Url
+            SELECT p1.product_name_fr, p2.product_name_fr, c.code
             FROM Searches_saved s
             INNER JOIN Products p1 ON p1.products_id = s.Products_products_id
             INNER JOIN Products p2 ON p2.products_id = s.substitute_id
+            INNER JOIN Codes_products_OFF c ON c.Codes_products_OFF_id = p2.Codes_products_OFF_Codes_products_OFF_id
             WHERE Users_user_id = '%s'
             """ % (user_id)
         fetched_stores = self.Log.request(request)
