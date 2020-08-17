@@ -97,7 +97,10 @@ class RequestsLists:
         """Table Products : create request for insertion."""
         Products = [
             "Products",
-            "Codes_products_OFF_Codes_products_OFF_id, product_name_fr, generic_name_fr, url, Brands_brands_id, Nutriscore_grades_nutriscore_grade_id, Categories_categories_id",
+            "Codes_products_OFF_Codes_products_OFF_id, product_name_fr, \
+                generic_name_fr, url, Brands_brands_id, \
+                    Nutriscore_grades_nutriscore_grade_id, \
+                        Categories_categories_id",
             (
                 Codes_products_OFF_id,
                 product["product_name_fr"],

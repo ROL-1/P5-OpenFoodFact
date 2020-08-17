@@ -2,14 +2,13 @@
 # coding: utf-8
 """Class to filter(really?) api informations and transmit it to the
 database."""
-"""pip install mysql-connector-python"""
-
-
-
 
 import mysql.connector as MC
-from model.json import Json
 from mysql.connector import errorcode
+
+from model.json import Json
+
+
 class Connection:
     """Récupère les informations pour la connexion et créé la connexion."""
 
@@ -41,12 +40,14 @@ class Connection:
         except MC.Error as err:
             if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
                 print(
-                    "Une information est erronée parmi votre nom d'utilisateur et votre mot de passe."
+                    "Une information est erronée parmi votre nom d'utilisateur \
+et votre mot de passe."
                 )
             elif err.errno == errorcode.ER_BAD_DB_ERROR:
                 print("La base de données n'existe pas.")
                 print(
-                    "Veuillez relancer le programme avec la commande : --install_database. (option : -v)"
+                    "Veuillez relancer le programme avec la commande : \
+--install_database. (option : -v)"
                 )
             else:
                 print(err)

@@ -39,7 +39,7 @@ class Ui:
         choices = len(menus["log_menu_choices"])
         user_input = input("\n Votre choix : ")
         log_choice = self._user_choices(user_input, choices)
-        if log_choice == False:
+        if log_choice is False:
             return False
         else:
             return log_choice
@@ -92,7 +92,7 @@ class Ui:
         user_input = input("Votre choix : ")
         menu_choice = self._user_choices(user_input, choices)
         # Loop if wrong choice, else return choice.
-        if menu_choice == False:
+        if menu_choice is False:
             return False
         else:
             return menu_choice
@@ -108,7 +108,7 @@ class Ui:
         user_input = input("\nVotre choix : ")
         choice = self._user_choices(user_input, choices)
         # Loop if wrong choice, else return category.
-        if choice == False:
+        if choice is False:
             return False
         else:
             for count, category in enumerate(CATEGORIES):
@@ -128,7 +128,7 @@ class Ui:
         user_input = input("\nVotre choix : ")
         choice = self._user_choices(user_input, choices)
         # Loop if wrong choice, else return product_id.
-        if choice == False:
+        if choice is False:
             return False
         else:
             for i in range(NBPRODUCTS):
@@ -142,12 +142,14 @@ class Ui:
         substitute = Fetch(Log).fetch_substitute(category)
         stores = Fetch(Log).fetch_stores(substitute[0][0])
         print(
-            f"\nLe produit suivant obtient un meilleur Nutriscore, dans la catégorie: {category}\n"
+            f"\nLe produit suivant obtient un meilleur Nutriscore, \
+dans la catégorie: {category}\n"
         )
         Sheets.sheet(substitute[0], stores)
         # Substituted product display.
         print(
-            "\nCe produit peut substituer le produit que vous aviez sélectionné :\n"
+            "\nCe produit peut substituer le produit que vous aviez \
+sélectionné :\n"
         )
         old_product = Fetch(Log).fetch_product(product_id)
         stores = Fetch(Log).fetch_stores(old_product[0][0])
@@ -161,7 +163,7 @@ class Ui:
         choices = len(menus["save_menu_choices"])
         user_input = input("Votre choix : ")
         save_choice = self._user_choices(user_input, choices)
-        if save_choice == False:
+        if save_choice is False:
             return False
         else:
             return save_choice
@@ -172,11 +174,11 @@ class Ui:
         if fetched_products == []:
             print("Vous n'avez aucune recherche sauvegardée.")
         else:
-            print("\n Voici vos anciennes recherches :")
+            print("\nVoici vos anciennes recherches :\n")
             Sheets.saves_sheet(fetched_products)
 
     def bye_message(self, user_name):
-        if user_name != False:
+        if user_name is not False:
             print('\nA bientôt "{}" !'.format(user_name))
         else:
             print("\nA bientôt !")

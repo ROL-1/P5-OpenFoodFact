@@ -2,7 +2,8 @@
 # coding: utf-8
 """Class to create database."""
 
-from model.connection import Connection
+import mysql
+
 from model.json import Json
 
 
@@ -30,7 +31,7 @@ class Create:
         for request in self.SQLrequests:
             try:
                 self.Log.execute(request)
-            except:
+            except mysql.connector.errors.ProgrammingError:
                 i += 1
                 if verbose:
                     print("String skipped:'", request, "'")

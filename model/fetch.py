@@ -29,15 +29,19 @@ class Fetch:
     def fetch_products(self, category):
         """Return 'NBPRODUCTS' products from a category."""
         request = """
-            SELECT DISTINCT products_id, product_name_fr, generic_name_fr, b.brands, n.nutriscore_grade
+            SELECT DISTINCT products_id, product_name_fr, generic_name_fr,
+            b.brands, n.nutriscore_grade
             FROM Products p
             INNER JOIN Brands b ON b.brands_id = p.Brands_brands_id
-            INNER JOIN Nutriscore_grades n ON n.Nutriscore_grade_id = p.Nutriscore_grades_Nutriscore_grade_id
-            INNER JOIN Categories c ON c.categories_id = p.Categories_categories_id
-            INNER JOIN Products_has_Stores phs ON p.products_id = phs.Products_products_id
+            INNER JOIN Nutriscore_grades n ON n.Nutriscore_grade_id =
+            p.Nutriscore_grades_Nutriscore_grade_id
+            INNER JOIN Categories c ON c.categories_id =
+            p.Categories_categories_id
+            INNER JOIN Products_has_Stores phs ON p.products_id =
+            phs.Products_products_id
             WHERE c.categories = '%s'
             AND n.nutriscore_grade > '%s'
-            ORDER BY RAND ()            
+            ORDER BY RAND ()
             LIMIT %s
             """ % (
             category,
@@ -49,16 +53,19 @@ class Fetch:
         return fetched_products
 
     def fetch_substitute(self, category):
-        """Find substitute : product with better nutriscore from the same category."""
+        """Find substitute : better nutriscore from the same category."""
         request = """
-            SELECT products_id, product_name_fr, generic_name_fr, b.brands, n.nutriscore_grade, url
+            SELECT products_id, product_name_fr, generic_name_fr, b.brands,
+            n.nutriscore_grade, url
             FROM Products p
             INNER JOIN Brands b ON b.brands_id = p.Brands_brands_id
-            INNER JOIN Nutriscore_grades n ON n.Nutriscore_grade_id = p.Nutriscore_grades_Nutriscore_grade_id
-            INNER JOIN Categories c ON c.categories_id = p.Categories_categories_id
+            INNER JOIN Nutriscore_grades n ON n.Nutriscore_grade_id =
+            p.Nutriscore_grades_Nutriscore_grade_id
+            INNER JOIN Categories c ON c.categories_id =
+            p.Categories_categories_id
             WHERE c.categories = '%s'
             AND n.nutriscore_grade <= '%s'
-            ORDER BY RAND ()            
+            ORDER BY RAND ()
             LIMIT 1
             """ % (
             category,
@@ -70,11 +77,14 @@ class Fetch:
     def fetch_product(self, product_id):
         """Find product datas."""
         request = """
-            SELECT products_id, product_name_fr, generic_name_fr, b.brands, n.nutriscore_grade, url
+            SELECT products_id, product_name_fr, generic_name_fr, b.brands,
+            n.nutriscore_grade, url
             FROM Products p
             INNER JOIN Brands b ON b.brands_id = p.Brands_brands_id
-            INNER JOIN Nutriscore_grades n ON n.Nutriscore_grade_id = p.Nutriscore_grades_Nutriscore_grade_id
-            INNER JOIN Categories c ON c.categories_id = p.Categories_categories_id
+            INNER JOIN Nutriscore_grades n ON n.Nutriscore_grade_id =
+            p.Nutriscore_grades_Nutriscore_grade_id
+            INNER JOIN Categories c ON c.categories_id =
+            p.Categories_categories_id
             WHERE p.products_id = '%s'
             LIMIT 1
             """ % (
@@ -88,7 +98,8 @@ class Fetch:
         request = """
             SELECT s.stores
             FROM Products p
-            INNER JOIN Products_has_Stores phs ON p.products_id = phs.Products_products_id
+            INNER JOIN Products_has_Stores phs ON p.products_id =
+            phs.Products_products_id
             INNER JOIN Stores s ON phs.Stores_stores_id = s.stores_id
             WHERE Products_products_id = '%s'
             """ % (
@@ -105,7 +116,8 @@ class Fetch:
             FROM Searches_saved s
             INNER JOIN Products p1 ON p1.products_id = s.Products_products_id
             INNER JOIN Products p2 ON p2.products_id = s.substitute_id
-            INNER JOIN Codes_products_OFF c ON c.Codes_products_OFF_id = p2.Codes_products_OFF_Codes_products_OFF_id
+            INNER JOIN Codes_products_OFF c ON c.Codes_products_OFF_id =
+            p2.Codes_products_OFF_Codes_products_OFF_id
             WHERE Users_user_id = '%s'
             """ % (
             user_id
