@@ -5,7 +5,6 @@
 import json
 
 import requests
-
 from controller.api_config import CATEGORIES, FIELDS, MIN_PROD, REQUEST_PARAMS
 
 
@@ -24,8 +23,11 @@ class ApiRequests:
     def api_request(self, category):
         """Get datas from api by creating endpoint with parameters."""
         params = (
-            "&".join(REQUEST_PARAMS) + FIELDS + "&page=" +
-            str(self.page_nb) + "&tag_0="
+            "&".join(REQUEST_PARAMS)
+            + FIELDS
+            + "&page="
+            + str(self.page_nb)
+            + "&tag_0="
         )
         request = requests.get(self.endpoint + params + category)
         return request
@@ -75,7 +77,10 @@ class ApiRequests:
                 if field in Fields_charmax.keys():
                     # Check for element with max length for 'stores'.
                     if field == "stores":
-                        if len(max(string.split(","), key=len)) > Fields_charmax[field]:
+                        if (
+                            len(max(string.split(","), key=len))
+                            > Fields_charmax[field]
+                        ):
                             return "False"
                     else:
                         if len(string) > Fields_charmax[field]:
@@ -128,7 +133,8 @@ class ApiRequests:
                         self.cleaned_scraped.append(product)
                 # Check how many products by categories are suitables.
                 category_filled = self.products_nb(
-                    self.cleaned_scraped, category)
+                    self.cleaned_scraped, category
+                )
                 if category_filled is False:
                     self.page_nb += 1
                 else:
@@ -136,7 +142,9 @@ class ApiRequests:
 
         if verbose:
             print(
-                "Datas cleaned. Founded", MIN_PROD, "products minimum by categories.",
+                "Datas cleaned. Founded",
+                MIN_PROD,
+                "products minimum by categories.",
             )
 
         # # Write JSON for debug

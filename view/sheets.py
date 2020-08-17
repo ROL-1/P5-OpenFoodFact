@@ -33,7 +33,11 @@ class Sheets:
             brands.append(fp[3])
             products.append(fp[1])
         frame = pd.DataFrame(
-            {"Nutriscores": nutriscores, "Produits": products, "Marques": brands, }
+            {
+                "Nutriscores": nutriscores,
+                "Produits": products,
+                "Marques": brands,
+            }
         )
         frame.index = [i + 1 for i in range(len(fetched_products))]
         print(frame)

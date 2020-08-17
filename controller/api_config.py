@@ -11,9 +11,7 @@ REQUEST_PARAMS = [
     "fields=",
 ]
 
-FIELDS = (
-    "generic_name_fr,product_name_fr,nutriscore_grade,stores,brands,code,categories,url"
-)
+FIELDS = "generic_name_fr,product_name_fr,nutriscore_grade,stores,brands,code,categories,url"
 
 CATEGORIES = ["Pizzas", "Sandwichs", "Sodas", "Chocolats", "Brioches"]
 

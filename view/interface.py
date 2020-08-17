@@ -20,7 +20,9 @@ class Ui:
 
     def connection_params(self):
         """Ask parameters for connection to server sql."""
-        print("\nVeuillez saisir les paramètres de connection au serveur sql:")
+        print(
+            "\nVeuillez saisir les paramètres de connection au serveur sql:"
+        )
         host = input("host : ")
         user = input("user : ")
         password = getpass()
@@ -144,7 +146,9 @@ class Ui:
         )
         Sheets.sheet(substitute[0], stores)
         # Substituted product display.
-        print("\nCe produit peut substituer le produit que vous aviez sélectionné :\n")
+        print(
+            "\nCe produit peut substituer le produit que vous aviez sélectionné :\n"
+        )
         old_product = Fetch(Log).fetch_product(product_id)
         stores = Fetch(Log).fetch_stores(old_product[0][0])
         Sheets.sheet(old_product[0], stores)

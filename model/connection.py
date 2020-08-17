@@ -8,8 +8,8 @@ database."""
 
 
 import mysql.connector as MC
-from mysql.connector import errorcode
 from model.json import Json
+from mysql.connector import errorcode
 class Connection:
     """Récupère les informations pour la connexion et créé la connexion."""
 

@@ -22,7 +22,10 @@ def main():
     try:
         parser = argparse.ArgumentParser(description="Launch the program !")
         parser.add_argument(
-            "-v", "--verbose", action="store_true", help="add output verbosity"
+            "-v",
+            "--verbose",
+            action="store_true",
+            help="add output verbosity",
         )
         parser.add_argument(
             "--install_database", action="store_true", help="install database"
@@ -69,12 +72,12 @@ def main():
             # User account.
             user_name = False
             Run = Ui()
-            while log_choice == False:
+            while log_choice is False:
                 log_choice = Run.log_menu()
             # User log.
             if log_choice == 1:
                 logged = False
-                while logged == False:
+                while logged is False:
                     user_name = Run.log_user()
                     try:
                         request_lists = RequestsLists().user_id(user_name)
@@ -84,7 +87,7 @@ def main():
                         print("\nCe nom d'utilisateur n'existe pas.")
             # User create account.
             elif log_choice == 2:
-                while user_name == False:
+                while user_name is False:
                     user_name = Run.create_user()
                     try:
                         request_lists = RequestsLists().user_id(user_name)
@@ -97,7 +100,7 @@ def main():
                         request_lists = RequestsLists().user_id(user_name)
                         user_id = Orm(Log_db).simple_request(request_lists)[0]
 
-            while Loop == False:
+            while Loop is False:
                 # Booleans for loops.
                 menu_choice = False
                 category = False
@@ -105,22 +108,23 @@ def main():
                 substitute_id = False
                 save_choice = False
                 # Display menu.
-                while menu_choice == False:
+                while menu_choice is False:
                     menu_choice = Run.menu()
                 # Launch search for substitute.
                 if menu_choice == 1:
                     # Display categories
-                    while category == False:
+                    while category is False:
                         category = Run.categories()
                     # Display products.
-                    while product_id == False:
+                    while product_id is False:
                         product_id = Run.products(Log, category)
                     # Display substitute
-                    while substitute_id == False:
+                    while substitute_id is False:
                         substitute_id = Run.substitute(
-                            Log, product_id, category)
+                            Log, product_id, category
+                        )
                     # Save result, leave or loop.
-                    while save_choice == False:
+                    while save_choice is False:
                         save_choice = Run.save_menu(Log)
                     if save_choice == 1:
                         insert_lists = RequestsLists().save_search(
