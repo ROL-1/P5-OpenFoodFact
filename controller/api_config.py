@@ -1,17 +1,21 @@
 #! /usr/bin/env python3
 # coding: utf-8
-""" config file for api.py"""
+"""config file for api.py."""
 
 REQUEST_PARAMS = [
-    'action=process','tagtype_0=categories','tag_contains_0=contains',
-    'json=1',
-    'page_size=25',
-    'fields='
+    "action=process",
+    "tagtype_0=categories",
+    "tag_contains_0=contains",
+    "json=1",
+    "page_size=25",
+    "fields=",
 ]
 
-FIELDS = 'generic_name_fr,product_name_fr,nutriscore_grade,stores,brands,code,categories,url'
+FIELDS = (
+    "generic_name_fr,product_name_fr,nutriscore_grade,stores,brands,code,categories,url"
+)
 
-CATEGORIES = ['Pizzas','Sandwichs','Sodas','Chocolats','Brioches']
+CATEGORIES = ["Pizzas", "Sandwichs", "Sodas", "Chocolats", "Brioches"]
 
 # Minimum number of products by categories.
 MIN_PROD = 50

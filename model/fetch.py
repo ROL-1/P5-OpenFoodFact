@@ -5,25 +5,27 @@
 from controller.api_config import FIELDS
 from model.config import NBPRODUCTS, NUTRISCORE_MIN
 
+
 class Fetch:
     """Requests for questioning database."""
 
     def __init__(self, Log, category=None, choice=None, product_id=None):
-        """..."""
         self.NBPRODUCTS = NBPRODUCTS
         self.Log = Log.database_log()
 
     def characters_max(self):
         """Retrieve the maximum number of characters for the fields."""
         char_max = {}
-        for field in FIELDS.split(','):
+        for field in FIELDS.split(","):
             fetch = self.Log.request(
                 """SELECT column_name, character_maximum_length
                 FROM information_schema.columns WHERE column_name = '%s'
-                AND (DATA_TYPE = 'char' OR DATA_TYPE = 'varchar')""" % (field))     
+                AND (DATA_TYPE = 'char' OR DATA_TYPE = 'varchar')"""
+                % (field)
+            )
             char_max.update(fetch)
         return char_max
-    
+
     def fetch_products(self, category):
         """Return 'NBPRODUCTS' products from a category."""
         request = """
@@ -37,11 +39,15 @@ class Fetch:
             AND n.nutriscore_grade > '%s'
             ORDER BY RAND ()            
             LIMIT %s
-            """ % (category,NUTRISCORE_MIN,self.NBPRODUCTS)
+            """ % (
+            category,
+            NUTRISCORE_MIN,
+            self.NBPRODUCTS,
+        )
 
-        fetched_products = self.Log.request(request) 
-        return fetched_products    
-    
+        fetched_products = self.Log.request(request)
+        return fetched_products
+
     def fetch_substitute(self, category):
         """Find substitute : product with better nutriscore from the same category."""
         request = """
@@ -54,10 +60,13 @@ class Fetch:
             AND n.nutriscore_grade <= '%s'
             ORDER BY RAND ()            
             LIMIT 1
-            """ % (category,NUTRISCORE_MIN)
-        fetched_substitute = self.Log.request(request) 
+            """ % (
+            category,
+            NUTRISCORE_MIN,
+        )
+        fetched_substitute = self.Log.request(request)
         return fetched_substitute
-    
+
     def fetch_product(self, product_id):
         """Find product datas."""
         request = """
@@ -68,8 +77,10 @@ class Fetch:
             INNER JOIN Categories c ON c.categories_id = p.Categories_categories_id
             WHERE p.products_id = '%s'
             LIMIT 1
-            """ % (product_id)
-        fetched_product = self.Log.request(request) 
+            """ % (
+            product_id
+        )
+        fetched_product = self.Log.request(request)
         return fetched_product
 
     def fetch_stores(self, product_id):
@@ -80,7 +91,9 @@ class Fetch:
             INNER JOIN Products_has_Stores phs ON p.products_id = phs.Products_products_id
             INNER JOIN Stores s ON phs.Stores_stores_id = s.stores_id
             WHERE Products_products_id = '%s'
-            """ % (product_id)
+            """ % (
+            product_id
+        )
         fetched_stores = self.Log.request(request)
 
         return fetched_stores
@@ -94,6 +107,8 @@ class Fetch:
             INNER JOIN Products p2 ON p2.products_id = s.substitute_id
             INNER JOIN Codes_products_OFF c ON c.Codes_products_OFF_id = p2.Codes_products_OFF_Codes_products_OFF_id
             WHERE Users_user_id = '%s'
-            """ % (user_id)
+            """ % (
+            user_id
+        )
         fetched_stores = self.Log.request(request)
         return fetched_stores

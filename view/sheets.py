@@ -4,54 +4,45 @@
 
 import pandas as pd
 
+
 class Sheets:
     """Give structure for products sheets."""
-      
+
     def sheet(product, stores):
         """Sheet."""
-        print('Nom :', product[1])
-        print('Description :', product[2])
-        print('Marque :', product[3])
-        print('Nutriscore :', product[4])
+        print("Nom :", product[1])
+        print("Description :", product[2])
+        print("Marque :", product[3])
+        print("Nutriscore :", product[4])
         # Remove unwanted characters in 'stores'.
-        stores = str(stores)  #TC
-        remove_char = ['[','(','\'',']']
-        stores = stores.replace(',)', "")
+        stores = str(stores)  # TC
+        remove_char = ["[", "(", "'", "]"]
+        stores = stores.replace(",)", "")
         for char in remove_char:
-            stores = stores.replace(char, "")        
-        print('Magasins :', stores)
-        print('Lien OpenFoodFact :',product[5])
-    
+            stores = stores.replace(char, "")
+        print("Magasins :", stores)
+        print("Lien OpenFoodFact :", product[5])
+
     def list_sheet(fetched_products):
         """Product list sheet."""
         nutriscores = []
-        brands = [] 
+        brands = []
         products = []
         for fp in fetched_products:
             nutriscores.append(fp[4])
             brands.append(fp[3])
             products.append(fp[1])
         frame = pd.DataFrame(
-            {
-                "Nutriscores" : nutriscores,
-                "Produits" : products,
-                "Marques" : brands,                
-            }
-        )   
-        frame.index = [i+1 for i in range(len(fetched_products))]
+            {"Nutriscores": nutriscores, "Produits": products, "Marques": brands, }
+        )
+        frame.index = [i + 1 for i in range(len(fetched_products))]
         print(frame)
-
-        # if count == 0:
-        #     print("Nb",'|',"{:>12}".format('Nutriscores'),'|',"{:50}".format('Marques'),'|','Produits')
-        #     print('-'*120)
-        # # Rows.
-        # print("{:>2}".format(count+1),'|',"{:>12}".format(product[4]),'|',"{:50}".format(product[3]),'|',product[1])
 
     def saves_sheet(fetched_products):
         """Searches saved list sheet."""
         # Create lists for frame.
         products = []
-        substitutes = [] 
+        substitutes = []
         codeOFF = []
         for fp in fetched_products:
             products.append(fp[0])
@@ -60,13 +51,10 @@ class Sheets:
         # Create frame.
         frame = pd.DataFrame(
             {
-                "Produits" : products,
-                "Substituts" : substitutes,
-                "https://fr.openfoodfacts.org/" : codeOFF,
+                "Produits": products,
+                "Substituts": substitutes,
+                "https://fr.openfoodfacts.org/": codeOFF,
             }
         )
-        frame.index = [i+1 for i in range(len(fetched_products))]
+        frame.index = [i + 1 for i in range(len(fetched_products))]
         print(frame)
-
-
-
