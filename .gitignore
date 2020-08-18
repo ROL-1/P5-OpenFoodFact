@@ -3,4 +3,4 @@ venv/
 model/conn_params.json
 model/database_name.json
 scraped_file.json
- **/__pycache__/
+__pycache__/
