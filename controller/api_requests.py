@@ -116,14 +116,14 @@ class ApiRequests:
                 # Review products.
 
                 for product in self.scraped:
-                    # Change "categories" product field for only one category, or nothing if not in 'CATEGORIES' list.
+                    # Change "categories" product field for only one category.
                     self.define_category(product)
                     # Erease string if there is a forbidden character.
                     self.wrong_caracters(product)
                     # Check datas.
                     Data = self.data_missing(product)
                     Strings = self.string_length(Fields_charmax, product)
-                    # Fill 'cleaned_scraped' list with product if all checks are true.
+                    # Fill 'cleaned_scraped' list, if all checks are trues.
                     if (
                         ("categories" in product)
                         and (category in product["categories"])

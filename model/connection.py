@@ -40,14 +40,14 @@ class Connection:
         except MC.Error as err:
             if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
                 print(
-                    "Une information est erronée parmi votre nom d'utilisateur \
-et votre mot de passe."
+                    "Une information est erronée parmi votre nom d'utilisateur"
+                    " et votre mot de passe."
                 )
             elif err.errno == errorcode.ER_BAD_DB_ERROR:
                 print("La base de données n'existe pas.")
                 print(
-                    "Veuillez relancer le programme avec la commande : \
---install_database. (option : -v)"
+                    "Veuillez relancer le programme avec la commande : "
+                    "--install_database. (option : -v)"
                 )
             else:
                 print(err)

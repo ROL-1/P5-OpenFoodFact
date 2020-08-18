@@ -4,8 +4,8 @@
 
 menus = {
     "log_menu": [
-        "\nA tout moment, vous pouvez quitter le programme en pressant : \
-[CTRL + C]",
+        "\nA tout moment, vous pouvez quitter le programme en pressant : "
+        "[CTRL + C]",
         "\nCompte utilisateur :\n",
     ],
     "log_menu_choices": [
@@ -13,22 +13,22 @@ menus = {
         "2. Créer un compte utilisateur.",
     ],
     "main_menu_welcome": [
-        "\nBIENVENUE DANS LE PROGRAMME DE RECHERCHE DE PRODUITS DE \
-SUBSTITUTION.",
+        "\nBIENVENUE DANS LE PROGRAMME DE RECHERCHE DE PRODUITS DE "
+        "SUBSTITUTION.",
         "Par l'entreprise Pur Beurre.",
         "Avec l'api OpenFoodFact.",
     ],
     "main_menu": ["\nVoulez-vous :\n"],
     "main_menu_choices": [
-        "1. - Trouver un produit de substitution pour un aliment ? - \
-(Appuyez sur 1)",
-        "2. - Consulter vos produits de substitution sauvegardés ? - \
-(Appuyez sur 2)",
+        "1. - Trouver un produit de substitution pour un aliment ? - "
+        "(Appuyez sur 1)",
+        "2. - Consulter vos produits de substitution sauvegardés ? - "
+        "(Appuyez sur 2)",
         "3. - Quitter le programme ? - (Appuyez sur 3)\n",
     ],
     "categories_menu": [
-        "\nPour quelle catégorie de produits voulez-vous faire une \
-recherche ?",
+        "\nPour quelle catégorie de produits voulez-vous faire une "
+        "recherche ?",
         "Sélectionnez une catégorie :\n",
     ],
     "products_menu": [
