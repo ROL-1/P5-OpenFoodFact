@@ -3,8 +3,8 @@
 """class to get informations from API."""
 
 import json
-
 import requests
+
 from controller.api_config import CATEGORIES, FIELDS, MIN_PROD, REQUEST_PARAMS
 
 
@@ -114,7 +114,6 @@ class ApiRequests:
                 if verbose:
                     print("Cleaning data for", category)
                 # Review products.
-
                 for product in self.scraped:
                     # Change "categories" product field for only one category.
                     self.define_category(product)

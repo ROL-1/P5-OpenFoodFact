@@ -4,9 +4,9 @@
 database."""
 
 import mysql.connector as MC
-from mysql.connector import errorcode
 
 from model.json import Json
+from mysql.connector import errorcode
 
 
 class Connection:

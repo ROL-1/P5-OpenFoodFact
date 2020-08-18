@@ -1,9 +1,6 @@
 #! /usr/bin/env python3
 # coding: utf-8
-"""Insert data in data base.
-
-From JSON.
-"""
+"""Insert data in data base."""
 
 from model.orm import Orm
 from model.requests_lists import RequestsLists
@@ -91,5 +88,5 @@ class Insert:
         if self.verbose:
             print(f"Database filled after scanning {product_count} products.")
         # Make sure data is committed to the database
-        self.Log.commit()  # TC
-        self.Log.close_connection()  # TC
+        self.Log.commit()
+        self.Log.close_connection()
