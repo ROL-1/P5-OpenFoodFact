@@ -147,6 +147,6 @@ class ApiRequests:
             )
 
         # # Write JSON for debug
-        # with open("scraped_file.json", "w") as write_file:
+        # with open("cleaned_scraped.json", "w") as write_file:
         #     json.dump(self.cleaned_scraped, write_file, indent=4)
         return self.cleaned_scraped

@@ -79,12 +79,17 @@ def main():
                 logged = False
                 while logged is False:
                     user_name = Run.log_user()
-                    try:
-                        request_lists = RequestsLists().user_id(user_name)
-                        user_id = Orm(Log_db).simple_request(request_lists)[0]
-                        logged = True
-                    except IndexError:
-                        print("\nCe nom d'utilisateur n'existe pas.")
+                    if isinstance(user_name, str):
+                        try:
+                            request_lists = RequestsLists().user_id(user_name)
+                            user_id = Orm(Log_db).simple_request(
+                                request_lists
+                            )[0]
+                            logged = True
+                        except IndexError:
+                            print("\n- Ce nom d'utilisateur n'existe pas.")
+                    else:
+                        print("\n- Veuillez saisir un nom d'utilisateur.")
             # User create account.
             elif log_choice == 2:
                 while user_name is False:
@@ -135,19 +140,16 @@ def main():
                     elif save_choice == 2:
                         pass
                     elif save_choice == 3:
-                        raise KeyboardInterrupt
+                        exit(Ui().bye_message(user_name))
 
                 # Display saved searches.
                 elif menu_choice == 2:
                     Run.saves_display(Log_db, user_id)
                 # Quit.
                 elif menu_choice == 3:
-                    raise KeyboardInterrupt
+                    exit(Ui().bye_message(user_name))
+
     except KeyboardInterrupt:
-        # Close connection
-        if args.verbose:
-            print("\nClose connection.")
-        Log_db.close_connection()
         Ui().bye_message(user_name)
 
 
