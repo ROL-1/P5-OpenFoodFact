@@ -40,16 +40,16 @@ En étant dans le répertoire de base :
 
 ### Pré-requis
 Le programme nécessite d'installer les dépendances présentes dans le requirements.txt, dans votre environnement virtuel (activé) ; avec la commande suivante :
-
+```
 pip install -r requirements.txt
-
+```
 ### Premier lancement
 ATTENTION : Le programme installera la base de données sur un serveur à partir du fichier .sql fourni. Le nom de la base de données est indiqué dans ce fichier. Si une base de donnée du même nom est déjà existante elle sera supprimée (les données seront alors perdues).
 
 Il est donc nécessaire d'avoir accès à un serveur SQL et de renseigner ses informations de connexion au programme lors du premier lancement ; avec la commande suivante : 
-
+```
 main.py --install_database -v
-
+```
 L'option -verbose (-v) est disponible pour plus de lisibilité et faciliter les opérations de débug.
 
 Cette commande peut être utilisée à tout moment pour réinitialiser la base de données et la remettre à jour avec de nouvelles données issues de l'api OpenFoodFact.
@@ -65,25 +65,25 @@ Etapes du programme d'installation :
 
 ### Utilisation du programme
 Le programme se lance avec la commande suivante :
-
+```
 main.py -v
-
+```
 L'option -verbose (-v) est disponible pour plus de lisibilité et faciliter les opérations de débug.
 
 Il sera nécessaire de renseigner un nom d'utilisateur.
 
 ### Configuration du programme
 - controller\api_config.py
-* REQUEST_PARAMS : contient les paramètres de l'endpoint de l'api, dont :
-"page_size=xx" : permet de définir combien de produits par pages sont affichés (modifier cette valeur peut permettre d'accélérer l'obtention de la liste de produits retenus pour la base de données).
-FIELDS : liste des champs à récupérer dans l'api.
-* CATEGORIES : il est possible de supprimer, remplacer ou ajouter des catégories souhaitées pour le programme de substitution.
-* MIN_PROD : permet de définir le nombre minimum de produits devant être retenus par categorie.
+    * REQUEST_PARAMS : contient les paramètres de l'endpoint de l'api, dont :
+    "page_size=xx" : permet de définir combien de produits par pages sont affichés (modifier cette valeur peut permettre d'accélérer l'obtention de la liste de produits retenus pour la base de données).
+    FIELDS : liste des champs à récupérer dans l'api.
+    * CATEGORIES : il est possible de supprimer, remplacer ou ajouter des catégories souhaitées pour le programme de substitution.
+    * MIN_PROD : permet de définir le nombre minimum de produits devant être retenus par categorie.
 
 - model\config.py
-* SQL_FILE : nom du fichier sql utilisé.
-* NBPRODUCTS : nombre de produits à afficher à l'utilisateur lors du choix de produits à remplacer.
-* NUTRISCORE_MIN : nutriscore limite entre les produits à remplacer et les substituts.
+    * SQL_FILE : nom du fichier sql utilisé.
+    * NBPRODUCTS : nombre de produits à afficher à l'utilisateur lors du choix de produits à remplacer.
+    * NUTRISCORE_MIN : nutriscore limite entre les produits à remplacer et les substituts.
 
 -----------------
 ## Architecture du programme
