@@ -16,7 +16,7 @@ menus = {
         "\nBIENVENUE DANS LE PROGRAMME DE RECHERCHE DE PRODUITS DE "
         "SUBSTITUTION.",
         "Par l'entreprise Pur Beurre.",
-        "Avec l'api OpenFoodFact.",
+        "Avec l'API OpenFoodFact.",
     ],
     "main_menu": ["\nVoulez-vous :\n"],
     "main_menu_choices": [

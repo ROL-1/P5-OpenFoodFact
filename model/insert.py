@@ -1,13 +1,13 @@
 #! /usr/bin/env python3
 # coding: utf-8
-"""Insert data in data base."""
+"""Insert data in database."""
 
 from model.orm import Orm
 from model.requests_lists import RequestsLists
 
 
 class Insert:
-    """Insert data in data base."""
+    """Insert data in database."""
 
     def __init__(self, Log, verbose, Api_data=None):
         """Retrive connection to server sql."""

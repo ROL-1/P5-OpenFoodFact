@@ -1,7 +1,6 @@
 #! /usr/bin/env python3
 # coding: utf-8
-"""Class to filter(really?) api informations and transmit it to the
-database."""
+"""File to manage connection to database."""
 
 import mysql.connector as MC
 
@@ -10,7 +9,7 @@ from mysql.connector import errorcode
 
 
 class Connection:
-    """Récupère les informations pour la connexion et créé la connexion."""
+    """Manage connection to database and contains functions to get datas."""
 
     compteur = 0
 

@@ -12,7 +12,7 @@ class ApiRequests:
     """Create requests for api."""
 
     def __init__(self, Fields_charmax=None, verbose=None):
-        """Get datas from api by looping on each category until it's filled."""
+        """Get datas from API by looping on each category until it's filled."""
         if verbose:
             print("Getting data from API...")
         self.scraped = []

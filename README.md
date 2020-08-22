@@ -44,7 +44,7 @@ Le programme nécessite d'installer les dépendances présentes dans le requirem
 pip install -r requirements.txt
 ```
 ### Premier lancement
-ATTENTION : Le programme installera la base de données sur un serveur à partir du fichier .sql fourni. Le nom de la base de données est indiqué dans ce fichier. Si une base de donnée du même nom est déjà existante elle sera supprimée (les données seront alors perdues).
+ATTENTION : Le programme installera la base de données sur un serveur à partir du fichier .sql fourni. Le nom de la base de données est indiqué dans ce fichier. Si une base de données du même nom est déjà existante elle sera supprimée (les données seront alors perdues).
 
 Il est donc nécessaire d'avoir accès à un serveur SQL et de renseigner ses informations de connexion au programme lors du premier lancement ; avec la commande suivante : 
 ```
@@ -74,9 +74,7 @@ Il sera nécessaire de renseigner un nom d'utilisateur.
 
 ### Configuration du programme
 - controller\api_config.py
-    * REQUEST_PARAMS : contient les paramètres de l'endpoint de l'api, dont :
-    "page_size=xx" : permet de définir combien de produits par pages sont affichés (modifier cette valeur peut permettre d'accélérer l'obtention de la liste de produits retenus pour la base de données).
-    FIELDS : liste des champs à récupérer dans l'api.
+    * REQUEST_PARAMS : contient les paramètres de l'endpoint de l'API, dont :  "page_size=xx" : permet de définir combien de produits par pages sont affichés (modifier cette valeur peut permettre d'accélérer l'obtention de la liste de produits retenus pour la base de données).  FIELDS : liste des champs à récupérer dans l'api.
     * CATEGORIES : il est possible de supprimer, remplacer ou ajouter des catégories souhaitées pour le programme de substitution.
     * MIN_PROD : permet de définir le nombre minimum de produits devant être retenus par categorie.
 
@@ -87,3 +85,27 @@ Il sera nécessaire de renseigner un nom d'utilisateur.
 
 -----------------
 ## Architecture du programme
+#### Lexique :
+BDD : base de données.
+#### à la racine :
+DBOFF1.sql : requêtes pour la création de la BDD.
+main.py : lance le programme.
+#### controller :
+api_config : paramètres pour api_requests.
+api_requests : récupère les informations de l'API.
+#### model :
+config.py : paramètres pour connection.py.
+connection.py : gère la connection à la base de données et contiens les fonctions pour y récupérer les données.
+create.py : créé la base de données.
+fetch.py : requêtes à passer pour obtenir des informations de la BDD.
+insert : insert les informations dans la BDD.
+json : actions avec les fichiers .json.
+orm : fait office d'interface pour mettre en langage SQL les requêtes préparées dans requests_lists.py.
+requests_lists.py : listes de champs à passer dans orm.py pour créer les requêtes SQL.
+sql_read.py : lit le fichier SQL et récupère le nom de la BDD et l'enregistre dans database_name.json.
+conn_params.json : sauvegarde les informations de connexion au serveur SQL saisies par l'utilisateur.
+database_name.json : contient le nom de la BDD extrait du fichier SQL.
+#### view :
+interface : gère l'affichage destiné à l'utilisateur.
+menus : répertorie les menus sous forme de listes pour faciliter leurs modifications.
+sheets : sous menu d'affichage pour les produits et produits substituts.

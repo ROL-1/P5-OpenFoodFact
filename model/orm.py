@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 # coding: utf-8
-"""Object-relational Mapper (ORM) class."""
+"""Object-relational Mapper (ORM) class for requests_lists.py."""
 
 
 class Orm:
