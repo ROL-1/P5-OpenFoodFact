@@ -57,8 +57,8 @@ Cette commande peut être utilisée à tout moment pour réinitialiser la base d
 Etapes du programme d'installation :
 - Sollicite la saisie par l'utilisateur des informations de connexion au serveur SQL (host,user,password).
 - Vérifie que la connexion est possible.
-- Lis le fichier .sql, passe les requêtes au serveur pour créer la base de données.
-- Créé et passe les requêtes à l'api OpenFoodFact pour obtenir les informations sur les produits.
+- Lit le fichier .sql, passe les requêtes au serveur pour créer la base de données.
+- Créé et passe les requêtes à l'API OpenFoodFact pour obtenir les informations sur les produits.
 - Filtre et standardise les informations reçues pour ne retenir que les informations utiles pour le programme.
 - Alimente la base de données avec les informations filtrées.
 - Informe l'utilisateur que la base de donneés est installée. Il est alors possible de lancer le programme.
@@ -85,27 +85,27 @@ Il sera nécessaire de renseigner un nom d'utilisateur.
 
 -----------------
 ## Architecture du programme
-#### Lexique :
+### Lexique :
 BDD : base de données.
-#### à la racine :
-DBOFF1.sql : requêtes pour la création de la BDD.
-main.py : lance le programme.
-#### controller :
-api_config : paramètres pour api_requests.
-api_requests : récupère les informations de l'API.
-#### model :
-config.py : paramètres pour connection.py.
-connection.py : gère la connection à la base de données et contiens les fonctions pour y récupérer les données.
-create.py : créé la base de données.
-fetch.py : requêtes à passer pour obtenir des informations de la BDD.
-insert : insert les informations dans la BDD.
-json : actions avec les fichiers .json.
-orm : fait office d'interface pour mettre en langage SQL les requêtes préparées dans requests_lists.py.
-requests_lists.py : listes de champs à passer dans orm.py pour créer les requêtes SQL.
-sql_read.py : lit le fichier SQL et récupère le nom de la BDD et l'enregistre dans database_name.json.
-conn_params.json : sauvegarde les informations de connexion au serveur SQL saisies par l'utilisateur.
-database_name.json : contient le nom de la BDD extrait du fichier SQL.
-#### view :
-interface : gère l'affichage destiné à l'utilisateur.
-menus : répertorie les menus sous forme de listes pour faciliter leurs modifications.
-sheets : sous menu d'affichage pour les produits et produits substituts.
+### à la racine :
+- DBOFF1.sql : requêtes pour la création de la BDD.
+- main.py : lance le programme.
+### controller :
+- api_config : paramètres pour api_requests.
+- api_requests : récupère les informations de l'API.
+### model :
+- config.py : paramètres pour connection.py.
+- connection.py : gère la connection à la base de données et contiens les fonctions pour y récupérer les données.
+- create.py : créé la base de données.
+- fetch.py : requêtes à passer pour obtenir des informations de la BDD.
+- insert : insert les informations dans la BDD.
+- json : actions avec les fichiers .json.
+- orm : fait office d'interface pour mettre en langage SQL les requêtes préparées dans requests_lists.py.
+- requests_lists.py : listes de champs à passer dans orm.py pour créer les requêtes SQL.
+- sql_read.py : lit le fichier SQL et récupère le nom de la BDD et l'enregistre dans database_name.json.
+- conn_params.json : sauvegarde les informations de connexion au serveur SQL saisies par l'utilisateur.
+- database_name.json : contient le nom de la BDD extrait du fichier SQL.
+### view :
+- interface : gère l'affichage destiné à l'utilisateur.
+- menus : répertorie les menus sous forme de listes pour faciliter leurs modifications.
+- sheets : sous menu d'affichage pour les produits et produits substituts.
