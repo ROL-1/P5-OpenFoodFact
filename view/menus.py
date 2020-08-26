@@ -8,10 +8,8 @@ menus = {
         "[CTRL + C]",
         "\nCompte utilisateur :\n",
     ],
-    "log_menu_choices": [
-        "1. Se connecter.",
-        "2. Créer un compte utilisateur.",
-    ],
+    "log_menu_choices": ["1. Se connecter.", "2. Créer un compte utilisateur.",
+                         ],
     "main_menu_welcome": [
         "\nBIENVENUE DANS LE PROGRAMME DE RECHERCHE DE PRODUITS DE "
         "SUBSTITUTION.",

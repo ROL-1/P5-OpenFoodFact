@@ -23,11 +23,8 @@ class ApiRequests:
     def api_request(self, category):
         """Get datas from api by creating endpoint with parameters."""
         params = (
-            "&".join(REQUEST_PARAMS)
-            + FIELDS
-            + "&page="
-            + str(self.page_nb)
-            + "&tag_0="
+            "&".join(REQUEST_PARAMS) + FIELDS + "&page=" + str(self.page_nb) +
+            "&tag_0="
         )
         request = requests.get(self.endpoint + params + category)
         return request
@@ -77,10 +74,8 @@ class ApiRequests:
                 if field in Fields_charmax.keys():
                     # Check for element with max length for 'stores'.
                     if field == "stores":
-                        if (
-                            len(max(string.split(","), key=len))
-                            > Fields_charmax[field]
-                        ):
+                        if len(max(string.split(","), key=len)
+                               ) > Fields_charmax[field]:
                             return "False"
                     else:
                         if len(string) > Fields_charmax[field]:
@@ -93,20 +88,19 @@ class ApiRequests:
             if category == product["categories"]:
                 products_nb += 1
         if products_nb < MIN_PROD:
-            category_filled = False
+            cat_filled = False
         else:
-            category_filled = True
-        return category_filled
+            cat_filled = True
+        return cat_filled
 
     def api_get_data(self, Fields_charmax, verbose):
         """Review categories until there is 'MIN_PROD' products for each."""
-
         for category in CATEGORIES:
             if verbose:
                 print("Loading", category)
-            category_filled = False
+            cat_filled = False
             # Loop while there is not enough products for the category.
-            while category_filled is False:
+            while cat_filled is False:
                 # Create request.
                 request = self.api_request(category)
                 # Add products from the request to 'scraped' list.
@@ -131,22 +125,19 @@ class ApiRequests:
                     ):
                         self.cleaned_scraped.append(product)
                 # Check how many products by categories are suitables.
-                category_filled = self.products_nb(
-                    self.cleaned_scraped, category
-                )
-                if category_filled is False:
+                cat_filled = self.products_nb(self.cleaned_scraped, category)
+                if cat_filled is False:
                     self.page_nb += 1
                 else:
                     self.page_nb = 1
 
         if verbose:
             print(
-                "Datas cleaned. Founded",
-                MIN_PROD,
-                "products minimum by categories.",
+                "Datas cleaned."
+                "Founded", MIN_PROD, "products minimum by categories.",
             )
 
-        # # Write JSON for debug
+        # # Write JSON of datas (for debug)
         # with open("cleaned_scraped.json", "w") as write_file:
         #     json.dump(self.cleaned_scraped, write_file, indent=4)
         return self.cleaned_scraped

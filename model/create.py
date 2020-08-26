@@ -11,8 +11,8 @@ class Create:
     """Create database."""
 
     def __init__(self, Log, sql_readed):
+        """Split the file to make requests list."""
         self.Log = Log
-        # Split the file to make requests list.
         self.SQLrequests = sql_readed.split(";")
 
     def create_db(self, verbose):

@@ -18,14 +18,11 @@ from view.interface import Ui
 
 
 def main():
-    """Main file for substitute program from 'Pur Beurre'."""
+    """Program file for product substitution program, by 'Pur Beurre'."""
     try:
         parser = argparse.ArgumentParser(description="Launch the program !")
         parser.add_argument(
-            "-v",
-            "--verbose",
-            action="store_true",
-            help="add output verbosity",
+            "-v", "--verbose", action="store_true", help="add output verbosity"
         )
         parser.add_argument(
             "--install_database", action="store_true", help="install database"
@@ -37,7 +34,8 @@ def main():
             print("Running '{}'".format(__file__))
 
         if args.install_database:
-            # Ask parameters for sql server connection and save in Json.
+            # Ask informations for sql server connection
+            # and save them in 'conn_params.json'.
             Run = Ui()
             host, user, password = Run.connection_params()
             Json().save_connection_params(host, user, password)
@@ -47,7 +45,7 @@ def main():
             # Read sql.
             Sql = SqlRead(verbose)
             sql_readed = Sql.read_sql(SQL_FILE)
-            # Write database name in dbname.py
+            # Write database name in 'database_name.json'.
             Sql.database_name(sql_readed)
             # Create database.
             Create(Log, sql_readed).create_db(verbose)
@@ -94,8 +92,7 @@ def main():
                         try:
                             request_lists = RequestsLists().user_id(user_name)
                             user_id = Orm(Log_db).simple_request(
-                                request_lists
-                            )[0]
+                                request_lists)[0]
                             logged = True
                         except IndexError:
                             print("\n- Ce nom d'utilisateur n'existe pas.")
@@ -136,9 +133,8 @@ def main():
                         product_id = Run.products(Log, category)
                     # Display substitute
                     while substitute_id is False:
-                        substitute_id = Run.substitute(
-                            Log, product_id, category
-                        )
+                        substitute_id = Run.substitute(Log, product_id,
+                                                       category)
                     # Save result, leave or loop.
                     while save_choice is False:
                         save_choice = Run.save_menu(Log)

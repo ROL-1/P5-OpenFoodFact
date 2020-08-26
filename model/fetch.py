@@ -10,6 +10,7 @@ class Fetch:
     """Requests for questioning database."""
 
     def __init__(self, Log, category=None, choice=None, product_id=None):
+        """Define constants."""
         self.NBPRODUCTS = NBPRODUCTS
         self.Log = Log.database_log()
 

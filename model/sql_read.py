@@ -8,9 +8,10 @@ from model.json import Json
 
 
 class SqlRead:
-    """Read sql file."""
+    """Read .sql file."""
 
     def __init__(self, verbose):
+        """Check for verbose."""
         self.verbose = verbose
 
     def read_sql(self, sql_file):
@@ -22,6 +23,7 @@ class SqlRead:
         return sql_readed
 
     def database_name(self, sql_readed):
+        """Extract database name from sql file to a .json."""
         if self.verbose:
             print("Extract database name.")
         """Find database name in .sql file."""

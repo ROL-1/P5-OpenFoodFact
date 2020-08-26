@@ -7,9 +7,14 @@ class Orm:
     """Translate from ptyhon to sql."""
 
     def __init__(self, Log):
+        """Define arguments."""
         self.Log = Log
 
     def build_params_values(self, values_list):
+        """For function : multiple_insertion.
+        
+        Adapt string according to number of values.
+        """
         nb_params = ",".join("%s" for value in values_list)
         return "VALUES ({})".format(nb_params)
 

@@ -1,7 +1,9 @@
 #! /usr/bin/env python3
 # coding: utf-8
-"""Contains lists to make requests to database,
-with Insertion.py and orm.py."""
+"""Lists to make requests to database.
+
+For Insertion.py and orm.py.
+"""
 
 
 class RequestsLists:

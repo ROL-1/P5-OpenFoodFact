@@ -15,7 +15,7 @@ class Ui:
     """Allows the user to interact with the program."""
 
     def __init__(self):
-        # Counter for welcome message input.
+        """Counter for welcome message input."""
         self.menu_counter = 0
 
     def connection_params(self):
@@ -27,6 +27,7 @@ class Ui:
         return host, user, password
 
     def print_menu(self, sub_menu):
+        """Print lines."""
         for line in menus[sub_menu]:
             print(line)
 
@@ -176,6 +177,7 @@ class Ui:
             Sheets.saves_sheet(fetched_products)
 
     def bye_message(self, user_name):
+        """Display exit message."""
         if user_name is not False:
             print('\nA bientôt "{}" !'.format(user_name))
         else:
