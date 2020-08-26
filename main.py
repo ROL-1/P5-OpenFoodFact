@@ -60,6 +60,17 @@ def main():
             print("Database installed.")
 
         else:
+            try:
+                with open("model/conn_params.json"):
+                    pass
+                with open("model/database_name.json"):
+                    pass
+            except IOError:
+                print(
+                    "\nInformations de connection manquantes.\n",
+                    "Veuillez utiliser l'option : --install_database\n",
+                )
+                exit()
             # Load connection parameters from json.
             host, user, password = Json().read_connection_params()
             # Server connection.
